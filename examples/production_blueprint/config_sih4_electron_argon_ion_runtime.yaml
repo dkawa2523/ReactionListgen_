@@ -1,0 +1,8 @@
+extends: config_deposition_silane_gas_phase_runtime.yaml
+
+feeds:
+  - species_key: SiH4
+    formula: SiH4
+    display_name: Silane
+
+projectiles: [e-, Ar+]

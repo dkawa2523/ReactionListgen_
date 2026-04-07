@@ -23,6 +23,8 @@ This directory contains production-design blueprints.
 - `config_silicon_family_runtime.yaml` is the silicon precursor example in promotion-first mode with curated fallback catalogs.
 - `config_cf4_electron_argon_ion_runtime.yaml` is the focused CF4 example for `e-` and `Ar+`.
 - `config_chf3_electron_argon_ion_runtime.yaml` is the focused CHF3 example for `e-` and `Ar+`.
+- `config_sih4_electron_argon_ion_runtime.yaml` is the focused SiH4 example for `e-` and `Ar+`.
+- `config_cl2_electron_argon_ion_runtime.yaml` is the focused Cl2 example for `e-` and `Ar+`.
 - `config_bromine_family_promotion_runtime.yaml` is a compatibility alias that resolves to the bromine runtime above.
 - `config_silicon_family_promotion_runtime.yaml` is a compatibility alias that resolves to the silicon runtime above.
 - `config_multi_family_template_promotion_runtime.yaml` shows source-backed template promotion generalized across hydrocarbon, oxygen, and nitrogen families.
@@ -292,6 +294,22 @@ Focused CHF3 runtime with `e-` and `Ar+` projectiles:
 py -3.13 -m uv run plasma-rxn-builder build `
   examples/production_blueprint/config_chf3_electron_argon_ion_runtime.yaml `
   --output runs/chf3_electron_argon_ion_case/network.json
+```
+
+Focused SiH4 runtime with `e-` and `Ar+` projectiles:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_sih4_electron_argon_ion_runtime.yaml `
+  --output runs/sih4_electron_argon_ion_case/network.json
+```
+
+Focused Cl2 runtime with `e-` and `Ar+` projectiles:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_cl2_electron_argon_ion_runtime.yaml `
+  --output runs/cl2_electron_argon_ion_case/network.json
 ```
 
 User-facing preset for support-gas chemistry:

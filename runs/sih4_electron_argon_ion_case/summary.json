@@ -1,0 +1,36 @@
+{
+  "case_name": "sih4_electron_argon_ion_case",
+  "config_path": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_sih4_electron_argon_ion_runtime.yaml",
+  "feeds": [
+    {
+      "species_key": "SiH4",
+      "formula": "SiH4",
+      "display_name": "Silane",
+      "identity_query": null,
+      "identity_namespace": "name"
+    }
+  ],
+  "projectiles": [
+    "e-",
+    "Ar+"
+  ],
+  "max_generation": 3,
+  "species_count": 7,
+  "reaction_count": 8,
+  "reaction_generations": [
+    1,
+    2,
+    3
+  ],
+  "projectile_usage": {
+    "ar_plus_reaction_count": 0,
+    "electron_reaction_count": 5
+  },
+  "families": [
+    "dissociative_recombination",
+    "electron_dissociation",
+    "electron_ionization",
+    "ion_neutral_followup",
+    "radical_neutral_reaction"
+  ]
+}

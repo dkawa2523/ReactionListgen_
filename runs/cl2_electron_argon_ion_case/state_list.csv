@@ -1,0 +1,5 @@
+generation,prototype_key,display_name,formula,charge,state_class,excitation_label,origin
+0,Cl2,Chlorine,Cl2,0,ground,,state_master
+1,Cl,Chlorine atom,Cl,0,atom,,state_master
+1,Cl2+,Cl2+,Cl2,1,cation,,state_master
+1,Cl2-,Cl2-,Cl2,-1,anion,,state_master

@@ -1,269 +1,361 @@
-# plasma-reaction-builder v0.10
+# Production Blueprint
 
-対象ガスと projectile を入れると、気相プラズマ反応ネットワークの状態リストと反応式リストを出力するツールです。  
-user-facing preset は既定で `max_generation: 3` を使うので、1 次反応だけでなく、生成物がさらに反応する 2 次・3 次反応まで展開します。
+This directory contains production-design blueprints.
 
-## 何ができるか
+- `state_master_base.yaml` is a design-only file.
+- `state_master_base.yaml` can now carry curated `excited_states` and source-backed `atomic_asd` expansion rules.
+- `catalog_*.yaml` files are runtime-compatible examples that show the intended split.
+- `config_state_master_runtime.yaml` shows how to wire `state_masters` into the normal build flow.
+- `config_state_promotion_runtime.yaml` shows how to promote molecular excited states from external evidence.
+- `config_state_promotion_template_runtime.yaml` adds automatic template generation for promoted molecular excited states.
+- `config_gas_phase_target_runtime.yaml` materializes the broader semiconductor gas-phase feedstock set.
+- `config_gas_phase_target_db_first_runtime.yaml` runs the broader semiconductor gas-phase target set in a DB-first, curated-minimal mode.
+- `config_process_gas_secondary_runtime.yaml` focuses on secondary gas-phase chemistry for SF6, NF3, BCl3, NH3, N2O, and O3.
+- `config_advanced_precursor_runtime.yaml` focuses on WF6, TEOS, and silicon-halide precursor chemistry.
+- `config_etch_common_support_runtime.yaml` is the user-facing preset for Ar, He, N2, H2, and O2 support-gas chemistry.
+- `config_etch_fluorocarbon_runtime.yaml` is the user-facing preset for CF4, CHF3, CH2F2, CH3F, C2F6, c-C4F8, and C5F8 fluorocarbon chemistry.
+- `config_etch_inorganic_fluoride_runtime.yaml` is the user-facing preset for SF6 / NF3 gas-phase etch chemistry with DB-backed excited-state expansion.
+- `config_etch_halogen_runtime.yaml` is the user-facing preset for Cl2, HCl, Br2, HBr, and BCl3 halogen chemistry.
+- `config_deposition_silane_gas_phase_runtime.yaml` is the user-facing preset for SiH4, SiH2Cl2, and SiHCl3 gas-phase precursor chemistry.
+- `config_deposition_reactant_gas_phase_runtime.yaml` is the user-facing preset for NH3, N2O, O3, H2, and O2 deposition-reactant chemistry.
+- `config_chlorine_family_runtime.yaml` is a minimal family-scoped example for chlorine chemistry.
+- `config_bromine_family_runtime.yaml` is the bromine family example in promotion-first mode with curated fallback catalogs.
+- `config_silicon_family_runtime.yaml` is the silicon precursor example in promotion-first mode with curated fallback catalogs.
+- `config_cf4_electron_argon_ion_runtime.yaml` is the focused CF4 example for `e-` and `Ar+`.
+- `config_chf3_electron_argon_ion_runtime.yaml` is the focused CHF3 example for `e-` and `Ar+`.
+- `config_sih4_electron_argon_ion_runtime.yaml` is the focused SiH4 example for `e-` and `Ar+`.
+- `config_cl2_electron_argon_ion_runtime.yaml` is the focused Cl2 example for `e-` and `Ar+`.
+- `config_bromine_family_promotion_runtime.yaml` is a compatibility alias that resolves to the bromine runtime above.
+- `config_silicon_family_promotion_runtime.yaml` is a compatibility alias that resolves to the silicon runtime above.
+- `config_multi_family_template_promotion_runtime.yaml` shows source-backed template promotion generalized across hydrocarbon, oxygen, and nitrogen families.
+- `config_halogen_fluorocarbon_template_promotion_runtime.yaml` extends source-backed template promotion coverage across fluorocarbon, chlorine, and bromine families.
+- `config_process_precursor_template_promotion_runtime.yaml` connects source-backed promotion to SF6, NF3, BCl3, SiH2Cl2, SiHCl3, WF6, and TEOS process/precursor packs.
+- `config_excited_precursor_template_promotion_runtime.yaml` couples precursor excited-state promotion, auto-generated excited-state templates, and source-backed excited follow-up channels.
+- `config_excited_fluoride_precursor_template_promotion_runtime.yaml` does the same for the fluoride precursor set built around SF6, NF3, and WF6.
+- `config_o2_electron_argon_ion_runtime.yaml` is a focused O2 example for electron-impact channels plus `Ar+` charge transfer.
+- `catalog_66_reactions_followup_oxygen_argon.yaml` extends the focused O2 example with representative `O`, `O2+`, `O-`, and `O2-` follow-up reactions.
+- `excited_state_registry.yaml` normalizes database-specific excited-state labels onto canonical keys.
+- `config_focused_runtime_base.yaml` centralizes the shared focused-runtime defaults and is intended to be loaded via `extends`.
+- These files are scaffolding examples and are not wired into `examples/config.yaml`.
 
-- 入力: `config.yaml` に対象ガス、projectile、使う catalog / DB snapshot を指定
-- 出力: `network.json`、`build_lock.json`、状態リスト CSV、反応式リスト CSV、監査 JSON
-- 監査: build 前は `audit-config`、build 後は `audit-network` で fallback / promotion / source を追跡
+The runtime config loader now supports `extends`, so focused configs can share one base policy while keeping family-specific feeds, catalogs, and limits small.
 
-## すぐ使えるプリセット
+`catalog_policy.reaction_conflict_policy: prefer_higher_priority` is the DB-first fallback switch used by these focused examples. It keeps curated packs available, but lets higher-priority promoted templates replace same-equation curated templates when both exist.
 
-| 用途 | Config | 主な対象ガス | 既定 projectile |
-| --- | --- | --- | --- |
-| 支援ガス | `examples/production_blueprint/config_etch_common_support_runtime.yaml` | Ar, He, N2, H2, O2 | `e-`, `Ar+` |
-| フルオロカーボン | `examples/production_blueprint/config_etch_fluorocarbon_runtime.yaml` | CF4, CHF3, CH2F2, CH3F, C2F6, c-C4F8, C5F8 | `e-` |
-| 無機フッ化物 | `examples/production_blueprint/config_etch_inorganic_fluoride_runtime.yaml` | SF6, NF3 | `e-` |
-| ハロゲン | `examples/production_blueprint/config_etch_halogen_runtime.yaml` | Cl2, HCl, Br2, HBr, BCl3 | `e-` |
-| シラン系前駆体 | `examples/production_blueprint/config_deposition_silane_gas_phase_runtime.yaml` | SiH4, SiH2Cl2, SiHCl3 | `e-` |
-| 成膜反応ガス | `examples/production_blueprint/config_deposition_reactant_gas_phase_runtime.yaml` | NH3, N2O, O3, H2, O2 | `e-` |
-| 高度前駆体 | `examples/production_blueprint/config_advanced_precursor_runtime.yaml` | WF6, TEOS (`C8H20O4Si`) | `e-` |
-| O2 + Ar+ 例 | `examples/production_blueprint/config_o2_electron_argon_ion_runtime.yaml` | O2 | `e-`, `Ar+` |
-| CF4 + Ar+ 例 | `examples/production_blueprint/config_cf4_electron_argon_ion_runtime.yaml` | CF4 | `e-`, `Ar+` |
-| CHF3 + Ar+ 例 | `examples/production_blueprint/config_chf3_electron_argon_ion_runtime.yaml` | CHF3 | `e-`, `Ar+` |
+The user-facing presets in this directory now default to `max_generation: 3`, so generated outputs include second- and third-generation gas-phase follow-up reactions when compatible templates exist.
 
-## 最短セットアップ
+Suggested loading policy:
+
+1. keep design master in `state_master_base.yaml`
+2. materialize explicit species into `catalog_10_*`
+3. materialize curated reaction templates into `catalog_20_*`, `catalog_30_*`, `catalog_40_*`
+4. keep project-specific changes in `catalog_90_*`
+
+Included reaction-family examples in this blueprint:
+
+- hydrocarbon: `electron_attachment`, `electron_ionization`, `electron_excitation_vibrational`, `electron_dissociation`
+- fluorocarbon: `electron_attachment`, `electron_dissociative_ionization`, `ion_neutral_followup`, `neutral_fragmentation`, `radical_fragmentation`
+- oxygen: `electron_attachment`, `electron_excitation`, `electron_ionization`, `electron_dissociation`
+- nitrogen: `electron_excitation`, `electron_ionization`, `electron_dissociation`
+- noble_gas: `electron_excitation`, `electron_ionization`, `charge_transfer`
+- bromine: `electron_attachment`, `electron_ionization`, `electron_dissociation`, `radical_neutral_reaction`, `ion_neutral_followup`, `dissociative_recombination`
+- silicon: `electron_ionization`, `electron_dissociation`, `radical_neutral_reaction`, `ion_neutral_followup`, `dissociative_recombination`
+- process_gases: `electron_ionization`, `electron_attachment`, `electron_dissociation`, `ion_neutral_followup`, `dissociative_recombination`
+- advanced_precursors: `electron_ionization`, `electron_dissociation`, `ion_neutral_followup`, `dissociative_recombination`
+
+User-ready gas-group presets:
+
+- `config_etch_common_support_runtime.yaml`: Ar / He / N2 / H2 / O2 with `e-` and `Ar+`
+- `config_etch_fluorocarbon_runtime.yaml`: CF4 / CHF3 / CH2F2 / CH3F / C2F6 / c-C4F8 / C5F8 with `e-`
+- `config_etch_inorganic_fluoride_runtime.yaml`: SF6 / NF3 with `e-`, O2 / H2 support gases, and DB-backed excited-state promotion
+- `config_etch_halogen_runtime.yaml`: Cl2 / HCl / Br2 / HBr / BCl3 with `e-`, H2 / O2 support gases, and DB-backed template promotion
+- `config_deposition_silane_gas_phase_runtime.yaml`: SiH4 / SiH2Cl2 / SiHCl3 with `e-` and DB-backed excited-state promotion
+- `config_deposition_reactant_gas_phase_runtime.yaml`: NH3 / N2O / O3 / H2 / O2 with `e-` and DB-backed excited-state promotion
+
+These presets are intended for list generation, not first-generation-only screening. By default they expand the network up to generation 3.
+
+Materializing a runtime species catalog:
 
 ```powershell
-uv sync --extra dev
+py -3.13 -m uv run plasma-rxn-builder materialize-state-catalog `
+  examples/production_blueprint/state_master_base.yaml `
+  --output examples/production_blueprint/catalog_10_species_generated.yaml `
+  --families core_plasma hydrocarbon `
+  --charge-window-min 0 `
+  --charge-window-max 1 `
+  --asd-export-paths examples/snapshots/asd/C_I.csv examples/snapshots/asd/C_II.csv
 ```
 
-以降の実行例は、sync 後に作られる `.venv` を直接使う前提です。
+Build-time charge filtering can also be driven from config:
 
-## 基本の実行方法
+```yaml
+state_masters:
+  - path: state_master_base.yaml
+    families: [core_plasma, oxygen, nitrogen, hydrocarbon, fluorocarbon]
 
-1. config の妥当性確認
-
-```powershell
-.\.venv\Scripts\plasma-rxn-builder.exe validate-config `
-  examples/production_blueprint/config_etch_halogen_runtime.yaml
+state_filters:
+  charge_window_min: 0
+  charge_window_max: 1
 ```
 
-2. build 前の監査
+When `bootstrap.nist_asd` export paths are configured, `atomic_asd` entries are expanded automatically during the normal build/runtime catalog assembly.
+
+Sample build using the expanded production blueprint:
 
 ```powershell
-.\.venv\Scripts\plasma-rxn-builder.exe audit-config `
-  examples/production_blueprint/config_etch_halogen_runtime.yaml `
-  --output runs/example_halogen/config_audit.json
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_state_master_runtime.yaml `
+  --output examples/production_blueprint/output_network.json
 ```
 
-3. ネットワーク生成
+Sample runtime for molecular excited-state promotion:
 
 ```powershell
-.\.venv\Scripts\plasma-rxn-builder.exe build `
-  examples/production_blueprint/config_etch_halogen_runtime.yaml `
-  --output runs/example_halogen/network.json `
-  --lock-output runs/example_halogen/build_lock.json
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_state_promotion_runtime.yaml `
+  --output examples/production_blueprint/output_promoted_network.json
 ```
 
-4. 状態リストと反応式リストの出力
+Sample runtime for auto-generated templates from promoted molecular excited states:
 
 ```powershell
-.\.venv\Scripts\plasma-rxn-builder.exe visualize `
-  runs/example_halogen/network.json `
-  --config examples/production_blueprint/config_etch_halogen_runtime.yaml `
-  --output-dir runs/example_halogen/visuals
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_state_promotion_template_runtime.yaml `
+  --output examples/production_blueprint/output_promoted_template_network.json
 ```
 
-主な一覧は次に出ます。
+This template-generation sample now includes `collisional_quenching` and `superelastic_deexcitation` in addition to excitation and radiative relaxation.
 
-- `runs/example_halogen/visuals/lists/generated_species.csv`
-- `runs/example_halogen/visuals/lists/generated_reactions.csv`
+The promotion sample intentionally uses mixed spellings such as `O2(c1Sigma_u-)`, `O2(c^1Σ_u-)`, and `N2(B^3Π_g)`. `excited_state_registry.yaml` folds them into canonical keys such as `O2[c1Sigma_u_minus]` and `N2[B3Pi_g]`.
 
-5. build 後の監査
+Sample runtime for the broader gas-phase target set:
 
 ```powershell
-.\.venv\Scripts\plasma-rxn-builder.exe audit-network `
-  runs/example_halogen/network.json `
-  --output runs/example_halogen/network_audit.json
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_gas_phase_target_runtime.yaml `
+  --output examples/production_blueprint/output_gas_phase_target_network.json
 ```
 
-## O2 / CF4 / CHF3 を `e-`, `Ar+` で実行するコマンド
-
-### O2
+DB-first runtime for the broader gas-phase target set:
 
 ```powershell
-.\.venv\Scripts\plasma-rxn-builder.exe build `
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_gas_phase_target_db_first_runtime.yaml `
+  --output examples/production_blueprint/output_gas_phase_target_db_first_network.json
+```
+
+This DB-first variant keeps curated reaction catalogs to a minimum and relies on `state_master`, normalized evidence snapshots, source-backed template promotion, and excited-state promotion instead.
+
+`build` / `write-lock` now emit a `catalog_manifest` with template origins, source systems, and equation-conflict decisions, and the reaction CSV exports from `visualize` include the same origin columns for manual review.
+
+If you want to inspect a focused config before building, use `audit-config`. It resolves `extends`, shows which fallback catalogs are still configured, and lists the source systems and snapshots that promotion will read.
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder audit-config `
+  examples/production_blueprint/config_bromine_family_runtime.yaml `
+  --output examples/production_blueprint/output_bromine_family_config_audit.json
+```
+
+`build` also embeds a `network_manifest` in the output JSON so automation can see which fallback catalogs, promoted templates, and evidence systems were actually used in the final network.
+
+If you want to run the same `audit-config -> build -> audit-network` flow across the main focused runtimes, use:
+
+```powershell
+.\examples\production_blueprint\run_focused_runtime_audits.ps1
+```
+
+By default this writes config audits, built networks, and network audits into `examples/production_blueprint/.generated_runtime_audits`.
+
+If you only want the compact provenance/fallback summary after a build, use:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder audit-network `
+  examples/production_blueprint/output_gas_phase_target_db_first_network.json `
+  --output examples/production_blueprint/output_gas_phase_target_db_first_audit.json
+```
+
+Focused runtime for secondary process-gas chemistry:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_process_gas_secondary_runtime.yaml `
+  --output examples/production_blueprint/output_process_gas_secondary_network.json
+```
+
+Focused runtime for WF6, TEOS, and silicon-halide precursor chemistry:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_advanced_precursor_runtime.yaml `
+  --output examples/production_blueprint/output_advanced_precursor_network.json
+```
+
+Sample runtime for a single family playbook:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_chlorine_family_runtime.yaml `
+  --output examples/production_blueprint/output_chlorine_family_network.json
+```
+
+Matching bromine-family runtime:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_bromine_family_runtime.yaml `
+  --output examples/production_blueprint/output_bromine_family_network.json
+```
+
+Matching silicon-family runtime:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_silicon_family_runtime.yaml `
+  --output examples/production_blueprint/output_silicon_family_network.json
+```
+
+Compatibility alias for the bromine-family runtime:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_bromine_family_promotion_runtime.yaml `
+  --output examples/production_blueprint/output_bromine_family_promoted_network.json
+```
+
+Compatibility alias for the silicon-family runtime:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_silicon_family_promotion_runtime.yaml `
+  --output examples/production_blueprint/output_silicon_family_promoted_network.json
+```
+
+Generalized multi-family source-backed template promotion runtime:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_multi_family_template_promotion_runtime.yaml `
+  --output examples/production_blueprint/output_multi_family_promoted_network.json
+```
+
+Halogen and fluorocarbon source-backed template promotion runtime:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_halogen_fluorocarbon_template_promotion_runtime.yaml `
+  --output examples/production_blueprint/output_halogen_fluorocarbon_promoted_network.json
+```
+
+Process-gas and precursor source-backed template promotion runtime:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_process_precursor_template_promotion_runtime.yaml `
+  --output examples/production_blueprint/output_process_precursor_promoted_network.json
+```
+
+Excited-state-coupled precursor promotion runtime:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_excited_precursor_template_promotion_runtime.yaml `
+  --output examples/production_blueprint/output_excited_precursor_promoted_network.json
+```
+
+Excited-state-coupled fluoride-precursor promotion runtime:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_excited_fluoride_precursor_template_promotion_runtime.yaml `
+  --output examples/production_blueprint/output_excited_fluoride_precursor_promoted_network.json
+```
+
+Focused O2 runtime with `e-` and `Ar+` projectiles:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
   examples/production_blueprint/config_o2_electron_argon_ion_runtime.yaml `
-  --output runs/o2_electron_argon_ion_case/network.json `
-  --lock-output runs/o2_electron_argon_ion_case/build_lock.json
-
-.\.venv\Scripts\plasma-rxn-builder.exe visualize `
-  runs/o2_electron_argon_ion_case/network.json `
-  --config examples/production_blueprint/config_o2_electron_argon_ion_runtime.yaml `
-  --output-dir runs/o2_electron_argon_ion_case/visuals
+  --output examples/production_blueprint/output_o2_electron_argon_ion_network.json
 ```
 
-### CF4
+This focused O2 runtime now includes representative follow-up channels for `O`, `O2+`, `O-`, and `O2-`, so `max_generation: 3` can reach oxygen-ion follow-up chemistry instead of stopping at only first-generation products.
+
+Focused CF4 runtime with `e-` and `Ar+` projectiles:
 
 ```powershell
-.\.venv\Scripts\plasma-rxn-builder.exe build `
+py -3.13 -m uv run plasma-rxn-builder build `
   examples/production_blueprint/config_cf4_electron_argon_ion_runtime.yaml `
-  --output runs/cf4_electron_argon_ion_case/network.json `
-  --lock-output runs/cf4_electron_argon_ion_case/build_lock.json
-
-.\.venv\Scripts\plasma-rxn-builder.exe visualize `
-  runs/cf4_electron_argon_ion_case/network.json `
-  --config examples/production_blueprint/config_cf4_electron_argon_ion_runtime.yaml `
-  --output-dir runs/cf4_electron_argon_ion_case/visuals
+  --output runs/cf4_electron_argon_ion_case/network.json
 ```
 
-### CHF3
+Focused CHF3 runtime with `e-` and `Ar+` projectiles:
 
 ```powershell
-.\.venv\Scripts\plasma-rxn-builder.exe build `
+py -3.13 -m uv run plasma-rxn-builder build `
   examples/production_blueprint/config_chf3_electron_argon_ion_runtime.yaml `
-  --output runs/chf3_electron_argon_ion_case/network.json `
-  --lock-output runs/chf3_electron_argon_ion_case/build_lock.json
-
-.\.venv\Scripts\plasma-rxn-builder.exe visualize `
-  runs/chf3_electron_argon_ion_case/network.json `
-  --config examples/production_blueprint/config_chf3_electron_argon_ion_runtime.yaml `
-  --output-dir runs/chf3_electron_argon_ion_case/visuals
+  --output runs/chf3_electron_argon_ion_case/network.json
 ```
 
-## 現在の土台で multi-step が確認できている主なガス
-
-現状の repo データで、単独 feed + `projectiles: [e-, Ar+]` として generation 2 以上を確認できている主なガスは次です。
-
-- 3 次まで確認: `O2`, `HBr`, `HCl`, `BCl3`, `SiH4`, `SiH2Cl2`, `O3`
-- 2 次まで確認: `c-C4F8`, `SF6`, `NF3`, `Cl2`, `SiHCl3`, `NH3`, `N2O`, `WF6`, `C8H20O4Si`
-
-現状は 1 次反応中心のガスもあります。
-
-- `CF4`, `CHF3`, `CH2F2`, `CH3F`, `C2F6`, `C5F8`, `Ar`, `N2`
-
-この差は `max_generation` ではなく、現在入っている template と snapshot の厚みで決まります。
-
-## 上級者向け: 手動でテンプレートを追加する
-
-### 1. state を追加する
-
-- feed や生成物として使いたい種を `examples/production_blueprint/state_master_base.yaml` に追加します
-- user-facing runtime では `state_masters` から species を materialize します
-
-### 2. reaction template を追加する
-
-- `examples/production_blueprint/catalog_*.yaml` に反応 family ごとの YAML を追加します
-- 1 ファイル 1 family、または 1 つの用途に絞るのがおすすめです
-
-最小テンプレート例:
-
-```yaml
-reactions:
-  - key: fluorocarbon::electron_dissociation::example
-    family: electron_dissociation
-    required_projectile: e-
-    reactants: [CF4]
-    products: [CF3, F]
-    lhs_tokens: [e-, CF4]
-    rhs_tokens: [e-, CF3, F]
-    threshold_ev: 8.0
-    base_confidence: 0.80
-    reference_ids: [your_reference_id]
-    note: "Manual fallback template."
-```
-
-### 3. config に組み込む
-
-- `catalog_paths` に追加した YAML を登録します
-- 追加後は次を順に実行します
+Focused SiH4 runtime with `e-` and `Ar+` projectiles:
 
 ```powershell
-.\.venv\Scripts\plasma-rxn-builder.exe validate-config <your_config.yaml>
-.\.venv\Scripts\plasma-rxn-builder.exe audit-config <your_config.yaml>
-.\.venv\Scripts\plasma-rxn-builder.exe build <your_config.yaml> --output runs/your_case/network.json
-.\.venv\Scripts\plasma-rxn-builder.exe visualize runs/your_case/network.json --config <your_config.yaml> --output-dir runs/your_case/visuals
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_sih4_electron_argon_ion_runtime.yaml `
+  --output runs/sih4_electron_argon_ion_case/network.json
 ```
 
-## 上級者向け: DB を使ってテンプレートを追加する
-
-### 1. snapshot を用意する
-
-- QDB / VAMDC / IDEADB などの snapshot を `examples/snapshots/` に置きます
-- 既存 snapshot を正規化したい場合は `collect-evidence` を使います
+Focused Cl2 runtime with `e-` and `Ar+` projectiles:
 
 ```powershell
-.\.venv\Scripts\plasma-rxn-builder.exe collect-evidence `
-  examples/your_source_config.yaml `
-  --output examples/snapshots/your_snapshot.json
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_cl2_electron_argon_ion_runtime.yaml `
+  --output runs/cl2_electron_argon_ion_case/network.json
 ```
 
-### 2. config で promotion を有効にする
-
-```yaml
-template_promotions:
-  source_backed_templates:
-    enabled: true
-    source_systems: [qdb, vamdc, ideadb]
-    target_families: [fluorocarbon]
-    allowed_reaction_families:
-      [electron_attachment, electron_dissociation, electron_ionization, ion_neutral_followup, dissociative_recombination]
-    min_support_score: 0.84
-    max_templates_per_family: 8
-    require_catalog_species: true
-
-bootstrap:
-  reaction_evidence:
-    sources:
-      - kind: qdb_snapshot
-        path: ../snapshots/your_snapshot.json
-```
-
-### 3. build 前後の監査で由来を確認する
+User-facing preset for support-gas chemistry:
 
 ```powershell
-.\.venv\Scripts\plasma-rxn-builder.exe audit-config <your_config.yaml>
-.\.venv\Scripts\plasma-rxn-builder.exe inspect-sources <your_config.yaml>
-.\.venv\Scripts\plasma-rxn-builder.exe build <your_config.yaml> --output runs/your_case/network.json
-.\.venv\Scripts\plasma-rxn-builder.exe audit-network runs/your_case/network.json
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_etch_common_support_runtime.yaml `
+  --output examples/production_blueprint/output_etch_common_support_network.json
 ```
 
-promotion と fallback の由来は次で追えます。
-
-- `build_lock.json`
-- `network.json` 内の `network_manifest`
-- `visuals/lists/generated_reactions.csv` の `origin`, `source_system`
-
-## 主な出力
-
-- `network.json`
-  最終 network 本体
-- `build_lock.json`
-  config source、catalog policy、manifest を含む lock
-- `visuals/lists/generated_species.csv`
-  状態リスト
-- `visuals/lists/generated_reactions.csv`
-  反応式リスト
-- `config_audit.json`
-  build 前の入力監査
-- `network_audit.json`
-  build 後の promotion / fallback 使用監査
-
-## 主なコマンド
-
-- `validate-config`
-- `audit-config`
-- `inspect-sources`
-- `collect-evidence`
-- `freeze-pubchem`
-- `materialize-state-catalog`
-- `build`
-- `visualize`
-- `audit-network`
-
-## テスト
+User-facing preset for fluorocarbon etch chemistry:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest -q
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_etch_fluorocarbon_runtime.yaml `
+  --output examples/production_blueprint/output_etch_fluorocarbon_network.json
 ```
 
-## 詳細ドキュメント
+User-facing preset for inorganic fluoride etch chemistry:
 
-- `examples/production_blueprint/README.md`
-- `docs/architecture_ja.md`
-- `docs/operations_ja.md`
-- `docs/source_acquisition_ja.md`
-- `docs/source_update_recipes_ja.md`
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_etch_inorganic_fluoride_runtime.yaml `
+  --output examples/production_blueprint/output_etch_inorganic_fluoride_network.json
+```
+
+User-facing preset for halogen etch chemistry:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_etch_halogen_runtime.yaml `
+  --output examples/production_blueprint/output_etch_halogen_network.json
+```
+
+User-facing preset for silane-family deposition chemistry:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_deposition_silane_gas_phase_runtime.yaml `
+  --output examples/production_blueprint/output_deposition_silane_network.json
+```
+
+User-facing preset for deposition-reactant chemistry:
+
+```powershell
+py -3.13 -m uv run plasma-rxn-builder build `
+  examples/production_blueprint/config_deposition_reactant_gas_phase_runtime.yaml `
+  --output examples/production_blueprint/output_deposition_reactant_network.json
+```

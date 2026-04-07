@@ -1,0 +1,34 @@
+{
+  "case_name": "cl2_electron_argon_ion_case",
+  "config_path": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_cl2_electron_argon_ion_runtime.yaml",
+  "feeds": [
+    {
+      "species_key": "Cl2",
+      "formula": "Cl2",
+      "display_name": "Chlorine",
+      "identity_query": null,
+      "identity_namespace": "name"
+    }
+  ],
+  "projectiles": [
+    "e-",
+    "Ar+"
+  ],
+  "max_generation": 3,
+  "species_count": 4,
+  "reaction_count": 4,
+  "reaction_generations": [
+    1,
+    2
+  ],
+  "projectile_usage": {
+    "ar_plus_reaction_count": 0,
+    "electron_reaction_count": 4
+  },
+  "families": [
+    "dissociative_recombination",
+    "electron_attachment",
+    "electron_dissociation",
+    "electron_ionization"
+  ]
+}

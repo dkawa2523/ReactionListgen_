@@ -1,0 +1,1190 @@
+{
+  "metadata": {
+    "feed_count": 1,
+    "species_count": 7,
+    "reaction_count": 8,
+    "loaded_resources": [
+      "packaged:species_library.yaml",
+      "packaged:references.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_00_references.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_53_reactions_electron_ionization_silicon.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_54_reactions_electron_dissociation_silicon.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_55_reactions_radical_neutral_reaction_silicon.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_58_reactions_ion_neutral_followup_silicon.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_59_reactions_dissociative_recombination_silicon.yaml",
+      "state_master:C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\state_master_base.yaml?families=core_plasma,hydrogen,chlorine,silicon",
+      "state_promotion:molecular_excited_states",
+      "template_promotion:source_backed_templates",
+      "template_promotion:molecular_excited_state_templates"
+    ],
+    "catalog_policy": {
+      "reaction_conflict_policy": "prefer_higher_priority"
+    },
+    "config_sources": [
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_focused_runtime_base.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_deposition_silane_gas_phase_runtime.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_sih4_electron_argon_ion_runtime.yaml"
+    ],
+    "network_manifest": {
+      "generated_at": "2026-04-07T05:02:20+00:00",
+      "config_sources": [
+        "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_focused_runtime_base.yaml",
+        "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_deposition_silane_gas_phase_runtime.yaml",
+        "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_sih4_electron_argon_ion_runtime.yaml"
+      ],
+      "catalog_policy": {
+        "reaction_conflict_policy": "prefer_higher_priority"
+      },
+      "species_count": 7,
+      "reaction_count": 8,
+      "species_by_origin": [
+        {
+          "name": "packaged_species_library",
+          "count": 2
+        },
+        {
+          "name": "state_master",
+          "count": 5
+        }
+      ],
+      "reaction_by_origin": [
+        {
+          "name": "curated_catalog",
+          "count": 6
+        },
+        {
+          "name": "source_backed_promotion",
+          "count": 2
+        }
+      ],
+      "reaction_by_layer": [
+        {
+          "name": "catalog",
+          "count": 6
+        },
+        {
+          "name": "promotion",
+          "count": 2
+        }
+      ],
+      "reaction_by_family": [
+        {
+          "name": "dissociative_recombination",
+          "count": 2
+        },
+        {
+          "name": "electron_dissociation",
+          "count": 1
+        },
+        {
+          "name": "electron_ionization",
+          "count": 2
+        },
+        {
+          "name": "ion_neutral_followup",
+          "count": 2
+        },
+        {
+          "name": "radical_neutral_reaction",
+          "count": 1
+        }
+      ],
+      "reaction_template_source_systems": [
+        {
+          "name": "qdb",
+          "count": 2
+        }
+      ],
+      "reaction_template_source_names": [
+        {
+          "name": "Quantemol-DB",
+          "count": 2
+        }
+      ],
+      "reaction_evidence_source_systems": [
+        {
+          "name": "qdb",
+          "count": 2
+        },
+        {
+          "name": "template_library",
+          "count": 6
+        }
+      ],
+      "reaction_evidence_source_names": [
+        {
+          "name": "Quantemol-DB",
+          "count": 2
+        },
+        {
+          "name": "production_gas_phase_targets_library",
+          "count": 2
+        },
+        {
+          "name": "production_silicon_library",
+          "count": 4
+        }
+      ],
+      "reaction_catalog_resources": [
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+          "count": 2
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_54_reactions_electron_dissociation_silicon.yaml",
+          "count": 1
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_55_reactions_radical_neutral_reaction_silicon.yaml",
+          "count": 1
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_58_reactions_ion_neutral_followup_silicon.yaml",
+          "count": 1
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_59_reactions_dissociative_recombination_silicon.yaml",
+          "count": 1
+        }
+      ],
+      "fallback_usage": {
+        "count": 6,
+        "families": [
+          {
+            "name": "dissociative_recombination",
+            "count": 1
+          },
+          {
+            "name": "electron_dissociation",
+            "count": 1
+          },
+          {
+            "name": "electron_ionization",
+            "count": 2
+          },
+          {
+            "name": "ion_neutral_followup",
+            "count": 1
+          },
+          {
+            "name": "radical_neutral_reaction",
+            "count": 1
+          }
+        ],
+        "catalog_resources": [
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+            "count": 2
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_54_reactions_electron_dissociation_silicon.yaml",
+            "count": 1
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_55_reactions_radical_neutral_reaction_silicon.yaml",
+            "count": 1
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_58_reactions_ion_neutral_followup_silicon.yaml",
+            "count": 1
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_59_reactions_dissociative_recombination_silicon.yaml",
+            "count": 1
+          }
+        ]
+      },
+      "promoted_usage": {
+        "count": 2,
+        "origins": [
+          {
+            "name": "source_backed_promotion",
+            "count": 2
+          }
+        ],
+        "template_source_systems": [
+          {
+            "name": "qdb",
+            "count": 2
+          }
+        ],
+        "template_source_names": [
+          {
+            "name": "Quantemol-DB",
+            "count": 2
+          }
+        ]
+      }
+    }
+  },
+  "species": [
+    {
+      "prototype_key": "SiH4",
+      "display_name": "Silane",
+      "formula": "SiH4",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "feed_candidate",
+        "silicon",
+        "deposition_precursor",
+        "generated_from_state_master",
+        "ground"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "silicon",
+        "state_master_species_id": "silane"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "SiH4",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "e865f43dd9694e06976a98c951f4d60b"
+    },
+    {
+      "prototype_key": "H",
+      "display_name": "Hydrogen atom",
+      "formula": "H",
+      "charge": 0,
+      "state_class": "atom",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "atom",
+        "curated"
+      ],
+      "metadata": {
+        "state_origin": "packaged_species_library",
+        "catalog_resource": "packaged:species_library.yaml"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "packaged:species_library.yaml",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "H",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged_species_library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.8649999999999999,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "be23c84e2bfb41dbbae8ac361aa5622c"
+    },
+    {
+      "prototype_key": "SiH3",
+      "display_name": "Silyl radical",
+      "formula": "SiH3",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "intermediate",
+        "silicon",
+        "radical",
+        "generated_from_state_master",
+        "ground"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "silicon",
+        "state_master_species_id": "silyl_radical"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "SiH3",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.8649999999999999,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "c31beedb41984640911cebefdd97ba26"
+    },
+    {
+      "prototype_key": "SiH4+",
+      "display_name": "SiH4+",
+      "formula": "SiH4",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "feed_candidate",
+        "silicon",
+        "deposition_precursor",
+        "generated_from_state_master",
+        "ion"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "silicon",
+        "state_master_species_id": "silane"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "SiH4+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "3934e54e06b9401290b55c67919448c2"
+    },
+    {
+      "prototype_key": "H2",
+      "display_name": "Hydrogen",
+      "formula": "H2",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 2,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "molecule",
+        "curated"
+      ],
+      "metadata": {
+        "state_origin": "packaged_species_library",
+        "catalog_resource": "packaged:species_library.yaml"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "packaged:species_library.yaml",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "H2",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged_species_library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.04,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "9e3f29ce8f0f4280acda3af42c057c61"
+    },
+    {
+      "prototype_key": "SiH2",
+      "display_name": "Silylene",
+      "formula": "SiH2",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 2,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "intermediate",
+        "silicon",
+        "radical",
+        "generated_from_state_master",
+        "ground"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "silicon",
+        "state_master_species_id": "silylene"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "SiH2",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.04,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "b5e54783ed9c49e1b0179a72c75034c0"
+    },
+    {
+      "prototype_key": "H2+",
+      "display_name": "H2+",
+      "formula": "H2",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 3,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "feed_candidate",
+        "hydrogen",
+        "support_gas",
+        "generated_from_state_master",
+        "ion"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "hydrogen",
+        "state_master_species_id": "hydrogen_molecule"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "H2+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.08,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "0db4505efbdf4dc7b5705ece54e83f96"
+    }
+  ],
+  "reactions": [
+    {
+      "key": "gas_phase_targets::electron_ionization::sih4_parent",
+      "family": "electron_ionization",
+      "equation": "e- + SiH4 -> e- + e- + SiH4+",
+      "reactant_state_ids": [
+        "e865f43dd9694e06976a98c951f4d60b"
+      ],
+      "product_state_ids": [
+        "3934e54e06b9401290b55c67919448c2"
+      ],
+      "reactant_keys": [
+        "SiH4"
+      ],
+      "product_keys": [
+        "SiH4+"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "SiH4"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "e-",
+        "SiH4+"
+      ],
+      "generation": 1,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_gas_phase_targets_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.81,
+          "source_url": null,
+          "locator": "curated_gas_phase_targets",
+          "citation": "Production curated gas-phase target library",
+          "retrieved_at": null,
+          "note": "Shared reference block for newly added gas-phase process feedstocks.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.82,
+        "evidence_bonus": 0.2025,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative parent ionization channel for silane.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_gas_phase_targets_library"
+        ]
+      },
+      "id": "71e18bef39d04653b865549232f4c6e0"
+    },
+    {
+      "key": "silicon::electron_dissociation::sih4_to_sih3_h",
+      "family": "electron_dissociation",
+      "equation": "e- + SiH4 -> e- + SiH3 + H",
+      "reactant_state_ids": [
+        "e865f43dd9694e06976a98c951f4d60b"
+      ],
+      "product_state_ids": [
+        "c31beedb41984640911cebefdd97ba26",
+        "be23c84e2bfb41dbbae8ac361aa5622c"
+      ],
+      "reactant_keys": [
+        "SiH4"
+      ],
+      "product_keys": [
+        "SiH3",
+        "H"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "SiH4"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "SiH3",
+        "H"
+      ],
+      "generation": 1,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_silicon_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_silicon",
+          "citation": "Production curated silicon library",
+          "retrieved_at": null,
+          "note": "Shared reference block for silicon-family gas-phase activation templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.81,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative Si-H bond cleavage channel for silane.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_54_reactions_electron_dissociation_silicon.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_silicon_library"
+        ]
+      },
+      "id": "e1c0daf320624a8d839225d613ede536"
+    },
+    {
+      "key": "promo::silicon::qdb::8d9362ceb8c44c29",
+      "family": "dissociative_recombination",
+      "equation": "e- + SiH4+ -> SiH2 + H2",
+      "reactant_state_ids": [
+        "3934e54e06b9401290b55c67919448c2"
+      ],
+      "product_state_ids": [
+        "b5e54783ed9c49e1b0179a72c75034c0",
+        "9e3f29ce8f0f4280acda3af42c057c61"
+      ],
+      "reactant_keys": [
+        "SiH4+"
+      ],
+      "product_keys": [
+        "SiH2",
+        "H2"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "SiH4+"
+      ],
+      "rhs_tokens": [
+        "SiH2",
+        "H2"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "qdb",
+          "source_name": "Quantemol-DB",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "validated_chemistry_record",
+          "support_score": 0.887,
+          "source_url": "https://quantemoldb.com/chemistries/api/",
+          "locator": null,
+          "citation": "Illustrative normalized QDB silicon template-promotion snapshot",
+          "retrieved_at": null,
+          "note": "Silane cation dissociative recombination channel promoted from external evidence.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.887,
+        "evidence_bonus": 0.22175,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Source-backed template promotion for silicon family from Quantemol-DB (curated_bridge). Silane cation dissociative recombination channel promoted from external evidence.",
+      "metadata": {
+        "template_origin": "source_backed_promotion",
+        "template_layer": "promotion",
+        "template_priority": 60,
+        "template_source_system": "qdb",
+        "template_source_name": "Quantemol-DB",
+        "source_support_score": 0.887,
+        "source_url": "https://quantemoldb.com/chemistries/api/",
+        "promotion_stage": "curated_bridge",
+        "promotion_target_family": "silicon",
+        "promotion_reaction_family": "dissociative_recombination"
+      },
+      "id": "cb6172321668406c8130e2971f1407bd"
+    },
+    {
+      "key": "silicon::dissociative_recombination::sih4_plus",
+      "family": "dissociative_recombination",
+      "equation": "e- + SiH4+ -> SiH3 + H",
+      "reactant_state_ids": [
+        "3934e54e06b9401290b55c67919448c2"
+      ],
+      "product_state_ids": [
+        "c31beedb41984640911cebefdd97ba26",
+        "be23c84e2bfb41dbbae8ac361aa5622c"
+      ],
+      "reactant_keys": [
+        "SiH4+"
+      ],
+      "product_keys": [
+        "SiH3",
+        "H"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "SiH4+"
+      ],
+      "rhs_tokens": [
+        "SiH3",
+        "H"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_silicon_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_silicon",
+          "citation": "Production curated silicon library",
+          "retrieved_at": null,
+          "note": "Shared reference block for silicon-family gas-phase activation templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.71,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative dissociative recombination channel for silane cations.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_59_reactions_dissociative_recombination_silicon.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_silicon_library"
+        ]
+      },
+      "id": "29a62d38c8754199b490e28dd857d0fd"
+    },
+    {
+      "key": "silicon::radical_neutral::sih3_plus_h",
+      "family": "radical_neutral_reaction",
+      "equation": "SiH3 + H -> SiH4",
+      "reactant_state_ids": [
+        "c31beedb41984640911cebefdd97ba26",
+        "be23c84e2bfb41dbbae8ac361aa5622c"
+      ],
+      "product_state_ids": [
+        "e865f43dd9694e06976a98c951f4d60b"
+      ],
+      "reactant_keys": [
+        "SiH3",
+        "H"
+      ],
+      "product_keys": [
+        "SiH4"
+      ],
+      "lhs_tokens": [
+        "SiH3",
+        "H"
+      ],
+      "rhs_tokens": [
+        "SiH4"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_silicon_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_silicon",
+          "citation": "Production curated silicon library",
+          "retrieved_at": null,
+          "note": "Shared reference block for silicon-family gas-phase activation templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.73,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative hydrogen addition step for silane radical closure.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_55_reactions_radical_neutral_reaction_silicon.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_silicon_library"
+        ]
+      },
+      "id": "53ede418f45b4d69bf4e66d6bed31912"
+    },
+    {
+      "key": "gas_phase_targets::electron_ionization::h2_parent",
+      "family": "electron_ionization",
+      "equation": "e- + H2 -> e- + e- + H2+",
+      "reactant_state_ids": [
+        "9e3f29ce8f0f4280acda3af42c057c61"
+      ],
+      "product_state_ids": [
+        "0db4505efbdf4dc7b5705ece54e83f96"
+      ],
+      "reactant_keys": [
+        "H2"
+      ],
+      "product_keys": [
+        "H2+"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "H2"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "e-",
+        "H2+"
+      ],
+      "generation": 3,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_gas_phase_targets_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.81,
+          "source_url": null,
+          "locator": "curated_gas_phase_targets",
+          "citation": "Production curated gas-phase target library",
+          "retrieved_at": null,
+          "note": "Shared reference block for newly added gas-phase process feedstocks.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.82,
+        "evidence_bonus": 0.2025,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.1,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Seed parent ionization channel for hydrogen.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_gas_phase_targets_library"
+        ]
+      },
+      "id": "8212e4982a1647f7ac86b0cb60b3c44b"
+    },
+    {
+      "key": "promo::silicon::qdb::1394a58e81d2dd17",
+      "family": "ion_neutral_followup",
+      "equation": "SiH4+ + H2 -> SiH4 + H2+",
+      "reactant_state_ids": [
+        "3934e54e06b9401290b55c67919448c2",
+        "9e3f29ce8f0f4280acda3af42c057c61"
+      ],
+      "product_state_ids": [
+        "e865f43dd9694e06976a98c951f4d60b",
+        "0db4505efbdf4dc7b5705ece54e83f96"
+      ],
+      "reactant_keys": [
+        "SiH4+",
+        "H2"
+      ],
+      "product_keys": [
+        "SiH4",
+        "H2+"
+      ],
+      "lhs_tokens": [
+        "SiH4+",
+        "H2"
+      ],
+      "rhs_tokens": [
+        "SiH4",
+        "H2+"
+      ],
+      "generation": 3,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "qdb",
+          "source_name": "Quantemol-DB",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "validated_chemistry_record",
+          "support_score": 0.859,
+          "source_url": "https://quantemoldb.com/chemistries/api/",
+          "locator": null,
+          "citation": "Illustrative normalized QDB silicon template-promotion snapshot",
+          "retrieved_at": null,
+          "note": "Silane cation hydrogen-pool follow-up promoted from external evidence.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.859,
+        "evidence_bonus": 0.21475,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.1,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Source-backed template promotion for silicon family from Quantemol-DB (curated_bridge). Silane cation hydrogen-pool follow-up promoted from external evidence.",
+      "metadata": {
+        "template_origin": "source_backed_promotion",
+        "template_layer": "promotion",
+        "template_priority": 60,
+        "template_source_system": "qdb",
+        "template_source_name": "Quantemol-DB",
+        "source_support_score": 0.859,
+        "source_url": "https://quantemoldb.com/chemistries/api/",
+        "promotion_stage": "curated_bridge",
+        "promotion_target_family": "silicon",
+        "promotion_reaction_family": "ion_neutral_followup"
+      },
+      "id": "ce3d0f0a48ed4b6fb52abf129603680f"
+    },
+    {
+      "key": "silicon::ion_neutral_followup::sih4_plus_h2",
+      "family": "ion_neutral_followup",
+      "equation": "SiH4+ + H2 -> SiH3 + H + H2+",
+      "reactant_state_ids": [
+        "3934e54e06b9401290b55c67919448c2",
+        "9e3f29ce8f0f4280acda3af42c057c61"
+      ],
+      "product_state_ids": [
+        "c31beedb41984640911cebefdd97ba26",
+        "be23c84e2bfb41dbbae8ac361aa5622c",
+        "0db4505efbdf4dc7b5705ece54e83f96"
+      ],
+      "reactant_keys": [
+        "SiH4+",
+        "H2"
+      ],
+      "product_keys": [
+        "SiH3",
+        "H",
+        "H2+"
+      ],
+      "lhs_tokens": [
+        "SiH4+",
+        "H2"
+      ],
+      "rhs_tokens": [
+        "SiH3",
+        "H",
+        "H2+"
+      ],
+      "generation": 3,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_silicon_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_silicon",
+          "citation": "Production curated silicon library",
+          "retrieved_at": null,
+          "note": "Shared reference block for silicon-family gas-phase activation templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.67,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.1,
+        "final_score": 0.9149999999999999,
+        "tier": "high"
+      },
+      "note": "Representative silane cation follow-up channel that transfers charge into the hydrogen pool.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_58_reactions_ion_neutral_followup_silicon.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_silicon_library"
+        ]
+      },
+      "id": "09ebe997a53d4329bb87fc348db10b90"
+    }
+  ],
+  "diagnostics": [
+    {
+      "level": "warning",
+      "code": "generic_state",
+      "message": "Generic state synthesized for Ar+",
+      "context": {
+        "species_key": "Ar+"
+      }
+    }
+  ]
+}

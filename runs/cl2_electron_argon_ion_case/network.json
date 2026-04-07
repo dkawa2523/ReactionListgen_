@@ -1,0 +1,687 @@
+{
+  "metadata": {
+    "feed_count": 1,
+    "species_count": 4,
+    "reaction_count": 4,
+    "loaded_resources": [
+      "packaged:species_library.yaml",
+      "packaged:references.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_00_references.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_45_reactions_electron_attachment_chlorine.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_46_reactions_electron_ionization_chlorine.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_47_reactions_electron_dissociation_chlorine.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_48_reactions_radical_neutral_reaction_chlorine.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_49_reactions_electron_attachment_bromine.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_50_reactions_electron_ionization_bromine.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_51_reactions_electron_dissociation_bromine.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_52_reactions_radical_neutral_reaction_bromine.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_56_reactions_ion_neutral_followup_bromine.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_57_reactions_dissociative_recombination_bromine.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_60_reactions_electron_dissociation_process_gases.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_61_reactions_ion_neutral_followup_process_gases.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_62_reactions_dissociative_recombination_process_gases.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_67_reactions_ion_neutral_followup_chlorine.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_68_reactions_dissociative_recombination_chlorine.yaml",
+      "state_master:C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\state_master_base.yaml?families=core_plasma,hydrogen,oxygen,chlorine,bromine,boron",
+      "template_promotion:source_backed_templates"
+    ],
+    "catalog_policy": {
+      "reaction_conflict_policy": "prefer_higher_priority"
+    },
+    "config_sources": [
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_focused_runtime_base.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_etch_halogen_runtime.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_cl2_electron_argon_ion_runtime.yaml"
+    ],
+    "network_manifest": {
+      "generated_at": "2026-04-07T05:02:20+00:00",
+      "config_sources": [
+        "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_focused_runtime_base.yaml",
+        "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_etch_halogen_runtime.yaml",
+        "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_cl2_electron_argon_ion_runtime.yaml"
+      ],
+      "catalog_policy": {
+        "reaction_conflict_policy": "prefer_higher_priority"
+      },
+      "species_count": 4,
+      "reaction_count": 4,
+      "species_by_origin": [
+        {
+          "name": "state_master",
+          "count": 4
+        }
+      ],
+      "reaction_by_origin": [
+        {
+          "name": "curated_catalog",
+          "count": 4
+        }
+      ],
+      "reaction_by_layer": [
+        {
+          "name": "catalog",
+          "count": 4
+        }
+      ],
+      "reaction_by_family": [
+        {
+          "name": "dissociative_recombination",
+          "count": 1
+        },
+        {
+          "name": "electron_attachment",
+          "count": 1
+        },
+        {
+          "name": "electron_dissociation",
+          "count": 1
+        },
+        {
+          "name": "electron_ionization",
+          "count": 1
+        }
+      ],
+      "reaction_template_source_systems": [],
+      "reaction_template_source_names": [],
+      "reaction_evidence_source_systems": [
+        {
+          "name": "template_library",
+          "count": 4
+        }
+      ],
+      "reaction_evidence_source_names": [
+        {
+          "name": "production_chlorine_library",
+          "count": 2
+        },
+        {
+          "name": "production_gas_phase_targets_library",
+          "count": 2
+        }
+      ],
+      "reaction_catalog_resources": [
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+          "count": 1
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+          "count": 1
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_47_reactions_electron_dissociation_chlorine.yaml",
+          "count": 1
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_68_reactions_dissociative_recombination_chlorine.yaml",
+          "count": 1
+        }
+      ],
+      "fallback_usage": {
+        "count": 4,
+        "families": [
+          {
+            "name": "dissociative_recombination",
+            "count": 1
+          },
+          {
+            "name": "electron_attachment",
+            "count": 1
+          },
+          {
+            "name": "electron_dissociation",
+            "count": 1
+          },
+          {
+            "name": "electron_ionization",
+            "count": 1
+          }
+        ],
+        "catalog_resources": [
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+            "count": 1
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+            "count": 1
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_47_reactions_electron_dissociation_chlorine.yaml",
+            "count": 1
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_68_reactions_dissociative_recombination_chlorine.yaml",
+            "count": 1
+          }
+        ]
+      },
+      "promoted_usage": {
+        "count": 0,
+        "origins": [],
+        "template_source_systems": [],
+        "template_source_names": []
+      }
+    }
+  },
+  "species": [
+    {
+      "prototype_key": "Cl2",
+      "display_name": "Chlorine",
+      "formula": "Cl2",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "feed_candidate",
+        "chlorine",
+        "etch_gas",
+        "generated_from_state_master",
+        "ground"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "chlorine",
+        "state_master_species_id": "chlorine_molecule"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "Cl2",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.55,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.805,
+        "tier": "high"
+      },
+      "id": "b70ea30d03b6475cbfd2b2ffc0f4b30b"
+    },
+    {
+      "prototype_key": "Cl",
+      "display_name": "Chlorine atom",
+      "formula": "Cl",
+      "charge": 0,
+      "state_class": "atom",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "core",
+        "atom",
+        "chlorine",
+        "generated_from_state_master"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "chlorine",
+        "state_master_species_id": "chlorine_atom"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "Cl",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.9449999999999998,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "60bb0ded912e45cc81b838dd113b8fc7"
+    },
+    {
+      "prototype_key": "Cl2+",
+      "display_name": "Cl2+",
+      "formula": "Cl2",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "feed_candidate",
+        "chlorine",
+        "etch_gas",
+        "generated_from_state_master",
+        "ion"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "chlorine",
+        "state_master_species_id": "chlorine_molecule"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "Cl2+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "e45d40bc3dd646ebb3539eefeb005ce1"
+    },
+    {
+      "prototype_key": "Cl2-",
+      "display_name": "Cl2-",
+      "formula": "Cl2",
+      "charge": -1,
+      "state_class": "anion",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "feed_candidate",
+        "chlorine",
+        "etch_gas",
+        "generated_from_state_master",
+        "anion"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "chlorine",
+        "state_master_species_id": "chlorine_molecule"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "Cl2-",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "533053a1438245fca28488f415c97393"
+    }
+  ],
+  "reactions": [
+    {
+      "key": "chlorine::electron_dissociation::cl2_to_cl_cl",
+      "family": "electron_dissociation",
+      "equation": "e- + Cl2 -> e- + Cl + Cl",
+      "reactant_state_ids": [
+        "b70ea30d03b6475cbfd2b2ffc0f4b30b"
+      ],
+      "product_state_ids": [
+        "60bb0ded912e45cc81b838dd113b8fc7",
+        "60bb0ded912e45cc81b838dd113b8fc7"
+      ],
+      "reactant_keys": [
+        "Cl2"
+      ],
+      "product_keys": [
+        "Cl",
+        "Cl"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "Cl2"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "Cl",
+        "Cl"
+      ],
+      "generation": 1,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_chlorine_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_chlorine",
+          "citation": "Production curated chlorine library",
+          "retrieved_at": null,
+          "note": "Shared reference block for chlorine-family electron-impact and neutral templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.81,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative dissociation channel for chlorine.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_47_reactions_electron_dissociation_chlorine.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_chlorine_library"
+        ]
+      },
+      "id": "fdb427fcd3c4403895052a953c25fd45"
+    },
+    {
+      "key": "gas_phase_targets::electron_attachment::cl2_parent",
+      "family": "electron_attachment",
+      "equation": "e- + Cl2 -> Cl2-",
+      "reactant_state_ids": [
+        "b70ea30d03b6475cbfd2b2ffc0f4b30b"
+      ],
+      "product_state_ids": [
+        "533053a1438245fca28488f415c97393"
+      ],
+      "reactant_keys": [
+        "Cl2"
+      ],
+      "product_keys": [
+        "Cl2-"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "Cl2"
+      ],
+      "rhs_tokens": [
+        "Cl2-"
+      ],
+      "generation": 1,
+      "threshold_ev": 0.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_gas_phase_targets_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.81,
+          "source_url": null,
+          "locator": "curated_gas_phase_targets",
+          "citation": "Production curated gas-phase target library",
+          "retrieved_at": null,
+          "note": "Shared reference block for newly added gas-phase process feedstocks.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.78,
+        "evidence_bonus": 0.2025,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Seed parent attachment channel for chlorine.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_gas_phase_targets_library"
+        ]
+      },
+      "id": "979681e74fd849aa803b615d7a86c9b2"
+    },
+    {
+      "key": "gas_phase_targets::electron_ionization::cl2_parent",
+      "family": "electron_ionization",
+      "equation": "e- + Cl2 -> e- + e- + Cl2+",
+      "reactant_state_ids": [
+        "b70ea30d03b6475cbfd2b2ffc0f4b30b"
+      ],
+      "product_state_ids": [
+        "e45d40bc3dd646ebb3539eefeb005ce1"
+      ],
+      "reactant_keys": [
+        "Cl2"
+      ],
+      "product_keys": [
+        "Cl2+"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "Cl2"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "e-",
+        "Cl2+"
+      ],
+      "generation": 1,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_gas_phase_targets_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.81,
+          "source_url": null,
+          "locator": "curated_gas_phase_targets",
+          "citation": "Production curated gas-phase target library",
+          "retrieved_at": null,
+          "note": "Shared reference block for newly added gas-phase process feedstocks.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.82,
+        "evidence_bonus": 0.2025,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative parent ionization channel for chlorine.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_gas_phase_targets_library"
+        ]
+      },
+      "id": "232cd947e1b9421e9d50023fab1e45b5"
+    },
+    {
+      "key": "chlorine::dissociative_recombination::cl2_plus",
+      "family": "dissociative_recombination",
+      "equation": "e- + Cl2+ -> Cl + Cl",
+      "reactant_state_ids": [
+        "e45d40bc3dd646ebb3539eefeb005ce1"
+      ],
+      "product_state_ids": [
+        "60bb0ded912e45cc81b838dd113b8fc7",
+        "60bb0ded912e45cc81b838dd113b8fc7"
+      ],
+      "reactant_keys": [
+        "Cl2+"
+      ],
+      "product_keys": [
+        "Cl",
+        "Cl"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "Cl2+"
+      ],
+      "rhs_tokens": [
+        "Cl",
+        "Cl"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_chlorine_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_chlorine",
+          "citation": "Production curated chlorine library",
+          "retrieved_at": null,
+          "note": "Shared reference block for chlorine-family electron-impact and neutral templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 0.9949999999999999,
+        "tier": "high"
+      },
+      "note": "Representative dissociative recombination channel for chlorine molecular cations.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_68_reactions_dissociative_recombination_chlorine.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_chlorine_library"
+        ]
+      },
+      "id": "431424d7fbfe48c4904cc7071a0139d1"
+    }
+  ],
+  "diagnostics": [
+    {
+      "level": "warning",
+      "code": "generic_state",
+      "message": "Generic state synthesized for Ar+",
+      "context": {
+        "species_key": "Ar+"
+      }
+    }
+  ]
+}

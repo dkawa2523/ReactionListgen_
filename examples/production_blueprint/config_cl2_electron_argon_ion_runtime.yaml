@@ -1,0 +1,8 @@
+extends: config_etch_halogen_runtime.yaml
+
+feeds:
+  - species_key: Cl2
+    formula: Cl2
+    display_name: Chlorine
+
+projectiles: [e-, Ar+]

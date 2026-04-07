@@ -1,0 +1,8 @@
+generation,prototype_key,display_name,formula,charge,state_class,excitation_label,origin
+0,SiH4,Silane,SiH4,0,ground,,state_master
+1,H,Hydrogen atom,H,0,atom,,packaged_species_library
+1,SiH3,Silyl radical,SiH3,0,ground,,state_master
+1,SiH4+,SiH4+,SiH4,1,cation,,state_master
+2,H2,Hydrogen,H2,0,ground,,packaged_species_library
+2,SiH2,Silylene,SiH2,0,ground,,state_master
+3,H2+,H2+,H2,1,cation,,state_master

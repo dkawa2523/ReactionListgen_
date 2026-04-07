@@ -1,0 +1,5 @@
+generation,family,equation,threshold_ev,delta_h_kj_mol,origin,source_system
+1,electron_dissociation,e- + Cl2 -> e- + Cl + Cl,,,curated_catalog,
+1,electron_attachment,e- + Cl2 -> Cl2-,0.0,,curated_catalog,
+1,electron_ionization,e- + Cl2 -> e- + e- + Cl2+,,,curated_catalog,
+2,dissociative_recombination,e- + Cl2+ -> Cl + Cl,,,curated_catalog,

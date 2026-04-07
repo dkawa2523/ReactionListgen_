@@ -1,0 +1,9 @@
+generation,family,equation,threshold_ev,delta_h_kj_mol,origin,source_system
+1,electron_ionization,e- + SiH4 -> e- + e- + SiH4+,,,curated_catalog,
+1,electron_dissociation,e- + SiH4 -> e- + SiH3 + H,,,curated_catalog,
+2,dissociative_recombination,e- + SiH4+ -> SiH2 + H2,,,source_backed_promotion,
+2,dissociative_recombination,e- + SiH4+ -> SiH3 + H,,,curated_catalog,
+2,radical_neutral_reaction,SiH3 + H -> SiH4,,,curated_catalog,
+3,electron_ionization,e- + H2 -> e- + e- + H2+,,,curated_catalog,
+3,ion_neutral_followup,SiH4+ + H2 -> SiH4 + H2+,,,source_backed_promotion,
+3,ion_neutral_followup,SiH4+ + H2 -> SiH3 + H + H2+,,,curated_catalog,
