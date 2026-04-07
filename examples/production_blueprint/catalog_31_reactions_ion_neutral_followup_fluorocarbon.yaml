@@ -1,0 +1,20 @@
+reactions:
+  - key: fluorocarbon::ion_neutral_followup::cf2_plus_cc4f8
+    family: ion_neutral_followup
+    reactants: [CF2+, c-C4F8]
+    products: [C3F5+, C2F4, F]
+    lhs_tokens: [CF2+, C4F8]
+    rhs_tokens: [C3F5+, C2F4, F]
+    base_confidence: 0.60
+    reference_ids: [curated_fluorocarbon, curated_fragmentation_family]
+    note: "Representative fluorocarbon ion-neutral follow-up channel after CF2+ formation."
+
+  - key: fluorocarbon::ion_neutral_followup::c2f3_plus_cc4f8
+    family: ion_neutral_followup
+    reactants: [C2F3+, c-C4F8]
+    products: [C3F5+, C3F6]
+    lhs_tokens: [C2F3+, C4F8]
+    rhs_tokens: [C3F5+, C3F6]
+    base_confidence: 0.62
+    reference_ids: [curated_fluorocarbon]
+    note: "Representative fluorocarbon ion-neutral growth channel."

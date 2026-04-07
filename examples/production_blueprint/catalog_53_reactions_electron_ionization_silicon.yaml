@@ -1,0 +1,33 @@
+reactions:
+  - key: silicon::electron_ionization::sih4_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [SiH4]
+    products: [SiH4+]
+    lhs_tokens: [e-, SiH4]
+    rhs_tokens: [e-, e-, SiH4+]
+    base_confidence: 0.82
+    reference_ids: [curated_silicon]
+    note: "Representative parent ionization channel for silane."
+
+  - key: silicon::electron_ionization::sih2cl2_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [SiH2Cl2]
+    products: [SiH2Cl2+]
+    lhs_tokens: [e-, SiH2Cl2]
+    rhs_tokens: [e-, e-, SiH2Cl2+]
+    base_confidence: 0.80
+    reference_ids: [curated_silicon]
+    note: "Representative parent ionization channel for dichlorosilane."
+
+  - key: silicon::electron_ionization::sihcl3_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [SiHCl3]
+    products: [SiHCl3+]
+    lhs_tokens: [e-, SiHCl3]
+    rhs_tokens: [e-, e-, SiHCl3+]
+    base_confidence: 0.79
+    reference_ids: [curated_silicon]
+    note: "Representative parent ionization channel for trichlorosilane."

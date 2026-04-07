@@ -1,0 +1,1854 @@
+﻿{
+  "metadata": {
+    "feed_count": 1,
+    "species_count": 10,
+    "reaction_count": 14,
+    "loaded_resources": [
+      "packaged:species_library.yaml",
+      "packaged:references.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_00_references.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_30_reactions_charge_transfer_noble_gas.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_32_reactions_electron_attachment_oxygen.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_33_reactions_electron_ionization_oxygen.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_34_reactions_electron_dissociation_oxygen.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_35_reactions_electron_excitation_oxygen.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_66_reactions_followup_oxygen_argon.yaml",
+      "state_master:C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\state_master_base.yaml?families=core_plasma,noble_gas,oxygen",
+      "template_promotion:source_backed_templates"
+    ],
+    "catalog_policy": {
+      "reaction_conflict_policy": "prefer_higher_priority"
+    },
+    "config_sources": [
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_focused_runtime_base.yaml",
+      "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_o2_electron_argon_ion_runtime.yaml"
+    ],
+    "network_manifest": {
+      "generated_at": "2026-04-07T04:30:41+00:00",
+      "config_sources": [
+        "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_focused_runtime_base.yaml",
+        "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_o2_electron_argon_ion_runtime.yaml"
+      ],
+      "catalog_policy": {
+        "reaction_conflict_policy": "prefer_higher_priority"
+      },
+      "species_count": 10,
+      "reaction_count": 14,
+      "species_by_origin": [
+        {
+          "name": "state_master",
+          "count": 8
+        },
+        {
+          "name": "state_master_excited",
+          "count": 2
+        }
+      ],
+      "reaction_by_origin": [
+        {
+          "name": "curated_catalog",
+          "count": 13
+        },
+        {
+          "name": "source_backed_promotion",
+          "count": 1
+        }
+      ],
+      "reaction_by_layer": [
+        {
+          "name": "catalog",
+          "count": 13
+        },
+        {
+          "name": "promotion",
+          "count": 1
+        }
+      ],
+      "reaction_by_family": [
+        {
+          "name": "charge_transfer",
+          "count": 2
+        },
+        {
+          "name": "dissociative_recombination",
+          "count": 1
+        },
+        {
+          "name": "electron_attachment",
+          "count": 3
+        },
+        {
+          "name": "electron_dissociation",
+          "count": 1
+        },
+        {
+          "name": "electron_excitation",
+          "count": 2
+        },
+        {
+          "name": "electron_ionization",
+          "count": 2
+        },
+        {
+          "name": "ion_neutral_followup",
+          "count": 1
+        },
+        {
+          "name": "mutual_neutralization",
+          "count": 2
+        }
+      ],
+      "reaction_template_source_systems": [
+        {
+          "name": "qdb",
+          "count": 1
+        }
+      ],
+      "reaction_template_source_names": [
+        {
+          "name": "Quantemol-DB",
+          "count": 1
+        }
+      ],
+      "reaction_evidence_source_systems": [
+        {
+          "name": "qdb",
+          "count": 1
+        },
+        {
+          "name": "template_library",
+          "count": 17
+        }
+      ],
+      "reaction_evidence_source_names": [
+        {
+          "name": "Quantemol-DB",
+          "count": 1
+        },
+        {
+          "name": "production_noble_gas_library",
+          "count": 4
+        },
+        {
+          "name": "production_oxygen_library",
+          "count": 13
+        }
+      ],
+      "reaction_catalog_resources": [
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_30_reactions_charge_transfer_noble_gas.yaml",
+          "count": 1
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_32_reactions_electron_attachment_oxygen.yaml",
+          "count": 2
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_33_reactions_electron_ionization_oxygen.yaml",
+          "count": 1
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_34_reactions_electron_dissociation_oxygen.yaml",
+          "count": 1
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_35_reactions_electron_excitation_oxygen.yaml",
+          "count": 2
+        },
+        {
+          "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_66_reactions_followup_oxygen_argon.yaml",
+          "count": 6
+        }
+      ],
+      "fallback_usage": {
+        "count": 13,
+        "families": [
+          {
+            "name": "charge_transfer",
+            "count": 2
+          },
+          {
+            "name": "dissociative_recombination",
+            "count": 1
+          },
+          {
+            "name": "electron_attachment",
+            "count": 3
+          },
+          {
+            "name": "electron_dissociation",
+            "count": 1
+          },
+          {
+            "name": "electron_excitation",
+            "count": 2
+          },
+          {
+            "name": "electron_ionization",
+            "count": 1
+          },
+          {
+            "name": "ion_neutral_followup",
+            "count": 1
+          },
+          {
+            "name": "mutual_neutralization",
+            "count": 2
+          }
+        ],
+        "catalog_resources": [
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_30_reactions_charge_transfer_noble_gas.yaml",
+            "count": 1
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_32_reactions_electron_attachment_oxygen.yaml",
+            "count": 2
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_33_reactions_electron_ionization_oxygen.yaml",
+            "count": 1
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_34_reactions_electron_dissociation_oxygen.yaml",
+            "count": 1
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_35_reactions_electron_excitation_oxygen.yaml",
+            "count": 2
+          },
+          {
+            "name": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_66_reactions_followup_oxygen_argon.yaml",
+            "count": 6
+          }
+        ]
+      },
+      "promoted_usage": {
+        "count": 1,
+        "origins": [
+          {
+            "name": "source_backed_promotion",
+            "count": 1
+          }
+        ],
+        "template_source_systems": [
+          {
+            "name": "qdb",
+            "count": 1
+          }
+        ],
+        "template_source_names": [
+          {
+            "name": "Quantemol-DB",
+            "count": 1
+          }
+        ]
+      }
+    }
+  },
+  "species": [
+    {
+      "prototype_key": "Ar+",
+      "display_name": "Ar+",
+      "formula": "Ar",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "core",
+        "noble_gas",
+        "generated_from_state_master",
+        "ion"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "noble_gas",
+        "state_master_species_id": "argon"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "Ar+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "99985e396bde47e6bc8da9baf13ebfa7"
+    },
+    {
+      "prototype_key": "O2",
+      "display_name": "Oxygen",
+      "formula": "O2",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "feed_candidate",
+        "oxygen",
+        "generated_from_state_master",
+        "ground"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "oxygen",
+        "state_master_species_id": "oxygen_molecule"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "O2",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "7c5394c5f05a43fcae70105489749124"
+    },
+    {
+      "prototype_key": "Ar",
+      "display_name": "Argon",
+      "formula": "Ar",
+      "charge": 0,
+      "state_class": "atom",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "core",
+        "noble_gas",
+        "generated_from_state_master",
+        "atom"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "noble_gas",
+        "state_master_species_id": "argon"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "Ar",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "2c2bcfbf873948daabc1ee8868a069a3"
+    },
+    {
+      "prototype_key": "O",
+      "display_name": "Oxygen atom",
+      "formula": "O",
+      "charge": 0,
+      "state_class": "atom",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "core",
+        "atom",
+        "oxygen",
+        "core_plasma",
+        "generated_from_state_master"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "core_plasma",
+        "state_master_species_id": "oxygen_atom"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "O",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.9149999999999999,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "3d59b84b8fc84cc0a0f0ac2f155a3762"
+    },
+    {
+      "prototype_key": "O-",
+      "display_name": "O-",
+      "formula": "O",
+      "charge": -1,
+      "state_class": "anion",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "core",
+        "atom",
+        "oxygen",
+        "core_plasma",
+        "generated_from_state_master",
+        "anion"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "core_plasma",
+        "state_master_species_id": "oxygen_atom"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "O-",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "bf42a20f41764911acb7d931ac8c51df"
+    },
+    {
+      "prototype_key": "O2+",
+      "display_name": "O2+",
+      "formula": "O2",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "feed_candidate",
+        "oxygen",
+        "generated_from_state_master",
+        "ion"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "oxygen",
+        "state_master_species_id": "oxygen_molecule"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "O2+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.9149999999999999,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "6d01ed4c5ad247a3b70ee13499b0d51b"
+    },
+    {
+      "prototype_key": "O2-",
+      "display_name": "O2-",
+      "formula": "O2",
+      "charge": -1,
+      "state_class": "anion",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "feed_candidate",
+        "oxygen",
+        "generated_from_state_master",
+        "anion"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "oxygen",
+        "state_master_species_id": "oxygen_molecule"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "O2-",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "40c440e32ff541d3bc6bcab5a47a06fc"
+    },
+    {
+      "prototype_key": "O2[a1Delta_g]",
+      "display_name": "O2(a1Delta_g)",
+      "formula": "O2",
+      "charge": 0,
+      "state_class": "excited",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "a1Delta_g",
+      "excitation_energy_ev": 0.98,
+      "tags": [
+        "feed_candidate",
+        "oxygen",
+        "metastable",
+        "molecular_excited",
+        "generated_from_state_master",
+        "excited"
+      ],
+      "metadata": {
+        "state_origin": "state_master_excited",
+        "state_family": "oxygen",
+        "state_master_species_id": "oxygen_molecule"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master_excited",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "O2[a1Delta_g]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master_excited.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "a716842f565c4ac3b2905c35b23436d8"
+    },
+    {
+      "prototype_key": "O2[b1Sigma_g_plus]",
+      "display_name": "O2(b1Sigma_g+)",
+      "formula": "O2",
+      "charge": 0,
+      "state_class": "excited",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "b1Sigma_g_plus",
+      "excitation_energy_ev": 1.63,
+      "tags": [
+        "feed_candidate",
+        "oxygen",
+        "metastable",
+        "molecular_excited",
+        "generated_from_state_master",
+        "excited"
+      ],
+      "metadata": {
+        "state_origin": "state_master_excited",
+        "state_family": "oxygen",
+        "state_master_species_id": "oxygen_molecule"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master_excited",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "O2[b1Sigma_g_plus]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master_excited.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "67e3aa8351fb4caca1f05906a10de341"
+    },
+    {
+      "prototype_key": "O+",
+      "display_name": "O+",
+      "formula": "O",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 2,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "core",
+        "atom",
+        "oxygen",
+        "core_plasma",
+        "generated_from_state_master",
+        "ion"
+      ],
+      "metadata": {
+        "state_origin": "state_master",
+        "state_family": "core_plasma",
+        "state_master_species_id": "oxygen_atom"
+      },
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "state_master",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "O+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from state_master.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.04,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "875ee1524c6f4b249dac196c018394bb"
+    }
+  ],
+  "reactions": [
+    {
+      "key": "noble_gas::charge_transfer::ar_plus_o2",
+      "family": "charge_transfer",
+      "equation": "Ar+ + O2 -> Ar + O2+",
+      "reactant_state_ids": [
+        "99985e396bde47e6bc8da9baf13ebfa7",
+        "7c5394c5f05a43fcae70105489749124"
+      ],
+      "product_state_ids": [
+        "2c2bcfbf873948daabc1ee8868a069a3",
+        "6d01ed4c5ad247a3b70ee13499b0d51b"
+      ],
+      "reactant_keys": [
+        "Ar+",
+        "O2"
+      ],
+      "product_keys": [
+        "Ar",
+        "O2+"
+      ],
+      "lhs_tokens": [
+        "Ar+",
+        "O2"
+      ],
+      "rhs_tokens": [
+        "Ar",
+        "O2+"
+      ],
+      "generation": 1,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_noble_gas_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.83,
+          "source_url": null,
+          "locator": "curated_noble_gas",
+          "citation": "Production curated noble gas library",
+          "retrieved_at": null,
+          "note": "Shared reference block for noble-gas excitation and charge-transfer templates.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.84,
+        "evidence_bonus": 0.20625,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative argon-cation charge-transfer channel into molecular oxygen.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_30_reactions_charge_transfer_noble_gas.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_noble_gas_library",
+          "production_oxygen_library"
+        ]
+      },
+      "id": "bc2b5c6e6a20482eb98b28f850c3db49"
+    },
+    {
+      "key": "oxygen::electron_attachment::o2_dissociative",
+      "family": "electron_attachment",
+      "equation": "e- + O2 -> O- + O",
+      "reactant_state_ids": [
+        "7c5394c5f05a43fcae70105489749124"
+      ],
+      "product_state_ids": [
+        "bf42a20f41764911acb7d931ac8c51df",
+        "3d59b84b8fc84cc0a0f0ac2f155a3762"
+      ],
+      "reactant_keys": [
+        "O2"
+      ],
+      "product_keys": [
+        "O-",
+        "O"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "O2"
+      ],
+      "rhs_tokens": [
+        "O-",
+        "O"
+      ],
+      "generation": 1,
+      "threshold_ev": 4.2,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.82,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative dissociative oxygen attachment channel.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_32_reactions_electron_attachment_oxygen.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_oxygen_library"
+        ]
+      },
+      "id": "e809f0d35765435883998ae1c0a4bd5f"
+    },
+    {
+      "key": "oxygen::electron_attachment::o2_parent",
+      "family": "electron_attachment",
+      "equation": "e- + O2 -> O2-",
+      "reactant_state_ids": [
+        "7c5394c5f05a43fcae70105489749124"
+      ],
+      "product_state_ids": [
+        "40c440e32ff541d3bc6bcab5a47a06fc"
+      ],
+      "reactant_keys": [
+        "O2"
+      ],
+      "product_keys": [
+        "O2-"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "O2"
+      ],
+      "rhs_tokens": [
+        "O2-"
+      ],
+      "generation": 1,
+      "threshold_ev": 0.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.76,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative parent attachment channel for oxygen.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_32_reactions_electron_attachment_oxygen.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_oxygen_library"
+        ]
+      },
+      "id": "215fb48b65d74e36a043ec1385155694"
+    },
+    {
+      "key": "oxygen::electron_dissociation::o2_to_o_o",
+      "family": "electron_dissociation",
+      "equation": "e- + O2 -> e- + O + O",
+      "reactant_state_ids": [
+        "7c5394c5f05a43fcae70105489749124"
+      ],
+      "product_state_ids": [
+        "3d59b84b8fc84cc0a0f0ac2f155a3762",
+        "3d59b84b8fc84cc0a0f0ac2f155a3762"
+      ],
+      "reactant_keys": [
+        "O2"
+      ],
+      "product_keys": [
+        "O",
+        "O"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "O2"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "O",
+        "O"
+      ],
+      "generation": 1,
+      "threshold_ev": 5.1,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.78,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative oxygen dissociation channel.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_34_reactions_electron_dissociation_oxygen.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_oxygen_library"
+        ]
+      },
+      "id": "4b7931ca03e84b439e396b1b8dd9bbce"
+    },
+    {
+      "key": "oxygen::electron_excitation::o2_a1delta",
+      "family": "electron_excitation",
+      "equation": "e- + O2 -> e- + O2(a1Delta_g)",
+      "reactant_state_ids": [
+        "7c5394c5f05a43fcae70105489749124"
+      ],
+      "product_state_ids": [
+        "a716842f565c4ac3b2905c35b23436d8"
+      ],
+      "reactant_keys": [
+        "O2"
+      ],
+      "product_keys": [
+        "O2[a1Delta_g]"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "O2"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "O2(a1Delta_g)"
+      ],
+      "generation": 1,
+      "threshold_ev": 0.98,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.84,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative oxygen metastable excitation channel.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_35_reactions_electron_excitation_oxygen.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_oxygen_library"
+        ]
+      },
+      "id": "1a3c7b5d16a740c191f7912f87a2391c"
+    },
+    {
+      "key": "oxygen::electron_excitation::o2_b1sigma",
+      "family": "electron_excitation",
+      "equation": "e- + O2 -> e- + O2(b1Sigma_g+)",
+      "reactant_state_ids": [
+        "7c5394c5f05a43fcae70105489749124"
+      ],
+      "product_state_ids": [
+        "67e3aa8351fb4caca1f05906a10de341"
+      ],
+      "reactant_keys": [
+        "O2"
+      ],
+      "product_keys": [
+        "O2[b1Sigma_g_plus]"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "O2"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "O2(b1Sigma_g+)"
+      ],
+      "generation": 1,
+      "threshold_ev": 1.63,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.82,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative higher oxygen excited-state channel.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_35_reactions_electron_excitation_oxygen.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_oxygen_library"
+        ]
+      },
+      "id": "b9ae0daf49e24b288a2fb095d1255b75"
+    },
+    {
+      "key": "oxygen::electron_ionization::o2_parent",
+      "family": "electron_ionization",
+      "equation": "e- + O2 -> e- + e- + O2+",
+      "reactant_state_ids": [
+        "7c5394c5f05a43fcae70105489749124"
+      ],
+      "product_state_ids": [
+        "6d01ed4c5ad247a3b70ee13499b0d51b"
+      ],
+      "reactant_keys": [
+        "O2"
+      ],
+      "product_keys": [
+        "O2+"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "O2"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "e-",
+        "O2+"
+      ],
+      "generation": 1,
+      "threshold_ev": 12.07,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.88,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative parent ionization channel for oxygen.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_33_reactions_electron_ionization_oxygen.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_oxygen_library"
+        ]
+      },
+      "id": "2c57d97767424de9968d1d8d1949e2c8"
+    },
+    {
+      "key": "oxygen_argon::charge_transfer::ar_plus_o",
+      "family": "charge_transfer",
+      "equation": "Ar+ + O -> Ar + O+",
+      "reactant_state_ids": [
+        "99985e396bde47e6bc8da9baf13ebfa7",
+        "3d59b84b8fc84cc0a0f0ac2f155a3762"
+      ],
+      "product_state_ids": [
+        "2c2bcfbf873948daabc1ee8868a069a3",
+        "875ee1524c6f4b249dac196c018394bb"
+      ],
+      "reactant_keys": [
+        "Ar+",
+        "O"
+      ],
+      "product_keys": [
+        "Ar",
+        "O+"
+      ],
+      "lhs_tokens": [
+        "Ar+",
+        "O"
+      ],
+      "rhs_tokens": [
+        "Ar",
+        "O+"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_noble_gas_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.83,
+          "source_url": null,
+          "locator": "curated_noble_gas",
+          "citation": "Production curated noble gas library",
+          "retrieved_at": null,
+          "note": "Shared reference block for noble-gas excitation and charge-transfer templates.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.75,
+        "evidence_bonus": 0.20625,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative argon-cation charge-transfer channel into atomic oxygen.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_66_reactions_followup_oxygen_argon.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_noble_gas_library",
+          "production_oxygen_library"
+        ]
+      },
+      "id": "415e65ef3246451e98261403790a48a3"
+    },
+    {
+      "key": "oxygen_argon::dissociative_recombination::o2_plus",
+      "family": "dissociative_recombination",
+      "equation": "e- + O2+ -> O + O",
+      "reactant_state_ids": [
+        "6d01ed4c5ad247a3b70ee13499b0d51b"
+      ],
+      "product_state_ids": [
+        "3d59b84b8fc84cc0a0f0ac2f155a3762",
+        "3d59b84b8fc84cc0a0f0ac2f155a3762"
+      ],
+      "reactant_keys": [
+        "O2+"
+      ],
+      "product_keys": [
+        "O",
+        "O"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "O2+"
+      ],
+      "rhs_tokens": [
+        "O",
+        "O"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.78,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative dissociative recombination channel for molecular oxygen cations.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_66_reactions_followup_oxygen_argon.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_oxygen_library"
+        ]
+      },
+      "id": "5d41f729b4a547e6abf80aee0059951a"
+    },
+    {
+      "key": "oxygen_argon::electron_attachment::o_atom",
+      "family": "electron_attachment",
+      "equation": "e- + O -> O-",
+      "reactant_state_ids": [
+        "3d59b84b8fc84cc0a0f0ac2f155a3762"
+      ],
+      "product_state_ids": [
+        "bf42a20f41764911acb7d931ac8c51df"
+      ],
+      "reactant_keys": [
+        "O"
+      ],
+      "product_keys": [
+        "O-"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "O"
+      ],
+      "rhs_tokens": [
+        "O-"
+      ],
+      "generation": 2,
+      "threshold_ev": 0.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.71,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative atomic-oxygen attachment channel.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_66_reactions_followup_oxygen_argon.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_oxygen_library"
+        ]
+      },
+      "id": "858bace5197241b8b18a43153864596e"
+    },
+    {
+      "key": "oxygen_argon::mutual_neutralization::ar_plus_o2_minus",
+      "family": "mutual_neutralization",
+      "equation": "Ar+ + O2- -> Ar + O2",
+      "reactant_state_ids": [
+        "99985e396bde47e6bc8da9baf13ebfa7",
+        "40c440e32ff541d3bc6bcab5a47a06fc"
+      ],
+      "product_state_ids": [
+        "2c2bcfbf873948daabc1ee8868a069a3",
+        "7c5394c5f05a43fcae70105489749124"
+      ],
+      "reactant_keys": [
+        "Ar+",
+        "O2-"
+      ],
+      "product_keys": [
+        "Ar",
+        "O2"
+      ],
+      "lhs_tokens": [
+        "Ar+",
+        "O2-"
+      ],
+      "rhs_tokens": [
+        "Ar",
+        "O2"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_noble_gas_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.83,
+          "source_url": null,
+          "locator": "curated_noble_gas",
+          "citation": "Production curated noble gas library",
+          "retrieved_at": null,
+          "note": "Shared reference block for noble-gas excitation and charge-transfer templates.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.74,
+        "evidence_bonus": 0.20625,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative mutual-neutralization channel between argon cations and molecular-oxygen anions.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_66_reactions_followup_oxygen_argon.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_noble_gas_library",
+          "production_oxygen_library"
+        ]
+      },
+      "id": "0244072d0fee40b6ab92b9b6ca0f742b"
+    },
+    {
+      "key": "oxygen_argon::mutual_neutralization::ar_plus_o_minus",
+      "family": "mutual_neutralization",
+      "equation": "Ar+ + O- -> Ar + O",
+      "reactant_state_ids": [
+        "99985e396bde47e6bc8da9baf13ebfa7",
+        "bf42a20f41764911acb7d931ac8c51df"
+      ],
+      "product_state_ids": [
+        "2c2bcfbf873948daabc1ee8868a069a3",
+        "3d59b84b8fc84cc0a0f0ac2f155a3762"
+      ],
+      "reactant_keys": [
+        "Ar+",
+        "O-"
+      ],
+      "product_keys": [
+        "Ar",
+        "O"
+      ],
+      "lhs_tokens": [
+        "Ar+",
+        "O-"
+      ],
+      "rhs_tokens": [
+        "Ar",
+        "O"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_noble_gas_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.83,
+          "source_url": null,
+          "locator": "curated_noble_gas",
+          "citation": "Production curated noble gas library",
+          "retrieved_at": null,
+          "note": "Shared reference block for noble-gas excitation and charge-transfer templates.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.73,
+        "evidence_bonus": 0.20625,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Representative mutual-neutralization channel between argon cations and oxygen anions.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_66_reactions_followup_oxygen_argon.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_noble_gas_library",
+          "production_oxygen_library"
+        ]
+      },
+      "id": "6bb3a0800cc54fcb8f27b1df394f6472"
+    },
+    {
+      "key": "promo::noble_gas::qdb::1a065153b544af1e",
+      "family": "electron_ionization",
+      "equation": "e- + Ar -> e- + e- + Ar+",
+      "reactant_state_ids": [
+        "2c2bcfbf873948daabc1ee8868a069a3"
+      ],
+      "product_state_ids": [
+        "99985e396bde47e6bc8da9baf13ebfa7"
+      ],
+      "reactant_keys": [
+        "Ar"
+      ],
+      "product_keys": [
+        "Ar+"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "Ar"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "e-",
+        "Ar+"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "qdb",
+          "source_name": "Quantemol-DB",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "validated_chemistry_record",
+          "support_score": 0.901,
+          "source_url": "https://quantemoldb.com/chemistries/api/",
+          "locator": null,
+          "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+          "retrieved_at": null,
+          "note": "Representative electron-impact argon ionization channel promoted into the noble-gas family.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.901,
+        "evidence_bonus": 0.22525,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Source-backed template promotion for noble_gas family from Quantemol-DB (curated_bridge). Representative electron-impact argon ionization channel promoted into the noble-gas family.",
+      "metadata": {
+        "template_origin": "source_backed_promotion",
+        "template_layer": "promotion",
+        "template_priority": 60,
+        "template_source_system": "qdb",
+        "template_source_name": "Quantemol-DB",
+        "source_support_score": 0.901,
+        "source_url": "https://quantemoldb.com/chemistries/api/",
+        "promotion_stage": "curated_bridge",
+        "promotion_target_family": "noble_gas",
+        "promotion_reaction_family": "electron_ionization"
+      },
+      "id": "3b547be44b8e49bda04e5c79b68671aa"
+    },
+    {
+      "key": "oxygen_argon::ion_neutral_followup::o_plus_o2",
+      "family": "ion_neutral_followup",
+      "equation": "O+ + O2 -> O + O2+",
+      "reactant_state_ids": [
+        "875ee1524c6f4b249dac196c018394bb",
+        "7c5394c5f05a43fcae70105489749124"
+      ],
+      "product_state_ids": [
+        "3d59b84b8fc84cc0a0f0ac2f155a3762",
+        "6d01ed4c5ad247a3b70ee13499b0d51b"
+      ],
+      "reactant_keys": [
+        "O+",
+        "O2"
+      ],
+      "product_keys": [
+        "O",
+        "O2+"
+      ],
+      "lhs_tokens": [
+        "O+",
+        "O2"
+      ],
+      "rhs_tokens": [
+        "O",
+        "O2+"
+      ],
+      "generation": 3,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "production_oxygen_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": "curated_oxygen",
+          "citation": "Production curated oxygen library",
+          "retrieved_at": null,
+          "note": "Shared reference block for oxygen electron-impact templates.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.72,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.1,
+        "final_score": 0.965,
+        "tier": "high"
+      },
+      "note": "Representative oxygen-cation follow-up channel in molecular oxygen.",
+      "metadata": {
+        "template_origin": "curated_catalog",
+        "template_layer": "catalog",
+        "template_priority": 20,
+        "catalog_resource": "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_66_reactions_followup_oxygen_argon.yaml",
+        "reference_source_systems": [
+          "template_library"
+        ],
+        "reference_source_names": [
+          "production_oxygen_library"
+        ]
+      },
+      "id": "65b133be8a6845f0aca8693ee67048c5"
+    }
+  ],
+  "diagnostics": []
+}

@@ -1,0 +1,60 @@
+reactions:
+  - key: process_gases::ion_neutral_followup::sf6_plus_o2
+    family: ion_neutral_followup
+    reactants: [SF6+, O2]
+    products: [SF5, F, O2+]
+    lhs_tokens: [SF6+, O2]
+    rhs_tokens: [SF5, F, O2+]
+    base_confidence: 0.69
+    reference_ids: [curated_process_gases]
+    note: "Representative sulfur-fluoride cation follow-up channel in oxygen-containing mixtures."
+
+  - key: process_gases::ion_neutral_followup::nf3_plus_o2
+    family: ion_neutral_followup
+    reactants: [NF3+, O2]
+    products: [NF2, F, O2+]
+    lhs_tokens: [NF3+, O2]
+    rhs_tokens: [NF2, F, O2+]
+    base_confidence: 0.68
+    reference_ids: [curated_process_gases]
+    note: "Representative nitrogen-fluoride cation follow-up channel in oxygen-containing mixtures."
+
+  - key: process_gases::ion_neutral_followup::bcl3_plus_o2
+    family: ion_neutral_followup
+    reactants: [BCl3+, O2]
+    products: [BCl2, Cl, O2+]
+    lhs_tokens: [BCl3+, O2]
+    rhs_tokens: [BCl2, Cl, O2+]
+    base_confidence: 0.68
+    reference_ids: [curated_process_gases]
+    note: "Representative boron-halide cation follow-up channel in oxygen-containing mixtures."
+
+  - key: process_gases::ion_neutral_followup::nh3_plus_h2
+    family: ion_neutral_followup
+    reactants: [NH3+, H2]
+    products: [NH2, H, H2+]
+    lhs_tokens: [NH3+, H2]
+    rhs_tokens: [NH2, H, H2+]
+    base_confidence: 0.67
+    reference_ids: [curated_process_gases]
+    note: "Representative ammonia cation follow-up channel in hydrogen-containing mixtures."
+
+  - key: process_gases::ion_neutral_followup::n2o_plus_o2
+    family: ion_neutral_followup
+    reactants: [N2O+, O2]
+    products: ["NO", N, O2+]
+    lhs_tokens: [N2O+, O2]
+    rhs_tokens: ["NO", N, O2+]
+    base_confidence: 0.66
+    reference_ids: [curated_process_gases]
+    note: "Representative nitrous-oxide cation follow-up channel."
+
+  - key: process_gases::ion_neutral_followup::o3_plus_o2
+    family: ion_neutral_followup
+    reactants: [O3+, O2]
+    products: [O2, O, O2+]
+    lhs_tokens: [O3+, O2]
+    rhs_tokens: [O2, O, O2+]
+    base_confidence: 0.66
+    reference_ids: [curated_process_gases]
+    note: "Representative ozone cation follow-up channel."

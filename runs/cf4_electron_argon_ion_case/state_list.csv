@@ -1,0 +1,6 @@
+﻿"generation","prototype_key","display_name","formula","charge","state_class","excitation_label","origin"
+"0","CF4","Tetrafluoromethane","CF4","0","ground",,"state_master"
+"1","CF3","CF3 radical","CF3","0","ground",,"packaged_species_library"
+"1","CF4+","CF4+","CF4","1","cation",,"state_master"
+"1","CF4-","CF4-","CF4","-1","anion",,"state_master"
+"1","F","Fluorine atom","F","0","atom",,"packaged_species_library"

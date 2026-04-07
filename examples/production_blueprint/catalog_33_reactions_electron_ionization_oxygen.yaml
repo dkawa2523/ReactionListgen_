@@ -1,0 +1,12 @@
+reactions:
+  - key: oxygen::electron_ionization::o2_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [O2]
+    products: [O2+]
+    lhs_tokens: [e-, O2]
+    rhs_tokens: [e-, e-, O2+]
+    threshold_ev: 12.07
+    base_confidence: 0.88
+    reference_ids: [curated_oxygen]
+    note: "Representative parent ionization channel for oxygen."

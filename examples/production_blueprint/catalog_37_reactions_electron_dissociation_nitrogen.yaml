@@ -1,0 +1,12 @@
+reactions:
+  - key: nitrogen::electron_dissociation::n2_to_n_n
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [N2]
+    products: [N, N]
+    lhs_tokens: [e-, N2]
+    rhs_tokens: [e-, N, N]
+    threshold_ev: 9.76
+    base_confidence: 0.76
+    reference_ids: [curated_nitrogen]
+    note: "Representative nitrogen dissociation channel."

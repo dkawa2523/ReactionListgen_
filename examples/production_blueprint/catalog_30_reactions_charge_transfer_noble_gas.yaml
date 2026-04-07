@@ -1,0 +1,30 @@
+reactions:
+  - key: noble_gas::charge_transfer::ar_plus_ch4
+    family: charge_transfer
+    reactants: [Ar+, CH4]
+    products: [Ar, CH4+]
+    lhs_tokens: [Ar+, CH4]
+    rhs_tokens: [Ar, CH4+]
+    base_confidence: 0.76
+    reference_ids: [curated_noble_gas]
+    note: "Representative noble-gas to hydrocarbon charge transfer."
+
+  - key: noble_gas::charge_transfer::ar_plus_cc4f8
+    family: charge_transfer
+    reactants: [Ar+, c-C4F8]
+    products: [Ar, c-C4F8+]
+    lhs_tokens: [Ar+, C4F8]
+    rhs_tokens: [Ar, C4F8+]
+    base_confidence: 0.78
+    reference_ids: [curated_noble_gas]
+    note: "Representative noble-gas to fluorocarbon charge transfer."
+
+  - key: noble_gas::charge_transfer::ar_plus_o2
+    family: charge_transfer
+    reactants: [Ar+, O2]
+    products: [Ar, O2+]
+    lhs_tokens: [Ar+, O2]
+    rhs_tokens: [Ar, O2+]
+    base_confidence: 0.84
+    reference_ids: [curated_noble_gas, curated_oxygen]
+    note: "Representative argon-cation charge-transfer channel into molecular oxygen."

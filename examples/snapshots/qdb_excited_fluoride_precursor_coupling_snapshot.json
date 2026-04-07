@@ -1,0 +1,97 @@
+{
+  "records": [
+    {
+      "reactants": ["SF6"],
+      "products": ["SF6(a1)"],
+      "citation": "Illustrative normalized QDB excited fluoride precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.90,
+      "note": "Electron-impact excitation channel for sulfur hexafluoride represented in a QDB chemistry set.",
+      "chemistry_id": 801,
+      "process_family": "electron_excitation",
+      "promotion_family": "sulfur",
+      "promoted_excited_states": [
+        {
+          "token": "SF6(a1)",
+          "label": "A1",
+          "energy_ev": 3.30,
+          "display_name": "SF6(A1)"
+        }
+      ]
+    },
+    {
+      "reactants": ["SF6[A1]", "O2"],
+      "products": ["SF5", "F", "O2"],
+      "citation": "Illustrative normalized QDB excited fluoride precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.87,
+      "note": "Excited sulfur hexafluoride follow-up channel promoted into the sulfur family.",
+      "chemistry_id": 802,
+      "process_family": "radical_neutral_reaction",
+      "promotion_family": "sulfur",
+      "promotion_stage": "excited_state_followup"
+    },
+    {
+      "reactants": ["NF3"],
+      "products": ["NF3(a1)"],
+      "citation": "Illustrative normalized QDB excited fluoride precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.89,
+      "note": "Electron-impact excitation channel for nitrogen trifluoride represented in a QDB chemistry set.",
+      "chemistry_id": 803,
+      "process_family": "electron_excitation",
+      "promotion_family": "nitrogen",
+      "promoted_excited_states": [
+        {
+          "token": "NF3(a1)",
+          "label": "A1",
+          "energy_ev": 3.25,
+          "display_name": "NF3(A1)"
+        }
+      ]
+    },
+    {
+      "reactants": ["NF3[A1]", "O2"],
+      "products": ["NF2", "F", "O2"],
+      "citation": "Illustrative normalized QDB excited fluoride precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.86,
+      "note": "Excited nitrogen trifluoride follow-up channel promoted into the nitrogen family.",
+      "chemistry_id": 804,
+      "process_family": "radical_neutral_reaction",
+      "promotion_family": "nitrogen",
+      "promotion_stage": "excited_state_followup"
+    },
+    {
+      "reactants": ["WF6"],
+      "products": ["WF6(b1)"],
+      "citation": "Illustrative normalized QDB excited fluoride precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.90,
+      "note": "Electron-impact excitation channel for tungsten hexafluoride represented in a QDB chemistry set.",
+      "chemistry_id": 805,
+      "process_family": "electron_excitation",
+      "promotion_family": "tungsten",
+      "promoted_excited_states": [
+        {
+          "token": "WF6(b1)",
+          "label": "B1",
+          "energy_ev": 4.10,
+          "display_name": "WF6(B1)"
+        }
+      ]
+    },
+    {
+      "reactants": ["WF6[B1]", "H2"],
+      "products": ["WF5", "F", "H2"],
+      "citation": "Illustrative normalized QDB excited fluoride precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.87,
+      "note": "Excited tungsten hexafluoride follow-up channel promoted into the tungsten family.",
+      "chemistry_id": 806,
+      "process_family": "radical_neutral_reaction",
+      "promotion_family": "tungsten",
+      "promotion_stage": "excited_state_followup"
+    }
+  ]
+}

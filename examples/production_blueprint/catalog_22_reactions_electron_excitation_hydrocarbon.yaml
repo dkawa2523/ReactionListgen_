@@ -1,0 +1,24 @@
+reactions:
+  - key: hydrocarbon::electron_excitation_vibrational::ch4_v24
+    family: electron_excitation_vibrational
+    required_projectile: e-
+    reactants: [CH4]
+    products: ["CH4[V24]"]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, CH4(V24)]
+    threshold_ev: 0.162
+    base_confidence: 0.88
+    reference_ids: [curated_hydrocarbon]
+    note: "Representative low-energy methane vibrational excitation channel."
+
+  - key: hydrocarbon::electron_excitation_vibrational::ch4_v13
+    family: electron_excitation_vibrational
+    required_projectile: e-
+    reactants: [CH4]
+    products: ["CH4[V13]"]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, CH4(V13)]
+    threshold_ev: 0.361
+    base_confidence: 0.88
+    reference_ids: [curated_hydrocarbon]
+    note: "Representative asymmetric methane vibrational excitation channel."

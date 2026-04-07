@@ -1,0 +1,38 @@
+{
+  "name:methane": {
+    "query": "Methane",
+    "namespace": "name",
+    "cid": 297,
+    "title": "Methane",
+    "formula": "CH4",
+    "molecular_weight": 16.043,
+    "smiles": "C",
+    "inchi": "InChI=1S/CH4/h1H4",
+    "inchikey": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+    "synonyms": [
+      "Methane",
+      "Methyl hydride"
+    ],
+    "candidate_count": 1,
+    "ambiguous": false,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/297"
+  },
+  "name:cyclobutane, octafluoro-": {
+    "query": "Cyclobutane, octafluoro-",
+    "namespace": "name",
+    "cid": 137139,
+    "title": "Cyclobutane, octafluoro-",
+    "formula": "C4F8",
+    "molecular_weight": 200.03,
+    "smiles": "C1(C(C(C1(F)F)(F)F)(F)F)(F)F",
+    "inchi": "InChI=1S/C4F8/c5-1(6)2(7,8)4(11,12)3(1,9)10",
+    "inchikey": "XJNRGXJCFJMKJL-UHFFFAOYSA-N",
+    "synonyms": [
+      "Cyclobutane, octafluoro-",
+      "Octafluorocyclobutane"
+    ],
+    "candidate_count": 1,
+    "ambiguous": false,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/137139"
+  }
+}

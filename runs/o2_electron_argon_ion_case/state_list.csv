@@ -1,0 +1,11 @@
+﻿"generation","prototype_key","display_name","formula","charge","state_class","excitation_label"
+"0","Ar+","Ar+","Ar","1","cation",
+"0","O2","Oxygen","O2","0","ground",
+"1","Ar","Argon","Ar","0","atom",
+"1","O","Oxygen atom","O","0","atom",
+"1","O-","O-","O","-1","anion",
+"1","O2+","O2+","O2","1","cation",
+"1","O2-","O2-","O2","-1","anion",
+"1","O2[a1Delta_g]","O2(a1Delta_g)","O2","0","excited","a1Delta_g"
+"1","O2[b1Sigma_g_plus]","O2(b1Sigma_g+)","O2","0","excited","b1Sigma_g_plus"
+"2","O+","O+","O","1","cation",

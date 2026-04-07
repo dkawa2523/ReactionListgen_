@@ -1,0 +1,24 @@
+reactions:
+  - key: oxygen::electron_attachment::o2_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [O2]
+    products: [O2-]
+    lhs_tokens: [e-, O2]
+    rhs_tokens: [O2-]
+    threshold_ev: 0.0
+    base_confidence: 0.76
+    reference_ids: [curated_oxygen]
+    note: "Representative parent attachment channel for oxygen."
+
+  - key: oxygen::electron_attachment::o2_dissociative
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [O2]
+    products: [O-, O]
+    lhs_tokens: [e-, O2]
+    rhs_tokens: [O-, O]
+    threshold_ev: 4.2
+    base_confidence: 0.82
+    reference_ids: [curated_oxygen]
+    note: "Representative dissociative oxygen attachment channel."

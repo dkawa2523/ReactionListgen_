@@ -1,0 +1,672 @@
+﻿{
+    "metadata":  {
+                     "feed_count":  1,
+                     "species_count":  5,
+                     "reaction_count":  3,
+                     "loaded_resources":  [
+                                              "packaged:species_library.yaml",
+                                              "packaged:references.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_00_references.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_24_reactions_electron_attachment_fluorocarbon.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_25_reactions_electron_dissociative_ionization_fluorocarbon.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_31_reactions_ion_neutral_followup_fluorocarbon.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_41_reactions_neutral_fragmentation_fluorocarbon.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_42_reactions_radical_fragmentation_fluorocarbon.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+                                              "state_master:C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\state_master_base.yaml?families=core_plasma,fluorocarbon",
+                                              "template_promotion:source_backed_templates"
+                                          ],
+                     "catalog_policy":  {
+                                            "reaction_conflict_policy":  "prefer_higher_priority"
+                                        },
+                     "config_sources":  [
+                                            "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_focused_runtime_base.yaml",
+                                            "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_etch_fluorocarbon_runtime.yaml"
+                                        ],
+                     "network_manifest":  {
+                                              "generated_at":  "2026-04-07T04:41:44+00:00",
+                                              "config_sources":  [
+                                                                     "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_focused_runtime_base.yaml",
+                                                                     "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_etch_fluorocarbon_runtime.yaml"
+                                                                 ],
+                                              "catalog_policy":  {
+                                                                     "reaction_conflict_policy":  "prefer_higher_priority"
+                                                                 },
+                                              "species_count":  5,
+                                              "reaction_count":  3,
+                                              "species_by_origin":  [
+                                                                        {
+                                                                            "name":  "packaged_species_library",
+                                                                            "count":  2
+                                                                        },
+                                                                        {
+                                                                            "name":  "state_master",
+                                                                            "count":  3
+                                                                        }
+                                                                    ],
+                                              "reaction_by_origin":  [
+                                                                         {
+                                                                             "name":  "curated_catalog",
+                                                                             "count":  2
+                                                                         },
+                                                                         {
+                                                                             "name":  "source_backed_promotion",
+                                                                             "count":  1
+                                                                         }
+                                                                     ],
+                                              "reaction_by_layer":  [
+                                                                        {
+                                                                            "name":  "catalog",
+                                                                            "count":  2
+                                                                        },
+                                                                        {
+                                                                            "name":  "promotion",
+                                                                            "count":  1
+                                                                        }
+                                                                    ],
+                                              "reaction_by_family":  [
+                                                                         {
+                                                                             "name":  "electron_attachment",
+                                                                             "count":  1
+                                                                         },
+                                                                         {
+                                                                             "name":  "electron_dissociation",
+                                                                             "count":  1
+                                                                         },
+                                                                         {
+                                                                             "name":  "electron_ionization",
+                                                                             "count":  1
+                                                                         }
+                                                                     ],
+                                              "reaction_template_source_systems":  [
+                                                                                       {
+                                                                                           "name":  "qdb",
+                                                                                           "count":  1
+                                                                                       }
+                                                                                   ],
+                                              "reaction_template_source_names":  [
+                                                                                     {
+                                                                                         "name":  "Quantemol-DB",
+                                                                                         "count":  1
+                                                                                     }
+                                                                                 ],
+                                              "reaction_evidence_source_systems":  [
+                                                                                       {
+                                                                                           "name":  "qdb",
+                                                                                           "count":  1
+                                                                                       },
+                                                                                       {
+                                                                                           "name":  "template_library",
+                                                                                           "count":  2
+                                                                                       }
+                                                                                   ],
+                                              "reaction_evidence_source_names":  [
+                                                                                     {
+                                                                                         "name":  "Quantemol-DB",
+                                                                                         "count":  1
+                                                                                     },
+                                                                                     {
+                                                                                         "name":  "production_gas_phase_targets_library",
+                                                                                         "count":  2
+                                                                                     }
+                                                                                 ],
+                                              "reaction_catalog_resources":  [
+                                                                                 {
+                                                                                     "name":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+                                                                                     "count":  1
+                                                                                 },
+                                                                                 {
+                                                                                     "name":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+                                                                                     "count":  1
+                                                                                 }
+                                                                             ],
+                                              "fallback_usage":  {
+                                                                     "count":  2,
+                                                                     "families":  [
+                                                                                      {
+                                                                                          "name":  "electron_attachment",
+                                                                                          "count":  1
+                                                                                      },
+                                                                                      {
+                                                                                          "name":  "electron_ionization",
+                                                                                          "count":  1
+                                                                                      }
+                                                                                  ],
+                                                                     "catalog_resources":  [
+                                                                                               {
+                                                                                                   "name":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+                                                                                                   "count":  1
+                                                                                               },
+                                                                                               {
+                                                                                                   "name":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+                                                                                                   "count":  1
+                                                                                               }
+                                                                                           ]
+                                                                 },
+                                              "promoted_usage":  {
+                                                                     "count":  1,
+                                                                     "origins":  [
+                                                                                     {
+                                                                                         "name":  "source_backed_promotion",
+                                                                                         "count":  1
+                                                                                     }
+                                                                                 ],
+                                                                     "template_source_systems":  [
+                                                                                                     {
+                                                                                                         "name":  "qdb",
+                                                                                                         "count":  1
+                                                                                                     }
+                                                                                                 ],
+                                                                     "template_source_names":  [
+                                                                                                   {
+                                                                                                       "name":  "Quantemol-DB",
+                                                                                                       "count":  1
+                                                                                                   }
+                                                                                               ]
+                                                                 }
+                                          }
+                 },
+    "species":  [
+                    {
+                        "prototype_key":  "CF4",
+                        "display_name":  "Tetrafluoromethane",
+                        "formula":  "CF4",
+                        "charge":  0,
+                        "state_class":  "ground",
+                        "generation":  0,
+                        "multiplicity":  null,
+                        "structure_id":  null,
+                        "excitation_label":  null,
+                        "excitation_energy_ev":  null,
+                        "tags":  [
+                                     "feed_candidate",
+                                     "fluorocarbon",
+                                     "etch_gas",
+                                     "generated_from_state_master",
+                                     "ground"
+                                 ],
+                        "metadata":  {
+                                         "state_origin":  "state_master",
+                                         "state_family":  "fluorocarbon",
+                                         "state_master_species_id":  "tetrafluoromethane"
+                                     },
+                        "identity":  null,
+                        "thermo":  {
+                                       "delta_hf_298_kj_mol":  null,
+                                       "delta_hf_0_kj_mol":  null,
+                                       "source_version":  null,
+                                       "doi":  null,
+                                       "source_url":  null
+                                   },
+                        "evidence":  [
+                                         {
+                                             "source_system":  "catalog",
+                                             "source_name":  "state_master",
+                                             "acquisition_method":  "package_template",
+                                             "evidence_kind":  "curated_species_record",
+                                             "support_score":  0.7,
+                                             "source_url":  null,
+                                             "locator":  "CF4",
+                                             "citation":  null,
+                                             "retrieved_at":  null,
+                                             "note":  "Species instantiated from state_master.",
+                                             "raw_ref":  null
+                                         }
+                                     ],
+                        "confidence":  {
+                                           "base_score":  0.55,
+                                           "evidence_bonus":  0.175,
+                                           "balance_bonus":  0.08,
+                                           "threshold_bonus":  0.0,
+                                           "thermo_bonus":  0.0,
+                                           "generation_penalty":  0.0,
+                                           "final_score":  0.805,
+                                           "tier":  "high"
+                                       },
+                        "id":  "6dbab3f1f6fd40bfa1c593988d03c384"
+                    },
+                    {
+                        "prototype_key":  "CF3",
+                        "display_name":  "CF3 radical",
+                        "formula":  "CF3",
+                        "charge":  0,
+                        "state_class":  "ground",
+                        "generation":  1,
+                        "multiplicity":  null,
+                        "structure_id":  null,
+                        "excitation_label":  null,
+                        "excitation_energy_ev":  null,
+                        "tags":  [
+                                     "radical",
+                                     "fluorocarbon",
+                                     "curated"
+                                 ],
+                        "metadata":  {
+                                         "state_origin":  "packaged_species_library",
+                                         "catalog_resource":  "packaged:species_library.yaml"
+                                     },
+                        "identity":  null,
+                        "thermo":  {
+                                       "delta_hf_298_kj_mol":  null,
+                                       "delta_hf_0_kj_mol":  null,
+                                       "source_version":  null,
+                                       "doi":  null,
+                                       "source_url":  null
+                                   },
+                        "evidence":  [
+                                         {
+                                             "source_system":  "catalog",
+                                             "source_name":  "packaged:species_library.yaml",
+                                             "acquisition_method":  "package_template",
+                                             "evidence_kind":  "curated_species_record",
+                                             "support_score":  0.7,
+                                             "source_url":  null,
+                                             "locator":  "CF3",
+                                             "citation":  null,
+                                             "retrieved_at":  null,
+                                             "note":  "Species instantiated from packaged_species_library.",
+                                             "raw_ref":  null
+                                         }
+                                     ],
+                        "confidence":  {
+                                           "base_score":  0.95,
+                                           "evidence_bonus":  0.175,
+                                           "balance_bonus":  0.08,
+                                           "threshold_bonus":  0.0,
+                                           "thermo_bonus":  0.0,
+                                           "generation_penalty":  0.0,
+                                           "final_score":  1.0,
+                                           "tier":  "high"
+                                       },
+                        "id":  "5d4aa74e13ee4d65a73e886955d5b26b"
+                    },
+                    {
+                        "prototype_key":  "CF4+",
+                        "display_name":  "CF4+",
+                        "formula":  "CF4",
+                        "charge":  1,
+                        "state_class":  "cation",
+                        "generation":  1,
+                        "multiplicity":  null,
+                        "structure_id":  null,
+                        "excitation_label":  null,
+                        "excitation_energy_ev":  null,
+                        "tags":  [
+                                     "feed_candidate",
+                                     "fluorocarbon",
+                                     "etch_gas",
+                                     "generated_from_state_master",
+                                     "ion"
+                                 ],
+                        "metadata":  {
+                                         "state_origin":  "state_master",
+                                         "state_family":  "fluorocarbon",
+                                         "state_master_species_id":  "tetrafluoromethane"
+                                     },
+                        "identity":  null,
+                        "thermo":  {
+                                       "delta_hf_298_kj_mol":  null,
+                                       "delta_hf_0_kj_mol":  null,
+                                       "source_version":  null,
+                                       "doi":  null,
+                                       "source_url":  null
+                                   },
+                        "evidence":  [
+                                         {
+                                             "source_system":  "catalog",
+                                             "source_name":  "state_master",
+                                             "acquisition_method":  "package_template",
+                                             "evidence_kind":  "curated_species_record",
+                                             "support_score":  0.7,
+                                             "source_url":  null,
+                                             "locator":  "CF4+",
+                                             "citation":  null,
+                                             "retrieved_at":  null,
+                                             "note":  "Species instantiated from state_master.",
+                                             "raw_ref":  null
+                                         }
+                                     ],
+                        "confidence":  {
+                                           "base_score":  0.95,
+                                           "evidence_bonus":  0.175,
+                                           "balance_bonus":  0.08,
+                                           "threshold_bonus":  0.0,
+                                           "thermo_bonus":  0.0,
+                                           "generation_penalty":  0.0,
+                                           "final_score":  1.0,
+                                           "tier":  "high"
+                                       },
+                        "id":  "3a36a41083864f7790522bb0347c0cf0"
+                    },
+                    {
+                        "prototype_key":  "CF4-",
+                        "display_name":  "CF4-",
+                        "formula":  "CF4",
+                        "charge":  -1,
+                        "state_class":  "anion",
+                        "generation":  1,
+                        "multiplicity":  null,
+                        "structure_id":  null,
+                        "excitation_label":  null,
+                        "excitation_energy_ev":  null,
+                        "tags":  [
+                                     "feed_candidate",
+                                     "fluorocarbon",
+                                     "etch_gas",
+                                     "generated_from_state_master",
+                                     "anion"
+                                 ],
+                        "metadata":  {
+                                         "state_origin":  "state_master",
+                                         "state_family":  "fluorocarbon",
+                                         "state_master_species_id":  "tetrafluoromethane"
+                                     },
+                        "identity":  null,
+                        "thermo":  {
+                                       "delta_hf_298_kj_mol":  null,
+                                       "delta_hf_0_kj_mol":  null,
+                                       "source_version":  null,
+                                       "doi":  null,
+                                       "source_url":  null
+                                   },
+                        "evidence":  [
+                                         {
+                                             "source_system":  "catalog",
+                                             "source_name":  "state_master",
+                                             "acquisition_method":  "package_template",
+                                             "evidence_kind":  "curated_species_record",
+                                             "support_score":  0.7,
+                                             "source_url":  null,
+                                             "locator":  "CF4-",
+                                             "citation":  null,
+                                             "retrieved_at":  null,
+                                             "note":  "Species instantiated from state_master.",
+                                             "raw_ref":  null
+                                         }
+                                     ],
+                        "confidence":  {
+                                           "base_score":  0.95,
+                                           "evidence_bonus":  0.175,
+                                           "balance_bonus":  0.08,
+                                           "threshold_bonus":  0.0,
+                                           "thermo_bonus":  0.0,
+                                           "generation_penalty":  0.0,
+                                           "final_score":  1.0,
+                                           "tier":  "high"
+                                       },
+                        "id":  "fb8d689c18a04d1ab3983cafca5e2c4b"
+                    },
+                    {
+                        "prototype_key":  "F",
+                        "display_name":  "Fluorine atom",
+                        "formula":  "F",
+                        "charge":  0,
+                        "state_class":  "atom",
+                        "generation":  1,
+                        "multiplicity":  null,
+                        "structure_id":  null,
+                        "excitation_label":  null,
+                        "excitation_energy_ev":  null,
+                        "tags":  [
+                                     "atom",
+                                     "fluorocarbon",
+                                     "curated"
+                                 ],
+                        "metadata":  {
+                                         "state_origin":  "packaged_species_library",
+                                         "catalog_resource":  "packaged:species_library.yaml"
+                                     },
+                        "identity":  null,
+                        "thermo":  {
+                                       "delta_hf_298_kj_mol":  null,
+                                       "delta_hf_0_kj_mol":  null,
+                                       "source_version":  null,
+                                       "doi":  null,
+                                       "source_url":  null
+                                   },
+                        "evidence":  [
+                                         {
+                                             "source_system":  "catalog",
+                                             "source_name":  "packaged:species_library.yaml",
+                                             "acquisition_method":  "package_template",
+                                             "evidence_kind":  "curated_species_record",
+                                             "support_score":  0.7,
+                                             "source_url":  null,
+                                             "locator":  "F",
+                                             "citation":  null,
+                                             "retrieved_at":  null,
+                                             "note":  "Species instantiated from packaged_species_library.",
+                                             "raw_ref":  null
+                                         }
+                                     ],
+                        "confidence":  {
+                                           "base_score":  0.95,
+                                           "evidence_bonus":  0.175,
+                                           "balance_bonus":  0.08,
+                                           "threshold_bonus":  0.0,
+                                           "thermo_bonus":  0.0,
+                                           "generation_penalty":  0.0,
+                                           "final_score":  1.0,
+                                           "tier":  "high"
+                                       },
+                        "id":  "0b3eb842597741f495cc1005db9183f2"
+                    }
+                ],
+    "reactions":  [
+                      {
+                          "key":  "gas_phase_targets::electron_attachment::cf4_parent",
+                          "family":  "electron_attachment",
+                          "equation":  "e- + CF4 -\u003e CF4-",
+                          "reactant_state_ids":  [
+                                                     "6dbab3f1f6fd40bfa1c593988d03c384"
+                                                 ],
+                          "product_state_ids":  [
+                                                    "fb8d689c18a04d1ab3983cafca5e2c4b"
+                                                ],
+                          "reactant_keys":  [
+                                                "CF4"
+                                            ],
+                          "product_keys":  [
+                                               "CF4-"
+                                           ],
+                          "lhs_tokens":  [
+                                             "e-",
+                                             "CF4"
+                                         ],
+                          "rhs_tokens":  [
+                                             "CF4-"
+                                         ],
+                          "generation":  1,
+                          "threshold_ev":  0.0,
+                          "delta_h_kj_mol":  null,
+                          "evidence":  [
+                                           {
+                                               "source_system":  "template_library",
+                                               "source_name":  "production_gas_phase_targets_library",
+                                               "acquisition_method":  "package_template",
+                                               "evidence_kind":  "curated_reaction_family",
+                                               "support_score":  0.81,
+                                               "source_url":  null,
+                                               "locator":  "curated_gas_phase_targets",
+                                               "citation":  "Production curated gas-phase target library",
+                                               "retrieved_at":  null,
+                                               "note":  "Shared reference block for newly added gas-phase process feedstocks.",
+                                               "raw_ref":  null
+                                           }
+                                       ],
+                          "confidence":  {
+                                             "base_score":  0.76,
+                                             "evidence_bonus":  0.2025,
+                                             "balance_bonus":  0.12,
+                                             "threshold_bonus":  0.1,
+                                             "thermo_bonus":  0.0,
+                                             "generation_penalty":  0.0,
+                                             "final_score":  1.0,
+                                             "tier":  "high"
+                                         },
+                          "note":  "Seed parent attachment channel for tetrafluoromethane.",
+                          "metadata":  {
+                                           "template_origin":  "curated_catalog",
+                                           "template_layer":  "catalog",
+                                           "template_priority":  20,
+                                           "catalog_resource":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+                                           "reference_source_systems":  [
+                                                                            "template_library"
+                                                                        ],
+                                           "reference_source_names":  [
+                                                                          "production_gas_phase_targets_library"
+                                                                      ]
+                                       },
+                          "id":  "13eb56e062b54cfab185b23a8866ec1d"
+                      },
+                      {
+                          "key":  "gas_phase_targets::electron_ionization::cf4_parent",
+                          "family":  "electron_ionization",
+                          "equation":  "e- + CF4 -\u003e e- + e- + CF4+",
+                          "reactant_state_ids":  [
+                                                     "6dbab3f1f6fd40bfa1c593988d03c384"
+                                                 ],
+                          "product_state_ids":  [
+                                                    "3a36a41083864f7790522bb0347c0cf0"
+                                                ],
+                          "reactant_keys":  [
+                                                "CF4"
+                                            ],
+                          "product_keys":  [
+                                               "CF4+"
+                                           ],
+                          "lhs_tokens":  [
+                                             "e-",
+                                             "CF4"
+                                         ],
+                          "rhs_tokens":  [
+                                             "e-",
+                                             "e-",
+                                             "CF4+"
+                                         ],
+                          "generation":  1,
+                          "threshold_ev":  null,
+                          "delta_h_kj_mol":  null,
+                          "evidence":  [
+                                           {
+                                               "source_system":  "template_library",
+                                               "source_name":  "production_gas_phase_targets_library",
+                                               "acquisition_method":  "package_template",
+                                               "evidence_kind":  "curated_reaction_family",
+                                               "support_score":  0.81,
+                                               "source_url":  null,
+                                               "locator":  "curated_gas_phase_targets",
+                                               "citation":  "Production curated gas-phase target library",
+                                               "retrieved_at":  null,
+                                               "note":  "Shared reference block for newly added gas-phase process feedstocks.",
+                                               "raw_ref":  null
+                                           }
+                                       ],
+                          "confidence":  {
+                                             "base_score":  0.8,
+                                             "evidence_bonus":  0.2025,
+                                             "balance_bonus":  0.12,
+                                             "threshold_bonus":  0.02,
+                                             "thermo_bonus":  0.0,
+                                             "generation_penalty":  0.0,
+                                             "final_score":  1.0,
+                                             "tier":  "high"
+                                         },
+                          "note":  "Representative parent ionization channel for tetrafluoromethane.",
+                          "metadata":  {
+                                           "template_origin":  "curated_catalog",
+                                           "template_layer":  "catalog",
+                                           "template_priority":  20,
+                                           "catalog_resource":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+                                           "reference_source_systems":  [
+                                                                            "template_library"
+                                                                        ],
+                                           "reference_source_names":  [
+                                                                          "production_gas_phase_targets_library"
+                                                                      ]
+                                       },
+                          "id":  "84137c2a444c4fe092bdafe52a475ee8"
+                      },
+                      {
+                          "key":  "promo::fluorocarbon::qdb::33b4dfefd139eba4",
+                          "family":  "electron_dissociation",
+                          "equation":  "e- + CF4 -\u003e e- + CF3 + F",
+                          "reactant_state_ids":  [
+                                                     "6dbab3f1f6fd40bfa1c593988d03c384"
+                                                 ],
+                          "product_state_ids":  [
+                                                    "5d4aa74e13ee4d65a73e886955d5b26b",
+                                                    "0b3eb842597741f495cc1005db9183f2"
+                                                ],
+                          "reactant_keys":  [
+                                                "CF4"
+                                            ],
+                          "product_keys":  [
+                                               "CF3",
+                                               "F"
+                                           ],
+                          "lhs_tokens":  [
+                                             "e-",
+                                             "CF4"
+                                         ],
+                          "rhs_tokens":  [
+                                             "e-",
+                                             "CF3",
+                                             "F"
+                                         ],
+                          "generation":  1,
+                          "threshold_ev":  null,
+                          "delta_h_kj_mol":  null,
+                          "evidence":  [
+                                           {
+                                               "source_system":  "qdb",
+                                               "source_name":  "Quantemol-DB",
+                                               "acquisition_method":  "offline_snapshot",
+                                               "evidence_kind":  "validated_chemistry_record",
+                                               "support_score":  0.88,
+                                               "source_url":  "https://quantemoldb.com/chemistries/api/",
+                                               "locator":  null,
+                                               "citation":  "Illustrative normalized QDB halogen-fluorocarbon template-promotion snapshot",
+                                               "retrieved_at":  null,
+                                               "note":  "Representative CF4 dissociation channel promoted into the fluorocarbon family.",
+                                               "raw_ref":  null
+                                           }
+                                       ],
+                          "confidence":  {
+                                             "base_score":  0.88,
+                                             "evidence_bonus":  0.22,
+                                             "balance_bonus":  0.12,
+                                             "threshold_bonus":  0.02,
+                                             "thermo_bonus":  0.0,
+                                             "generation_penalty":  0.0,
+                                             "final_score":  1.0,
+                                             "tier":  "high"
+                                         },
+                          "note":  "Source-backed template promotion for fluorocarbon family from Quantemol-DB (curated_bridge). Representative CF4 dissociation channel promoted into the fluorocarbon family.",
+                          "metadata":  {
+                                           "template_origin":  "source_backed_promotion",
+                                           "template_layer":  "promotion",
+                                           "template_priority":  60,
+                                           "template_source_system":  "qdb",
+                                           "template_source_name":  "Quantemol-DB",
+                                           "source_support_score":  0.88,
+                                           "source_url":  "https://quantemoldb.com/chemistries/api/",
+                                           "promotion_stage":  "curated_bridge",
+                                           "promotion_target_family":  "fluorocarbon",
+                                           "promotion_reaction_family":  "electron_dissociation"
+                                       },
+                          "id":  "969125100cb3443c9fa3d64c3a4299d4"
+                      }
+                  ],
+    "diagnostics":  [
+                        {
+                            "level":  "warning",
+                            "code":  "generic_state",
+                            "message":  "Generic state synthesized for Ar+",
+                            "context":  {
+                                            "species_key":  "Ar+"
+                                        }
+                        }
+                    ]
+}

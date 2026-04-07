@@ -1,0 +1,17 @@
+.venv/
+.pytest_cache/
+.pytest_tmp/
+.pytest_work/
+.test_work/
+pytest_tmp/
+pytest_tmp2/
+pytest_tmp3/
+.tmp*/
+tmp*/
+.push_repo/
+.push_stage/
+__pycache__/
+*.pyc
+src/plasma_reaction_builder.egg-info/
+examples/production_blueprint/.generated_runtime_audits_smoke/
+.tmp_readme_verify/

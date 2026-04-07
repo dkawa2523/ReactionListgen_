@@ -1,0 +1,82 @@
+extends: config_focused_runtime_base.yaml
+
+feeds:
+  - species_key: Cl2
+    formula: Cl2
+    display_name: Chlorine
+  - species_key: HCl
+    formula: HCl
+    display_name: Hydrogen chloride
+  - species_key: Br2
+    formula: Br2
+    display_name: Bromine
+  - species_key: HBr
+    formula: HBr
+    display_name: Hydrogen bromide
+  - species_key: BCl3
+    formula: BCl3
+    display_name: Boron trichloride
+  - species_key: H2
+    formula: H2
+    display_name: Hydrogen
+  - species_key: O2
+    formula: O2
+    display_name: Oxygen
+
+projectiles: [e-]
+
+catalog_paths:
+  - catalog_00_references.yaml
+  - catalog_43_reactions_electron_ionization_gas_phase_targets.yaml
+  - catalog_44_reactions_electron_attachment_gas_phase_targets.yaml
+  - catalog_45_reactions_electron_attachment_chlorine.yaml
+  - catalog_46_reactions_electron_ionization_chlorine.yaml
+  - catalog_47_reactions_electron_dissociation_chlorine.yaml
+  - catalog_48_reactions_radical_neutral_reaction_chlorine.yaml
+  - catalog_49_reactions_electron_attachment_bromine.yaml
+  - catalog_50_reactions_electron_ionization_bromine.yaml
+  - catalog_51_reactions_electron_dissociation_bromine.yaml
+  - catalog_52_reactions_radical_neutral_reaction_bromine.yaml
+  - catalog_56_reactions_ion_neutral_followup_bromine.yaml
+  - catalog_57_reactions_dissociative_recombination_bromine.yaml
+  - catalog_60_reactions_electron_dissociation_process_gases.yaml
+  - catalog_61_reactions_ion_neutral_followup_process_gases.yaml
+  - catalog_62_reactions_dissociative_recombination_process_gases.yaml
+  - catalog_67_reactions_ion_neutral_followup_chlorine.yaml
+  - catalog_68_reactions_dissociative_recombination_chlorine.yaml
+
+state_masters:
+  - path: state_master_base.yaml
+    families: [core_plasma, hydrogen, oxygen, chlorine, bromine, boron]
+
+template_promotions:
+  source_backed_templates:
+    enabled: true
+    source_systems: [qdb]
+    target_families: [chlorine, bromine, boron]
+    allowed_reaction_families:
+      [
+        electron_attachment,
+        electron_dissociation,
+        radical_neutral_reaction,
+        ion_neutral_followup,
+        dissociative_recombination,
+      ]
+    min_support_score: 0.82
+    max_templates_per_family: 8
+    require_catalog_species: true
+
+limits:
+  max_generation: 3
+  beam_width: 80
+  max_species: 128
+
+bootstrap:
+  reaction_evidence:
+    sources:
+      - kind: qdb_snapshot
+        path: ../snapshots/qdb_halogen_fluorocarbon_template_promotion_snapshot.json
+      - kind: qdb_snapshot
+        path: ../snapshots/qdb_bromine_template_promotion_snapshot.json
+      - kind: qdb_snapshot
+        path: ../snapshots/qdb_process_precursor_template_promotion_snapshot.json

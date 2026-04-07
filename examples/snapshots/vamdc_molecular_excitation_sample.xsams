@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XSAMSData xmlns="http://vamdc.org/xml/xsams/1.0">
+  <Species>
+    <Molecules>
+      <Molecule speciesID="M_O2">
+        <MolecularChemicalSpecies>
+          <StoichiometricFormula>O2</StoichiometricFormula>
+          <ChemicalName><Value>Oxygen</Value></ChemicalName>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="M_O2_C">
+        <MolecularChemicalSpecies>
+          <StoichiometricFormula>O2</StoichiometricFormula>
+          <ChemicalName><Value>O2(c^1Σ_u-)</Value></ChemicalName>
+        </MolecularChemicalSpecies>
+      </Molecule>
+    </Molecules>
+    <Particles>
+      <Particle speciesID="P_E">
+        <ParticleProperties>
+          <Name>e-</Name>
+        </ParticleProperties>
+      </Particle>
+    </Particles>
+  </Species>
+  <Sources>
+    <Source sourceID="S1">
+      <Title>Illustrative VAMDC molecular excitation dataset</Title>
+      <Year>2025</Year>
+      <DOI>10.0000/example-vamdc-excitation</DOI>
+    </Source>
+  </Sources>
+  <Processes>
+    <Collisions>
+      <Collision>
+        <Reactant><SpeciesRef>P_E</SpeciesRef></Reactant>
+        <Reactant><SpeciesRef>M_O2</SpeciesRef></Reactant>
+        <Product><SpeciesRef>P_E</SpeciesRef></Product>
+        <Product><SpeciesRef>M_O2_C</SpeciesRef></Product>
+        <SourceRef>S1</SourceRef>
+      </Collision>
+    </Collisions>
+  </Processes>
+</XSAMSData>

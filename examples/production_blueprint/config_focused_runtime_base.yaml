@@ -1,0 +1,24 @@
+libraries: []
+
+catalog_policy:
+  reaction_conflict_policy: prefer_higher_priority
+
+state_filters:
+  charge_window_min: -1
+  charge_window_max: 1
+
+conditions:
+  electron_max_ev: 10000.0
+  ion_max_ev: 200.0
+  gas_temperature_k: 300.0
+
+bootstrap:
+  pubchem:
+    enabled: false
+  nist_asd:
+    enabled: false
+  atct:
+    enabled: false
+  reaction_evidence:
+    seed_templates: false
+    sources: []

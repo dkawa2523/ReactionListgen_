@@ -1,0 +1,12 @@
+reactions:
+  - key: nitrogen::electron_ionization::n2_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [N2]
+    products: [N2+]
+    lhs_tokens: [e-, N2]
+    rhs_tokens: [e-, e-, N2+]
+    threshold_ev: 15.58
+    base_confidence: 0.88
+    reference_ids: [curated_nitrogen]
+    note: "Representative parent ionization channel for nitrogen."

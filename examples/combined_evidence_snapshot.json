@@ -1,0 +1,264 @@
+{
+  "manifest": {
+    "generated_at": "2026-04-05T12:43:04+00:00",
+    "config_path": "/mnt/data/prb_v9_useful/examples/config.yaml",
+    "total_records": 10,
+    "sources": [
+      {
+        "source_id": "ideadb",
+        "source_name": "IDEADB (illustrative XSAMS)",
+        "record_count": 1,
+        "acquisition_method": "offline_snapshot",
+        "evidence_kind": "collision_process_record",
+        "source_family": "electron_attachment",
+        "source_priority": 90
+      },
+      {
+        "source_id": "kida",
+        "source_name": "KIDA",
+        "record_count": 2,
+        "acquisition_method": "official_download",
+        "evidence_kind": "astrochemistry_network_record",
+        "source_family": "astrochemistry",
+        "source_priority": 30
+      },
+      {
+        "source_id": "nist_kinetics",
+        "source_name": "NIST Chemical Kinetics Database",
+        "record_count": 2,
+        "acquisition_method": "offline_snapshot",
+        "evidence_kind": "thermal_gas_phase_record",
+        "source_family": "thermal_kinetics",
+        "source_priority": 75
+      },
+      {
+        "source_id": "qdb",
+        "source_name": "Quantemol-DB",
+        "record_count": 3,
+        "acquisition_method": "offline_snapshot",
+        "evidence_kind": "validated_chemistry_record",
+        "source_family": "plasma_chemistry",
+        "source_priority": 95
+      },
+      {
+        "source_id": "umist",
+        "source_name": "UMIST Database for Astrochemistry",
+        "record_count": 2,
+        "acquisition_method": "official_download",
+        "evidence_kind": "astrochemistry_network_record",
+        "source_family": "astrochemistry",
+        "source_priority": 35
+      }
+    ]
+  },
+  "records": [
+    {
+      "source_system": "nist_kinetics",
+      "source_name": "NIST Chemical Kinetics Database",
+      "reactants": [
+        "CH3",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "citation": "Illustrative normalized NIST kinetics snapshot",
+      "source_url": "https://kinetics.nist.gov/kinetics/",
+      "support_score": 0.8019999999999999,
+      "note": "Reverse-direction thermal record used as supporting evidence for CH4 fragmentation family.",
+      "metadata": {
+        "source_family": "thermal_kinetics",
+        "source_priority": 75
+      }
+    },
+    {
+      "source_system": "nist_kinetics",
+      "source_name": "NIST Chemical Kinetics Database",
+      "reactants": [
+        "CH2",
+        "H"
+      ],
+      "products": [
+        "CH3"
+      ],
+      "citation": "Illustrative normalized NIST kinetics snapshot",
+      "source_url": "https://kinetics.nist.gov/kinetics/",
+      "support_score": 0.7879999999999999,
+      "note": "Reverse-direction thermal record used as supporting evidence for radical contraction ladder.",
+      "metadata": {
+        "source_family": "thermal_kinetics",
+        "source_priority": 75
+      }
+    },
+    {
+      "source_system": "qdb",
+      "source_name": "Quantemol-DB",
+      "reactants": [
+        "CH4"
+      ],
+      "products": [
+        "CH4+"
+      ],
+      "citation": "Illustrative normalized QDB snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.908,
+      "note": "Electron-impact parent ionization channel represented in a QDB chemistry set.",
+      "metadata": {
+        "chemistry_id": 4,
+        "source_family": "plasma_chemistry",
+        "source_priority": 95
+      }
+    },
+    {
+      "source_system": "qdb",
+      "source_name": "Quantemol-DB",
+      "reactants": [
+        "CH4"
+      ],
+      "products": [
+        "CH3+",
+        "H"
+      ],
+      "citation": "Illustrative normalized QDB snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.908,
+      "note": "Electron-impact dissociative ionization channel represented in a QDB chemistry set.",
+      "metadata": {
+        "chemistry_id": 4,
+        "source_family": "plasma_chemistry",
+        "source_priority": 95
+      }
+    },
+    {
+      "source_system": "qdb",
+      "source_name": "Quantemol-DB",
+      "reactants": [
+        "c-C4F8"
+      ],
+      "products": [
+        "C2F4+",
+        "C2F4"
+      ],
+      "citation": "Illustrative normalized QDB snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.901,
+      "note": "Fluorocarbon ionization channel represented in a QDB chemistry set.",
+      "metadata": {
+        "chemistry_id": 11,
+        "source_family": "plasma_chemistry",
+        "source_priority": 95
+      }
+    },
+    {
+      "source_system": "umist",
+      "source_name": "UMIST Database for Astrochemistry",
+      "reactants": [
+        "CH3",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "citation": "UMIST Rate22 reaction #9001",
+      "source_url": "https://umistdatabase.uk/react/9001",
+      "support_score": 0.506,
+      "note": "UMIST RATE22 #9001 type=NN method=L accuracy=factor2; Illustrative UMIST reverse hydrogenation",
+      "metadata": {
+        "reaction_id": "9001",
+        "reaction_type": "NN",
+        "method": "L",
+        "reference_code": "DEMOREF",
+        "accuracy": "factor2",
+        "source_family": "astrochemistry",
+        "source_priority": 35
+      }
+    },
+    {
+      "source_system": "umist",
+      "source_name": "UMIST Database for Astrochemistry",
+      "reactants": [
+        "CH2",
+        "H2"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "citation": "UMIST Rate22 reaction #9002",
+      "source_url": "https://umistdatabase.uk/react/9002",
+      "support_score": 0.548,
+      "note": "UMIST RATE22 #9002 type=IN method=C accuracy=factor2; Illustrative UMIST radical stabilization",
+      "metadata": {
+        "reaction_id": "9002",
+        "reaction_type": "IN",
+        "method": "C",
+        "reference_code": "DEMOREF",
+        "accuracy": "factor2",
+        "source_family": "astrochemistry",
+        "source_priority": 35
+      }
+    },
+    {
+      "source_system": "kida",
+      "source_name": "KIDA",
+      "reactants": [
+        "CH3",
+        "H"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "citation": "KIDA reaction #1001",
+      "source_url": null,
+      "support_score": 0.48,
+      "note": "KIDA network record #1001 type=4; parameter_count=5",
+      "metadata": {
+        "reaction_id": "1001",
+        "type_code": "4",
+        "source_family": "astrochemistry",
+        "source_priority": 30
+      }
+    },
+    {
+      "source_system": "kida",
+      "source_name": "KIDA",
+      "reactants": [
+        "CH2",
+        "H2"
+      ],
+      "products": [
+        "CH4"
+      ],
+      "citation": "KIDA reaction #1002",
+      "source_url": null,
+      "support_score": 0.48,
+      "note": "KIDA network record #1002 type=4; parameter_count=5",
+      "metadata": {
+        "reaction_id": "1002",
+        "type_code": "4",
+        "source_family": "astrochemistry",
+        "source_priority": 30
+      }
+    },
+    {
+      "source_system": "ideadb",
+      "source_name": "IDEADB (illustrative XSAMS)",
+      "reactants": [
+        "e-",
+        "CH4"
+      ],
+      "products": [
+        "H-",
+        "CH3"
+      ],
+      "citation": "Illustrative IDEADB-style DEA dataset; 2024; 10.0000/example",
+      "source_url": null,
+      "support_score": 0.82,
+      "note": "VAMDC XSAMS dissociative_electron_attachment record.",
+      "metadata": {
+        "node": "ideadb",
+        "source_family": "electron_attachment",
+        "source_priority": 90
+      }
+    }
+  ]
+}

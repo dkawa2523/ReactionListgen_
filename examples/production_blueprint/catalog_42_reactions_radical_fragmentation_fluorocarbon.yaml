@@ -1,0 +1,20 @@
+reactions:
+  - key: fluorocarbon::radical_fragmentation::c4f7_to_c3f5_cf2
+    family: radical_fragmentation
+    reactants: [C4F7]
+    products: [C3F5, CF2]
+    lhs_tokens: [C4F7]
+    rhs_tokens: [C3F5, CF2]
+    base_confidence: 0.56
+    reference_ids: [curated_fragmentation_family]
+    note: "Representative fluorocarbon radical fragmentation channel."
+
+  - key: fluorocarbon::radical_fragmentation::c3f5_to_c2f3_cf2
+    family: radical_fragmentation
+    reactants: [C3F5]
+    products: [C2F3, CF2]
+    lhs_tokens: [C3F5]
+    rhs_tokens: [C2F3, CF2]
+    base_confidence: 0.54
+    reference_ids: [curated_fragmentation_family]
+    note: "Representative follow-up radical fragmentation channel."

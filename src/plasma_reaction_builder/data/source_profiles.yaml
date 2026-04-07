@@ -1,0 +1,51 @@
+profiles:
+  - source_id: pubchem
+    family: identity
+    default_support: 0.88
+    priority: 90
+    note: Canonical identity lookup.
+  - source_id: nist_asd
+    family: atomic_states
+    default_support: 0.86
+    priority: 90
+    note: Atomic and atomic-ion state records.
+  - source_id: atct
+    family: thermochemistry
+    default_support: 0.90
+    priority: 95
+    note: Thermochemistry and reaction enthalpy basis.
+  - source_id: qdb
+    family: plasma_chemistry
+    default_support: 0.88
+    priority: 95
+    note: Validated plasma chemistry source.
+  - source_id: lxcat
+    family: plasma_collision
+    default_support: 0.85
+    priority: 92
+    note: Plasma collision source.
+  - source_id: ideadb
+    family: electron_attachment
+    default_support: 0.82
+    priority: 90
+    note: Dissociative electron attachment records.
+  - source_id: vamdc
+    family: state_or_collision_exchange
+    default_support: 0.72
+    priority: 65
+    note: Generic VAMDC node default.
+  - source_id: nist_kinetics
+    family: thermal_kinetics
+    default_support: 0.76
+    priority: 75
+    note: Thermal gas-phase kinetics evidence.
+  - source_id: umist
+    family: astrochemistry
+    default_support: 0.52
+    priority: 35
+    note: Astrochemistry network source; weak prior for plasma use.
+  - source_id: kida
+    family: astrochemistry
+    default_support: 0.48
+    priority: 30
+    note: Astrochemistry network source; weak prior for plasma use.

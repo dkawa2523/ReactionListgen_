@@ -1,0 +1,24 @@
+reactions:
+  - key: bromine::electron_attachment::br2_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [Br2]
+    products: [Br2-]
+    lhs_tokens: [e-, Br2]
+    rhs_tokens: [Br2-]
+    threshold_ev: 0.0
+    base_confidence: 0.78
+    reference_ids: [curated_bromine]
+    note: "Representative parent attachment channel for bromine."
+
+  - key: bromine::electron_attachment::hbr_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [HBr]
+    products: [HBr-]
+    lhs_tokens: [e-, HBr]
+    rhs_tokens: [HBr-]
+    threshold_ev: 0.0
+    base_confidence: 0.77
+    reference_ids: [curated_bromine]
+    note: "Representative parent attachment channel for hydrogen bromide."

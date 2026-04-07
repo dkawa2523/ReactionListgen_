@@ -1,0 +1,50 @@
+extends: config_focused_runtime_base.yaml
+
+feeds:
+  - species_key: SiH4
+    formula: SiH4
+    display_name: Silane
+  - species_key: SiH2Cl2
+    formula: SiH2Cl2
+    display_name: Dichlorosilane
+  - species_key: SiHCl3
+    formula: SiHCl3
+    display_name: Trichlorosilane
+  - species_key: H2
+    formula: H2
+    display_name: Hydrogen
+
+projectiles: [e-]
+
+catalog_paths:
+  - catalog_00_references.yaml
+  - catalog_53_reactions_electron_ionization_silicon.yaml
+  - catalog_54_reactions_electron_dissociation_silicon.yaml
+  - catalog_55_reactions_radical_neutral_reaction_silicon.yaml
+  - catalog_58_reactions_ion_neutral_followup_silicon.yaml
+  - catalog_59_reactions_dissociative_recombination_silicon.yaml
+
+state_masters:
+  - path: state_master_base.yaml
+    families: [core_plasma, hydrogen, chlorine, silicon]
+
+template_promotions:
+  source_backed_templates:
+    enabled: true
+    source_systems: [qdb]
+    target_families: [silicon]
+    allowed_reaction_families: [ion_neutral_followup, dissociative_recombination]
+    min_support_score: 0.82
+    max_templates_per_family: 6
+    require_catalog_species: true
+
+limits:
+  max_generation: 3
+  beam_width: 64
+  max_species: 96
+
+bootstrap:
+  reaction_evidence:
+    sources:
+      - kind: qdb_snapshot
+        path: ../snapshots/qdb_silicon_template_promotion_snapshot.json

@@ -1,0 +1,33 @@
+reactions:
+  - key: silicon::dissociative_recombination::sih4_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [SiH4+]
+    products: [SiH3, H]
+    lhs_tokens: [e-, SiH4+]
+    rhs_tokens: [SiH3, H]
+    base_confidence: 0.71
+    reference_ids: [curated_silicon]
+    note: "Representative dissociative recombination channel for silane cations."
+
+  - key: silicon::dissociative_recombination::sih2cl2_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [SiH2Cl2+]
+    products: [SiHCl2, H]
+    lhs_tokens: [e-, SiH2Cl2+]
+    rhs_tokens: [SiHCl2, H]
+    base_confidence: 0.70
+    reference_ids: [curated_silicon]
+    note: "Representative dissociative recombination channel for dichlorosilane cations."
+
+  - key: silicon::dissociative_recombination::sihcl3_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [SiHCl3+]
+    products: [SiCl3, H]
+    lhs_tokens: [e-, SiHCl3+]
+    rhs_tokens: [SiCl3, H]
+    base_confidence: 0.69
+    reference_ids: [curated_silicon]
+    note: "Representative dissociative recombination channel for trichlorosilane cations."

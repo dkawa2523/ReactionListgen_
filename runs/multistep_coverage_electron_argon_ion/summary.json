@@ -1,0 +1,1078 @@
+[
+  {
+    "species_key": "Ar",
+    "config": "config_etch_common_support_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 4,
+    "reaction_count": 3,
+    "reaction_generations": [
+      1
+    ],
+    "max_generation_seen": 1,
+    "multi_step": false,
+    "gen2plus_reaction_count": 0,
+    "electron_reaction_count": 3,
+    "ar_plus_reaction_count": 1,
+    "families": [
+      "electron_excitation",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [],
+    "charged_species": [
+      "Ar+"
+    ],
+    "gen2plus_charged_species": [],
+    "gen2plus_equations": [],
+    "error": ""
+  },
+  {
+    "species_key": "He",
+    "config": "config_etch_common_support_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 1,
+    "reaction_count": 0,
+    "reaction_generations": [],
+    "max_generation_seen": 0,
+    "multi_step": false,
+    "gen2plus_reaction_count": 0,
+    "electron_reaction_count": 0,
+    "ar_plus_reaction_count": 0,
+    "families": [],
+    "gen2plus_families": [],
+    "charged_species": [],
+    "gen2plus_charged_species": [],
+    "gen2plus_equations": [],
+    "error": ""
+  },
+  {
+    "species_key": "N2",
+    "config": "config_etch_common_support_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 4,
+    "reaction_count": 3,
+    "reaction_generations": [
+      1
+    ],
+    "max_generation_seen": 1,
+    "multi_step": false,
+    "gen2plus_reaction_count": 0,
+    "electron_reaction_count": 3,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "electron_dissociation",
+      "electron_excitation",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [],
+    "charged_species": [
+      "N2+"
+    ],
+    "gen2plus_charged_species": [],
+    "gen2plus_equations": [],
+    "error": ""
+  },
+  {
+    "species_key": "H2",
+    "config": "config_etch_common_support_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 1,
+    "reaction_count": 0,
+    "reaction_generations": [],
+    "max_generation_seen": 0,
+    "multi_step": false,
+    "gen2plus_reaction_count": 0,
+    "electron_reaction_count": 0,
+    "ar_plus_reaction_count": 0,
+    "families": [],
+    "gen2plus_families": [],
+    "charged_species": [],
+    "gen2plus_charged_species": [],
+    "gen2plus_equations": [],
+    "error": ""
+  },
+  {
+    "species_key": "O2",
+    "config": "config_o2_electron_argon_ion_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 10,
+    "reaction_count": 14,
+    "reaction_generations": [
+      1,
+      2,
+      3
+    ],
+    "max_generation_seen": 3,
+    "multi_step": true,
+    "gen2plus_reaction_count": 7,
+    "electron_reaction_count": 9,
+    "ar_plus_reaction_count": 5,
+    "families": [
+      "charge_transfer",
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_excitation",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "mutual_neutralization"
+    ],
+    "gen2plus_families": [
+      "charge_transfer",
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "mutual_neutralization"
+    ],
+    "charged_species": [
+      "Ar+",
+      "O+",
+      "O-",
+      "O2+",
+      "O2-"
+    ],
+    "gen2plus_charged_species": [
+      "Ar+",
+      "O+",
+      "O-",
+      "O2+",
+      "O2-"
+    ],
+    "gen2plus_equations": [
+      "Ar+ + O -> Ar + O+",
+      "e- + O2+ -> O + O",
+      "e- + O -> O-",
+      "Ar+ + O2- -> Ar + O2",
+      "Ar+ + O- -> Ar + O",
+      "e- + Ar -> e- + e- + Ar+",
+      "O+ + O2 -> O + O2+"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "CF4",
+    "config": "config_etch_fluorocarbon_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 5,
+    "reaction_count": 3,
+    "reaction_generations": [
+      1
+    ],
+    "max_generation_seen": 1,
+    "multi_step": false,
+    "gen2plus_reaction_count": 0,
+    "electron_reaction_count": 3,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [],
+    "charged_species": [
+      "CF4+",
+      "CF4-"
+    ],
+    "gen2plus_charged_species": [],
+    "gen2plus_equations": [],
+    "error": ""
+  },
+  {
+    "species_key": "CHF3",
+    "config": "config_etch_fluorocarbon_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 3,
+    "reaction_count": 2,
+    "reaction_generations": [
+      1
+    ],
+    "max_generation_seen": 1,
+    "multi_step": false,
+    "gen2plus_reaction_count": 0,
+    "electron_reaction_count": 2,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "electron_attachment",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [],
+    "charged_species": [
+      "CHF3+",
+      "CHF3-"
+    ],
+    "gen2plus_charged_species": [],
+    "gen2plus_equations": [],
+    "error": ""
+  },
+  {
+    "species_key": "CH2F2",
+    "config": "config_etch_fluorocarbon_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 3,
+    "reaction_count": 2,
+    "reaction_generations": [
+      1
+    ],
+    "max_generation_seen": 1,
+    "multi_step": false,
+    "gen2plus_reaction_count": 0,
+    "electron_reaction_count": 2,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "electron_attachment",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [],
+    "charged_species": [
+      "CH2F2+",
+      "CH2F2-"
+    ],
+    "gen2plus_charged_species": [],
+    "gen2plus_equations": [],
+    "error": ""
+  },
+  {
+    "species_key": "CH3F",
+    "config": "config_etch_fluorocarbon_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 3,
+    "reaction_count": 2,
+    "reaction_generations": [
+      1
+    ],
+    "max_generation_seen": 1,
+    "multi_step": false,
+    "gen2plus_reaction_count": 0,
+    "electron_reaction_count": 2,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "electron_attachment",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [],
+    "charged_species": [
+      "CH3F+",
+      "CH3F-"
+    ],
+    "gen2plus_charged_species": [],
+    "gen2plus_equations": [],
+    "error": ""
+  },
+  {
+    "species_key": "C2F6",
+    "config": "config_etch_fluorocarbon_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 3,
+    "reaction_count": 2,
+    "reaction_generations": [
+      1
+    ],
+    "max_generation_seen": 1,
+    "multi_step": false,
+    "gen2plus_reaction_count": 0,
+    "electron_reaction_count": 2,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "electron_attachment",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [],
+    "charged_species": [
+      "C2F6+",
+      "C2F6-"
+    ],
+    "gen2plus_charged_species": [],
+    "gen2plus_equations": [],
+    "error": ""
+  },
+  {
+    "species_key": "c-C4F8",
+    "config": "config_etch_fluorocarbon_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 14,
+    "reaction_count": 11,
+    "reaction_generations": [
+      1,
+      2
+    ],
+    "max_generation_seen": 2,
+    "multi_step": true,
+    "gen2plus_reaction_count": 2,
+    "electron_reaction_count": 7,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "electron_attachment",
+      "electron_dissociative_ionization",
+      "electron_ionization",
+      "neutral_fragmentation",
+      "radical_fragmentation"
+    ],
+    "gen2plus_families": [
+      "radical_fragmentation"
+    ],
+    "charged_species": [
+      "C2F4+",
+      "C3F5+",
+      "CF3-",
+      "F-",
+      "c-C4F8+",
+      "c-C4F8-"
+    ],
+    "gen2plus_charged_species": [],
+    "gen2plus_equations": [
+      "C3F5 -> C2F3 + CF2",
+      "C4F7 -> C3F5 + CF2"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "C5F8",
+    "config": "config_etch_fluorocarbon_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 3,
+    "reaction_count": 2,
+    "reaction_generations": [
+      1
+    ],
+    "max_generation_seen": 1,
+    "multi_step": false,
+    "gen2plus_reaction_count": 0,
+    "electron_reaction_count": 2,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "electron_attachment",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [],
+    "charged_species": [
+      "C5F8+",
+      "C5F8-"
+    ],
+    "gen2plus_charged_species": [],
+    "gen2plus_equations": [],
+    "error": ""
+  },
+  {
+    "species_key": "SF6",
+    "config": "config_etch_inorganic_fluoride_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 7,
+    "reaction_count": 10,
+    "reaction_generations": [
+      1,
+      2
+    ],
+    "max_generation_seen": 2,
+    "multi_step": true,
+    "gen2plus_reaction_count": 5,
+    "electron_reaction_count": 8,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "collisional_quenching",
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_excitation",
+      "electron_ionization",
+      "radiative_relaxation",
+      "superelastic_deexcitation"
+    ],
+    "gen2plus_families": [
+      "collisional_quenching",
+      "dissociative_recombination",
+      "radiative_relaxation",
+      "superelastic_deexcitation"
+    ],
+    "charged_species": [
+      "SF6+",
+      "SF6-"
+    ],
+    "gen2plus_charged_species": [
+      "SF6+"
+    ],
+    "gen2plus_equations": [
+      "e- + SF6+ -> SF5 + F",
+      "e- + SF6+ -> SF4 + F + F",
+      "SF6(A1) + SF6 -> SF6 + SF6",
+      "SF6(A1) -> SF6",
+      "e- + SF6(A1) -> e- + SF6"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "NF3",
+    "config": "config_etch_inorganic_fluoride_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 7,
+    "reaction_count": 10,
+    "reaction_generations": [
+      1,
+      2
+    ],
+    "max_generation_seen": 2,
+    "multi_step": true,
+    "gen2plus_reaction_count": 5,
+    "electron_reaction_count": 8,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "collisional_quenching",
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_excitation",
+      "electron_ionization",
+      "radiative_relaxation",
+      "superelastic_deexcitation"
+    ],
+    "gen2plus_families": [
+      "collisional_quenching",
+      "dissociative_recombination",
+      "radiative_relaxation",
+      "superelastic_deexcitation"
+    ],
+    "charged_species": [
+      "NF3+",
+      "NF3-"
+    ],
+    "gen2plus_charged_species": [
+      "NF3+"
+    ],
+    "gen2plus_equations": [
+      "e- + NF3+ -> NF2 + F",
+      "e- + NF3+ -> N + F + F + F",
+      "NF3(A1) + NF3 -> NF3 + NF3",
+      "NF3(A1) -> NF3",
+      "e- + NF3(A1) -> e- + NF3"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "Cl2",
+    "config": "config_etch_halogen_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 4,
+    "reaction_count": 4,
+    "reaction_generations": [
+      1,
+      2
+    ],
+    "max_generation_seen": 2,
+    "multi_step": true,
+    "gen2plus_reaction_count": 1,
+    "electron_reaction_count": 4,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [
+      "dissociative_recombination"
+    ],
+    "charged_species": [
+      "Cl2+",
+      "Cl2-"
+    ],
+    "gen2plus_charged_species": [
+      "Cl2+"
+    ],
+    "gen2plus_equations": [
+      "e- + Cl2+ -> Cl + Cl"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "HBr",
+    "config": "config_etch_halogen_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 8,
+    "reaction_count": 10,
+    "reaction_generations": [
+      1,
+      2,
+      3
+    ],
+    "max_generation_seen": 3,
+    "multi_step": true,
+    "gen2plus_reaction_count": 7,
+    "electron_reaction_count": 7,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "radical_neutral_reaction"
+    ],
+    "gen2plus_families": [
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "radical_neutral_reaction"
+    ],
+    "charged_species": [
+      "Br2+",
+      "Br2-",
+      "HBr+",
+      "HBr-"
+    ],
+    "gen2plus_charged_species": [
+      "Br2+",
+      "Br2-",
+      "HBr+"
+    ],
+    "gen2plus_equations": [
+      "e- + HBr+ -> H + Br",
+      "Br + HBr -> Br2 + H",
+      "e- + Br2 -> Br2-",
+      "e- + Br2 -> e- + Br + Br",
+      "e- + Br2 -> e- + e- + Br2+",
+      "HBr+ + Br2 -> Br2+ + HBr",
+      "H + Br2 -> HBr + Br"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "HCl",
+    "config": "config_etch_halogen_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 8,
+    "reaction_count": 10,
+    "reaction_generations": [
+      1,
+      2,
+      3
+    ],
+    "max_generation_seen": 3,
+    "multi_step": true,
+    "gen2plus_reaction_count": 7,
+    "electron_reaction_count": 7,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "radical_neutral_reaction"
+    ],
+    "gen2plus_families": [
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "radical_neutral_reaction"
+    ],
+    "charged_species": [
+      "Cl2+",
+      "Cl2-",
+      "HCl+",
+      "HCl-"
+    ],
+    "gen2plus_charged_species": [
+      "Cl2+",
+      "Cl2-",
+      "HCl+"
+    ],
+    "gen2plus_equations": [
+      "e- + HCl+ -> H + Cl",
+      "Cl + HCl -> Cl2 + H",
+      "e- + Cl2 -> e- + Cl + Cl",
+      "HCl+ + Cl2 -> Cl2+ + HCl",
+      "H + Cl2 -> HCl + Cl",
+      "e- + Cl2 -> Cl2-",
+      "e- + Cl2 -> e- + e- + Cl2+"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "BCl3",
+    "config": "config_etch_halogen_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 9,
+    "reaction_count": 10,
+    "reaction_generations": [
+      1,
+      2,
+      3
+    ],
+    "max_generation_seen": 3,
+    "multi_step": true,
+    "gen2plus_reaction_count": 6,
+    "electron_reaction_count": 10,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_ionization"
+    ],
+    "charged_species": [
+      "BCl3+",
+      "BCl3-",
+      "Cl2+",
+      "Cl2-"
+    ],
+    "gen2plus_charged_species": [
+      "BCl3+",
+      "Cl2+",
+      "Cl2-"
+    ],
+    "gen2plus_equations": [
+      "e- + Cl2 -> e- + Cl + Cl",
+      "e- + Cl2 -> Cl2-",
+      "e- + Cl2 -> e- + e- + Cl2+",
+      "e- + BCl3+ -> BCl2 + Cl",
+      "e- + BCl3+ -> B + Cl + Cl2",
+      "e- + Cl2+ -> Cl + Cl"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "SiH4",
+    "config": "config_deposition_silane_gas_phase_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 7,
+    "reaction_count": 8,
+    "reaction_generations": [
+      1,
+      2,
+      3
+    ],
+    "max_generation_seen": 3,
+    "multi_step": true,
+    "gen2plus_reaction_count": 6,
+    "electron_reaction_count": 5,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "dissociative_recombination",
+      "electron_dissociation",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "radical_neutral_reaction"
+    ],
+    "gen2plus_families": [
+      "dissociative_recombination",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "radical_neutral_reaction"
+    ],
+    "charged_species": [
+      "H2+",
+      "SiH4+"
+    ],
+    "gen2plus_charged_species": [
+      "H2+",
+      "SiH4+"
+    ],
+    "gen2plus_equations": [
+      "e- + SiH4+ -> SiH2 + H2",
+      "e- + SiH4+ -> SiH3 + H",
+      "SiH3 + H -> SiH4",
+      "e- + H2 -> e- + e- + H2+",
+      "SiH4+ + H2 -> SiH4 + H2+",
+      "SiH4+ + H2 -> SiH3 + H + H2+"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "SiH2Cl2",
+    "config": "config_deposition_silane_gas_phase_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 8,
+    "reaction_count": 12,
+    "reaction_generations": [
+      1,
+      2,
+      3
+    ],
+    "max_generation_seen": 3,
+    "multi_step": true,
+    "gen2plus_reaction_count": 9,
+    "electron_reaction_count": 7,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "collisional_quenching",
+      "dissociative_recombination",
+      "electron_dissociation",
+      "electron_excitation",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "radiative_relaxation",
+      "radical_neutral_reaction",
+      "superelastic_deexcitation"
+    ],
+    "gen2plus_families": [
+      "collisional_quenching",
+      "dissociative_recombination",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "radiative_relaxation",
+      "radical_neutral_reaction",
+      "superelastic_deexcitation"
+    ],
+    "charged_species": [
+      "H2+",
+      "SiH2Cl2+"
+    ],
+    "gen2plus_charged_species": [
+      "H2+",
+      "SiH2Cl2+"
+    ],
+    "gen2plus_equations": [
+      "e- + SiH2Cl2+ -> SiCl2 + H2",
+      "SiH2Cl2(A1) + SiH2Cl2 -> SiH2Cl2 + SiH2Cl2",
+      "SiH2Cl2(A1) -> SiH2Cl2",
+      "e- + SiH2Cl2(A1) -> e- + SiH2Cl2",
+      "e- + SiH2Cl2+ -> SiHCl2 + H",
+      "SiHCl2 + H -> SiH2Cl2",
+      "e- + H2 -> e- + e- + H2+",
+      "SiH2Cl2(A1) + H2 -> SiH2Cl2 + H2",
+      "SiH2Cl2+ + H2 -> SiHCl2 + H + H2+"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "SiHCl3",
+    "config": "config_deposition_silane_gas_phase_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 5,
+    "reaction_count": 8,
+    "reaction_generations": [
+      1,
+      2
+    ],
+    "max_generation_seen": 2,
+    "multi_step": true,
+    "gen2plus_reaction_count": 5,
+    "electron_reaction_count": 5,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "collisional_quenching",
+      "dissociative_recombination",
+      "electron_dissociation",
+      "electron_excitation",
+      "electron_ionization",
+      "radiative_relaxation",
+      "radical_neutral_reaction",
+      "superelastic_deexcitation"
+    ],
+    "gen2plus_families": [
+      "collisional_quenching",
+      "dissociative_recombination",
+      "radiative_relaxation",
+      "radical_neutral_reaction",
+      "superelastic_deexcitation"
+    ],
+    "charged_species": [
+      "SiHCl3+"
+    ],
+    "gen2plus_charged_species": [
+      "SiHCl3+"
+    ],
+    "gen2plus_equations": [
+      "SiHCl3(B1) + SiHCl3 -> SiHCl3 + SiHCl3",
+      "SiHCl3(B1) -> SiHCl3",
+      "e- + SiHCl3(B1) -> e- + SiHCl3",
+      "e- + SiHCl3+ -> SiCl3 + H",
+      "SiCl3 + H -> SiHCl3"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "NH3",
+    "config": "config_deposition_reactant_gas_phase_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 4,
+    "reaction_count": 3,
+    "reaction_generations": [
+      1,
+      2
+    ],
+    "max_generation_seen": 2,
+    "multi_step": true,
+    "gen2plus_reaction_count": 1,
+    "electron_reaction_count": 3,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "dissociative_recombination",
+      "electron_dissociation",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [
+      "dissociative_recombination"
+    ],
+    "charged_species": [
+      "NH3+"
+    ],
+    "gen2plus_charged_species": [
+      "NH3+"
+    ],
+    "gen2plus_equations": [
+      "e- + NH3+ -> NH2 + H"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "N2O",
+    "config": "config_deposition_reactant_gas_phase_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 4,
+    "reaction_count": 3,
+    "reaction_generations": [
+      1,
+      2
+    ],
+    "max_generation_seen": 2,
+    "multi_step": true,
+    "gen2plus_reaction_count": 1,
+    "electron_reaction_count": 3,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "dissociative_recombination",
+      "electron_dissociation",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [
+      "dissociative_recombination"
+    ],
+    "charged_species": [
+      "N2O+"
+    ],
+    "gen2plus_charged_species": [
+      "N2O+"
+    ],
+    "gen2plus_equations": [
+      "e- + N2O+ -> NO + N"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "O3",
+    "config": "config_deposition_reactant_gas_phase_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 10,
+    "reaction_count": 16,
+    "reaction_generations": [
+      1,
+      2,
+      3
+    ],
+    "max_generation_seen": 3,
+    "multi_step": true,
+    "gen2plus_reaction_count": 14,
+    "electron_reaction_count": 12,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "collisional_quenching",
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_excitation",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "radiative_relaxation",
+      "superelastic_deexcitation"
+    ],
+    "gen2plus_families": [
+      "collisional_quenching",
+      "dissociative_recombination",
+      "electron_attachment",
+      "electron_dissociation",
+      "electron_excitation",
+      "electron_ionization",
+      "ion_neutral_followup",
+      "radiative_relaxation",
+      "superelastic_deexcitation"
+    ],
+    "charged_species": [
+      "O-",
+      "O2+",
+      "O2-",
+      "O3+"
+    ],
+    "gen2plus_charged_species": [
+      "O-",
+      "O2+",
+      "O2-",
+      "O3+"
+    ],
+    "gen2plus_equations": [
+      "e- + O2 -> O- + O",
+      "e- + O2 -> O2-",
+      "e- + O2 -> e- + O + O",
+      "e- + O2 -> e- + O2(a1Delta_g)",
+      "e- + O2 -> e- + O2(b1Sigma_g+)",
+      "e- + O2 -> e- + e- + O2+",
+      "e- + O3+ -> O2 + O",
+      "O3+ + O2 -> O2 + O + O2+",
+      "O2 -> O2[c1Sigma_u_minus]",
+      "e- + O2 -> e- + O2[c1Sigma_u_minus]",
+      "e- + O2 -> e- + O2(c1Sigma_u_minus)",
+      "O2(c1Sigma_u_minus) + O2 -> O2 + O2",
+      "O2(c1Sigma_u_minus) -> O2",
+      "e- + O2(c1Sigma_u_minus) -> e- + O2"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "WF6",
+    "config": "config_advanced_precursor_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 5,
+    "reaction_count": 6,
+    "reaction_generations": [
+      1,
+      2
+    ],
+    "max_generation_seen": 2,
+    "multi_step": true,
+    "gen2plus_reaction_count": 3,
+    "electron_reaction_count": 6,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "dissociative_recombination",
+      "electron_dissociation",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [
+      "dissociative_recombination",
+      "electron_dissociation"
+    ],
+    "charged_species": [
+      "WF6+"
+    ],
+    "gen2plus_charged_species": [
+      "WF6+"
+    ],
+    "gen2plus_equations": [
+      "e- + WF6+ -> WF5 + F",
+      "e- + WF5 -> e- + WF4 + F",
+      "e- + WF6+ -> WF4 + F + F"
+    ],
+    "error": ""
+  },
+  {
+    "species_key": "C8H20O4Si",
+    "config": "config_advanced_precursor_runtime.yaml",
+    "projectiles": [
+      "e-",
+      "Ar+"
+    ],
+    "species_count": 4,
+    "reaction_count": 3,
+    "reaction_generations": [
+      1,
+      2
+    ],
+    "max_generation_seen": 2,
+    "multi_step": true,
+    "gen2plus_reaction_count": 1,
+    "electron_reaction_count": 3,
+    "ar_plus_reaction_count": 0,
+    "families": [
+      "dissociative_recombination",
+      "electron_dissociation",
+      "electron_ionization"
+    ],
+    "gen2plus_families": [
+      "dissociative_recombination"
+    ],
+    "charged_species": [
+      "C8H20O4Si+"
+    ],
+    "gen2plus_charged_species": [
+      "C8H20O4Si+"
+    ],
+    "gen2plus_equations": [
+      "e- + C8H20O4Si+ -> C6H15O3Si + C2H5O"
+    ],
+    "error": ""
+  }
+]

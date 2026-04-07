@@ -1,0 +1,126 @@
+references:
+  curated_core_plasma:
+    source_system: template_library
+    source_name: production_core_plasma_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.82
+    citation: "Production curated core plasma library"
+    note: "Shared reference block for core plasma templates."
+
+  curated_hydrocarbon:
+    source_system: template_library
+    source_name: production_hydrocarbon_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.82
+    citation: "Production curated hydrocarbon library"
+    note: "Shared reference block for hydrocarbon templates."
+
+  curated_fluorocarbon:
+    source_system: template_library
+    source_name: production_fluorocarbon_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.84
+    citation: "Production curated fluorocarbon library"
+    note: "Shared reference block for fluorocarbon templates."
+
+  curated_noble_gas:
+    source_system: template_library
+    source_name: production_noble_gas_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.83
+    citation: "Production curated noble gas library"
+    note: "Shared reference block for noble-gas excitation and charge-transfer templates."
+
+  curated_oxygen:
+    source_system: template_library
+    source_name: production_oxygen_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.82
+    citation: "Production curated oxygen library"
+    note: "Shared reference block for oxygen electron-impact templates."
+
+  curated_nitrogen:
+    source_system: template_library
+    source_name: production_nitrogen_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.82
+    citation: "Production curated nitrogen library"
+    note: "Shared reference block for nitrogen electron-impact templates."
+
+  curated_chlorine:
+    source_system: template_library
+    source_name: production_chlorine_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.82
+    citation: "Production curated chlorine library"
+    note: "Shared reference block for chlorine-family electron-impact and neutral templates."
+
+  curated_bromine:
+    source_system: template_library
+    source_name: production_bromine_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.82
+    citation: "Production curated bromine library"
+    note: "Shared reference block for bromine-family electron-impact and neutral templates."
+
+  curated_silicon:
+    source_system: template_library
+    source_name: production_silicon_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.82
+    citation: "Production curated silicon library"
+    note: "Shared reference block for silicon-family gas-phase activation templates."
+
+  curated_fragmentation_family:
+    source_system: template_library
+    source_name: production_fragmentation_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.76
+    citation: "Production curated fragmentation library"
+    note: "Shared reference block for neutral and radical fragmentation templates."
+
+  curated_gas_phase_targets:
+    source_system: template_library
+    source_name: production_gas_phase_targets_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.81
+    citation: "Production curated gas-phase target library"
+    note: "Shared reference block for newly added gas-phase process feedstocks."
+
+  curated_process_gases:
+    source_system: template_library
+    source_name: production_process_gas_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.80
+    citation: "Production curated process-gas library"
+    note: "Shared reference block for sulfur, nitrogen, oxygen, and boron process-gas activation channels."
+
+  curated_advanced_precursors:
+    source_system: template_library
+    source_name: production_advanced_precursor_library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.79
+    citation: "Production curated advanced precursor library"
+    note: "Shared reference block for tungsten fluoride, organosilicon, and silicon-halide precursor chemistry."
+
+  source_promoted_qdb:
+    source_system: qdb
+    source_name: Quantemol-DB
+    acquisition_method: offline_snapshot
+    evidence_kind: validated_chemistry_record
+    support_score: 0.88
+    citation: "Promoted from normalized QDB evidence"
+    note: "Use when a promoted template is directly supported by QDB."

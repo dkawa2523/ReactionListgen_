@@ -1,0 +1,128 @@
+{
+  "records": [
+    {
+      "reactants": ["BCl3"],
+      "products": ["BCl3(a1)"],
+      "citation": "Illustrative normalized QDB excited precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.89,
+      "note": "Electron-impact excitation channel for boron trichloride represented in a QDB chemistry set.",
+      "chemistry_id": 701,
+      "process_family": "electron_excitation",
+      "promotion_family": "boron",
+      "promoted_excited_states": [
+        {
+          "token": "BCl3(a1)",
+          "label": "A1",
+          "energy_ev": 3.10,
+          "display_name": "BCl3(A1)"
+        }
+      ]
+    },
+    {
+      "reactants": ["BCl3[A1]", "O2"],
+      "products": ["BCl2", "Cl", "O2"],
+      "citation": "Illustrative normalized QDB excited precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.86,
+      "note": "Excited boron trichloride follow-up channel promoted into the boron family.",
+      "chemistry_id": 702,
+      "process_family": "radical_neutral_reaction",
+      "promotion_family": "boron",
+      "promotion_stage": "excited_state_followup"
+    },
+    {
+      "reactants": ["SiH2Cl2"],
+      "products": ["SiH2Cl2(A1)"],
+      "citation": "Illustrative normalized QDB excited precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.90,
+      "note": "Electron-impact excitation channel for dichlorosilane represented in a QDB chemistry set.",
+      "chemistry_id": 703,
+      "process_family": "electron_excitation",
+      "promotion_family": "silicon",
+      "promoted_excited_states": [
+        {
+          "token": "SiH2Cl2(A1)",
+          "label": "A1",
+          "energy_ev": 3.45,
+          "display_name": "SiH2Cl2(A1)"
+        }
+      ]
+    },
+    {
+      "reactants": ["SiH2Cl2[A1]", "H2"],
+      "products": ["SiHCl2", "H", "H2"],
+      "citation": "Illustrative normalized QDB excited precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.87,
+      "note": "Excited dichlorosilane follow-up channel promoted into the silicon family.",
+      "chemistry_id": 704,
+      "process_family": "radical_neutral_reaction",
+      "promotion_family": "silicon",
+      "promotion_stage": "excited_state_followup"
+    },
+    {
+      "reactants": ["SiHCl3"],
+      "products": ["SiHCl3(B1)"],
+      "citation": "Illustrative normalized QDB excited precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.89,
+      "note": "Electron-impact excitation channel for trichlorosilane represented in a QDB chemistry set.",
+      "chemistry_id": 705,
+      "process_family": "electron_excitation",
+      "promotion_family": "silicon",
+      "promoted_excited_states": [
+        {
+          "token": "SiHCl3(B1)",
+          "label": "B1",
+          "energy_ev": 3.85,
+          "display_name": "SiHCl3(B1)"
+        }
+      ]
+    },
+    {
+      "reactants": ["SiHCl3[B1]", "H2"],
+      "products": ["SiCl2", "HCl", "H2"],
+      "citation": "Illustrative normalized QDB excited precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.86,
+      "note": "Excited trichlorosilane follow-up channel promoted into the silicon family.",
+      "chemistry_id": 706,
+      "process_family": "radical_neutral_reaction",
+      "promotion_family": "silicon",
+      "promotion_stage": "excited_state_followup"
+    },
+    {
+      "reactants": ["C8H20O4Si"],
+      "products": ["C8H20O4Si(ryd1)"],
+      "citation": "Illustrative normalized QDB excited precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.88,
+      "note": "Electron-impact excitation channel for TEOS represented in a QDB chemistry set.",
+      "chemistry_id": 707,
+      "process_family": "electron_excitation",
+      "promotion_family": "organosilicon",
+      "promoted_excited_states": [
+        {
+          "token": "C8H20O4Si(ryd1)",
+          "label": "Ryd1",
+          "energy_ev": 5.20,
+          "display_name": "TEOS(Ryd1)"
+        }
+      ]
+    },
+    {
+      "reactants": ["C8H20O4Si[Ryd1]", "O2"],
+      "products": ["C6H15O3Si", "C2H5O", "O2"],
+      "citation": "Illustrative normalized QDB excited precursor coupling snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.85,
+      "note": "Excited TEOS follow-up channel promoted into the organosilicon family.",
+      "chemistry_id": 708,
+      "process_family": "radical_neutral_reaction",
+      "promotion_family": "organosilicon",
+      "promotion_stage": "excited_state_followup"
+    }
+  ]
+}

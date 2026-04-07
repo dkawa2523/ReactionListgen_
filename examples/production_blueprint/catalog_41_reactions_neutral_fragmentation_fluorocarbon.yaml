@@ -1,0 +1,20 @@
+reactions:
+  - key: fluorocarbon::neutral_fragmentation::cc4f8_ring_opening
+    family: neutral_fragmentation
+    reactants: [c-C4F8]
+    products: [C2F4, C2F4]
+    lhs_tokens: [C4F8]
+    rhs_tokens: [C2F4, C2F4]
+    base_confidence: 0.60
+    reference_ids: [curated_fragmentation_family]
+    note: "Representative ring-opening fluorocarbon fragmentation channel."
+
+  - key: fluorocarbon::neutral_fragmentation::cc4f8_f_loss
+    family: neutral_fragmentation
+    reactants: [c-C4F8]
+    products: [C4F7, F]
+    lhs_tokens: [C4F8]
+    rhs_tokens: [C4F7, F]
+    base_confidence: 0.58
+    reference_ids: [curated_fragmentation_family]
+    note: "Representative neutral fluorine-loss channel."

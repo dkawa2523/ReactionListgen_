@@ -1,0 +1,22 @@
+reactions:
+  - key: bromine::dissociative_recombination::br2_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [Br2+]
+    products: [Br, Br]
+    lhs_tokens: [e-, Br2+]
+    rhs_tokens: [Br, Br]
+    base_confidence: 0.70
+    reference_ids: [curated_bromine]
+    note: "Representative dissociative recombination channel for bromine molecular cations."
+
+  - key: bromine::dissociative_recombination::hbr_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [HBr+]
+    products: [H, Br]
+    lhs_tokens: [e-, HBr+]
+    rhs_tokens: [H, Br]
+    base_confidence: 0.69
+    reference_ids: [curated_bromine]
+    note: "Representative dissociative recombination channel for hydrogen bromide cations."

@@ -1,0 +1,24 @@
+reactions:
+  - key: hydrocarbon::electron_attachment::ch4_h_minus
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [CH4]
+    products: [CH3, H-]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [CH3, H-]
+    threshold_ev: 7.7
+    base_confidence: 0.88
+    reference_ids: [curated_hydrocarbon, source_promoted_qdb]
+    note: "Primary dissociative attachment channel promoted to production hydrocarbon library."
+
+  - key: hydrocarbon::electron_attachment::ch4_ch2_minus
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [CH4]
+    products: [H2, CH2-]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [H2, CH2-]
+    threshold_ev: 9.0
+    base_confidence: 0.84
+    reference_ids: [curated_hydrocarbon]
+    note: "Secondary dissociative attachment channel."

@@ -1,0 +1,40 @@
+{
+  "records": [
+    {
+      "reactants": ["CH4"],
+      "products": ["CH4(v14)"],
+      "citation": "Illustrative normalized QDB molecular excitation snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.94,
+      "note": "Electron-impact vibrational excitation channel represented in a QDB chemistry set.",
+      "chemistry_id": 4,
+      "process_family": "electron_excitation_vibrational",
+      "promoted_excited_states": [
+        {
+          "token": "CH4(v14)",
+          "label": "v14",
+          "energy_ev": 0.374,
+          "display_name": "CH4(v14)"
+        }
+      ]
+    },
+    {
+      "reactants": ["O2"],
+      "products": ["O2(c1Sigma_u-)"],
+      "citation": "Illustrative normalized QDB molecular excitation snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.91,
+      "note": "Electron-impact electronic excitation channel represented in a QDB chemistry set.",
+      "chemistry_id": 14,
+      "process_family": "electron_excitation",
+      "promoted_excited_states": [
+        {
+          "token": "O2(c1Sigma_u-)",
+          "label": "c1Sigma_u-",
+          "energy_ev": 4.50,
+          "display_name": "O2(c1Sigma_u-)"
+        }
+      ]
+    }
+  ]
+}

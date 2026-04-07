@@ -1,0 +1,9 @@
+.venv/
+.pytest_cache/
+.pytest_work/
+.test_work/
+.pytest_tmp/
+.tmp*/
+pytest_tmp*/
+tmp*/
+__pycache__/

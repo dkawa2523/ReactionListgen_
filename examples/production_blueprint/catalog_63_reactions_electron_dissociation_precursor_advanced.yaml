@@ -1,0 +1,55 @@
+reactions:
+  - key: advanced_precursors::electron_dissociation::wf6_to_wf5_f
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [WF6]
+    products: [WF5, F]
+    lhs_tokens: [e-, WF6]
+    rhs_tokens: [e-, WF5, F]
+    base_confidence: 0.80
+    reference_ids: [curated_advanced_precursors]
+    note: "Representative tungsten-hexafluoride activation channel."
+
+  - key: advanced_precursors::electron_dissociation::wf5_to_wf4_f
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [WF5]
+    products: [WF4, F]
+    lhs_tokens: [e-, WF5]
+    rhs_tokens: [e-, WF4, F]
+    base_confidence: 0.77
+    reference_ids: [curated_advanced_precursors]
+    note: "Second-step tungsten-fluoride fragmentation channel."
+
+  - key: advanced_precursors::electron_dissociation::teos_to_triethoxysilyl_ethoxy
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [C8H20O4Si]
+    products: [C6H15O3Si, C2H5O]
+    lhs_tokens: [e-, C8H20O4Si]
+    rhs_tokens: [e-, C6H15O3Si, C2H5O]
+    base_confidence: 0.76
+    reference_ids: [curated_advanced_precursors]
+    note: "Representative TEOS electron-impact cleavage of one ethoxy ligand."
+
+  - key: advanced_precursors::electron_dissociation::sih2cl2_to_sicl2_h2
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [SiH2Cl2]
+    products: [SiCl2, H2]
+    lhs_tokens: [e-, SiH2Cl2]
+    rhs_tokens: [e-, SiCl2, H2]
+    base_confidence: 0.78
+    reference_ids: [curated_advanced_precursors]
+    note: "Alternative dichlorosilane dissociation channel that closes the hydrogen pool."
+
+  - key: advanced_precursors::electron_dissociation::sihcl3_to_sicl2_hcl
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [SiHCl3]
+    products: [SiCl2, HCl]
+    lhs_tokens: [e-, SiHCl3]
+    rhs_tokens: [e-, SiCl2, HCl]
+    base_confidence: 0.78
+    reference_ids: [curated_advanced_precursors]
+    note: "Alternative trichlorosilane dissociation channel producing hydrogen chloride."

@@ -1,0 +1,24 @@
+reactions:
+  - key: hydrocarbon::electron_ionization::ch4_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [CH4]
+    products: [CH4+]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, e-, CH4+]
+    threshold_ev: 12.6
+    base_confidence: 0.90
+    reference_ids: [curated_hydrocarbon]
+    note: "Parent ionization channel in the production hydrocarbon library."
+
+  - key: hydrocarbon::electron_dissociative_ionization::ch4_ch3_plus
+    family: electron_dissociative_ionization
+    required_projectile: e-
+    reactants: [CH4]
+    products: [H, CH3+]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, e-, H, CH3+]
+    threshold_ev: 14.3
+    base_confidence: 0.90
+    reference_ids: [curated_hydrocarbon]
+    note: "Primary dissociative ionization channel."

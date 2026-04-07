@@ -1,0 +1,20 @@
+reactions:
+  - key: chlorine::radical_neutral::cl_plus_h2
+    family: radical_neutral_reaction
+    reactants: [Cl, H2]
+    products: [HCl, H]
+    lhs_tokens: [Cl, H2]
+    rhs_tokens: [HCl, H]
+    base_confidence: 0.73
+    reference_ids: [curated_chlorine]
+    note: "Representative chlorine chain-propagation step in hydrogen-containing gas mixtures."
+
+  - key: chlorine::radical_neutral::h_plus_cl2
+    family: radical_neutral_reaction
+    reactants: [H, Cl2]
+    products: [HCl, Cl]
+    lhs_tokens: [H, Cl2]
+    rhs_tokens: [HCl, Cl]
+    base_confidence: 0.75
+    reference_ids: [curated_chlorine]
+    note: "Representative hydrogen-assisted chlorine conversion step."

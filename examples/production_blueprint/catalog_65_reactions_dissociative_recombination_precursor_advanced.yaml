@@ -1,0 +1,55 @@
+reactions:
+  - key: advanced_precursors::dissociative_recombination::wf6_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [WF6+]
+    products: [WF5, F]
+    lhs_tokens: [e-, WF6+]
+    rhs_tokens: [WF5, F]
+    base_confidence: 0.69
+    reference_ids: [curated_advanced_precursors]
+    note: "Representative dissociative recombination channel for tungsten-hexafluoride cations."
+
+  - key: advanced_precursors::dissociative_recombination::wf5_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [WF5+]
+    products: [WF4, F]
+    lhs_tokens: [e-, WF5+]
+    rhs_tokens: [WF4, F]
+    base_confidence: 0.67
+    reference_ids: [curated_advanced_precursors]
+    note: "Second-step dissociative recombination channel for tungsten-fluoride cations."
+
+  - key: advanced_precursors::dissociative_recombination::teos_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [C8H20O4Si+]
+    products: [C6H15O3Si, C2H5O]
+    lhs_tokens: [e-, C8H20O4Si+]
+    rhs_tokens: [C6H15O3Si, C2H5O]
+    base_confidence: 0.66
+    reference_ids: [curated_advanced_precursors]
+    note: "Representative dissociative recombination channel for TEOS cations."
+
+  - key: advanced_precursors::dissociative_recombination::sih2cl2_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [SiH2Cl2+]
+    products: [SiCl2, H2]
+    lhs_tokens: [e-, SiH2Cl2+]
+    rhs_tokens: [SiCl2, H2]
+    base_confidence: 0.68
+    reference_ids: [curated_advanced_precursors]
+    note: "Alternative dissociative recombination channel for dichlorosilane cations."
+
+  - key: advanced_precursors::dissociative_recombination::sihcl3_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [SiHCl3+]
+    products: [SiCl2, HCl]
+    lhs_tokens: [e-, SiHCl3+]
+    rhs_tokens: [SiCl2, HCl]
+    base_confidence: 0.67
+    reference_ids: [curated_advanced_precursors]
+    note: "Alternative dissociative recombination channel for trichlorosilane cations."

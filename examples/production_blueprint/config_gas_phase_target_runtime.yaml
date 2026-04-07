@@ -1,0 +1,156 @@
+feeds:
+  - species_key: Ar
+    formula: Ar
+    display_name: Argon
+  - species_key: He
+    formula: He
+    display_name: Helium
+  - species_key: N2
+    formula: N2
+    display_name: Nitrogen
+  - species_key: H2
+    formula: H2
+    display_name: Hydrogen
+  - species_key: O2
+    formula: O2
+    display_name: Oxygen
+  - species_key: CF4
+    formula: CF4
+    display_name: Tetrafluoromethane
+  - species_key: CHF3
+    formula: CHF3
+    display_name: Trifluoromethane
+  - species_key: CH2F2
+    formula: CH2F2
+    display_name: Difluoromethane
+  - species_key: CH3F
+    formula: CH3F
+    display_name: Fluoromethane
+  - species_key: C2F6
+    formula: C2F6
+    display_name: Hexafluoroethane
+  - species_key: c-C4F8
+    formula: C4F8
+    display_name: Octafluorocyclobutane
+  - species_key: C5F8
+    formula: C5F8
+    display_name: Octafluorocyclopentene
+  - species_key: SF6
+    formula: SF6
+    display_name: Sulfur hexafluoride
+  - species_key: NF3
+    formula: NF3
+    display_name: Nitrogen trifluoride
+  - species_key: Cl2
+    formula: Cl2
+    display_name: Chlorine
+  - species_key: HBr
+    formula: HBr
+    display_name: Hydrogen bromide
+  - species_key: HCl
+    formula: HCl
+    display_name: Hydrogen chloride
+  - species_key: BCl3
+    formula: BCl3
+    display_name: Boron trichloride
+  - species_key: SiH4
+    formula: SiH4
+    display_name: Silane
+  - species_key: NH3
+    formula: NH3
+    display_name: Ammonia
+  - species_key: N2O
+    formula: N2O
+    display_name: Nitrous oxide
+  - species_key: O3
+    formula: O3
+    display_name: Ozone
+  - species_key: SiH2Cl2
+    formula: SiH2Cl2
+    display_name: Dichlorosilane
+  - species_key: SiHCl3
+    formula: SiHCl3
+    display_name: Trichlorosilane
+  - species_key: WF6
+    formula: WF6
+    display_name: Tungsten hexafluoride
+  - species_key: C8H20O4Si
+    formula: C8H20O4Si
+    display_name: Tetraethyl orthosilicate
+
+projectiles: [e-]
+libraries: []
+
+catalog_paths:
+  - catalog_00_references.yaml
+  - catalog_26_reactions_electron_excitation_noble_gas.yaml
+  - catalog_27_reactions_electron_ionization_noble_gas.yaml
+  - catalog_32_reactions_electron_attachment_oxygen.yaml
+  - catalog_33_reactions_electron_ionization_oxygen.yaml
+  - catalog_36_reactions_electron_ionization_nitrogen.yaml
+  - catalog_43_reactions_electron_ionization_gas_phase_targets.yaml
+  - catalog_44_reactions_electron_attachment_gas_phase_targets.yaml
+  - catalog_60_reactions_electron_dissociation_process_gases.yaml
+  - catalog_61_reactions_ion_neutral_followup_process_gases.yaml
+  - catalog_62_reactions_dissociative_recombination_process_gases.yaml
+  - catalog_63_reactions_electron_dissociation_precursor_advanced.yaml
+  - catalog_64_reactions_ion_neutral_followup_precursor_advanced.yaml
+  - catalog_65_reactions_dissociative_recombination_precursor_advanced.yaml
+
+state_masters:
+  - path: state_master_base.yaml
+    families:
+      [
+        core_plasma,
+        noble_gas,
+        hydrogen,
+        oxygen,
+        nitrogen,
+        hydrocarbon,
+        fluorocarbon,
+        chlorine,
+        bromine,
+        boron,
+        silicon,
+        sulfur,
+        tungsten,
+        organosilicon,
+      ]
+
+state_filters:
+  charge_window_min: -1
+  charge_window_max: 1
+
+limits:
+  max_generation: 3
+  beam_width: 96
+  max_species: 240
+
+conditions:
+  electron_max_ev: 10000.0
+  ion_max_ev: 200.0
+  gas_temperature_k: 300.0
+
+bootstrap:
+  pubchem:
+    enabled: false
+  nist_asd:
+    enabled: true
+    export_paths:
+      - ../snapshots/asd/H_I.csv
+      - ../snapshots/asd/C_I.csv
+      - ../snapshots/asd/C_II.csv
+      - ../snapshots/asd/F_I.csv
+      - ../snapshots/asd/O_I.csv
+      - ../snapshots/asd/O_II.csv
+      - ../snapshots/asd/N_I.csv
+      - ../snapshots/asd/N_II.csv
+      - ../snapshots/asd/Ar_I.csv
+      - ../snapshots/asd/Ar_II.csv
+    max_ion_charge: 1
+    max_levels_per_spectrum: 3
+  atct:
+    enabled: false
+  reaction_evidence:
+    seed_templates: false
+    sources: []

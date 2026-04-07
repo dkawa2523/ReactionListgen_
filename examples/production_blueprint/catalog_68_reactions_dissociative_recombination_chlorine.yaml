@@ -1,0 +1,22 @@
+reactions:
+  - key: chlorine::dissociative_recombination::cl2_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [Cl2+]
+    products: [Cl, Cl]
+    lhs_tokens: [e-, Cl2+]
+    rhs_tokens: [Cl, Cl]
+    base_confidence: 0.70
+    reference_ids: [curated_chlorine]
+    note: "Representative dissociative recombination channel for chlorine molecular cations."
+
+  - key: chlorine::dissociative_recombination::hcl_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [HCl+]
+    products: [H, Cl]
+    lhs_tokens: [e-, HCl+]
+    rhs_tokens: [H, Cl]
+    base_confidence: 0.69
+    reference_ids: [curated_chlorine]
+    note: "Representative dissociative recombination channel for hydrogen chloride cations."

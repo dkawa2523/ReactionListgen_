@@ -1,0 +1,253 @@
+reactions:
+  - key: gas_phase_targets::electron_ionization::he_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [He]
+    products: [He+]
+    lhs_tokens: [e-, He]
+    rhs_tokens: [e-, e-, He+]
+    base_confidence: 0.82
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent ionization channel for helium support plasmas."
+
+  - key: gas_phase_targets::electron_ionization::h2_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [H2]
+    products: [H2+]
+    lhs_tokens: [e-, H2]
+    rhs_tokens: [e-, e-, H2+]
+    base_confidence: 0.82
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent ionization channel for hydrogen."
+
+  - key: gas_phase_targets::electron_ionization::cf4_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [CF4]
+    products: [CF4+]
+    lhs_tokens: [e-, CF4]
+    rhs_tokens: [e-, e-, CF4+]
+    base_confidence: 0.80
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for tetrafluoromethane."
+
+  - key: gas_phase_targets::electron_ionization::chf3_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [CHF3]
+    products: [CHF3+]
+    lhs_tokens: [e-, CHF3]
+    rhs_tokens: [e-, e-, CHF3+]
+    base_confidence: 0.80
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for trifluoromethane."
+
+  - key: gas_phase_targets::electron_ionization::ch2f2_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [CH2F2]
+    products: [CH2F2+]
+    lhs_tokens: [e-, CH2F2]
+    rhs_tokens: [e-, e-, CH2F2+]
+    base_confidence: 0.79
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for difluoromethane."
+
+  - key: gas_phase_targets::electron_ionization::ch3f_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [CH3F]
+    products: [CH3F+]
+    lhs_tokens: [e-, CH3F]
+    rhs_tokens: [e-, e-, CH3F+]
+    base_confidence: 0.79
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for fluoromethane."
+
+  - key: gas_phase_targets::electron_ionization::c2f6_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [C2F6]
+    products: [C2F6+]
+    lhs_tokens: [e-, C2F6]
+    rhs_tokens: [e-, e-, C2F6+]
+    base_confidence: 0.80
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for hexafluoroethane."
+
+  - key: gas_phase_targets::electron_ionization::cc4f8_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [c-C4F8+]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [e-, e-, C4F8+]
+    base_confidence: 0.80
+    reference_ids: [curated_fluorocarbon, curated_gas_phase_targets]
+    note: "Seed parent ionization channel for octafluorocyclobutane."
+
+  - key: gas_phase_targets::electron_ionization::c5f8_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [C5F8]
+    products: [C5F8+]
+    lhs_tokens: [e-, C5F8]
+    rhs_tokens: [e-, e-, C5F8+]
+    base_confidence: 0.78
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for octafluorocyclopentene."
+
+  - key: gas_phase_targets::electron_ionization::sf6_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [SF6]
+    products: [SF6+]
+    lhs_tokens: [e-, SF6]
+    rhs_tokens: [e-, e-, SF6+]
+    base_confidence: 0.81
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for sulfur hexafluoride."
+
+  - key: gas_phase_targets::electron_ionization::nf3_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [NF3]
+    products: [NF3+]
+    lhs_tokens: [e-, NF3]
+    rhs_tokens: [e-, e-, NF3+]
+    base_confidence: 0.81
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for nitrogen trifluoride."
+
+  - key: gas_phase_targets::electron_ionization::cl2_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [Cl2]
+    products: [Cl2+]
+    lhs_tokens: [e-, Cl2]
+    rhs_tokens: [e-, e-, Cl2+]
+    base_confidence: 0.82
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for chlorine."
+
+  - key: gas_phase_targets::electron_ionization::hbr_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [HBr]
+    products: [HBr+]
+    lhs_tokens: [e-, HBr]
+    rhs_tokens: [e-, e-, HBr+]
+    base_confidence: 0.80
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for hydrogen bromide."
+
+  - key: gas_phase_targets::electron_ionization::hcl_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [HCl]
+    products: [HCl+]
+    lhs_tokens: [e-, HCl]
+    rhs_tokens: [e-, e-, HCl+]
+    base_confidence: 0.80
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for hydrogen chloride."
+
+  - key: gas_phase_targets::electron_ionization::bcl3_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [BCl3]
+    products: [BCl3+]
+    lhs_tokens: [e-, BCl3]
+    rhs_tokens: [e-, e-, BCl3+]
+    base_confidence: 0.80
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for boron trichloride."
+
+  - key: gas_phase_targets::electron_ionization::sih4_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [SiH4]
+    products: [SiH4+]
+    lhs_tokens: [e-, SiH4]
+    rhs_tokens: [e-, e-, SiH4+]
+    base_confidence: 0.82
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for silane."
+
+  - key: gas_phase_targets::electron_ionization::nh3_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [NH3]
+    products: [NH3+]
+    lhs_tokens: [e-, NH3]
+    rhs_tokens: [e-, e-, NH3+]
+    base_confidence: 0.81
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for ammonia."
+
+  - key: gas_phase_targets::electron_ionization::n2o_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [N2O]
+    products: [N2O+]
+    lhs_tokens: [e-, N2O]
+    rhs_tokens: [e-, e-, N2O+]
+    base_confidence: 0.80
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for nitrous oxide."
+
+  - key: gas_phase_targets::electron_ionization::o3_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [O3]
+    products: [O3+]
+    lhs_tokens: [e-, O3]
+    rhs_tokens: [e-, e-, O3+]
+    base_confidence: 0.78
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for ozone."
+
+  - key: gas_phase_targets::electron_ionization::sih2cl2_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [SiH2Cl2]
+    products: [SiH2Cl2+]
+    lhs_tokens: [e-, SiH2Cl2]
+    rhs_tokens: [e-, e-, SiH2Cl2+]
+    base_confidence: 0.79
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for dichlorosilane."
+
+  - key: gas_phase_targets::electron_ionization::sihcl3_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [SiHCl3]
+    products: [SiHCl3+]
+    lhs_tokens: [e-, SiHCl3]
+    rhs_tokens: [e-, e-, SiHCl3+]
+    base_confidence: 0.79
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for trichlorosilane."
+
+  - key: gas_phase_targets::electron_ionization::wf6_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [WF6]
+    products: [WF6+]
+    lhs_tokens: [e-, WF6]
+    rhs_tokens: [e-, e-, WF6+]
+    base_confidence: 0.78
+    reference_ids: [curated_gas_phase_targets]
+    note: "Representative parent ionization channel for tungsten hexafluoride."
+
+  - key: gas_phase_targets::electron_ionization::teos_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [C8H20O4Si]
+    products: [C8H20O4Si+]
+    lhs_tokens: [e-, TEOS]
+    rhs_tokens: [e-, e-, TEOS+]
+    base_confidence: 0.74
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent ionization channel for tetraethyl orthosilicate."

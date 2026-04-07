@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "reactants": ["e-", "SiH4+"],
+      "products": ["SiH2", "H2"],
+      "citation": "Illustrative normalized QDB silicon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.89,
+      "note": "Silane cation dissociative recombination channel promoted from external evidence.",
+      "chemistry_id": 310,
+      "process_family": "dissociative_recombination",
+      "promotion_family": "silicon",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["e-", "SiH2Cl2+"],
+      "products": ["SiCl2", "H2"],
+      "citation": "Illustrative normalized QDB silicon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.87,
+      "note": "Dichlorosilane cation dissociative recombination channel promoted from external evidence.",
+      "chemistry_id": 311,
+      "process_family": "dissociative_recombination",
+      "promotion_family": "silicon",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["SiH4+", "H2"],
+      "products": ["SiH4", "H2+"],
+      "citation": "Illustrative normalized QDB silicon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.85,
+      "note": "Silane cation hydrogen-pool follow-up promoted from external evidence.",
+      "chemistry_id": 312,
+      "process_family": "ion_neutral_followup",
+      "promotion_family": "silicon",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["SiHCl3+", "H2"],
+      "products": ["SiHCl3", "H2+"],
+      "citation": "Illustrative normalized QDB silicon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.84,
+      "note": "Trichlorosilane cation hydrogen-pool follow-up promoted from external evidence.",
+      "chemistry_id": 313,
+      "process_family": "ion_neutral_followup",
+      "promotion_family": "silicon",
+      "promotion_stage": "curated_bridge"
+    }
+  ]
+}

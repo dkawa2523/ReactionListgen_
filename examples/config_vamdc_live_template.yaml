@@ -1,0 +1,32 @@
+feeds:
+  - species_key: CH4
+    formula: CH4
+    display_name: Methane
+  - species_key: c-C4F8
+    formula: C4F8
+    display_name: Cyclobutane, octafluoro-
+
+projectiles: [e-]
+libraries: [ch4, c_c4f8]
+
+bootstrap:
+  pubchem:
+    enabled: false
+
+  nist_asd:
+    enabled: false
+
+  atct:
+    enabled: false
+
+  reaction_evidence:
+    seed_templates: true
+    max_templates_per_source: 20
+    require_reactant_overlap: true
+    sources:
+      - kind: vamdc_live
+        url: https://example-vamdc-node/sync
+        source_name: Example VAMDC node
+        source_system: vamdc
+        use_feed_formulas: true
+        query_template: "SELECT * WHERE MoleculeStoichiometricFormula = '{formula}'"

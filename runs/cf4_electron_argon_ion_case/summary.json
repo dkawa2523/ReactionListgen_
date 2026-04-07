@@ -1,0 +1,35 @@
+﻿{
+    "case_name":  "cf4_electron_argon_ion_case",
+    "feeds":  [
+                  {
+                      "species_key":  "CF4",
+                      "formula":  "CF4",
+                      "display_name":  "Tetrafluoromethane",
+                      "identity_query":  null,
+                      "identity_namespace":  "name"
+                  }
+              ],
+    "projectiles":  [
+                        "e-",
+                        "Ar+"
+                    ],
+    "max_generation":  3,
+    "species_count":  5,
+    "reaction_count":  3,
+    "reaction_generations":  [
+                                 1
+                             ],
+    "projectile_usage":  {
+                             "ar_plus_reaction_count":  0,
+                             "electron_reaction_count":  3
+                         },
+    "families":  [
+                     "electron_attachment",
+                     "electron_dissociation",
+                     "electron_ionization"
+                 ],
+    "notes":  [
+                  "This case uses the fluorocarbon user-facing preset with feeds reduced to CF4 only.",
+                  "Outputs reflect the current curated and source-backed data available in the repository."
+              ]
+}

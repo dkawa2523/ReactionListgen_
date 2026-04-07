@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-04-06T14:17:03.067067+00:00",
+  "network_path": "examples/output_network.json",
+  "config_path": "examples/config.yaml",
+  "artifact_count": 19,
+  "artifacts": [
+    {
+      "view_id": "datasci_dataset_summary",
+      "audience": "datasci",
+      "kind": "figure",
+      "path": "network/datasci_dataset_summary.png",
+      "title": "Data scientist: dataset summary",
+      "description": "Coverage and provenance dashboard for the generated state / reaction network, including evidence counts, field completeness, confidence tiers, and family counts."
+    },
+    {
+      "view_id": "dictionary_engineer_summary",
+      "audience": "engineer",
+      "kind": "figure",
+      "path": "dictionary/engineer_dictionary_summary.png",
+      "title": "Semiconductor engineer: current dictionary summary",
+      "description": "Counts of packaged species roles, reaction families, and projectile coverage in the current dictionaries."
+    },
+    {
+      "view_id": "dictionary_plasma_summary",
+      "audience": "plasma",
+      "kind": "figure",
+      "path": "dictionary/plasma_dictionary_summary.png",
+      "title": "Plasma physicist: current dictionary summary",
+      "description": "Charge-state composition of the packaged state dictionary and threshold coverage in the packaged reaction template dictionary."
+    },
+    {
+      "view_id": "dictionary_reaction_pages",
+      "audience": "datasci",
+      "kind": "csv",
+      "path": "lists/dictionary_reaction_templates.csv",
+      "title": "Reaction dictionary CSV",
+      "description": "Tabular export of the current packaged reaction template dictionary."
+    },
+    {
+      "view_id": "dictionary_reaction_pages",
+      "audience": "datasci",
+      "kind": "figure",
+      "path": "tables/dictionary_reaction_templates_p01.png",
+      "title": "Reaction dictionary page",
+      "description": "Paginated image table for the current packaged reaction template dictionary."
+    },
+    {
+      "view_id": "dictionary_reaction_pages",
+      "audience": "datasci",
+      "kind": "figure",
+      "path": "tables/dictionary_reaction_templates_p02.png",
+      "title": "Reaction dictionary page",
+      "description": "Paginated image table for the current packaged reaction template dictionary."
+    },
+    {
+      "view_id": "dictionary_species_pages",
+      "audience": "datasci",
+      "kind": "csv",
+      "path": "lists/dictionary_species.csv",
+      "title": "State dictionary CSV",
+      "description": "Tabular export of the current packaged state dictionary."
+    },
+    {
+      "view_id": "dictionary_species_pages",
+      "audience": "datasci",
+      "kind": "figure",
+      "path": "tables/dictionary_species_p01.png",
+      "title": "State dictionary page",
+      "description": "Paginated image table for the current packaged state dictionary."
+    },
+    {
+      "view_id": "dictionary_species_pages",
+      "audience": "datasci",
+      "kind": "figure",
+      "path": "tables/dictionary_species_p02.png",
+      "title": "State dictionary page",
+      "description": "Paginated image table for the current packaged state dictionary."
+    },
+    {
+      "view_id": "engineer_inventory_summary",
+      "audience": "engineer",
+      "kind": "figure",
+      "path": "network/engineer_inventory_summary.png",
+      "title": "Semiconductor engineer: inventory summary",
+      "description": "Compact summary of generated state roles, reaction families, and the fragments that act as the main branching hubs."
+    },
+    {
+      "view_id": "engineer_process_dag",
+      "audience": "engineer",
+      "kind": "figure",
+      "path": "network/engineer_process_dag.png",
+      "title": "Semiconductor engineer: process-fragment DAG",
+      "description": "Generation-layered DAG that shows how feed gases decompose into radicals, ions, excited states, and follow-up fragments."
+    },
+    {
+      "view_id": "generated_reaction_pages",
+      "audience": "datasci",
+      "kind": "csv",
+      "path": "lists/generated_reactions.csv",
+      "title": "Generated reaction list CSV",
+      "description": "Tabular export of the generated reaction list."
+    },
+    {
+      "view_id": "generated_reaction_pages",
+      "audience": "datasci",
+      "kind": "figure",
+      "path": "tables/generated_reaction_list_p01.png",
+      "title": "Generated reaction list page",
+      "description": "Paginated image table for the generated reaction list."
+    },
+    {
+      "view_id": "generated_reaction_pages",
+      "audience": "datasci",
+      "kind": "figure",
+      "path": "tables/generated_reaction_list_p02.png",
+      "title": "Generated reaction list page",
+      "description": "Paginated image table for the generated reaction list."
+    },
+    {
+      "view_id": "generated_state_pages",
+      "audience": "datasci",
+      "kind": "csv",
+      "path": "lists/generated_species.csv",
+      "title": "Generated state list CSV",
+      "description": "Tabular export of the generated state list."
+    },
+    {
+      "view_id": "generated_state_pages",
+      "audience": "datasci",
+      "kind": "figure",
+      "path": "tables/generated_state_list_p01.png",
+      "title": "Generated state list page",
+      "description": "Paginated image table for the generated state list."
+    },
+    {
+      "view_id": "generated_state_pages",
+      "audience": "datasci",
+      "kind": "figure",
+      "path": "tables/generated_state_list_p02.png",
+      "title": "Generated state list page",
+      "description": "Paginated image table for the generated state list."
+    },
+    {
+      "view_id": "plasma_bipartite_dag",
+      "audience": "plasma",
+      "kind": "figure",
+      "path": "network/plasma_bipartite_dag.png",
+      "title": "Plasma physicist: species-reaction DAG",
+      "description": "Bipartite DAG that keeps reaction nodes explicit so charge-state creation, attachment, excitation, and fragmentation pathways remain visible."
+    },
+    {
+      "view_id": "plasma_threshold_map",
+      "audience": "plasma",
+      "kind": "figure",
+      "path": "network/plasma_threshold_map.png",
+      "title": "Plasma physicist: threshold map",
+      "description": "Scatter summary of reaction thresholds, generations, thermochemical annotations, and confidence values."
+    }
+  ]
+}

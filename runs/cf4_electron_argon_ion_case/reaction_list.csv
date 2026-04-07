@@ -1,0 +1,4 @@
+﻿"generation","family","equation","threshold_ev","delta_h_kj_mol","origin","source_system"
+"1","electron_attachment","e- + CF4 -> CF4-","0.0",,"curated_catalog",""
+"1","electron_ionization","e- + CF4 -> e- + e- + CF4+",,,"curated_catalog",""
+"1","electron_dissociation","e- + CF4 -> e- + CF3 + F",,,"source_backed_promotion",""

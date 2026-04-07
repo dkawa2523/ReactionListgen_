@@ -1,0 +1,156 @@
+reactions:
+  - key: gas_phase_targets::electron_attachment::cf4_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [CF4]
+    products: [CF4-]
+    lhs_tokens: [e-, CF4]
+    rhs_tokens: [CF4-]
+    threshold_ev: 0.0
+    base_confidence: 0.76
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for tetrafluoromethane."
+
+  - key: gas_phase_targets::electron_attachment::chf3_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [CHF3]
+    products: [CHF3-]
+    lhs_tokens: [e-, CHF3]
+    rhs_tokens: [CHF3-]
+    threshold_ev: 0.0
+    base_confidence: 0.76
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for trifluoromethane."
+
+  - key: gas_phase_targets::electron_attachment::ch2f2_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [CH2F2]
+    products: [CH2F2-]
+    lhs_tokens: [e-, CH2F2]
+    rhs_tokens: [CH2F2-]
+    threshold_ev: 0.0
+    base_confidence: 0.74
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for difluoromethane."
+
+  - key: gas_phase_targets::electron_attachment::ch3f_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [CH3F]
+    products: [CH3F-]
+    lhs_tokens: [e-, CH3F]
+    rhs_tokens: [CH3F-]
+    threshold_ev: 0.0
+    base_confidence: 0.72
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for fluoromethane."
+
+  - key: gas_phase_targets::electron_attachment::c2f6_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [C2F6]
+    products: [C2F6-]
+    lhs_tokens: [e-, C2F6]
+    rhs_tokens: [C2F6-]
+    threshold_ev: 0.0
+    base_confidence: 0.77
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for hexafluoroethane."
+
+  - key: gas_phase_targets::electron_attachment::cc4f8_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [c-C4F8-]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [C4F8-]
+    threshold_ev: 0.0
+    base_confidence: 0.78
+    reference_ids: [curated_fluorocarbon, curated_gas_phase_targets]
+    note: "Companion parent attachment channel for octafluorocyclobutane."
+
+  - key: gas_phase_targets::electron_attachment::c5f8_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [C5F8]
+    products: [C5F8-]
+    lhs_tokens: [e-, C5F8]
+    rhs_tokens: [C5F8-]
+    threshold_ev: 0.0
+    base_confidence: 0.77
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for octafluorocyclopentene."
+
+  - key: gas_phase_targets::electron_attachment::sf6_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [SF6]
+    products: [SF6-]
+    lhs_tokens: [e-, SF6]
+    rhs_tokens: [SF6-]
+    threshold_ev: 0.0
+    base_confidence: 0.80
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for sulfur hexafluoride."
+
+  - key: gas_phase_targets::electron_attachment::nf3_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [NF3]
+    products: [NF3-]
+    lhs_tokens: [e-, NF3]
+    rhs_tokens: [NF3-]
+    threshold_ev: 0.0
+    base_confidence: 0.79
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for nitrogen trifluoride."
+
+  - key: gas_phase_targets::electron_attachment::cl2_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [Cl2]
+    products: [Cl2-]
+    lhs_tokens: [e-, Cl2]
+    rhs_tokens: [Cl2-]
+    threshold_ev: 0.0
+    base_confidence: 0.78
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for chlorine."
+
+  - key: gas_phase_targets::electron_attachment::hbr_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [HBr]
+    products: [HBr-]
+    lhs_tokens: [e-, HBr]
+    rhs_tokens: [HBr-]
+    threshold_ev: 0.0
+    base_confidence: 0.78
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for hydrogen bromide."
+
+  - key: gas_phase_targets::electron_attachment::hcl_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [HCl]
+    products: [HCl-]
+    lhs_tokens: [e-, HCl]
+    rhs_tokens: [HCl-]
+    threshold_ev: 0.0
+    base_confidence: 0.75
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for hydrogen chloride."
+
+  - key: gas_phase_targets::electron_attachment::bcl3_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [BCl3]
+    products: [BCl3-]
+    lhs_tokens: [e-, BCl3]
+    rhs_tokens: [BCl3-]
+    threshold_ev: 0.0
+    base_confidence: 0.77
+    reference_ids: [curated_gas_phase_targets]
+    note: "Seed parent attachment channel for boron trichloride."

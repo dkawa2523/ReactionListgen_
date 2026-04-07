@@ -1,0 +1,84 @@
+extends: config_focused_runtime_base.yaml
+
+feeds:
+  - species_key: BCl3
+    formula: BCl3
+    display_name: Boron trichloride
+  - species_key: SiH2Cl2
+    formula: SiH2Cl2
+    display_name: Dichlorosilane
+  - species_key: SiHCl3
+    formula: SiHCl3
+    display_name: Trichlorosilane
+  - species_key: C8H20O4Si
+    formula: C8H20O4Si
+    display_name: Tetraethyl orthosilicate
+  - species_key: O2
+    formula: O2
+    display_name: Oxygen
+  - species_key: H2
+    formula: H2
+    display_name: Hydrogen
+
+projectiles: [e-]
+
+catalog_paths:
+  - catalog_00_references.yaml
+  - catalog_60_reactions_electron_dissociation_process_gases.yaml
+  - catalog_61_reactions_ion_neutral_followup_process_gases.yaml
+  - catalog_62_reactions_dissociative_recombination_process_gases.yaml
+  - catalog_63_reactions_electron_dissociation_precursor_advanced.yaml
+  - catalog_64_reactions_ion_neutral_followup_precursor_advanced.yaml
+  - catalog_65_reactions_dissociative_recombination_precursor_advanced.yaml
+
+state_masters:
+  - path: state_master_base.yaml
+    families: [core_plasma, hydrogen, oxygen, chlorine, boron, silicon, organosilicon]
+
+excited_state_registry_path: excited_state_registry.yaml
+
+state_filters:
+  charge_window_min: 0
+  charge_window_max: 1
+
+state_promotions:
+  molecular_excited_states:
+    enabled: true
+    source_systems: [qdb]
+    min_support_score: 0.84
+    max_states_per_species: 2
+    require_electron_signal: true
+
+template_promotions:
+  source_backed_templates:
+    enabled: true
+    source_systems: [qdb]
+    target_families: [boron, silicon, organosilicon]
+    allowed_reaction_families: [radical_neutral_reaction]
+    min_support_score: 0.84
+    max_templates_per_family: 4
+    require_catalog_species: true
+  molecular_excited_state_templates:
+    enabled: true
+    source_systems: [qdb]
+    target_families: [boron, silicon, organosilicon]
+    min_support_score: 0.84
+    include_electron_excitation: true
+    include_radiative_relaxation: true
+    include_collisional_quenching: true
+    include_superelastic_deexcitation: true
+    quenching_partners:
+      boron: [BCl3, O2]
+      silicon: [SiH2Cl2, SiHCl3, H2]
+      organosilicon: [C8H20O4Si, O2, H2]
+
+limits:
+  max_generation: 3
+  beam_width: 64
+  max_species: 120
+
+bootstrap:
+  reaction_evidence:
+    sources:
+      - kind: qdb_snapshot
+        path: ../snapshots/qdb_excited_precursor_coupling_snapshot.json

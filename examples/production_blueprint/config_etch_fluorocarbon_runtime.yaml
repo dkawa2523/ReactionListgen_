@@ -1,0 +1,69 @@
+extends: config_focused_runtime_base.yaml
+
+feeds:
+  - species_key: CF4
+    formula: CF4
+    display_name: Tetrafluoromethane
+  - species_key: CHF3
+    formula: CHF3
+    display_name: Trifluoromethane
+  - species_key: CH2F2
+    formula: CH2F2
+    display_name: Difluoromethane
+  - species_key: CH3F
+    formula: CH3F
+    display_name: Fluoromethane
+  - species_key: C2F6
+    formula: C2F6
+    display_name: Hexafluoroethane
+  - species_key: c-C4F8
+    formula: C4F8
+    display_name: Octafluorocyclobutane
+  - species_key: C5F8
+    formula: C5F8
+    display_name: Octafluorocyclopentene
+
+projectiles: [e-]
+
+catalog_paths:
+  - catalog_00_references.yaml
+  - catalog_24_reactions_electron_attachment_fluorocarbon.yaml
+  - catalog_25_reactions_electron_dissociative_ionization_fluorocarbon.yaml
+  - catalog_31_reactions_ion_neutral_followup_fluorocarbon.yaml
+  - catalog_41_reactions_neutral_fragmentation_fluorocarbon.yaml
+  - catalog_42_reactions_radical_fragmentation_fluorocarbon.yaml
+  - catalog_43_reactions_electron_ionization_gas_phase_targets.yaml
+  - catalog_44_reactions_electron_attachment_gas_phase_targets.yaml
+
+state_masters:
+  - path: state_master_base.yaml
+    families: [core_plasma, fluorocarbon]
+
+template_promotions:
+  source_backed_templates:
+    enabled: true
+    source_systems: [qdb]
+    target_families: [fluorocarbon]
+    allowed_reaction_families:
+      [
+        electron_attachment,
+        electron_dissociation,
+        electron_dissociative_ionization,
+        ion_neutral_followup,
+        neutral_fragmentation,
+        radical_fragmentation,
+      ]
+    min_support_score: 0.82
+    max_templates_per_family: 8
+    require_catalog_species: true
+
+limits:
+  max_generation: 3
+  beam_width: 72
+  max_species: 128
+
+bootstrap:
+  reaction_evidence:
+    sources:
+      - kind: qdb_snapshot
+        path: ../snapshots/qdb_halogen_fluorocarbon_template_promotion_snapshot.json

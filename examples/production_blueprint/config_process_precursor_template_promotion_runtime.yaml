@@ -1,0 +1,68 @@
+extends: config_focused_runtime_base.yaml
+
+feeds:
+  - species_key: SF6
+    formula: SF6
+    display_name: Sulfur hexafluoride
+  - species_key: NF3
+    formula: NF3
+    display_name: Nitrogen trifluoride
+  - species_key: BCl3
+    formula: BCl3
+    display_name: Boron trichloride
+  - species_key: SiH2Cl2
+    formula: SiH2Cl2
+    display_name: Dichlorosilane
+  - species_key: SiHCl3
+    formula: SiHCl3
+    display_name: Trichlorosilane
+  - species_key: WF6
+    formula: WF6
+    display_name: Tungsten hexafluoride
+  - species_key: C8H20O4Si
+    formula: C8H20O4Si
+    display_name: Tetraethyl orthosilicate
+  - species_key: O2
+    formula: O2
+    display_name: Oxygen
+  - species_key: H2
+    formula: H2
+    display_name: Hydrogen
+
+projectiles: [e-]
+
+catalog_paths:
+  - catalog_00_references.yaml
+  - catalog_43_reactions_electron_ionization_gas_phase_targets.yaml
+  - catalog_44_reactions_electron_attachment_gas_phase_targets.yaml
+  - catalog_60_reactions_electron_dissociation_process_gases.yaml
+  - catalog_61_reactions_ion_neutral_followup_process_gases.yaml
+  - catalog_62_reactions_dissociative_recombination_process_gases.yaml
+  - catalog_63_reactions_electron_dissociation_precursor_advanced.yaml
+  - catalog_64_reactions_ion_neutral_followup_precursor_advanced.yaml
+  - catalog_65_reactions_dissociative_recombination_precursor_advanced.yaml
+
+state_masters:
+  - path: state_master_base.yaml
+    families: [core_plasma, hydrogen, oxygen, nitrogen, sulfur, chlorine, boron, silicon, tungsten, organosilicon]
+
+template_promotions:
+  source_backed_templates:
+    enabled: true
+    source_systems: [qdb]
+    target_families: [sulfur, nitrogen, boron, silicon, tungsten, organosilicon]
+    allowed_reaction_families: [electron_dissociation, ion_neutral_followup, dissociative_recombination]
+    min_support_score: 0.84
+    max_templates_per_family: 6
+    require_catalog_species: true
+
+limits:
+  max_generation: 3
+  beam_width: 72
+  max_species: 128
+
+bootstrap:
+  reaction_evidence:
+    sources:
+      - kind: qdb_snapshot
+        path: ../snapshots/qdb_process_precursor_template_promotion_snapshot.json

@@ -1,0 +1,20 @@
+{
+  "records": [
+    {
+      "reactants": ["CH3", "H"],
+      "products": ["CH4"],
+      "citation": "Illustrative normalized NIST kinetics snapshot",
+      "source_url": "https://kinetics.nist.gov/kinetics/",
+      "support_score": 0.82,
+      "note": "Reverse-direction thermal record used as supporting evidence for CH4 fragmentation family."
+    },
+    {
+      "reactants": ["CH2", "H"],
+      "products": ["CH3"],
+      "citation": "Illustrative normalized NIST kinetics snapshot",
+      "source_url": "https://kinetics.nist.gov/kinetics/",
+      "support_score": 0.80,
+      "note": "Reverse-direction thermal record used as supporting evidence for radical contraction ladder."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+extends: config_focused_runtime_base.yaml
+
+feeds:
+  - species_key: O2
+    formula: O2
+    display_name: Oxygen
+
+projectiles: [e-, Ar+]
+
+catalog_paths:
+  - catalog_00_references.yaml
+  - catalog_30_reactions_charge_transfer_noble_gas.yaml
+  - catalog_32_reactions_electron_attachment_oxygen.yaml
+  - catalog_33_reactions_electron_ionization_oxygen.yaml
+  - catalog_34_reactions_electron_dissociation_oxygen.yaml
+  - catalog_35_reactions_electron_excitation_oxygen.yaml
+  - catalog_66_reactions_followup_oxygen_argon.yaml
+
+state_masters:
+  - path: state_master_base.yaml
+    families: [core_plasma, noble_gas, oxygen]
+
+template_promotions:
+  source_backed_templates:
+    enabled: true
+    source_systems: [qdb]
+    target_families: [noble_gas, oxygen]
+    allowed_reaction_families:
+      [
+        electron_attachment,
+        electron_ionization,
+        electron_dissociation,
+        charge_transfer,
+        dissociative_recombination,
+        mutual_neutralization,
+        ion_neutral_followup,
+      ]
+    min_support_score: 0.82
+    max_templates_per_family: 12
+    require_catalog_species: true
+
+limits:
+  max_generation: 3
+  beam_width: 24
+  max_species: 64
+
+bootstrap:
+  reaction_evidence:
+    sources:
+      - kind: qdb_snapshot
+        path: ../snapshots/qdb_oxygen_argon_template_promotion_snapshot.json

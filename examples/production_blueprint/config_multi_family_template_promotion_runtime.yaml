@@ -1,0 +1,56 @@
+extends: config_focused_runtime_base.yaml
+
+feeds:
+  - species_key: O2
+    formula: O2
+    display_name: Oxygen
+  - species_key: N2
+    formula: N2
+    display_name: Nitrogen
+  - species_key: CH4
+    formula: CH4
+    display_name: Methane
+
+projectiles: [e-]
+
+catalog_paths:
+  - catalog_00_references.yaml
+
+state_masters:
+  - path: state_master_base.yaml
+    families: [oxygen, nitrogen, hydrocarbon]
+
+excited_state_registry_path: excited_state_registry.yaml
+
+state_filters:
+  charge_window_min: 0
+  charge_window_max: 0
+
+state_promotions:
+  molecular_excited_states:
+    enabled: true
+    source_systems: [qdb]
+    min_support_score: 0.82
+    max_states_per_species: 3
+    require_electron_signal: true
+
+template_promotions:
+  source_backed_templates:
+    enabled: true
+    source_systems: [qdb]
+    target_families: [hydrocarbon, oxygen, nitrogen]
+    allowed_reaction_families: [electron_excitation_vibrational, electron_excitation]
+    min_support_score: 0.82
+    max_templates_per_family: 4
+    require_catalog_species: true
+
+limits:
+  max_generation: 3
+  beam_width: 32
+  max_species: 80
+
+bootstrap:
+  reaction_evidence:
+    sources:
+      - kind: qdb_snapshot
+        path: ../snapshots/qdb_multi_family_template_promotion_snapshot.json

@@ -1,0 +1,8 @@
+extends: config_etch_fluorocarbon_runtime.yaml
+
+feeds:
+  - species_key: CF4
+    formula: CF4
+    display_name: Tetrafluoromethane
+
+projectiles: [e-, Ar+]

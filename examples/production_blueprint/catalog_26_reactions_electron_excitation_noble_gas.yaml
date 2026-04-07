@@ -1,0 +1,24 @@
+reactions:
+  - key: noble_gas::electron_excitation::ar_1s5
+    family: electron_excitation
+    required_projectile: e-
+    reactants: [Ar]
+    products: ["Ar[1s5]"]
+    lhs_tokens: [e-, Ar]
+    rhs_tokens: [e-, Ar(1s5)]
+    threshold_ev: 11.55
+    base_confidence: 0.86
+    reference_ids: [curated_noble_gas]
+    note: "Representative argon metastable excitation channel."
+
+  - key: noble_gas::electron_excitation::ar_1s3
+    family: electron_excitation
+    required_projectile: e-
+    reactants: [Ar]
+    products: ["Ar[1s3]"]
+    lhs_tokens: [e-, Ar]
+    rhs_tokens: [e-, Ar(1s3)]
+    threshold_ev: 11.72
+    base_confidence: 0.84
+    reference_ids: [curated_noble_gas]
+    note: "Representative argon resonance excitation channel."

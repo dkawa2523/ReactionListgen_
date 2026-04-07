@@ -1,0 +1,12 @@
+reactions:
+  - key: oxygen::electron_dissociation::o2_to_o_o
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [O2]
+    products: [O, O]
+    lhs_tokens: [e-, O2]
+    rhs_tokens: [e-, O, O]
+    threshold_ev: 5.10
+    base_confidence: 0.78
+    reference_ids: [curated_oxygen]
+    note: "Representative oxygen dissociation channel."

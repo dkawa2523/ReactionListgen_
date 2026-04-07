@@ -1,0 +1,4 @@
+# reaction_id type reactant1 reactant2 product1 product2 alpha beta gamma Tmin Tmax
+1001 4 CH3 H CH4 1.00E-10 0.00 0.00 10 800
+1002 4 CH2 H2 CH4 8.00E-11 0.00 0.00 10 800
+1003 4 Photon CH4 CH3 H 2.00E-09 0.00 0.00 10 800

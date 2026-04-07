@@ -1,0 +1,22 @@
+reactions:
+  - key: bromine::electron_ionization::br2_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [Br2]
+    products: [Br2+]
+    lhs_tokens: [e-, Br2]
+    rhs_tokens: [e-, e-, Br2+]
+    base_confidence: 0.82
+    reference_ids: [curated_bromine]
+    note: "Representative parent ionization channel for bromine."
+
+  - key: bromine::electron_ionization::hbr_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [HBr]
+    products: [HBr+]
+    lhs_tokens: [e-, HBr]
+    rhs_tokens: [e-, e-, HBr+]
+    base_confidence: 0.80
+    reference_ids: [curated_bromine]
+    note: "Representative parent ionization channel for hydrogen bromide."

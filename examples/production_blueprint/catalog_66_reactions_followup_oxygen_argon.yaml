@@ -1,0 +1,63 @@
+reactions:
+  - key: oxygen_argon::dissociative_recombination::o2_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [O2+]
+    products: [O, O]
+    lhs_tokens: [e-, O2+]
+    rhs_tokens: [O, O]
+    base_confidence: 0.78
+    reference_ids: [curated_oxygen]
+    note: "Representative dissociative recombination channel for molecular oxygen cations."
+
+  - key: oxygen_argon::electron_attachment::o_atom
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [O]
+    products: [O-]
+    lhs_tokens: [e-, O]
+    rhs_tokens: [O-]
+    threshold_ev: 0.0
+    base_confidence: 0.71
+    reference_ids: [curated_oxygen]
+    note: "Representative atomic-oxygen attachment channel."
+
+  - key: oxygen_argon::charge_transfer::ar_plus_o
+    family: charge_transfer
+    reactants: [Ar+, O]
+    products: [Ar, O+]
+    lhs_tokens: [Ar+, O]
+    rhs_tokens: [Ar, O+]
+    base_confidence: 0.75
+    reference_ids: [curated_noble_gas, curated_oxygen]
+    note: "Representative argon-cation charge-transfer channel into atomic oxygen."
+
+  - key: oxygen_argon::mutual_neutralization::ar_plus_o_minus
+    family: mutual_neutralization
+    reactants: [Ar+, O-]
+    products: [Ar, O]
+    lhs_tokens: [Ar+, O-]
+    rhs_tokens: [Ar, O]
+    base_confidence: 0.73
+    reference_ids: [curated_noble_gas, curated_oxygen]
+    note: "Representative mutual-neutralization channel between argon cations and oxygen anions."
+
+  - key: oxygen_argon::mutual_neutralization::ar_plus_o2_minus
+    family: mutual_neutralization
+    reactants: [Ar+, O2-]
+    products: [Ar, O2]
+    lhs_tokens: [Ar+, O2-]
+    rhs_tokens: [Ar, O2]
+    base_confidence: 0.74
+    reference_ids: [curated_noble_gas, curated_oxygen]
+    note: "Representative mutual-neutralization channel between argon cations and molecular-oxygen anions."
+
+  - key: oxygen_argon::ion_neutral_followup::o_plus_o2
+    family: ion_neutral_followup
+    reactants: [O+, O2]
+    products: [O, O2+]
+    lhs_tokens: [O+, O2]
+    rhs_tokens: [O, O2+]
+    base_confidence: 0.72
+    reference_ids: [curated_oxygen]
+    note: "Representative oxygen-cation follow-up channel in molecular oxygen."

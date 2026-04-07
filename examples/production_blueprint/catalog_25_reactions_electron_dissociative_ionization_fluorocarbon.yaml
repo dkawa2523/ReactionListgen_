@@ -1,0 +1,24 @@
+reactions:
+  - key: fluorocarbon::electron_dissociative_ionization::cc4f8_c2f4_plus
+    family: electron_dissociative_ionization
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [C2F4+, C2F4]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [e-, e-, C2F4+, C2F4]
+    threshold_ev: 12.0
+    base_confidence: 0.84
+    reference_ids: [curated_fluorocarbon]
+    note: "Representative symmetric fluorocarbon dissociative ionization channel."
+
+  - key: fluorocarbon::electron_dissociative_ionization::cc4f8_c3f5_plus
+    family: electron_dissociative_ionization
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [C3F5+, CF3]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [e-, e-, C3F5+, CF3]
+    threshold_ev: 12.0
+    base_confidence: 0.84
+    reference_ids: [curated_fluorocarbon]
+    note: "Representative dissociative ionization channel toward C3F5+."

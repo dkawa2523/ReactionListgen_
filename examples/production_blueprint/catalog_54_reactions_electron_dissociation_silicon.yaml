@@ -1,0 +1,33 @@
+reactions:
+  - key: silicon::electron_dissociation::sih4_to_sih3_h
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [SiH4]
+    products: [SiH3, H]
+    lhs_tokens: [e-, SiH4]
+    rhs_tokens: [e-, SiH3, H]
+    base_confidence: 0.81
+    reference_ids: [curated_silicon]
+    note: "Representative Si-H bond cleavage channel for silane."
+
+  - key: silicon::electron_dissociation::sih2cl2_to_sihcl2_h
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [SiH2Cl2]
+    products: [SiHCl2, H]
+    lhs_tokens: [e-, SiH2Cl2]
+    rhs_tokens: [e-, SiHCl2, H]
+    base_confidence: 0.79
+    reference_ids: [curated_silicon]
+    note: "Representative Si-H cleavage channel for dichlorosilane."
+
+  - key: silicon::electron_dissociation::sihcl3_to_sicl3_h
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [SiHCl3]
+    products: [SiCl3, H]
+    lhs_tokens: [e-, SiHCl3]
+    rhs_tokens: [e-, SiCl3, H]
+    base_confidence: 0.79
+    reference_ids: [curated_silicon]
+    note: "Representative Si-H cleavage channel for trichlorosilane."

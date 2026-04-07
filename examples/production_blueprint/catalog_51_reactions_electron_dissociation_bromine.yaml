@@ -1,0 +1,22 @@
+reactions:
+  - key: bromine::electron_dissociation::br2_to_br_br
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [Br2]
+    products: [Br, Br]
+    lhs_tokens: [e-, Br2]
+    rhs_tokens: [e-, Br, Br]
+    base_confidence: 0.80
+    reference_ids: [curated_bromine]
+    note: "Representative dissociation channel for bromine."
+
+  - key: bromine::electron_dissociation::hbr_to_h_br
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [HBr]
+    products: [H, Br]
+    lhs_tokens: [e-, HBr]
+    rhs_tokens: [e-, H, Br]
+    base_confidence: 0.79
+    reference_ids: [curated_bromine]
+    note: "Representative dissociation channel for hydrogen bromide."

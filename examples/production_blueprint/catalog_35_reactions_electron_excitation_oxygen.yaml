@@ -1,0 +1,24 @@
+reactions:
+  - key: oxygen::electron_excitation::o2_a1delta
+    family: electron_excitation
+    required_projectile: e-
+    reactants: [O2]
+    products: ["O2[a1Delta_g]"]
+    lhs_tokens: [e-, O2]
+    rhs_tokens: [e-, O2(a1Delta_g)]
+    threshold_ev: 0.98
+    base_confidence: 0.84
+    reference_ids: [curated_oxygen]
+    note: "Representative oxygen metastable excitation channel."
+
+  - key: oxygen::electron_excitation::o2_b1sigma
+    family: electron_excitation
+    required_projectile: e-
+    reactants: [O2]
+    products: ["O2[b1Sigma_g_plus]"]
+    lhs_tokens: [e-, O2]
+    rhs_tokens: [e-, O2(b1Sigma_g+)]
+    threshold_ev: 1.63
+    base_confidence: 0.82
+    reference_ids: [curated_oxygen]
+    note: "Representative higher oxygen excited-state channel."

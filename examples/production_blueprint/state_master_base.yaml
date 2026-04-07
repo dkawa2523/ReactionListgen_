@@ -1,0 +1,848 @@
+state_master:
+  - family: core_plasma
+    species_id: hydrogen_atom
+    preferred_key: H
+    display_name: Hydrogen atom
+    formula: H
+    aliases: [H_atom]
+    tags: [core, atom, hydrogen]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: atomic_asd
+    priority: 100
+    required_sources: [nist_asd, atct]
+    enabled: true
+
+  - family: core_plasma
+    species_id: carbon_atom
+    preferred_key: C
+    display_name: Carbon atom
+    formula: C
+    aliases: [C_atom]
+    tags: [core, atom, carbon]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: atomic_asd
+    priority: 100
+    required_sources: [nist_asd, atct]
+    enabled: true
+
+  - family: core_plasma
+    species_id: fluorine_atom
+    preferred_key: F
+    display_name: Fluorine atom
+    formula: F
+    aliases: [F_atom]
+    tags: [core, atom, fluorine]
+    allowed_charges: [0]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: atomic_asd
+    priority: 100
+    required_sources: [nist_asd, atct]
+    enabled: true
+
+  - family: core_plasma
+    species_id: oxygen_atom
+    preferred_key: O
+    display_name: Oxygen atom
+    formula: O
+    aliases: [O_atom]
+    tags: [core, atom, oxygen]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: atomic_asd
+    priority: 100
+    required_sources: [nist_asd, atct]
+    enabled: true
+
+  - family: core_plasma
+    species_id: nitrogen_atom
+    preferred_key: N
+    display_name: Nitrogen atom
+    formula: N
+    aliases: [N_atom]
+    tags: [core, atom, nitrogen]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: atomic_asd
+    priority: 100
+    required_sources: [nist_asd, atct]
+    enabled: true
+
+  - family: noble_gas
+    species_id: argon
+    preferred_key: Ar
+    display_name: Argon
+    formula: Ar
+    aliases: [argon]
+    tags: [core, noble_gas]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: atomic_asd
+    priority: 95
+    required_sources: [nist_asd]
+    enabled: true
+
+  - family: noble_gas
+    species_id: helium
+    preferred_key: He
+    display_name: Helium
+    formula: He
+    aliases: [helium]
+    tags: [core, noble_gas, support_gas]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 94
+    required_sources: [nist_asd]
+    enabled: true
+
+  - family: hydrogen
+    species_id: hydrogen_molecule
+    preferred_key: H2
+    display_name: Hydrogen
+    formula: H2
+    aliases: [hydrogen]
+    tags: [feed_candidate, hydrogen, support_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 98
+    required_sources: [nist_kinetics]
+    enabled: true
+
+  - family: oxygen
+    species_id: oxygen_molecule
+    preferred_key: O2
+    display_name: Oxygen
+    formula: O2
+    aliases: [oxygen]
+    tags: [feed_candidate, oxygen]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: molecular_curated
+    priority: 98
+    required_sources: [qdb, nist_kinetics]
+    excited_states:
+      - label: a1Delta_g
+        energy_ev: 0.98
+        display_name: O2(a1Delta_g)
+        tags: [metastable, molecular_excited]
+      - label: b1Sigma_g_plus
+        energy_ev: 1.63
+        display_name: O2(b1Sigma_g+)
+        tags: [metastable, molecular_excited]
+    enabled: true
+
+  - family: nitrogen
+    species_id: nitrogen_molecule
+    preferred_key: N2
+    display_name: Nitrogen
+    formula: N2
+    aliases: [nitrogen]
+    tags: [feed_candidate, nitrogen]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: molecular_curated
+    priority: 98
+    required_sources: [qdb, nist_kinetics]
+    excited_states:
+      - label: A3Sigma_u_plus
+        energy_ev: 6.17
+        display_name: N2(A3Sigma_u+)
+        tags: [metastable, molecular_excited]
+    enabled: true
+
+  - family: hydrocarbon
+    species_id: methane
+    preferred_key: CH4
+    display_name: Methane
+    formula: CH4
+    aliases: [methane]
+    tags: [feed_candidate, hydrocarbon]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: molecular_curated
+    priority: 100
+    required_sources: [pubchem, qdb, nist_kinetics]
+    excited_states:
+      - label: V24
+        energy_ev: 0.162
+        display_name: CH4(v24)
+        tags: [vibrational]
+      - label: V13
+        energy_ev: 0.361
+        display_name: CH4(v13)
+        tags: [vibrational]
+    enabled: true
+
+  - family: fluorocarbon
+    species_id: tetrafluoromethane
+    preferred_key: CF4
+    display_name: Tetrafluoromethane
+    formula: CF4
+    aliases: [carbon_tetrafluoride]
+    tags: [feed_candidate, fluorocarbon, etch_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 99
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: fluorocarbon
+    species_id: trifluoromethane
+    preferred_key: CHF3
+    display_name: Trifluoromethane
+    formula: CHF3
+    aliases: [fluoroform]
+    tags: [feed_candidate, fluorocarbon, etch_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 99
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: fluorocarbon
+    species_id: difluoromethane
+    preferred_key: CH2F2
+    display_name: Difluoromethane
+    formula: CH2F2
+    aliases: [methylene_fluoride]
+    tags: [feed_candidate, fluorocarbon, etch_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 98
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: fluorocarbon
+    species_id: monofluoromethane
+    preferred_key: CH3F
+    display_name: Fluoromethane
+    formula: CH3F
+    aliases: [methyl_fluoride]
+    tags: [feed_candidate, fluorocarbon, etch_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 97
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: fluorocarbon
+    species_id: hexafluoroethane
+    preferred_key: C2F6
+    display_name: Hexafluoroethane
+    formula: C2F6
+    aliases: [perfluoroethane]
+    tags: [feed_candidate, fluorocarbon, etch_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 99
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: fluorocarbon
+    species_id: cyclo_c4f8
+    preferred_key: c-C4F8
+    display_name: Cyclobutane, octafluoro-
+    formula: C4F8
+    aliases: [C4F8, cyclobutane_octafluoro]
+    tags: [feed_candidate, fluorocarbon]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: molecular_curated
+    priority: 100
+    required_sources: [pubchem, ideadb, qdb]
+    enabled: true
+
+  - family: fluorocarbon
+    species_id: octafluorocyclopentene
+    preferred_key: C5F8
+    display_name: Octafluorocyclopentene
+    formula: C5F8
+    aliases: [perfluorocyclopentene]
+    tags: [feed_candidate, fluorocarbon, etch_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 96
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: sulfur
+    species_id: sulfur_atom
+    preferred_key: S
+    display_name: Sulfur atom
+    formula: S
+    aliases: [S_atom]
+    tags: [core, atom, sulfur]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 85
+    required_sources: [atct]
+    enabled: true
+
+  - family: sulfur
+    species_id: sulfur_hexafluoride
+    preferred_key: SF6
+    display_name: Sulfur hexafluoride
+    formula: SF6
+    aliases: [sulfur_hexafluoride]
+    tags: [feed_candidate, sulfur, inorganic_fluoride, etch_gas, clean_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: molecular_promoted
+    priority: 99
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: sulfur
+    species_id: sulfur_pentafluoride
+    preferred_key: SF5
+    display_name: Sulfur pentafluoride fragment
+    formula: SF5
+    aliases: [sulfur_pentafluoride]
+    tags: [intermediate, sulfur, inorganic_fluoride, radical]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 94
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: sulfur
+    species_id: sulfur_tetrafluoride
+    preferred_key: SF4
+    display_name: Sulfur tetrafluoride fragment
+    formula: SF4
+    aliases: [sulfur_tetrafluoride]
+    tags: [intermediate, sulfur, inorganic_fluoride]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 92
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: nitrogen
+    species_id: nitrogen_trifluoride
+    preferred_key: NF3
+    display_name: Nitrogen trifluoride
+    formula: NF3
+    aliases: [nitrogen_trifluoride]
+    tags: [feed_candidate, nitrogen, inorganic_fluoride, etch_gas, clean_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: molecular_promoted
+    priority: 99
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: nitrogen
+    species_id: difluoroamino
+    preferred_key: NF2
+    display_name: Difluoroamino fragment
+    formula: NF2
+    aliases: [difluoroamino]
+    tags: [intermediate, nitrogen, inorganic_fluoride, radical]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 93
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: nitrogen
+    species_id: ammonia
+    preferred_key: NH3
+    display_name: Ammonia
+    formula: NH3
+    aliases: [ammonia]
+    tags: [feed_candidate, nitrogen, deposition_reactant]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 99
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: nitrogen
+    species_id: amidogen
+    preferred_key: NH2
+    display_name: Amidogen radical
+    formula: NH2
+    aliases: [amidogen]
+    tags: [intermediate, nitrogen, radical]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 94
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: nitrogen
+    species_id: nitrous_oxide
+    preferred_key: N2O
+    display_name: Nitrous oxide
+    formula: N2O
+    aliases: [nitrous_oxide]
+    tags: [feed_candidate, nitrogen, oxygenated, deposition_reactant]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 98
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: nitrogen
+    species_id: nitric_oxide
+    preferred_key: "NO"
+    display_name: Nitric oxide
+    formula: "NO"
+    aliases: [nitric_oxide]
+    tags: [intermediate, nitrogen, oxygenated]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 93
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: oxygen
+    species_id: ozone
+    preferred_key: O3
+    display_name: Ozone
+    formula: O3
+    aliases: [ozone]
+    tags: [feed_candidate, oxygen, deposition_reactant]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 98
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: chlorine
+    species_id: chlorine_atom
+    preferred_key: Cl
+    display_name: Chlorine atom
+    formula: Cl
+    aliases: [Cl_atom]
+    tags: [core, atom, chlorine]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 90
+    required_sources: [atct]
+    enabled: true
+
+  - family: chlorine
+    species_id: chlorine_molecule
+    preferred_key: Cl2
+    display_name: Chlorine
+    formula: Cl2
+    aliases: [chlorine]
+    tags: [feed_candidate, chlorine, etch_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 99
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: chlorine
+    species_id: hydrogen_chloride
+    preferred_key: HCl
+    display_name: Hydrogen chloride
+    formula: HCl
+    aliases: [hydrogen_chloride]
+    tags: [feed_candidate, chlorine, etch_gas, clean_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 98
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: bromine
+    species_id: bromine_atom
+    preferred_key: Br
+    display_name: Bromine atom
+    formula: Br
+    aliases: [Br_atom]
+    tags: [core, atom, bromine]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 88
+    required_sources: [atct]
+    enabled: true
+
+  - family: bromine
+    species_id: bromine_molecule
+    preferred_key: Br2
+    display_name: Bromine
+    formula: Br2
+    aliases: [bromine]
+    tags: [feed_candidate, bromine, etch_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 96
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: bromine
+    species_id: hydrogen_bromide
+    preferred_key: HBr
+    display_name: Hydrogen bromide
+    formula: HBr
+    aliases: [hydrogen_bromide]
+    tags: [feed_candidate, bromine, etch_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 98
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: boron
+    species_id: boron_atom
+    preferred_key: B
+    display_name: Boron atom
+    formula: B
+    aliases: [B_atom]
+    tags: [core, atom, boron]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 88
+    required_sources: [atct]
+    enabled: true
+
+  - family: boron
+    species_id: boron_trichloride
+    preferred_key: BCl3
+    display_name: Boron trichloride
+    formula: BCl3
+    aliases: [boron_trichloride]
+    tags: [feed_candidate, boron, chlorine, etch_gas]
+    allowed_charges: [-1, 0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: molecular_promoted
+    priority: 98
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: boron
+    species_id: boron_dichloride
+    preferred_key: BCl2
+    display_name: Boron dichloride fragment
+    formula: BCl2
+    aliases: [boron_dichloride]
+    tags: [intermediate, boron, chlorine]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 92
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: silicon
+    species_id: silicon_atom
+    preferred_key: Si
+    display_name: Silicon atom
+    formula: Si
+    aliases: [Si_atom]
+    tags: [core, atom, silicon]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 90
+    required_sources: [atct]
+    enabled: true
+
+  - family: silicon
+    species_id: silyl_radical
+    preferred_key: SiH3
+    display_name: Silyl radical
+    formula: SiH3
+    aliases: [silyl]
+    tags: [intermediate, silicon, radical]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 92
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: silicon
+    species_id: silylene
+    preferred_key: SiH2
+    display_name: Silylene
+    formula: SiH2
+    aliases: [silylene]
+    tags: [intermediate, silicon, radical]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 91
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: silicon
+    species_id: silyne
+    preferred_key: SiH
+    display_name: SiH radical
+    formula: SiH
+    aliases: [sih_radical]
+    tags: [intermediate, silicon, radical]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 89
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: silicon
+    species_id: silane
+    preferred_key: SiH4
+    display_name: Silane
+    formula: SiH4
+    aliases: [silane]
+    tags: [feed_candidate, silicon, deposition_precursor]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 99
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: silicon
+    species_id: chlorosilyl_dihydride
+    preferred_key: SiHCl2
+    display_name: Chlorosilyl dihydride fragment
+    formula: SiHCl2
+    aliases: [chlorosilyl_dihydride]
+    tags: [intermediate, silicon, chlorine]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 91
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: silicon
+    species_id: dichlorosilane
+    preferred_key: SiH2Cl2
+    display_name: Dichlorosilane
+    formula: SiH2Cl2
+    aliases: [dichlorosilane, DCS]
+    tags: [feed_candidate, silicon, chlorine, deposition_precursor]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: molecular_promoted
+    priority: 98
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: silicon
+    species_id: trichlorosilyl
+    preferred_key: SiCl3
+    display_name: Trichlorosilyl fragment
+    formula: SiCl3
+    aliases: [trichlorosilyl]
+    tags: [intermediate, silicon, chlorine]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 90
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: silicon
+    species_id: dichlorosilylene
+    preferred_key: SiCl2
+    display_name: Dichlorosilylene fragment
+    formula: SiCl2
+    aliases: [dichlorosilylene]
+    tags: [intermediate, silicon, chlorine]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 89
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: silicon
+    species_id: trichlorosilane
+    preferred_key: SiHCl3
+    display_name: Trichlorosilane
+    formula: SiHCl3
+    aliases: [trichlorosilane, TCS]
+    tags: [feed_candidate, silicon, chlorine, deposition_precursor]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: molecular_promoted
+    priority: 98
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: tungsten
+    species_id: tungsten_atom
+    preferred_key: W
+    display_name: Tungsten atom
+    formula: W
+    aliases: [W_atom]
+    tags: [core, atom, tungsten]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 84
+    required_sources: [atct]
+    enabled: true
+
+  - family: tungsten
+    species_id: tungsten_hexafluoride
+    preferred_key: WF6
+    display_name: Tungsten hexafluoride
+    formula: WF6
+    aliases: [tungsten_hexafluoride]
+    tags: [feed_candidate, tungsten, inorganic_fluoride, deposition_precursor]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: molecular_promoted
+    priority: 97
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: tungsten
+    species_id: tungsten_pentafluoride
+    preferred_key: WF5
+    display_name: Tungsten pentafluoride fragment
+    formula: WF5
+    aliases: [tungsten_pentafluoride]
+    tags: [intermediate, tungsten, inorganic_fluoride]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 92
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: tungsten
+    species_id: tungsten_tetrafluoride
+    preferred_key: WF4
+    display_name: Tungsten tetrafluoride fragment
+    formula: WF4
+    aliases: [tungsten_tetrafluoride]
+    tags: [intermediate, tungsten, inorganic_fluoride]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 90
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: organosilicon
+    species_id: teos
+    preferred_key: C8H20O4Si
+    display_name: Tetraethyl orthosilicate
+    formula: C8H20O4Si
+    aliases: [TEOS, tetraethoxysilane]
+    tags: [feed_candidate, organosilicon, silicon, deposition_precursor]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: molecular_promoted
+    priority: 96
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: organosilicon
+    species_id: triethoxysilyl_fragment
+    preferred_key: C6H15O3Si
+    display_name: Triethoxysilyl fragment
+    formula: C6H15O3Si
+    aliases: [triethoxysilyl]
+    tags: [intermediate, organosilicon, silicon, radical]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 90
+    required_sources: [pubchem, qdb]
+    enabled: true
+
+  - family: organosilicon
+    species_id: ethoxy_radical
+    preferred_key: C2H5O
+    display_name: Ethoxy radical
+    formula: C2H5O
+    aliases: [ethoxy]
+    tags: [intermediate, organosilicon, oxygenated, radical]
+    allowed_charges: [0, 1]
+    charge_window_min: -2
+    charge_window_max: 2
+    excitation_policy: none
+    priority: 89
+    required_sources: [pubchem, qdb]
+    enabled: true

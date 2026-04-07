@@ -1,0 +1,20 @@
+reactions:
+  - key: bromine::radical_neutral::br_plus_h2
+    family: radical_neutral_reaction
+    reactants: [Br, H2]
+    products: [HBr, H]
+    lhs_tokens: [Br, H2]
+    rhs_tokens: [HBr, H]
+    base_confidence: 0.73
+    reference_ids: [curated_bromine]
+    note: "Representative bromine chain-propagation step in hydrogen-containing gas mixtures."
+
+  - key: bromine::radical_neutral::h_plus_br2
+    family: radical_neutral_reaction
+    reactants: [H, Br2]
+    products: [HBr, Br]
+    lhs_tokens: [H, Br2]
+    rhs_tokens: [HBr, Br]
+    base_confidence: 0.75
+    reference_ids: [curated_bromine]
+    note: "Representative hydrogen-assisted bromine conversion step."

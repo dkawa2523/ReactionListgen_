@@ -1,0 +1,33 @@
+generation,family,equation,threshold_ev,delta_h_kj_mol,confidence,evidence_sources,note
+1,electron_attachment,e- + C4F8 -> C3F5- + CF3,0.0,,1.000,c-C4F8 curated reaction library,
+1,electron_attachment,e- + C4F8 -> C4F8-,0.0,,1.000,c-C4F8 curated reaction library,
+1,electron_attachment,e- + C4F8 -> CF3- + C3F5,0.0,,1.000,c-C4F8 curated reaction library,
+1,electron_attachment,e- + C4F8 -> F- + C4F7,0.0,,1.000,c-C4F8 curated reaction library,
+1,electron_attachment,e- + CH4 -> CH3 + H-,7.7,,1.000,"CH4 curated reaction library, IDEADB (illustrative XSAMS)",Dissociative attachment channel to H-.
+1,electron_attachment,e- + CH4 -> H2 + CH2-,9.0,,1.000,CH4 curated reaction library,Dissociative attachment channel to CH2-.
+1,electron_collision_evidence,e- + CH4 -> H- + CH3,,,1.000,IDEADB (illustrative XSAMS),VAMDC XSAMS dissociative_electron_attachment record.
+1,electron_dissociation,e- + CH4 -> e- + CH + H2 + H,12.0,888.6,1.000,"CH4 curated reaction library, Active Thermochemical Tables",
+1,electron_dissociation,e- + CH4 -> e- + CH2 + H2,10.5,466.6,1.000,"CH4 curated reaction library, Active Thermochemical Tables, UMIST Database for Astrochemistry, KIDA",
+1,electron_dissociation,e- + CH4 -> e- + CH3 + H,9.0,438.6,1.000,"CH4 curated reaction library, Active Thermochemical Tables, NIST Chemical Kinetics Database, UMIST Database for Astrochemistry, KIDA",
+1,electron_dissociative_ionization,e- + C4F8 -> e- + e- + C2F3+ + C2F5,12.0,,1.000,"c-C4F8 curated reaction library, balanced_counterfragment_inference",
+1,electron_dissociative_ionization,e- + C4F8 -> e- + e- + C2F4+ + C2F4,12.0,,1.000,"c-C4F8 curated reaction library, Quantemol-DB",
+1,electron_dissociative_ionization,e- + C4F8 -> e- + e- + C3F5+ + CF3,12.0,,1.000,c-C4F8 curated reaction library,
+1,electron_dissociative_ionization,e- + C4F8 -> e- + e- + CF2+ + C3F6,12.0,,1.000,c-C4F8 curated reaction library,
+1,electron_dissociative_ionization,e- + CH4 -> e- + e- + H + CH3+,14.3,,1.000,"CH4 curated reaction library, Quantemol-DB",Direct dissociative ionization channel.
+1,electron_excitation_vibrational,e- + CH4 -> e- + CH4(V13),0.361,,1.000,CH4 curated reaction library,
+1,electron_excitation_vibrational,e- + CH4 -> e- + CH4(V24),0.162,,1.000,CH4 curated reaction library,
+1,electron_ionization,e- + CH4 -> e- + e- + CH4+,12.6,,1.000,"CH4 curated reaction library, Quantemol-DB",Parent ionization channel.
+1,neutral_fragmentation,C4F8 -> C2F4 + C2F4,,,0.870,packaged_curated_fragmentation,
+1,neutral_fragmentation,C4F8 -> C4F7 + F,,,0.850,packaged_curated_fragmentation,
+2,gas_phase_evidence,CH2 + H -> CH3,,-464.0,1.000,"NIST Chemical Kinetics Database, Active Thermochemical Tables",Reverse-direction thermal record used as supporting evidence for radical contraction ladder.
+2,gas_phase_evidence,CH2 + H2 -> CH4,,-466.6,0.871,"UMIST Database for Astrochemistry, Active Thermochemical Tables, KIDA",UMIST RATE22 #9002 type=IN method=C accuracy=factor2; Illustrative UMIST radical stabilization
+2,gas_phase_evidence,CH3 + H -> CH4,,-438.6,1.000,"NIST Chemical Kinetics Database, Active Thermochemical Tables, UMIST Database for Astrochemistry, KIDA",Reverse-direction thermal record used as supporting evidence for CH4 fragmentation family.
+2,ion_fragmentation,CH3+ -> CH2+ + H,,,0.885,CH4 curated reaction library,
+2,ion_fragmentation,CH4+ -> CH3+ + H,,,0.965,CH4 curated reaction library,
+2,ion_neutral_followup,C2F3+ + C4F8 -> C3F5+ + C3F6,,,0.822,"c-C4F8 curated reaction library, mass_balance_completion",Missing co-products completed by exact balance.
+2,ion_neutral_followup,CF2+ + C4F8 -> C3F5+ + C2F5,,,0.822,"c-C4F8 curated reaction library, mass_balance_completion",Missing co-products completed by exact balance.
+2,radical_fragmentation,C2F4 -> CF2 + CF2,,,0.780,packaged_curated_fragmentation,
+2,radical_fragmentation,C3F5 -> C2F3 + CF2,,,0.740,packaged_curated_fragmentation,
+2,radical_fragmentation,C4F7 -> C3F5 + CF2,,,0.760,packaged_curated_fragmentation,
+2,radical_fragmentation,CH3 -> CH2 + H,,464.0,0.788,"packaged_curated_fragmentation, Active Thermochemical Tables, NIST Chemical Kinetics Database",
+3,ion_fragmentation,CH2+ -> CH+ + H,,,0.795,CH4 curated reaction library,

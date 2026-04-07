@@ -1,0 +1,36 @@
+references:
+  curated_ch4:
+    source_system: template_library
+    source_name: CH4 curated reaction library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.78
+    citation: "Packaged CH4 reaction template set"
+    note: "Curated methane family used as the starting network prior."
+
+  curated_c4f8:
+    source_system: template_library
+    source_name: c-C4F8 curated reaction library
+    acquisition_method: package_template
+    evidence_kind: curated_reaction_family
+    support_score: 0.78
+    citation: "Packaged c-C4F8 reaction template set"
+    note: "Curated fluorocarbon family used as the starting network prior."
+
+  curated_fragmentation_family:
+    source_system: template_library
+    source_name: packaged_curated_fragmentation
+    acquisition_method: package_template
+    evidence_kind: heuristic_family
+    support_score: 0.52
+    citation: "Curated fragmentation family"
+    note: "Balanced fragmentation step added to continue second and third generation expansion."
+
+  mass_balance_inference_family:
+    source_system: inference
+    source_name: balanced_counterfragment_inference
+    acquisition_method: package_template
+    evidence_kind: mass_balance_inference
+    support_score: 0.36
+    citation: "Mass and charge balanced counterfragment inference"
+    note: "Primary ionic product specified in the template; neutral counterpart inferred from conservation laws."

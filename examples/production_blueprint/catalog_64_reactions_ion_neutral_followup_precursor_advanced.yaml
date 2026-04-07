@@ -1,0 +1,50 @@
+reactions:
+  - key: advanced_precursors::ion_neutral_followup::wf6_plus_h2
+    family: ion_neutral_followup
+    reactants: [WF6+, H2]
+    products: [WF5, F, H2+]
+    lhs_tokens: [WF6+, H2]
+    rhs_tokens: [WF5, F, H2+]
+    base_confidence: 0.66
+    reference_ids: [curated_advanced_precursors]
+    note: "Representative tungsten-fluoride cation follow-up channel in hydrogen-containing precursor mixtures."
+
+  - key: advanced_precursors::ion_neutral_followup::wf5_plus_h2
+    family: ion_neutral_followup
+    reactants: [WF5+, H2]
+    products: [WF4, F, H2+]
+    lhs_tokens: [WF5+, H2]
+    rhs_tokens: [WF4, F, H2+]
+    base_confidence: 0.64
+    reference_ids: [curated_advanced_precursors]
+    note: "Second-step tungsten-fluoride cation follow-up channel."
+
+  - key: advanced_precursors::ion_neutral_followup::teos_plus_o2
+    family: ion_neutral_followup
+    reactants: [C8H20O4Si+, O2]
+    products: [C6H15O3Si, C2H5O, O2+]
+    lhs_tokens: [C8H20O4Si+, O2]
+    rhs_tokens: [C6H15O3Si, C2H5O, O2+]
+    base_confidence: 0.65
+    reference_ids: [curated_advanced_precursors]
+    note: "Representative TEOS cation follow-up channel in oxygen-containing mixtures."
+
+  - key: advanced_precursors::ion_neutral_followup::sih2cl2_plus_h2
+    family: ion_neutral_followup
+    reactants: [SiH2Cl2+, H2]
+    products: [SiCl2, H2, H2+]
+    lhs_tokens: [SiH2Cl2+, H2]
+    rhs_tokens: [SiCl2, H2, H2+]
+    base_confidence: 0.65
+    reference_ids: [curated_advanced_precursors]
+    note: "Alternative dichlorosilane cation follow-up channel that strips both hydrogens into the gas pool."
+
+  - key: advanced_precursors::ion_neutral_followup::sihcl3_plus_h2
+    family: ion_neutral_followup
+    reactants: [SiHCl3+, H2]
+    products: [SiCl2, HCl, H2+]
+    lhs_tokens: [SiHCl3+, H2]
+    rhs_tokens: [SiCl2, HCl, H2+]
+    base_confidence: 0.64
+    reference_ids: [curated_advanced_precursors]
+    note: "Alternative trichlorosilane cation follow-up channel that moves deeper into silicon-halide fragments."

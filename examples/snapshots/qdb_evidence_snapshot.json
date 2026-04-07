@@ -1,0 +1,31 @@
+{
+  "records": [
+    {
+      "reactants": ["CH4"],
+      "products": ["CH4+"],
+      "citation": "Illustrative normalized QDB snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.92,
+      "note": "Electron-impact parent ionization channel represented in a QDB chemistry set.",
+      "chemistry_id": 4
+    },
+    {
+      "reactants": ["CH4"],
+      "products": ["CH3+", "H"],
+      "citation": "Illustrative normalized QDB snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.92,
+      "note": "Electron-impact dissociative ionization channel represented in a QDB chemistry set.",
+      "chemistry_id": 4
+    },
+    {
+      "reactants": ["C4F8"],
+      "products": ["C2F4+", "C2F4"],
+      "citation": "Illustrative normalized QDB snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.91,
+      "note": "Fluorocarbon ionization channel represented in a QDB chemistry set.",
+      "chemistry_id": 11
+    }
+  ]
+}

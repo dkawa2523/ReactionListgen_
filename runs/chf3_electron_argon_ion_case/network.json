@@ -1,0 +1,453 @@
+﻿{
+    "metadata":  {
+                     "feed_count":  1,
+                     "species_count":  3,
+                     "reaction_count":  2,
+                     "loaded_resources":  [
+                                              "packaged:species_library.yaml",
+                                              "packaged:references.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_00_references.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_24_reactions_electron_attachment_fluorocarbon.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_25_reactions_electron_dissociative_ionization_fluorocarbon.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_31_reactions_ion_neutral_followup_fluorocarbon.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_41_reactions_neutral_fragmentation_fluorocarbon.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_42_reactions_radical_fragmentation_fluorocarbon.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+                                              "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+                                              "state_master:C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\state_master_base.yaml?families=core_plasma,fluorocarbon",
+                                              "template_promotion:source_backed_templates"
+                                          ],
+                     "catalog_policy":  {
+                                            "reaction_conflict_policy":  "prefer_higher_priority"
+                                        },
+                     "config_sources":  [
+                                            "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_focused_runtime_base.yaml",
+                                            "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_etch_fluorocarbon_runtime.yaml"
+                                        ],
+                     "network_manifest":  {
+                                              "generated_at":  "2026-04-07T04:40:08+00:00",
+                                              "config_sources":  [
+                                                                     "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_focused_runtime_base.yaml",
+                                                                     "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\config_etch_fluorocarbon_runtime.yaml"
+                                                                 ],
+                                              "catalog_policy":  {
+                                                                     "reaction_conflict_policy":  "prefer_higher_priority"
+                                                                 },
+                                              "species_count":  3,
+                                              "reaction_count":  2,
+                                              "species_by_origin":  [
+                                                                        {
+                                                                            "name":  "state_master",
+                                                                            "count":  3
+                                                                        }
+                                                                    ],
+                                              "reaction_by_origin":  [
+                                                                         {
+                                                                             "name":  "curated_catalog",
+                                                                             "count":  2
+                                                                         }
+                                                                     ],
+                                              "reaction_by_layer":  [
+                                                                        {
+                                                                            "name":  "catalog",
+                                                                            "count":  2
+                                                                        }
+                                                                    ],
+                                              "reaction_by_family":  [
+                                                                         {
+                                                                             "name":  "electron_attachment",
+                                                                             "count":  1
+                                                                         },
+                                                                         {
+                                                                             "name":  "electron_ionization",
+                                                                             "count":  1
+                                                                         }
+                                                                     ],
+                                              "reaction_template_source_systems":  [
+
+                                                                                   ],
+                                              "reaction_template_source_names":  [
+
+                                                                                 ],
+                                              "reaction_evidence_source_systems":  [
+                                                                                       {
+                                                                                           "name":  "template_library",
+                                                                                           "count":  2
+                                                                                       }
+                                                                                   ],
+                                              "reaction_evidence_source_names":  [
+                                                                                     {
+                                                                                         "name":  "production_gas_phase_targets_library",
+                                                                                         "count":  2
+                                                                                     }
+                                                                                 ],
+                                              "reaction_catalog_resources":  [
+                                                                                 {
+                                                                                     "name":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+                                                                                     "count":  1
+                                                                                 },
+                                                                                 {
+                                                                                     "name":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+                                                                                     "count":  1
+                                                                                 }
+                                                                             ],
+                                              "fallback_usage":  {
+                                                                     "count":  2,
+                                                                     "families":  [
+                                                                                      {
+                                                                                          "name":  "electron_attachment",
+                                                                                          "count":  1
+                                                                                      },
+                                                                                      {
+                                                                                          "name":  "electron_ionization",
+                                                                                          "count":  1
+                                                                                      }
+                                                                                  ],
+                                                                     "catalog_resources":  [
+                                                                                               {
+                                                                                                   "name":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+                                                                                                   "count":  1
+                                                                                               },
+                                                                                               {
+                                                                                                   "name":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+                                                                                                   "count":  1
+                                                                                               }
+                                                                                           ]
+                                                                 },
+                                              "promoted_usage":  {
+                                                                     "count":  0,
+                                                                     "origins":  [
+
+                                                                                 ],
+                                                                     "template_source_systems":  [
+
+                                                                                                 ],
+                                                                     "template_source_names":  [
+
+                                                                                               ]
+                                                                 }
+                                          }
+                 },
+    "species":  [
+                    {
+                        "prototype_key":  "CHF3",
+                        "display_name":  "Trifluoromethane",
+                        "formula":  "CHF3",
+                        "charge":  0,
+                        "state_class":  "ground",
+                        "generation":  0,
+                        "multiplicity":  null,
+                        "structure_id":  null,
+                        "excitation_label":  null,
+                        "excitation_energy_ev":  null,
+                        "tags":  [
+                                     "feed_candidate",
+                                     "fluorocarbon",
+                                     "etch_gas",
+                                     "generated_from_state_master",
+                                     "ground"
+                                 ],
+                        "metadata":  {
+                                         "state_origin":  "state_master",
+                                         "state_family":  "fluorocarbon",
+                                         "state_master_species_id":  "trifluoromethane"
+                                     },
+                        "identity":  null,
+                        "thermo":  {
+                                       "delta_hf_298_kj_mol":  null,
+                                       "delta_hf_0_kj_mol":  null,
+                                       "source_version":  null,
+                                       "doi":  null,
+                                       "source_url":  null
+                                   },
+                        "evidence":  [
+                                         {
+                                             "source_system":  "catalog",
+                                             "source_name":  "state_master",
+                                             "acquisition_method":  "package_template",
+                                             "evidence_kind":  "curated_species_record",
+                                             "support_score":  0.7,
+                                             "source_url":  null,
+                                             "locator":  "CHF3",
+                                             "citation":  null,
+                                             "retrieved_at":  null,
+                                             "note":  "Species instantiated from state_master.",
+                                             "raw_ref":  null
+                                         }
+                                     ],
+                        "confidence":  {
+                                           "base_score":  0.55,
+                                           "evidence_bonus":  0.175,
+                                           "balance_bonus":  0.08,
+                                           "threshold_bonus":  0.0,
+                                           "thermo_bonus":  0.0,
+                                           "generation_penalty":  0.0,
+                                           "final_score":  0.805,
+                                           "tier":  "high"
+                                       },
+                        "id":  "4a9fd273ed6b44429ccaa7a9f50c3b13"
+                    },
+                    {
+                        "prototype_key":  "CHF3+",
+                        "display_name":  "CHF3+",
+                        "formula":  "CHF3",
+                        "charge":  1,
+                        "state_class":  "cation",
+                        "generation":  1,
+                        "multiplicity":  null,
+                        "structure_id":  null,
+                        "excitation_label":  null,
+                        "excitation_energy_ev":  null,
+                        "tags":  [
+                                     "feed_candidate",
+                                     "fluorocarbon",
+                                     "etch_gas",
+                                     "generated_from_state_master",
+                                     "ion"
+                                 ],
+                        "metadata":  {
+                                         "state_origin":  "state_master",
+                                         "state_family":  "fluorocarbon",
+                                         "state_master_species_id":  "trifluoromethane"
+                                     },
+                        "identity":  null,
+                        "thermo":  {
+                                       "delta_hf_298_kj_mol":  null,
+                                       "delta_hf_0_kj_mol":  null,
+                                       "source_version":  null,
+                                       "doi":  null,
+                                       "source_url":  null
+                                   },
+                        "evidence":  [
+                                         {
+                                             "source_system":  "catalog",
+                                             "source_name":  "state_master",
+                                             "acquisition_method":  "package_template",
+                                             "evidence_kind":  "curated_species_record",
+                                             "support_score":  0.7,
+                                             "source_url":  null,
+                                             "locator":  "CHF3+",
+                                             "citation":  null,
+                                             "retrieved_at":  null,
+                                             "note":  "Species instantiated from state_master.",
+                                             "raw_ref":  null
+                                         }
+                                     ],
+                        "confidence":  {
+                                           "base_score":  0.95,
+                                           "evidence_bonus":  0.175,
+                                           "balance_bonus":  0.08,
+                                           "threshold_bonus":  0.0,
+                                           "thermo_bonus":  0.0,
+                                           "generation_penalty":  0.0,
+                                           "final_score":  1.0,
+                                           "tier":  "high"
+                                       },
+                        "id":  "aece749750814e998247e14fe8bb402c"
+                    },
+                    {
+                        "prototype_key":  "CHF3-",
+                        "display_name":  "CHF3-",
+                        "formula":  "CHF3",
+                        "charge":  -1,
+                        "state_class":  "anion",
+                        "generation":  1,
+                        "multiplicity":  null,
+                        "structure_id":  null,
+                        "excitation_label":  null,
+                        "excitation_energy_ev":  null,
+                        "tags":  [
+                                     "feed_candidate",
+                                     "fluorocarbon",
+                                     "etch_gas",
+                                     "generated_from_state_master",
+                                     "anion"
+                                 ],
+                        "metadata":  {
+                                         "state_origin":  "state_master",
+                                         "state_family":  "fluorocarbon",
+                                         "state_master_species_id":  "trifluoromethane"
+                                     },
+                        "identity":  null,
+                        "thermo":  {
+                                       "delta_hf_298_kj_mol":  null,
+                                       "delta_hf_0_kj_mol":  null,
+                                       "source_version":  null,
+                                       "doi":  null,
+                                       "source_url":  null
+                                   },
+                        "evidence":  [
+                                         {
+                                             "source_system":  "catalog",
+                                             "source_name":  "state_master",
+                                             "acquisition_method":  "package_template",
+                                             "evidence_kind":  "curated_species_record",
+                                             "support_score":  0.7,
+                                             "source_url":  null,
+                                             "locator":  "CHF3-",
+                                             "citation":  null,
+                                             "retrieved_at":  null,
+                                             "note":  "Species instantiated from state_master.",
+                                             "raw_ref":  null
+                                         }
+                                     ],
+                        "confidence":  {
+                                           "base_score":  0.95,
+                                           "evidence_bonus":  0.175,
+                                           "balance_bonus":  0.08,
+                                           "threshold_bonus":  0.0,
+                                           "thermo_bonus":  0.0,
+                                           "generation_penalty":  0.0,
+                                           "final_score":  1.0,
+                                           "tier":  "high"
+                                       },
+                        "id":  "897653bc19b34b71858ff7caed81c3c7"
+                    }
+                ],
+    "reactions":  [
+                      {
+                          "key":  "gas_phase_targets::electron_attachment::chf3_parent",
+                          "family":  "electron_attachment",
+                          "equation":  "e- + CHF3 -\u003e CHF3-",
+                          "reactant_state_ids":  [
+                                                     "4a9fd273ed6b44429ccaa7a9f50c3b13"
+                                                 ],
+                          "product_state_ids":  [
+                                                    "897653bc19b34b71858ff7caed81c3c7"
+                                                ],
+                          "reactant_keys":  [
+                                                "CHF3"
+                                            ],
+                          "product_keys":  [
+                                               "CHF3-"
+                                           ],
+                          "lhs_tokens":  [
+                                             "e-",
+                                             "CHF3"
+                                         ],
+                          "rhs_tokens":  [
+                                             "CHF3-"
+                                         ],
+                          "generation":  1,
+                          "threshold_ev":  0.0,
+                          "delta_h_kj_mol":  null,
+                          "evidence":  [
+                                           {
+                                               "source_system":  "template_library",
+                                               "source_name":  "production_gas_phase_targets_library",
+                                               "acquisition_method":  "package_template",
+                                               "evidence_kind":  "curated_reaction_family",
+                                               "support_score":  0.81,
+                                               "source_url":  null,
+                                               "locator":  "curated_gas_phase_targets",
+                                               "citation":  "Production curated gas-phase target library",
+                                               "retrieved_at":  null,
+                                               "note":  "Shared reference block for newly added gas-phase process feedstocks.",
+                                               "raw_ref":  null
+                                           }
+                                       ],
+                          "confidence":  {
+                                             "base_score":  0.76,
+                                             "evidence_bonus":  0.2025,
+                                             "balance_bonus":  0.12,
+                                             "threshold_bonus":  0.1,
+                                             "thermo_bonus":  0.0,
+                                             "generation_penalty":  0.0,
+                                             "final_score":  1.0,
+                                             "tier":  "high"
+                                         },
+                          "note":  "Seed parent attachment channel for trifluoromethane.",
+                          "metadata":  {
+                                           "template_origin":  "curated_catalog",
+                                           "template_layer":  "catalog",
+                                           "template_priority":  20,
+                                           "catalog_resource":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_44_reactions_electron_attachment_gas_phase_targets.yaml",
+                                           "reference_source_systems":  [
+                                                                            "template_library"
+                                                                        ],
+                                           "reference_source_names":  [
+                                                                          "production_gas_phase_targets_library"
+                                                                      ]
+                                       },
+                          "id":  "db82e6db2d1549419eae84a4a5b6022f"
+                      },
+                      {
+                          "key":  "gas_phase_targets::electron_ionization::chf3_parent",
+                          "family":  "electron_ionization",
+                          "equation":  "e- + CHF3 -\u003e e- + e- + CHF3+",
+                          "reactant_state_ids":  [
+                                                     "4a9fd273ed6b44429ccaa7a9f50c3b13"
+                                                 ],
+                          "product_state_ids":  [
+                                                    "aece749750814e998247e14fe8bb402c"
+                                                ],
+                          "reactant_keys":  [
+                                                "CHF3"
+                                            ],
+                          "product_keys":  [
+                                               "CHF3+"
+                                           ],
+                          "lhs_tokens":  [
+                                             "e-",
+                                             "CHF3"
+                                         ],
+                          "rhs_tokens":  [
+                                             "e-",
+                                             "e-",
+                                             "CHF3+"
+                                         ],
+                          "generation":  1,
+                          "threshold_ev":  null,
+                          "delta_h_kj_mol":  null,
+                          "evidence":  [
+                                           {
+                                               "source_system":  "template_library",
+                                               "source_name":  "production_gas_phase_targets_library",
+                                               "acquisition_method":  "package_template",
+                                               "evidence_kind":  "curated_reaction_family",
+                                               "support_score":  0.81,
+                                               "source_url":  null,
+                                               "locator":  "curated_gas_phase_targets",
+                                               "citation":  "Production curated gas-phase target library",
+                                               "retrieved_at":  null,
+                                               "note":  "Shared reference block for newly added gas-phase process feedstocks.",
+                                               "raw_ref":  null
+                                           }
+                                       ],
+                          "confidence":  {
+                                             "base_score":  0.8,
+                                             "evidence_bonus":  0.2025,
+                                             "balance_bonus":  0.12,
+                                             "threshold_bonus":  0.02,
+                                             "thermo_bonus":  0.0,
+                                             "generation_penalty":  0.0,
+                                             "final_score":  1.0,
+                                             "tier":  "high"
+                                         },
+                          "note":  "Representative parent ionization channel for trifluoromethane.",
+                          "metadata":  {
+                                           "template_origin":  "curated_catalog",
+                                           "template_layer":  "catalog",
+                                           "template_priority":  20,
+                                           "catalog_resource":  "C:\\Users\\user\\Desktop\\prb_v10_visuals\\examples\\production_blueprint\\catalog_43_reactions_electron_ionization_gas_phase_targets.yaml",
+                                           "reference_source_systems":  [
+                                                                            "template_library"
+                                                                        ],
+                                           "reference_source_names":  [
+                                                                          "production_gas_phase_targets_library"
+                                                                      ]
+                                       },
+                          "id":  "d4636e0e22fb497c8251cae859122e75"
+                      }
+                  ],
+    "diagnostics":  [
+                        {
+                            "level":  "warning",
+                            "code":  "generic_state",
+                            "message":  "Generic state synthesized for Ar+",
+                            "context":  {
+                                            "species_key":  "Ar+"
+                                        }
+                        }
+                    ]
+}

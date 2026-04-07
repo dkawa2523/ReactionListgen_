@@ -1,0 +1,30 @@
+reactions:
+  - key: silicon::radical_neutral::sih3_plus_h
+    family: radical_neutral_reaction
+    reactants: [SiH3, H]
+    products: [SiH4]
+    lhs_tokens: [SiH3, H]
+    rhs_tokens: [SiH4]
+    base_confidence: 0.73
+    reference_ids: [curated_silicon]
+    note: "Representative hydrogen addition step for silane radical closure."
+
+  - key: silicon::radical_neutral::sihcl2_plus_h
+    family: radical_neutral_reaction
+    reactants: [SiHCl2, H]
+    products: [SiH2Cl2]
+    lhs_tokens: [SiHCl2, H]
+    rhs_tokens: [SiH2Cl2]
+    base_confidence: 0.72
+    reference_ids: [curated_silicon]
+    note: "Representative hydrogen addition step for dichlorosilane radical closure."
+
+  - key: silicon::radical_neutral::sicl3_plus_h
+    family: radical_neutral_reaction
+    reactants: [SiCl3, H]
+    products: [SiHCl3]
+    lhs_tokens: [SiCl3, H]
+    rhs_tokens: [SiHCl3]
+    base_confidence: 0.72
+    reference_ids: [curated_silicon]
+    note: "Representative hydrogen addition step for trichlorosilane radical closure."

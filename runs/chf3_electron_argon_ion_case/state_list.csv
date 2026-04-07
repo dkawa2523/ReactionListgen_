@@ -1,0 +1,4 @@
+﻿"generation","prototype_key","display_name","formula","charge","state_class","excitation_label","origin"
+"0","CHF3","Trifluoromethane","CHF3","0","ground",,"state_master"
+"1","CHF3+","CHF3+","CHF3","1","cation",,"state_master"
+"1","CHF3-","CHF3-","CHF3","-1","anion",,"state_master"

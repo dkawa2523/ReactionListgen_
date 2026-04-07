@@ -1,0 +1,6 @@
+profiles:
+  - source_id: umist
+    family: astrochemistry
+    default_support: 0.45
+    priority: 25
+    note: Example project override.

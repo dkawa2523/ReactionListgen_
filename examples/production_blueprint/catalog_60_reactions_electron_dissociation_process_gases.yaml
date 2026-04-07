@@ -1,0 +1,66 @@
+reactions:
+  - key: process_gases::electron_dissociation::sf6_to_sf5_f
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [SF6]
+    products: [SF5, F]
+    lhs_tokens: [e-, SF6]
+    rhs_tokens: [e-, SF5, F]
+    base_confidence: 0.82
+    reference_ids: [curated_process_gases]
+    note: "Representative sulfur hexafluoride bond-cleavage channel."
+
+  - key: process_gases::electron_dissociation::nf3_to_nf2_f
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [NF3]
+    products: [NF2, F]
+    lhs_tokens: [e-, NF3]
+    rhs_tokens: [e-, NF2, F]
+    base_confidence: 0.81
+    reference_ids: [curated_process_gases]
+    note: "Representative nitrogen trifluoride dissociation channel."
+
+  - key: process_gases::electron_dissociation::bcl3_to_bcl2_cl
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [BCl3]
+    products: [BCl2, Cl]
+    lhs_tokens: [e-, BCl3]
+    rhs_tokens: [e-, BCl2, Cl]
+    base_confidence: 0.80
+    reference_ids: [curated_process_gases]
+    note: "Representative boron trichloride dissociation channel."
+
+  - key: process_gases::electron_dissociation::nh3_to_nh2_h
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [NH3]
+    products: [NH2, H]
+    lhs_tokens: [e-, NH3]
+    rhs_tokens: [e-, NH2, H]
+    base_confidence: 0.79
+    reference_ids: [curated_process_gases]
+    note: "Representative ammonia dissociation channel."
+
+  - key: process_gases::electron_dissociation::n2o_to_no_n
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [N2O]
+    products: ["NO", N]
+    lhs_tokens: [e-, N2O]
+    rhs_tokens: [e-, "NO", N]
+    base_confidence: 0.79
+    reference_ids: [curated_process_gases]
+    note: "Representative nitrous-oxide dissociation channel."
+
+  - key: process_gases::electron_dissociation::o3_to_o2_o
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [O3]
+    products: [O2, O]
+    lhs_tokens: [e-, O3]
+    rhs_tokens: [e-, O2, O]
+    base_confidence: 0.78
+    reference_ids: [curated_process_gases]
+    note: "Representative ozone dissociation channel."

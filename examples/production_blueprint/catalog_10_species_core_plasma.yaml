@@ -1,0 +1,54 @@
+species:
+  - key: O
+    display_name: Oxygen atom
+    formula: O
+    state_class: atom
+    tags: [core, oxygen, atom, curated]
+
+  - key: O+
+    display_name: O+
+    formula: O
+    charge: 1
+    state_class: cation
+    tags: [core, oxygen, ion, curated]
+
+  - key: O++
+    display_name: O++
+    formula: O
+    charge: 2
+    state_class: cation
+    tags: [core, oxygen, ion, curated]
+
+  - key: O-
+    display_name: O-
+    formula: O
+    charge: -1
+    state_class: anion
+    tags: [core, oxygen, anion, curated]
+
+  - key: Ar
+    display_name: Argon
+    formula: Ar
+    state_class: atom
+    tags: [core, noble_gas, atom, curated]
+
+  - key: Ar+
+    display_name: Ar+
+    formula: Ar
+    charge: 1
+    state_class: cation
+    tags: [core, noble_gas, ion, curated]
+
+  - key: Ar++
+    display_name: Ar++
+    formula: Ar
+    charge: 2
+    state_class: cation
+    tags: [core, noble_gas, ion, curated]
+
+  - key: Ar[1s5]
+    display_name: Ar(1s5)
+    formula: Ar
+    state_class: excited
+    excitation_label: 1s5
+    tags: [core, noble_gas, excited, curated]

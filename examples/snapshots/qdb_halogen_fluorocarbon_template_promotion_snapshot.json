@@ -1,0 +1,76 @@
+{
+  "records": [
+    {
+      "reactants": ["e-", "c-C4F8"],
+      "products": ["c-C4F8-"],
+      "citation": "Illustrative normalized QDB halogen-fluorocarbon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.91,
+      "note": "Electron attachment channel promoted for fluorocarbon etch chemistry.",
+      "chemistry_id": 510,
+      "process_family": "electron_attachment",
+      "promotion_family": "fluorocarbon",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["e-", "CF4"],
+      "products": ["e-", "CF3", "F"],
+      "citation": "Illustrative normalized QDB halogen-fluorocarbon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.88,
+      "note": "Representative CF4 dissociation channel promoted into the fluorocarbon family.",
+      "chemistry_id": 511,
+      "process_family": "electron_dissociation",
+      "promotion_family": "fluorocarbon",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["e-", "HCl"],
+      "products": ["e-", "H", "Cl"],
+      "citation": "Illustrative normalized QDB halogen-fluorocarbon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.87,
+      "note": "Representative hydrogen chloride dissociation channel promoted into the chlorine family.",
+      "chemistry_id": 512,
+      "process_family": "electron_dissociation",
+      "promotion_family": "chlorine",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["Cl", "HCl"],
+      "products": ["Cl2", "H"],
+      "citation": "Illustrative normalized QDB halogen-fluorocarbon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.84,
+      "note": "Representative chlorine radical recycling channel promoted into the chlorine family.",
+      "chemistry_id": 513,
+      "process_family": "radical_neutral_reaction",
+      "promotion_family": "chlorine",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["e-", "HBr"],
+      "products": ["e-", "H", "Br"],
+      "citation": "Illustrative normalized QDB halogen-fluorocarbon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.86,
+      "note": "Representative hydrogen bromide dissociation channel promoted into the bromine family.",
+      "chemistry_id": 514,
+      "process_family": "electron_dissociation",
+      "promotion_family": "bromine",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["Br", "HBr"],
+      "products": ["Br2", "H"],
+      "citation": "Illustrative normalized QDB halogen-fluorocarbon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.83,
+      "note": "Representative bromine radical recycling channel promoted into the bromine family.",
+      "chemistry_id": 515,
+      "process_family": "radical_neutral_reaction",
+      "promotion_family": "bromine",
+      "promotion_stage": "curated_bridge"
+    }
+  ]
+}

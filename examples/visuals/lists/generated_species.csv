@@ -1,0 +1,41 @@
+generation,prototype_key,display_name,formula,charge,state_class,excitation_label,tags,confidence,evidence_sources
+0,C+[2P_3/2],C+ 2P_3/2,C,1,cation,2P_3/2,"asd_bootstrap, atomic, ion, excited",0.805,species_library
+0,C+[4P_1/2],C+ 4P_1/2,C,1,cation,4P_1/2,"asd_bootstrap, atomic, ion, excited",0.805,species_library
+0,CH4,Methane,CH4,0,ground,,"feed, curated",1.000,"species_library, Active Thermochemical Tables, PubChem"
+0,C[1D_2],C 1D_2,C,0,excited,1D_2,"asd_bootstrap, atomic, excited",0.805,species_library
+0,C[3P_1],C 3P_1,C,0,excited,3P_1,"asd_bootstrap, atomic, excited",0.805,species_library
+0,F,Fluorine atom,F,0,atom,,"atom, fluorocarbon, curated",1.000,species_library
+0,F[2P_1/2],F 2P_1/2,F,0,excited,2P_1/2,"asd_bootstrap, atomic, excited",0.805,species_library
+0,F[4P_5/2],F 4P_5/2,F,0,excited,4P_5/2,"asd_bootstrap, atomic, excited",0.805,species_library
+0,H,Hydrogen atom,H,0,atom,,"atom, curated",1.000,"species_library, Active Thermochemical Tables"
+0,H[2P_1/2],H 2P_1/2,H,0,excited,2P_1/2,"asd_bootstrap, atomic, excited",0.805,species_library
+0,H[2S_1/2],H 2S_1/2,H,0,excited,2S_1/2,"asd_bootstrap, atomic, excited",0.805,species_library
+0,c-C4F8,"Cyclobutane, octafluoro-",C4F8,0,ground,,"feed, fluorocarbon, curated",0.828,"species_library, PubChem"
+1,C2F3+,C2F3+,C2F3,1,cation,,"ion, fluorocarbon, curated",1.000,species_library
+1,C2F4,Tetrafluoroethylene,C2F4,0,ground,,"molecule, fluorocarbon, curated",1.000,species_library
+1,C2F4+,C2F4+,C2F4,1,cation,,"ion, fluorocarbon, curated",1.000,species_library
+1,C2F5,C2F5 radical,C2F5,0,ground,,"radical, fluorocarbon, curated",1.000,species_library
+1,C3F5,C3F5 radical,C3F5,0,ground,,"radical, fluorocarbon, curated",0.965,species_library
+1,C3F5+,C3F5+,C3F5,1,cation,,"ion, fluorocarbon, curated",1.000,species_library
+1,C3F5-,C3F5-,C3F5,-1,anion,,"anion, fluorocarbon, curated",1.000,species_library
+1,C3F6,C3F6 neutral fragment,C3F6,0,ground,,"molecule, fluorocarbon, curated",1.000,species_library
+1,C4F7,C4F7 radical,C4F7,0,ground,,"radical, fluorocarbon, curated",1.000,species_library
+1,CF2+,CF2+,CF2,1,cation,,"ion, fluorocarbon, curated",1.000,species_library
+1,CF3,CF3 radical,CF3,0,ground,,"radical, fluorocarbon, curated",1.000,species_library
+1,CF3-,CF3-,CF3,-1,anion,,"anion, fluorocarbon, curated",1.000,species_library
+1,CH,CH radical,CH,0,ground,,"radical, curated",1.000,"species_library, Active Thermochemical Tables"
+1,CH2,Methylene,CH2,0,ground,,"radical, curated",1.000,"species_library, Active Thermochemical Tables"
+1,CH2-,CH2-,CH2,-1,anion,,"anion, curated",1.000,species_library
+1,CH3,Methyl radical,CH3,0,ground,,"radical, curated",1.000,"species_library, Active Thermochemical Tables"
+1,CH3+,CH3+,CH3,1,cation,,"ion, curated",1.000,species_library
+1,CH4+,CH4+,CH4,1,cation,,"ion, curated",1.000,species_library
+1,CH4[V13],CH4(v13),CH4,0,excited,V13,"excited, curated",1.000,species_library
+1,CH4[V24],CH4(v24),CH4,0,excited,V24,"excited, curated",1.000,species_library
+1,F-,Fluoride anion,F,-1,anion,,"anion, fluorocarbon, curated",1.000,species_library
+1,H-,Hydride anion,H,-1,anion,,"anion, curated",1.000,species_library
+1,H2,Hydrogen,H2,0,ground,,"molecule, curated",1.000,"species_library, Active Thermochemical Tables"
+1,c-C4F8-,C4F8-,C4F8,-1,anion,,"anion, fluorocarbon, curated",1.000,species_library
+2,C2F3,C2F3 radical,C2F3,0,ground,,"radical, fluorocarbon, curated",0.905,species_library
+2,CF2,CF2 radical,CF2,0,ground,,"radical, fluorocarbon, curated",0.905,species_library
+2,CH2+,CH2+,CH2,1,cation,,"ion, curated",1.000,species_library
+3,CH+,CH+,CH,1,cation,,"ion, curated",0.920,species_library

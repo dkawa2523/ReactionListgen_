@@ -1,0 +1,66 @@
+reactions:
+  - key: process_gases::dissociative_recombination::sf6_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [SF6+]
+    products: [SF5, F]
+    lhs_tokens: [e-, SF6+]
+    rhs_tokens: [SF5, F]
+    base_confidence: 0.72
+    reference_ids: [curated_process_gases]
+    note: "Representative dissociative recombination channel for sulfur-hexafluoride cations."
+
+  - key: process_gases::dissociative_recombination::nf3_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [NF3+]
+    products: [NF2, F]
+    lhs_tokens: [e-, NF3+]
+    rhs_tokens: [NF2, F]
+    base_confidence: 0.71
+    reference_ids: [curated_process_gases]
+    note: "Representative dissociative recombination channel for nitrogen-trifluoride cations."
+
+  - key: process_gases::dissociative_recombination::bcl3_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [BCl3+]
+    products: [BCl2, Cl]
+    lhs_tokens: [e-, BCl3+]
+    rhs_tokens: [BCl2, Cl]
+    base_confidence: 0.70
+    reference_ids: [curated_process_gases]
+    note: "Representative dissociative recombination channel for boron-trichloride cations."
+
+  - key: process_gases::dissociative_recombination::nh3_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [NH3+]
+    products: [NH2, H]
+    lhs_tokens: [e-, NH3+]
+    rhs_tokens: [NH2, H]
+    base_confidence: 0.70
+    reference_ids: [curated_process_gases]
+    note: "Representative dissociative recombination channel for ammonia cations."
+
+  - key: process_gases::dissociative_recombination::n2o_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [N2O+]
+    products: ["NO", N]
+    lhs_tokens: [e-, N2O+]
+    rhs_tokens: ["NO", N]
+    base_confidence: 0.69
+    reference_ids: [curated_process_gases]
+    note: "Representative dissociative recombination channel for nitrous-oxide cations."
+
+  - key: process_gases::dissociative_recombination::o3_plus
+    family: dissociative_recombination
+    required_projectile: e-
+    reactants: [O3+]
+    products: [O2, O]
+    lhs_tokens: [e-, O3+]
+    rhs_tokens: [O2, O]
+    base_confidence: 0.68
+    reference_ids: [curated_process_gases]
+    note: "Representative dissociative recombination channel for ozone cations."

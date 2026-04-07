@@ -1,0 +1,41 @@
+species:
+  - key: CH4
+    display_name: Methane
+    formula: CH4
+    nist_query: Methane
+    aliases: [methane]
+    tags: [hydrocarbon, feed_candidate, curated]
+
+  - key: CH4+
+    display_name: CH4+
+    formula: CH4
+    charge: 1
+    state_class: cation
+    tags: [hydrocarbon, ion, curated]
+
+  - key: CH3
+    display_name: Methyl radical
+    formula: CH3
+    tags: [hydrocarbon, radical, curated]
+
+  - key: CH3+
+    display_name: CH3+
+    formula: CH3
+    charge: 1
+    state_class: cation
+    tags: [hydrocarbon, ion, curated]
+
+  - key: CH2-
+    display_name: CH2-
+    formula: CH2
+    charge: -1
+    state_class: anion
+    tags: [hydrocarbon, anion, curated]
+
+  - key: CH4[V13]
+    display_name: CH4(v13)
+    formula: CH4
+    state_class: excited
+    excitation_label: V13
+    excitation_energy_ev: 0.361
+    tags: [hydrocarbon, excited, curated]

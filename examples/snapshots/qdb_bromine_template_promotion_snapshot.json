@@ -1,0 +1,28 @@
+{
+  "records": [
+    {
+      "reactants": ["Br2+", "HBr"],
+      "products": ["HBr+", "Br2"],
+      "citation": "Illustrative normalized QDB bromine template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.91,
+      "note": "Charge-transfer-like bromine cation follow-up channel preserved from external evidence.",
+      "chemistry_id": 210,
+      "process_family": "ion_neutral_followup",
+      "promotion_family": "bromine",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["Br", "HBr"],
+      "products": ["Br2", "H"],
+      "citation": "Illustrative normalized QDB bromine template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.84,
+      "note": "Hydrogen-poor bromine recycling step promoted into the family template pack.",
+      "chemistry_id": 211,
+      "process_family": "radical_neutral_reaction",
+      "promotion_family": "bromine",
+      "promotion_stage": "curated_bridge"
+    }
+  ]
+}

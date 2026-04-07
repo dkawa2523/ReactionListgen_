@@ -1,0 +1,148 @@
+{
+  "records": [
+    {
+      "reactants": ["e-", "Ar"],
+      "products": ["e-", "e-", "Ar+"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.91,
+      "note": "Representative electron-impact argon ionization channel promoted into the noble-gas family.",
+      "chemistry_id": 901,
+      "process_family": "electron_ionization",
+      "promotion_family": "noble_gas",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["e-", "O2"],
+      "products": ["O2-"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.89,
+      "note": "Representative parent oxygen attachment channel promoted into the oxygen family.",
+      "chemistry_id": 902,
+      "process_family": "electron_attachment",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["e-", "O2"],
+      "products": ["O-", "O"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.90,
+      "note": "Representative dissociative oxygen attachment channel promoted into the oxygen family.",
+      "chemistry_id": 903,
+      "process_family": "electron_attachment",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["e-", "O2"],
+      "products": ["e-", "e-", "O2+"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.91,
+      "note": "Representative oxygen parent ionization channel promoted into the oxygen family.",
+      "chemistry_id": 904,
+      "process_family": "electron_ionization",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["e-", "O2"],
+      "products": ["e-", "O", "O"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.90,
+      "note": "Representative oxygen dissociation channel promoted into the oxygen family.",
+      "chemistry_id": 905,
+      "process_family": "electron_dissociation",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["Ar+", "O2"],
+      "products": ["Ar", "O2+"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.88,
+      "note": "Representative argon-cation charge-transfer channel into molecular oxygen.",
+      "chemistry_id": 906,
+      "process_family": "charge_transfer",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["e-", "O2+"],
+      "products": ["O", "O"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.87,
+      "note": "Representative dissociative recombination channel for oxygen molecular cations.",
+      "chemistry_id": 907,
+      "process_family": "dissociative_recombination",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["e-", "O"],
+      "products": ["O-"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.85,
+      "note": "Representative atomic-oxygen attachment channel promoted into the oxygen family.",
+      "chemistry_id": 908,
+      "process_family": "electron_attachment",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["Ar+", "O"],
+      "products": ["Ar", "O+"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.86,
+      "note": "Representative argon-cation charge-transfer channel into atomic oxygen.",
+      "chemistry_id": 909,
+      "process_family": "charge_transfer",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["Ar+", "O-"],
+      "products": ["Ar", "O"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.84,
+      "note": "Representative mutual-neutralization channel between argon cations and oxygen anions.",
+      "chemistry_id": 910,
+      "process_family": "mutual_neutralization",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["Ar+", "O2-"],
+      "products": ["Ar", "O2"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.85,
+      "note": "Representative mutual-neutralization channel between argon cations and molecular-oxygen anions.",
+      "chemistry_id": 911,
+      "process_family": "mutual_neutralization",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge"
+    },
+    {
+      "reactants": ["O+", "O2"],
+      "products": ["O", "O2+"],
+      "citation": "Illustrative normalized QDB oxygen-argon template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.86,
+      "note": "Representative oxygen-cation follow-up channel in molecular oxygen.",
+      "chemistry_id": 912,
+      "process_family": "ion_neutral_followup",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge"
+    }
+  ]
+}

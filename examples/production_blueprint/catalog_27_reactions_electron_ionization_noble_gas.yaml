@@ -1,0 +1,12 @@
+reactions:
+  - key: noble_gas::electron_ionization::ar_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [Ar]
+    products: [Ar+]
+    lhs_tokens: [e-, Ar]
+    rhs_tokens: [e-, e-, Ar+]
+    threshold_ev: 15.76
+    base_confidence: 0.88
+    reference_ids: [curated_noble_gas]
+    note: "Representative parent ionization channel for argon."

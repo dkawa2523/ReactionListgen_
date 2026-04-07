@@ -1,0 +1,36 @@
+reactions:
+  - key: fluorocarbon::electron_attachment::cc4f8_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [c-C4F8-]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [C4F8-]
+    threshold_ev: 0.0
+    base_confidence: 0.78
+    reference_ids: [curated_fluorocarbon, source_promoted_qdb]
+    note: "Parent attachment channel retained for fluorocarbon screening."
+
+  - key: fluorocarbon::electron_attachment::cc4f8_f_minus
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [F-, C4F7]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [F-, C4F7]
+    threshold_ev: 0.0
+    base_confidence: 0.82
+    reference_ids: [curated_fluorocarbon, source_promoted_qdb]
+    note: "Representative dissociative attachment channel producing fluoride."
+
+  - key: fluorocarbon::electron_attachment::cc4f8_cf3_minus
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [CF3-, C3F5]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [CF3-, C3F5]
+    threshold_ev: 0.0
+    base_confidence: 0.80
+    reference_ids: [curated_fluorocarbon]
+    note: "Representative fragment anion channel."

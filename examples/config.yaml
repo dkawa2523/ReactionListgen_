@@ -1,0 +1,67 @@
+feeds:
+  - species_key: CH4
+    formula: CH4
+    display_name: Methane
+    identity_query: Methane
+    identity_namespace: name
+  - species_key: c-C4F8
+    formula: C4F8
+    display_name: Cyclobutane, octafluoro-
+    identity_query: Cyclobutane, octafluoro-
+    identity_namespace: name
+
+projectiles: [e-]
+libraries: [ch4, c_c4f8]
+alias_path: aliases.yaml
+
+limits:
+  max_generation: 3
+  beam_width: 64
+  max_species: 220
+
+conditions:
+  electron_max_ev: 100.0
+  ion_max_ev: 200.0
+  gas_temperature_k: 300.0
+
+bootstrap:
+  pubchem:
+    enabled: true
+    live_api: false
+    snapshot_path: snapshots/pubchem_identity_snapshot.json
+
+  nist_asd:
+    enabled: true
+    export_paths:
+      - snapshots/asd/C_I.csv
+      - snapshots/asd/C_II.csv
+      - snapshots/asd/H_I.csv
+      - snapshots/asd/F_I.csv
+    max_ion_charge: 1
+    max_levels_per_spectrum: 3
+
+  atct:
+    enabled: true
+    snapshot_path: snapshots/atct_snapshot.csv
+    soft_endothermic_kj_mol: 150.0
+    hard_endothermic_kj_mol: 320.0
+    prunable_families: [neutral_fragmentation, radical_fragmentation, ion_fragmentation, ion_neutral_followup, gas_phase_evidence, ion_neutral_evidence]
+
+  reaction_evidence:
+    seed_templates: true
+    max_templates_per_source: 20
+    require_reactant_overlap: true
+    sources:
+      - kind: nist_kinetics_snapshot
+        path: snapshots/nist_kinetics_snapshot.json
+      - kind: qdb_snapshot
+        path: snapshots/qdb_evidence_snapshot.json
+      - kind: umist_ratefile
+        path: snapshots/umist_rate22_sample.rates
+      - kind: kida_network
+        path: snapshots/kida_gas_reactions_sample.txt
+      - kind: vamdc_xsams
+        path: snapshots/vamdc_ideadb_sample.xsams
+        source_name: IDEADB (illustrative XSAMS)
+        source_system: ideadb
+        support_score: 0.82

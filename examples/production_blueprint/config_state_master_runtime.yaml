@@ -1,0 +1,83 @@
+feeds:
+  - species_key: Ar
+    formula: Ar
+    display_name: Argon
+  - species_key: O2
+    formula: O2
+    display_name: Oxygen
+  - species_key: N2
+    formula: N2
+    display_name: Nitrogen
+  - species_key: CH4
+    formula: CH4
+    display_name: Methane
+  - species_key: c-C4F8
+    formula: C4F8
+    display_name: Cyclobutane, octafluoro-
+
+projectiles: [e-]
+libraries: []
+
+catalog_paths:
+  - catalog_00_references.yaml
+  - catalog_20_reactions_electron_attachment_hydrocarbon.yaml
+  - catalog_21_reactions_electron_ionization_hydrocarbon.yaml
+  - catalog_22_reactions_electron_excitation_hydrocarbon.yaml
+  - catalog_23_reactions_electron_dissociation_hydrocarbon.yaml
+  - catalog_24_reactions_electron_attachment_fluorocarbon.yaml
+  - catalog_25_reactions_electron_dissociative_ionization_fluorocarbon.yaml
+  - catalog_26_reactions_electron_excitation_noble_gas.yaml
+  - catalog_27_reactions_electron_ionization_noble_gas.yaml
+  - catalog_31_reactions_ion_neutral_followup_fluorocarbon.yaml
+  - catalog_32_reactions_electron_attachment_oxygen.yaml
+  - catalog_33_reactions_electron_ionization_oxygen.yaml
+  - catalog_34_reactions_electron_dissociation_oxygen.yaml
+  - catalog_35_reactions_electron_excitation_oxygen.yaml
+  - catalog_36_reactions_electron_ionization_nitrogen.yaml
+  - catalog_37_reactions_electron_dissociation_nitrogen.yaml
+  - catalog_38_reactions_electron_excitation_nitrogen.yaml
+  - catalog_30_reactions_charge_transfer_noble_gas.yaml
+  - catalog_41_reactions_neutral_fragmentation_fluorocarbon.yaml
+  - catalog_42_reactions_radical_fragmentation_fluorocarbon.yaml
+
+state_masters:
+  - path: state_master_base.yaml
+    families: [core_plasma, noble_gas, oxygen, nitrogen, hydrocarbon, fluorocarbon]
+
+state_filters:
+  charge_window_min: -1
+  charge_window_max: 1
+
+limits:
+  max_generation: 3
+  beam_width: 48
+  max_species: 160
+
+conditions:
+  electron_max_ev: 10000.0
+  ion_max_ev: 200.0
+  gas_temperature_k: 300.0
+
+bootstrap:
+  pubchem:
+    enabled: false
+  nist_asd:
+    enabled: true
+    export_paths:
+      - ../snapshots/asd/H_I.csv
+      - ../snapshots/asd/C_I.csv
+      - ../snapshots/asd/C_II.csv
+      - ../snapshots/asd/F_I.csv
+      - ../snapshots/asd/O_I.csv
+      - ../snapshots/asd/O_II.csv
+      - ../snapshots/asd/N_I.csv
+      - ../snapshots/asd/N_II.csv
+      - ../snapshots/asd/Ar_I.csv
+      - ../snapshots/asd/Ar_II.csv
+    max_ion_charge: 1
+    max_levels_per_spectrum: 3
+  atct:
+    enabled: false
+  reaction_evidence:
+    seed_templates: false
+    sources: []

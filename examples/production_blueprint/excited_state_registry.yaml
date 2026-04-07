@@ -1,0 +1,106 @@
+excited_state_registry:
+  - canonical_key: "CH4[V13]"
+    source_aliases:
+      qdb: [CH4(V13), CH4(v13)]
+      vamdc: ["CH4[V13]"]
+    label_synonyms: [V13, v13]
+    excitation_energy_ev: 0.161
+    energy_tolerance_ev: 0.05
+    priority_source: qdb
+  - canonical_key: "CH4[V14]"
+    source_aliases:
+      qdb: [CH4(V14), CH4(v14)]
+      vamdc: ["CH4[V14]"]
+    label_synonyms: [V14, v14]
+    excitation_energy_ev: 0.374
+    energy_tolerance_ev: 0.05
+    priority_source: qdb
+  - canonical_key: "O2[a1Delta_g]"
+    source_aliases:
+      qdb: [O2(a1Delta_g), O2(a1Deltag), O2(a^1Delta_g), O2(a^1ﾎ農g)]
+      vamdc: ["O2[a^1ﾎ農g]", O2(a^1ﾎ農g)]
+    label_synonyms: [a1Delta_g, a1Deltag, a^1Delta_g, a^1ﾎ農g]
+    excitation_energy_ev: 0.977
+    energy_tolerance_ev: 0.15
+    priority_source: vamdc
+  - canonical_key: "O2[b1Sigma_g_plus]"
+    source_aliases:
+      qdb: [O2(b1Sigma_g_plus), O2(b1Sigma_g+), O2(b^1Sigma_g+), O2(b^1ﾎ｣_g+)]
+      vamdc: ["O2[b^1ﾎ｣_g+]", O2(b^1ﾎ｣_g+)]
+    label_synonyms: [b1Sigma_g_plus, b1Sigma_g+, b^1Sigma_g+, b^1ﾎ｣_g+]
+    excitation_energy_ev: 1.627
+    energy_tolerance_ev: 0.15
+    priority_source: vamdc
+  - canonical_key: "O2[c1Sigma_u_minus]"
+    source_aliases:
+      qdb: [O2(c1Sigma_u_minus), O2(c1Sigma_u-), O2(c^1Sigma_u-), O2(c^1ﾎ｣_u-)]
+      vamdc: ["O2[c^1ﾎ｣_u-]", O2(c^1ﾎ｣_u-)]
+    label_synonyms: [c1Sigma_u_minus, c1Sigma_u-, c^1Sigma_u-, c^1ﾎ｣_u-]
+    excitation_energy_ev: 4.50
+    energy_tolerance_ev: 0.20
+    priority_source: vamdc
+  - canonical_key: "N2[A3Sigma_u_plus]"
+    source_aliases:
+      qdb: [N2(A3Sigma_u_plus), N2(A3Sigma_u+), N2(A^3Sigma_u+), N2(A^3ﾎ｣_u+)]
+      ideadb: ["N2[A^3ﾎ｣_u+]", N2(A^3ﾎ｣_u+)]
+    label_synonyms: [A3Sigma_u_plus, A3Sigma_u+, A^3Sigma_u+, A^3ﾎ｣_u+]
+    excitation_energy_ev: 6.17
+    energy_tolerance_ev: 0.20
+    priority_source: ideadb
+  - canonical_key: "N2[B3Pi_g]"
+    source_aliases:
+      ideadb: [N2(B3Pi_g), N2(B^3Pi_g), N2(B^3ﾎ_g)]
+      vamdc: ["N2[B^3ﾎ_g]", N2(B^3ﾎ_g)]
+    label_synonyms: [B3Pi_g, B^3Pi_g, B^3ﾎ_g]
+    excitation_energy_ev: 7.35
+    energy_tolerance_ev: 0.25
+    priority_source: ideadb
+  - canonical_key: "BCl3[A1]"
+    source_aliases:
+      qdb: [BCl3(A1), BCl3(a1)]
+    label_synonyms: [A1, a1]
+    excitation_energy_ev: 3.10
+    energy_tolerance_ev: 0.20
+    priority_source: qdb
+  - canonical_key: "SiH2Cl2[A1]"
+    source_aliases:
+      qdb: [SiH2Cl2(A1), SiH2Cl2(a1)]
+    label_synonyms: [A1, a1]
+    excitation_energy_ev: 3.45
+    energy_tolerance_ev: 0.20
+    priority_source: qdb
+  - canonical_key: "SiHCl3[B1]"
+    source_aliases:
+      qdb: [SiHCl3(B1), SiHCl3(b1)]
+    label_synonyms: [B1, b1]
+    excitation_energy_ev: 3.85
+    energy_tolerance_ev: 0.20
+    priority_source: qdb
+  - canonical_key: "C8H20O4Si[Ryd1]"
+    source_aliases:
+      qdb: [C8H20O4Si(Ryd1), C8H20O4Si(ryd1), TEOS(Ryd1), TEOS(ryd1)]
+    label_synonyms: [Ryd1, ryd1, rydberg1]
+    excitation_energy_ev: 5.20
+    energy_tolerance_ev: 0.30
+    priority_source: qdb
+  - canonical_key: "SF6[A1]"
+    source_aliases:
+      qdb: [SF6(A1), SF6(a1)]
+    label_synonyms: [A1, a1]
+    excitation_energy_ev: 3.30
+    energy_tolerance_ev: 0.20
+    priority_source: qdb
+  - canonical_key: "NF3[A1]"
+    source_aliases:
+      qdb: [NF3(A1), NF3(a1)]
+    label_synonyms: [A1, a1]
+    excitation_energy_ev: 3.25
+    energy_tolerance_ev: 0.20
+    priority_source: qdb
+  - canonical_key: "WF6[B1]"
+    source_aliases:
+      qdb: [WF6(B1), WF6(b1)]
+    label_synonyms: [B1, b1]
+    excitation_energy_ev: 4.10
+    energy_tolerance_ev: 0.25
+    priority_source: qdb

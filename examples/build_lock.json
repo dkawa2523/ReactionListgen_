@@ -1,0 +1,330 @@
+{
+  "generated_at": "2026-04-05T12:43:04+00:00",
+  "package_version": "0.9.0",
+  "config_path": "/mnt/data/prb_v9_useful/examples/config.yaml",
+  "config_sha256": "fa8afb2306c99e98f200b340903a13e83e275916057c875ad51f5172ea3529bb",
+  "feeds": [
+    {
+      "species_key": "CH4",
+      "formula": "CH4",
+      "display_name": "Methane",
+      "identity_query": "Methane",
+      "identity_namespace": "name"
+    },
+    {
+      "species_key": "c-C4F8",
+      "formula": "C4F8",
+      "display_name": "Cyclobutane, octafluoro-",
+      "identity_query": "Cyclobutane, octafluoro-",
+      "identity_namespace": "name"
+    }
+  ],
+  "projectiles": [
+    "e-"
+  ],
+  "libraries": [
+    "ch4",
+    "c_c4f8"
+  ],
+  "catalog_paths": [],
+  "alias_path": "/mnt/data/prb_v9_useful/examples/aliases.yaml",
+  "source_profiles_path": null,
+  "inspection": {
+    "generated_at": "2026-04-05T12:43:04+00:00",
+    "package_version": "0.9.0",
+    "config_path": "/mnt/data/prb_v9_useful/examples/config.yaml",
+    "config_sha256": "fa8afb2306c99e98f200b340903a13e83e275916057c875ad51f5172ea3529bb",
+    "feeds": [
+      {
+        "species_key": "CH4",
+        "formula": "CH4",
+        "display_name": "Methane",
+        "identity_query": "Methane",
+        "identity_namespace": "name"
+      },
+      {
+        "species_key": "c-C4F8",
+        "formula": "C4F8",
+        "display_name": "Cyclobutane, octafluoro-",
+        "identity_query": "Cyclobutane, octafluoro-",
+        "identity_namespace": "name"
+      }
+    ],
+    "alias_path": "/mnt/data/prb_v9_useful/examples/aliases.yaml",
+    "alias_count": 8,
+    "source_profiles_path": null,
+    "pubchem": {
+      "enabled": true,
+      "live_api": false,
+      "snapshot": {
+        "path": "/mnt/data/prb_v9_useful/examples/snapshots/pubchem_identity_snapshot.json",
+        "exists": true,
+        "size_bytes": 1000,
+        "modified_at": "2026-04-05T12:29:13+00:00",
+        "sha256": "a794b660cda5f12dbcfc735e470635e290cb66193828997b0587e902b26fe4db"
+      },
+      "queries": [
+        {
+          "species_key": "CH4",
+          "formula": "CH4",
+          "query": "Methane",
+          "namespace": "name"
+        },
+        {
+          "species_key": "c-C4F8",
+          "formula": "C4F8",
+          "query": "Cyclobutane, octafluoro-",
+          "namespace": "name"
+        }
+      ],
+      "next_step": "ready_for_build",
+      "snapshot_entries": 2
+    },
+    "nist_asd": {
+      "enabled": true,
+      "max_ion_charge": 1,
+      "max_levels_per_spectrum": 3,
+      "exports": [
+        {
+          "path": "/mnt/data/prb_v9_useful/examples/snapshots/asd/C_I.csv",
+          "exists": true,
+          "size_bytes": 137,
+          "modified_at": "2026-04-05T12:29:13+00:00",
+          "sha256": "c27b353100e6b46e20eb961295776b6e9d7bca22bc8093566bb6243251053754"
+        },
+        {
+          "path": "/mnt/data/prb_v9_useful/examples/snapshots/asd/C_II.csv",
+          "exists": true,
+          "size_bytes": 119,
+          "modified_at": "2026-04-05T12:29:13+00:00",
+          "sha256": "ade694bc8485a8b440153772b817190b78454ec7e2a5c785204dcc28f2602a47"
+        },
+        {
+          "path": "/mnt/data/prb_v9_useful/examples/snapshots/asd/H_I.csv",
+          "exists": true,
+          "size_bytes": 106,
+          "modified_at": "2026-04-05T12:29:13+00:00",
+          "sha256": "376040409f4ef73cbb658d39391ab18632168d4e2f03fb55509e77260c82f5d7"
+        },
+        {
+          "path": "/mnt/data/prb_v9_useful/examples/snapshots/asd/F_I.csv",
+          "exists": true,
+          "size_bytes": 123,
+          "modified_at": "2026-04-05T12:29:13+00:00",
+          "sha256": "eae7ce08ce1109c3a48b662d509b7f72b62d8540b08a2154c6e971f6e70195fb"
+        }
+      ],
+      "next_step": "ready_for_build",
+      "spectrum_count": 4,
+      "total_levels": 13,
+      "bootstrap_species_count": 12,
+      "spectra": [
+        "C I",
+        "C II",
+        "F I",
+        "H I"
+      ]
+    },
+    "atct": {
+      "enabled": true,
+      "snapshot": {
+        "path": "/mnt/data/prb_v9_useful/examples/snapshots/atct_snapshot.csv",
+        "exists": true,
+        "size_bytes": 640,
+        "modified_at": "2026-04-05T12:29:13+00:00",
+        "sha256": "c3f9fbb6251c6899b6210f957f32761497097333ab17c3c5543b6b90b4a60b4a"
+      },
+      "soft_endothermic_kj_mol": 150.0,
+      "hard_endothermic_kj_mol": 320.0,
+      "prunable_families": [
+        "neutral_fragmentation",
+        "radical_fragmentation",
+        "ion_fragmentation",
+        "ion_neutral_followup",
+        "gas_phase_evidence",
+        "ion_neutral_evidence"
+      ],
+      "next_step": "ready_for_build",
+      "entry_count": 7
+    },
+    "reaction_evidence": [
+      {
+        "kind": "nist_kinetics_snapshot",
+        "enabled": true,
+        "source_name": null,
+        "source_system": null,
+        "path": "/mnt/data/prb_v9_useful/examples/snapshots/nist_kinetics_snapshot.json",
+        "url": null,
+        "note": null,
+        "mode": "snapshot",
+        "profile_family": null,
+        "profile_priority": null,
+        "profile_default_support": null,
+        "path_status": {
+          "path": "/mnt/data/prb_v9_useful/examples/snapshots/nist_kinetics_snapshot.json",
+          "exists": true,
+          "size_bytes": 696,
+          "modified_at": "2026-04-05T12:29:13+00:00",
+          "sha256": "738e96b7a865dc562a54925bfe16172f95ddf299645631ee6ef7698788d5657d"
+        },
+        "status": "ready",
+        "record_count": 2,
+        "example_reaction": "CH3 + H -> CH4",
+        "next_step": "ready_for_build"
+      },
+      {
+        "kind": "qdb_snapshot",
+        "enabled": true,
+        "source_name": null,
+        "source_system": null,
+        "path": "/mnt/data/prb_v9_useful/examples/snapshots/qdb_evidence_snapshot.json",
+        "url": null,
+        "note": null,
+        "mode": "snapshot",
+        "profile_family": null,
+        "profile_priority": null,
+        "profile_default_support": null,
+        "path_status": {
+          "path": "/mnt/data/prb_v9_useful/examples/snapshots/qdb_evidence_snapshot.json",
+          "exists": true,
+          "size_bytes": 1051,
+          "modified_at": "2026-04-05T12:29:13+00:00",
+          "sha256": "b117af6acc03df1568f0747be52dd6d2aea5ceb56473d4817388bae38c9d9c77"
+        },
+        "status": "ready",
+        "record_count": 3,
+        "example_reaction": "CH4 -> CH4+",
+        "next_step": "ready_for_build"
+      },
+      {
+        "kind": "umist_ratefile",
+        "enabled": true,
+        "source_name": null,
+        "source_system": null,
+        "path": "/mnt/data/prb_v9_useful/examples/snapshots/umist_rate22_sample.rates",
+        "url": null,
+        "note": null,
+        "mode": "snapshot",
+        "profile_family": null,
+        "profile_priority": null,
+        "profile_default_support": null,
+        "path_status": {
+          "path": "/mnt/data/prb_v9_useful/examples/snapshots/umist_rate22_sample.rates",
+          "exists": true,
+          "size_bytes": 342,
+          "modified_at": "2026-04-05T12:29:13+00:00",
+          "sha256": "5be9dba92b7cff75158a87fd2b81ad0a993ae499db5fffa6d404d918c052e6e2"
+        },
+        "status": "ready",
+        "record_count": 2,
+        "example_reaction": "CH3 + H -> CH4",
+        "next_step": "ready_for_build"
+      },
+      {
+        "kind": "kida_network",
+        "enabled": true,
+        "source_name": null,
+        "source_system": null,
+        "path": "/mnt/data/prb_v9_useful/examples/snapshots/kida_gas_reactions_sample.txt",
+        "url": null,
+        "note": null,
+        "mode": "snapshot",
+        "profile_family": null,
+        "profile_priority": null,
+        "profile_default_support": null,
+        "path_status": {
+          "path": "/mnt/data/prb_v9_useful/examples/snapshots/kida_gas_reactions_sample.txt",
+          "exists": true,
+          "size_bytes": 221,
+          "modified_at": "2026-04-05T12:29:13+00:00",
+          "sha256": "75a4bdd01b1a5f270261fac935f81316749a2d7b5d68aadb5889ba82cd7787ab"
+        },
+        "status": "ready",
+        "record_count": 2,
+        "example_reaction": "CH3 + H -> CH4",
+        "next_step": "ready_for_build"
+      },
+      {
+        "kind": "vamdc_xsams",
+        "enabled": true,
+        "source_name": "IDEADB (illustrative XSAMS)",
+        "source_system": "ideadb",
+        "path": "/mnt/data/prb_v9_useful/examples/snapshots/vamdc_ideadb_sample.xsams",
+        "url": null,
+        "note": null,
+        "mode": "snapshot",
+        "profile_family": "electron_attachment",
+        "profile_priority": 90,
+        "profile_default_support": 0.82,
+        "path_status": {
+          "path": "/mnt/data/prb_v9_useful/examples/snapshots/vamdc_ideadb_sample.xsams",
+          "exists": true,
+          "size_bytes": 1624,
+          "modified_at": "2026-04-05T12:29:13+00:00",
+          "sha256": "085c2f9854fa08e3a2fd297944544e8c9dac09419d9221e9041e841ad183f620"
+        },
+        "status": "ready",
+        "record_count": 1,
+        "example_reaction": "e- + CH4 -> H- + CH3",
+        "next_step": "ready_for_build"
+      }
+    ],
+    "summary": {
+      "reaction_evidence_ready": 5,
+      "reaction_evidence_total": 5,
+      "build_ready": true
+    }
+  },
+  "evidence_manifest": {
+    "generated_at": "2026-04-05T12:43:04+00:00",
+    "config_path": "/mnt/data/prb_v9_useful/examples/config.yaml",
+    "total_records": 10,
+    "sources": [
+      {
+        "source_id": "ideadb",
+        "source_name": "IDEADB (illustrative XSAMS)",
+        "record_count": 1,
+        "acquisition_method": "offline_snapshot",
+        "evidence_kind": "collision_process_record",
+        "source_family": "electron_attachment",
+        "source_priority": 90
+      },
+      {
+        "source_id": "kida",
+        "source_name": "KIDA",
+        "record_count": 2,
+        "acquisition_method": "official_download",
+        "evidence_kind": "astrochemistry_network_record",
+        "source_family": "astrochemistry",
+        "source_priority": 30
+      },
+      {
+        "source_id": "nist_kinetics",
+        "source_name": "NIST Chemical Kinetics Database",
+        "record_count": 2,
+        "acquisition_method": "offline_snapshot",
+        "evidence_kind": "thermal_gas_phase_record",
+        "source_family": "thermal_kinetics",
+        "source_priority": 75
+      },
+      {
+        "source_id": "qdb",
+        "source_name": "Quantemol-DB",
+        "record_count": 3,
+        "acquisition_method": "offline_snapshot",
+        "evidence_kind": "validated_chemistry_record",
+        "source_family": "plasma_chemistry",
+        "source_priority": 95
+      },
+      {
+        "source_id": "umist",
+        "source_name": "UMIST Database for Astrochemistry",
+        "record_count": 2,
+        "acquisition_method": "official_download",
+        "evidence_kind": "astrochemistry_network_record",
+        "source_family": "astrochemistry",
+        "source_priority": 35
+      }
+    ]
+  }
+}

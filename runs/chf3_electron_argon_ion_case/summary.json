@@ -1,0 +1,31 @@
+﻿{
+    "case_name":  "chf3_electron_argon_ion_case",
+    "feeds":  [
+                  {
+                      "species_key":  "CHF3",
+                      "formula":  "CHF3",
+                      "display_name":  "Trifluoromethane",
+                      "identity_query":  null,
+                      "identity_namespace":  "name"
+                  }
+              ],
+    "projectiles":  [
+                        "e-",
+                        "Ar+"
+                    ],
+    "max_generation":  3,
+    "species_count":  3,
+    "reaction_count":  2,
+    "reaction_generations":  [
+                                 1
+                             ],
+    "projectile_usage":  {
+                             "ar_plus_reaction_count":  0,
+                             "electron_reaction_count":  2
+                         },
+    "notes":  [
+                  "Current curated and snapshot data for CHF3 provide electron attachment and electron ionization channels.",
+                  "No direct Ar+ + CHF3 reaction template or source-backed promotion was available in the current repository data.",
+                  "Because no secondary CHF3 fragment templates are currently available, this case stops at first-generation products."
+              ]
+}

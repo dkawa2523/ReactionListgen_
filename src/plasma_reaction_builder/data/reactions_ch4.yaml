@@ -1,0 +1,166 @@
+reactions:
+  - key: ch4::electron_attachment_h_minus
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [CH4]
+    products: [CH3, H-]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [CH3, H-]
+    threshold_ev: 7.7
+    base_confidence: 0.88
+    reference_ids: [curated_ch4]
+    note: "Dissociative attachment channel to H-."
+
+  - key: ch4::electron_attachment_ch2_minus
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [CH4]
+    products: [H2, CH2-]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [H2, CH2-]
+    threshold_ev: 9.0
+    base_confidence: 0.86
+    reference_ids: [curated_ch4]
+    note: "Dissociative attachment channel to CH2-."
+
+  - key: ch4::electron_ionization_parent
+    family: electron_ionization
+    required_projectile: e-
+    reactants: [CH4]
+    products: [CH4+]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, e-, CH4+]
+    threshold_ev: 12.6
+    base_confidence: 0.90
+    reference_ids: [curated_ch4]
+    note: "Parent ionization channel."
+
+  - key: ch4::electron_dissociative_ionization_ch3
+    family: electron_dissociative_ionization
+    required_projectile: e-
+    reactants: [CH4]
+    products: [H, CH3+]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, e-, H, CH3+]
+    threshold_ev: 14.3
+    base_confidence: 0.90
+    reference_ids: [curated_ch4]
+    note: "Direct dissociative ionization channel."
+
+  - key: ch4::electron_dissociation_ch3
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [CH4]
+    products: [CH3, H]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, CH3, H]
+    threshold_ev: 9.0
+    base_confidence: 0.78
+    reference_ids: [curated_ch4]
+
+  - key: ch4::electron_dissociation_ch2
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [CH4]
+    products: [CH2, H2]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, CH2, H2]
+    threshold_ev: 10.5
+    base_confidence: 0.74
+    reference_ids: [curated_ch4]
+
+  - key: ch4::electron_dissociation_ch
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [CH4]
+    products: [CH, H2, H]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, CH, H2, H]
+    threshold_ev: 12.0
+    base_confidence: 0.70
+    reference_ids: [curated_ch4]
+
+  - key: ch4::vibrational_v24
+    family: electron_excitation_vibrational
+    required_projectile: e-
+    reactants: [CH4]
+    products: ["CH4[V24]"]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, CH4(V24)]
+    threshold_ev: 0.162
+    base_confidence: 0.88
+    reference_ids: [curated_ch4]
+
+  - key: ch4::vibrational_v13
+    family: electron_excitation_vibrational
+    required_projectile: e-
+    reactants: [CH4]
+    products: ["CH4[V13]"]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, CH4(V13)]
+    threshold_ev: 0.361
+    base_confidence: 0.88
+    reference_ids: [curated_ch4]
+
+  - key: ch4::parent_ion_fragmentation
+    family: ion_fragmentation
+    reactants: [CH4+]
+    products: [CH3+, H]
+    lhs_tokens: [CH4+]
+    rhs_tokens: [CH3+, H]
+    base_confidence: 0.68
+    reference_ids: [curated_ch4]
+
+  - key: ch4::ion_fragmentation_ch2
+    family: ion_fragmentation
+    reactants: [CH3+]
+    products: [CH2+, H]
+    lhs_tokens: [CH3+]
+    rhs_tokens: [CH2+, H]
+    base_confidence: 0.60
+    reference_ids: [curated_ch4]
+
+  - key: ch4::ion_fragmentation_ch
+    family: ion_fragmentation
+    reactants: [CH2+]
+    products: [CH+, H]
+    lhs_tokens: [CH2+]
+    rhs_tokens: [CH+, H]
+    base_confidence: 0.56
+    reference_ids: [curated_ch4]
+
+  - key: ch4::ion_fragmentation_c
+    family: ion_fragmentation
+    reactants: [CH+]
+    products: [C+, H]
+    lhs_tokens: [CH+]
+    rhs_tokens: [C+, H]
+    base_confidence: 0.52
+    reference_ids: [curated_ch4]
+
+  - key: ch4::radical_fragmentation_ch2
+    family: radical_fragmentation
+    reactants: [CH3]
+    products: [CH2, H]
+    lhs_tokens: [CH3]
+    rhs_tokens: [CH2, H]
+    base_confidence: 0.62
+    reference_ids: [curated_fragmentation_family]
+
+  - key: ch4::radical_fragmentation_ch
+    family: radical_fragmentation
+    reactants: [CH2]
+    products: [CH, H]
+    lhs_tokens: [CH2]
+    rhs_tokens: [CH, H]
+    base_confidence: 0.58
+    reference_ids: [curated_fragmentation_family]
+
+  - key: ch4::radical_fragmentation_c
+    family: radical_fragmentation
+    reactants: [CH]
+    products: [C, H]
+    lhs_tokens: [CH]
+    rhs_tokens: [C, H]
+    base_confidence: 0.54
+    reference_ids: [curated_fragmentation_family]

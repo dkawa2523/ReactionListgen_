@@ -1,0 +1,162 @@
+reactions:
+  - key: c_c4f8::electron_attachment_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [c-C4F8-]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [C4F8-]
+    threshold_ev: 0.0
+    base_confidence: 0.78
+    reference_ids: [curated_c4f8]
+
+  - key: c_c4f8::electron_attachment_f_minus
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [F-, C4F7]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [F-, C4F7]
+    threshold_ev: 0.0
+    base_confidence: 0.82
+    reference_ids: [curated_c4f8]
+
+  - key: c_c4f8::electron_attachment_cf3_minus
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [CF3-, C3F5]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [CF3-, C3F5]
+    threshold_ev: 0.0
+    base_confidence: 0.80
+    reference_ids: [curated_c4f8]
+
+  - key: c_c4f8::electron_attachment_c3f5_minus
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [C3F5-, CF3]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [C3F5-, CF3]
+    threshold_ev: 0.0
+    base_confidence: 0.80
+    reference_ids: [curated_c4f8]
+
+  - key: c_c4f8::electron_dissociative_ionization_c2f4
+    family: electron_dissociative_ionization
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [C2F4+, C2F4]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [e-, e-, C2F4+, C2F4]
+    threshold_ev: 12.0
+    base_confidence: 0.84
+    reference_ids: [curated_c4f8]
+
+  - key: c_c4f8::electron_dissociative_ionization_c3f5
+    family: electron_dissociative_ionization
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [C3F5+, CF3]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [e-, e-, C3F5+, CF3]
+    threshold_ev: 12.0
+    base_confidence: 0.84
+    reference_ids: [curated_c4f8]
+
+  - key: c_c4f8::electron_dissociative_ionization_cf2
+    family: electron_dissociative_ionization
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [CF2+, C3F6]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [e-, e-, CF2+, C3F6]
+    threshold_ev: 12.0
+    base_confidence: 0.72
+    reference_ids: [curated_c4f8]
+
+  - key: c_c4f8::electron_dissociative_ionization_c2f3
+    family: electron_dissociative_ionization
+    required_projectile: e-
+    reactants: [c-C4F8]
+    products: [C2F3+, C2F5]
+    lhs_tokens: [e-, C4F8]
+    rhs_tokens: [e-, e-, C2F3+, C2F5]
+    threshold_ev: 12.0
+    base_confidence: 0.68
+    reference_ids: [curated_c4f8, mass_balance_inference_family]
+    inferred_balance: true
+
+  - key: c_c4f8::ring_open_fragmentation
+    family: neutral_fragmentation
+    reactants: [c-C4F8]
+    products: [C2F4]
+    lhs_tokens: [C4F8]
+    rhs_tokens: [C2F4, C2F4]
+    base_confidence: 0.60
+    reference_ids: [curated_fragmentation_family]
+    inferred_balance: true
+
+  - key: c_c4f8::neutral_f_loss
+    family: neutral_fragmentation
+    reactants: [c-C4F8]
+    products: [C4F7, F]
+    lhs_tokens: [C4F8]
+    rhs_tokens: [C4F7, F]
+    base_confidence: 0.58
+    reference_ids: [curated_fragmentation_family]
+
+  - key: c_c4f8::tetrafluoroethylene_split
+    family: radical_fragmentation
+    reactants: [C2F4]
+    products: [CF2]
+    lhs_tokens: [C2F4]
+    rhs_tokens: [CF2, CF2]
+    base_confidence: 0.56
+    reference_ids: [curated_fragmentation_family]
+    inferred_balance: true
+
+  - key: c_c4f8::c4f7_to_c3f5
+    family: radical_fragmentation
+    reactants: [C4F7]
+    products: [C3F5, CF2]
+    lhs_tokens: [C4F7]
+    rhs_tokens: [C3F5, CF2]
+    base_confidence: 0.54
+    reference_ids: [curated_fragmentation_family]
+
+  - key: c_c4f8::c3f5_to_c2f3
+    family: radical_fragmentation
+    reactants: [C3F5]
+    products: [C2F3, CF2]
+    lhs_tokens: [C3F5]
+    rhs_tokens: [C2F3, CF2]
+    base_confidence: 0.52
+    reference_ids: [curated_fragmentation_family]
+
+  - key: c_c4f8::cf2plus_followup
+    family: ion_neutral_followup
+    reactants: [CF2+, c-C4F8]
+    products: [C3F5+]
+    lhs_tokens: [CF2+, C4F8]
+    rhs_tokens: [C3F5+]
+    base_confidence: 0.58
+    reference_ids: [curated_c4f8]
+    missing_products:
+      - kind: mass_balance_neutral
+        allowed_tags: [fluorocarbon]
+        allowed_state_classes: [ground]
+
+  - key: c_c4f8::c2f3plus_followup
+    family: ion_neutral_followup
+    reactants: [C2F3+, c-C4F8]
+    products: [C3F5+]
+    lhs_tokens: [C2F3+, C4F8]
+    rhs_tokens: [C3F5+]
+    base_confidence: 0.58
+    reference_ids: [curated_c4f8]
+    missing_products:
+      - kind: mass_balance_neutral
+        allowed_tags: [fluorocarbon]
+        allowed_state_classes: [ground]

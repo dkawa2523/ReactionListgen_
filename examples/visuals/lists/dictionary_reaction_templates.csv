@@ -1,0 +1,32 @@
+key,family,projectile,reactants,products,equation,threshold_ev,reference_ids,note
+c_c4f8::electron_attachment_c3f5_minus,electron_attachment,e-,c-C4F8,"C3F5-, CF3",e- + C4F8 -> C3F5- + CF3,0.0,curated_c4f8,
+c_c4f8::electron_attachment_cf3_minus,electron_attachment,e-,c-C4F8,"CF3-, C3F5",e- + C4F8 -> CF3- + C3F5,0.0,curated_c4f8,
+c_c4f8::electron_attachment_f_minus,electron_attachment,e-,c-C4F8,"F-, C4F7",e- + C4F8 -> F- + C4F7,0.0,curated_c4f8,
+c_c4f8::electron_attachment_parent,electron_attachment,e-,c-C4F8,c-C4F8-,e- + C4F8 -> C4F8-,0.0,curated_c4f8,
+ch4::electron_attachment_ch2_minus,electron_attachment,e-,CH4,"H2, CH2-",e- + CH4 -> H2 + CH2-,9.0,curated_ch4,Dissociative attachment channel to CH2-.
+ch4::electron_attachment_h_minus,electron_attachment,e-,CH4,"CH3, H-",e- + CH4 -> CH3 + H-,7.7,curated_ch4,Dissociative attachment channel to H-.
+ch4::electron_dissociation_ch,electron_dissociation,e-,CH4,"CH, H2, H",e- + CH4 -> e- + CH + H2 + H,12.0,curated_ch4,
+ch4::electron_dissociation_ch2,electron_dissociation,e-,CH4,"CH2, H2",e- + CH4 -> e- + CH2 + H2,10.5,curated_ch4,
+ch4::electron_dissociation_ch3,electron_dissociation,e-,CH4,"CH3, H",e- + CH4 -> e- + CH3 + H,9.0,curated_ch4,
+c_c4f8::electron_dissociative_ionization_c2f3,electron_dissociative_ionization,e-,c-C4F8,"C2F3+, C2F5",e- + C4F8 -> e- + e- + C2F3+ + C2F5,12.0,"curated_c4f8, mass_balance_inference_family",
+c_c4f8::electron_dissociative_ionization_c2f4,electron_dissociative_ionization,e-,c-C4F8,"C2F4+, C2F4",e- + C4F8 -> e- + e- + C2F4+ + C2F4,12.0,curated_c4f8,
+c_c4f8::electron_dissociative_ionization_c3f5,electron_dissociative_ionization,e-,c-C4F8,"C3F5+, CF3",e- + C4F8 -> e- + e- + C3F5+ + CF3,12.0,curated_c4f8,
+c_c4f8::electron_dissociative_ionization_cf2,electron_dissociative_ionization,e-,c-C4F8,"CF2+, C3F6",e- + C4F8 -> e- + e- + CF2+ + C3F6,12.0,curated_c4f8,
+ch4::electron_dissociative_ionization_ch3,electron_dissociative_ionization,e-,CH4,"H, CH3+",e- + CH4 -> e- + e- + H + CH3+,14.3,curated_ch4,Direct dissociative ionization channel.
+ch4::vibrational_v13,electron_excitation_vibrational,e-,CH4,CH4[V13],e- + CH4 -> e- + CH4(V13),0.361,curated_ch4,
+ch4::vibrational_v24,electron_excitation_vibrational,e-,CH4,CH4[V24],e- + CH4 -> e- + CH4(V24),0.162,curated_ch4,
+ch4::electron_ionization_parent,electron_ionization,e-,CH4,CH4+,e- + CH4 -> e- + e- + CH4+,12.6,curated_ch4,Parent ionization channel.
+ch4::ion_fragmentation_c,ion_fragmentation,,CH+,"C+, H",CH+ -> C+ + H,,curated_ch4,
+ch4::ion_fragmentation_ch,ion_fragmentation,,CH2+,"CH+, H",CH2+ -> CH+ + H,,curated_ch4,
+ch4::ion_fragmentation_ch2,ion_fragmentation,,CH3+,"CH2+, H",CH3+ -> CH2+ + H,,curated_ch4,
+ch4::parent_ion_fragmentation,ion_fragmentation,,CH4+,"CH3+, H",CH4+ -> CH3+ + H,,curated_ch4,
+c_c4f8::c2f3plus_followup,ion_neutral_followup,,"C2F3+, c-C4F8",C3F5+,C2F3+ + C4F8 -> C3F5+,,curated_c4f8,
+c_c4f8::cf2plus_followup,ion_neutral_followup,,"CF2+, c-C4F8",C3F5+,CF2+ + C4F8 -> C3F5+,,curated_c4f8,
+c_c4f8::neutral_f_loss,neutral_fragmentation,,c-C4F8,"C4F7, F",C4F8 -> C4F7 + F,,curated_fragmentation_family,
+c_c4f8::ring_open_fragmentation,neutral_fragmentation,,c-C4F8,C2F4,C4F8 -> C2F4 + C2F4,,curated_fragmentation_family,
+c_c4f8::c3f5_to_c2f3,radical_fragmentation,,C3F5,"C2F3, CF2",C3F5 -> C2F3 + CF2,,curated_fragmentation_family,
+c_c4f8::c4f7_to_c3f5,radical_fragmentation,,C4F7,"C3F5, CF2",C4F7 -> C3F5 + CF2,,curated_fragmentation_family,
+c_c4f8::tetrafluoroethylene_split,radical_fragmentation,,C2F4,CF2,C2F4 -> CF2 + CF2,,curated_fragmentation_family,
+ch4::radical_fragmentation_c,radical_fragmentation,,CH,"C, H",CH -> C + H,,curated_fragmentation_family,
+ch4::radical_fragmentation_ch,radical_fragmentation,,CH2,"CH, H",CH2 -> CH + H,,curated_fragmentation_family,
+ch4::radical_fragmentation_ch2,radical_fragmentation,,CH3,"CH2, H",CH3 -> CH2 + H,,curated_fragmentation_family,

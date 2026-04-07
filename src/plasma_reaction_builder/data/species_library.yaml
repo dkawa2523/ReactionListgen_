@@ -1,0 +1,226 @@
+species:
+  - key: CH4
+    display_name: Methane
+    formula: CH4
+    nist_query: Methane
+    tags: [feed, curated]
+
+  - key: CH4+
+    display_name: CH4+
+    formula: CH4
+    charge: 1
+    state_class: cation
+    tags: [ion, curated]
+
+  - key: CH3+
+    display_name: CH3+
+    formula: CH3
+    charge: 1
+    state_class: cation
+    tags: [ion, curated]
+
+  - key: CH2+
+    display_name: CH2+
+    formula: CH2
+    charge: 1
+    state_class: cation
+    tags: [ion, curated]
+
+  - key: CH+
+    display_name: CH+
+    formula: CH
+    charge: 1
+    state_class: cation
+    tags: [ion, curated]
+
+  - key: C+
+    display_name: C+
+    formula: C
+    charge: 1
+    state_class: cation
+    tags: [ion, curated]
+
+  - key: CH3
+    display_name: Methyl radical
+    formula: CH3
+    tags: [radical, curated]
+
+  - key: CH2
+    display_name: Methylene
+    formula: CH2
+    tags: [radical, curated]
+
+  - key: CH
+    display_name: CH radical
+    formula: CH
+    tags: [radical, curated]
+
+  - key: C
+    display_name: Carbon atom
+    formula: C
+    state_class: atom
+    tags: [atom, curated]
+
+  - key: H
+    display_name: Hydrogen atom
+    formula: H
+    state_class: atom
+    tags: [atom, curated]
+
+  - key: H2
+    display_name: Hydrogen
+    formula: H2
+    tags: [molecule, curated]
+
+  - key: H-
+    display_name: Hydride anion
+    formula: H
+    charge: -1
+    state_class: anion
+    tags: [anion, curated]
+
+  - key: CH2-
+    display_name: CH2-
+    formula: CH2
+    charge: -1
+    state_class: anion
+    tags: [anion, curated]
+
+  - key: CH4[V24]
+    display_name: CH4(v24)
+    formula: CH4
+    state_class: excited
+    excitation_label: V24
+    excitation_energy_ev: 0.162
+    tags: [excited, curated]
+
+  - key: CH4[V13]
+    display_name: CH4(v13)
+    formula: CH4
+    state_class: excited
+    excitation_label: V13
+    excitation_energy_ev: 0.361
+    tags: [excited, curated]
+
+  - key: c-C4F8
+    display_name: Cyclobutane, octafluoro-
+    formula: C4F8
+    nist_query: Cyclobutane, octafluoro-
+    structure_id: c-C4F8
+    tags: [feed, fluorocarbon, curated]
+
+  - key: c-C4F8-
+    display_name: C4F8-
+    formula: C4F8
+    charge: -1
+    state_class: anion
+    tags: [anion, fluorocarbon, curated]
+
+  - key: C4F7
+    display_name: C4F7 radical
+    formula: C4F7
+    tags: [radical, fluorocarbon, curated]
+
+  - key: F
+    display_name: Fluorine atom
+    formula: F
+    state_class: atom
+    tags: [atom, fluorocarbon, curated]
+
+  - key: F-
+    display_name: Fluoride anion
+    formula: F
+    charge: -1
+    state_class: anion
+    tags: [anion, fluorocarbon, curated]
+
+  - key: CF3
+    display_name: CF3 radical
+    formula: CF3
+    tags: [radical, fluorocarbon, curated]
+
+  - key: CF3-
+    display_name: CF3-
+    formula: CF3
+    charge: -1
+    state_class: anion
+    tags: [anion, fluorocarbon, curated]
+
+  - key: C3F5
+    display_name: C3F5 radical
+    formula: C3F5
+    tags: [radical, fluorocarbon, curated]
+
+  - key: C3F5-
+    display_name: C3F5-
+    formula: C3F5
+    charge: -1
+    state_class: anion
+    tags: [anion, fluorocarbon, curated]
+
+  - key: C2F4
+    display_name: Tetrafluoroethylene
+    formula: C2F4
+    tags: [molecule, fluorocarbon, curated]
+
+  - key: C2F5
+    display_name: C2F5 radical
+    formula: C2F5
+    tags: [radical, fluorocarbon, curated]
+
+  - key: CF2
+    display_name: CF2 radical
+    formula: CF2
+    tags: [radical, fluorocarbon, curated]
+
+  - key: CF2+
+    display_name: CF2+
+    formula: CF2
+    charge: 1
+    state_class: cation
+    tags: [ion, fluorocarbon, curated]
+
+  - key: CF+
+    display_name: CF+
+    formula: CF
+    charge: 1
+    state_class: cation
+    tags: [ion, fluorocarbon, curated]
+
+  - key: CF3+
+    display_name: CF3+
+    formula: CF3
+    charge: 1
+    state_class: cation
+    tags: [ion, fluorocarbon, curated]
+
+  - key: C2F3
+    display_name: C2F3 radical
+    formula: C2F3
+    tags: [radical, fluorocarbon, curated]
+
+  - key: C2F3+
+    display_name: C2F3+
+    formula: C2F3
+    charge: 1
+    state_class: cation
+    tags: [ion, fluorocarbon, curated]
+
+  - key: C2F4+
+    display_name: C2F4+
+    formula: C2F4
+    charge: 1
+    state_class: cation
+    tags: [ion, fluorocarbon, curated]
+
+  - key: C3F5+
+    display_name: C3F5+
+    formula: C3F5
+    charge: 1
+    state_class: cation
+    tags: [ion, fluorocarbon, curated]
+
+  - key: C3F6
+    display_name: C3F6 neutral fragment
+    formula: C3F6
+    tags: [molecule, fluorocarbon, curated]

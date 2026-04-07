@@ -1,0 +1,8 @@
+species_key,display_name,formula,delta_hf_298_kj_mol,delta_hf_0_kj_mol,version,doi,source_url
+CH4,Methane,CH4,-74.6,-66.6,1.220,10.17038/CSE/2568691,https://atct.anl.gov/
+CH3,Methyl radical,CH3,146.0,142.0,1.220,10.17038/CSE/2568691,https://atct.anl.gov/
+CH2,Methylene,CH2,392.0,390.0,1.220,10.17038/CSE/2568691,https://atct.anl.gov/
+CH,CH radical,CH,596.0,594.0,1.220,10.17038/CSE/2568691,https://atct.anl.gov/
+C,Carbon atom,C,717.0,711.0,1.220,10.17038/CSE/2568691,https://atct.anl.gov/
+H,Hydrogen atom,H,218.0,216.0,1.220,10.17038/CSE/2568691,https://atct.anl.gov/
+H2,Hydrogen,H2,0.0,0.0,1.220,10.17038/CSE/2568691,https://atct.anl.gov/

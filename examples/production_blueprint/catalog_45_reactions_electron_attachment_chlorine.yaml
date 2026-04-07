@@ -1,0 +1,24 @@
+reactions:
+  - key: chlorine::electron_attachment::cl2_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [Cl2]
+    products: [Cl2-]
+    lhs_tokens: [e-, Cl2]
+    rhs_tokens: [Cl2-]
+    threshold_ev: 0.0
+    base_confidence: 0.79
+    reference_ids: [curated_chlorine]
+    note: "Representative parent attachment channel for chlorine."
+
+  - key: chlorine::electron_attachment::hcl_parent
+    family: electron_attachment
+    required_projectile: e-
+    reactants: [HCl]
+    products: [HCl-]
+    lhs_tokens: [e-, HCl]
+    rhs_tokens: [HCl-]
+    threshold_ev: 0.0
+    base_confidence: 0.75
+    reference_ids: [curated_chlorine]
+    note: "Representative parent attachment channel for hydrogen chloride."

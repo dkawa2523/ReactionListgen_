@@ -1,0 +1,48 @@
+extends: config_focused_runtime_base.yaml
+
+feeds:
+  - species_key: Br2
+    formula: Br2
+    display_name: Bromine
+  - species_key: HBr
+    formula: HBr
+    display_name: Hydrogen bromide
+  - species_key: H2
+    formula: H2
+    display_name: Hydrogen
+
+projectiles: [e-]
+
+catalog_paths:
+  - catalog_00_references.yaml
+  - catalog_49_reactions_electron_attachment_bromine.yaml
+  - catalog_50_reactions_electron_ionization_bromine.yaml
+  - catalog_51_reactions_electron_dissociation_bromine.yaml
+  - catalog_52_reactions_radical_neutral_reaction_bromine.yaml
+  - catalog_56_reactions_ion_neutral_followup_bromine.yaml
+  - catalog_57_reactions_dissociative_recombination_bromine.yaml
+
+state_masters:
+  - path: state_master_base.yaml
+    families: [core_plasma, hydrogen, bromine]
+
+template_promotions:
+  source_backed_templates:
+    enabled: true
+    source_systems: [qdb]
+    target_families: [bromine]
+    allowed_reaction_families: [ion_neutral_followup, radical_neutral_reaction]
+    min_support_score: 0.82
+    max_templates_per_family: 4
+    require_catalog_species: true
+
+limits:
+  max_generation: 3
+  beam_width: 48
+  max_species: 80
+
+bootstrap:
+  reaction_evidence:
+    sources:
+      - kind: qdb_snapshot
+        path: ../snapshots/qdb_bromine_template_promotion_snapshot.json

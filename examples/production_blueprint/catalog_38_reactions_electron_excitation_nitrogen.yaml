@@ -1,0 +1,12 @@
+reactions:
+  - key: nitrogen::electron_excitation::n2_a_state
+    family: electron_excitation
+    required_projectile: e-
+    reactants: [N2]
+    products: ["N2[A3Sigma_u_plus]"]
+    lhs_tokens: [e-, N2]
+    rhs_tokens: [e-, N2(A3Sigma_u+)]
+    threshold_ev: 6.17
+    base_confidence: 0.84
+    reference_ids: [curated_nitrogen]
+    note: "Representative nitrogen metastable excitation channel."

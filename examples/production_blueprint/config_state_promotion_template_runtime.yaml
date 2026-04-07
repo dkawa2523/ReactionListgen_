@@ -1,0 +1,85 @@
+feeds:
+  - species_key: O2
+    formula: O2
+    display_name: Oxygen
+  - species_key: N2
+    formula: N2
+    display_name: Nitrogen
+  - species_key: CH4
+    formula: CH4
+    display_name: Methane
+
+projectiles: [e-]
+libraries: []
+
+catalog_paths:
+  - catalog_00_references.yaml
+  - catalog_22_reactions_electron_excitation_hydrocarbon.yaml
+  - catalog_35_reactions_electron_excitation_oxygen.yaml
+  - catalog_38_reactions_electron_excitation_nitrogen.yaml
+
+state_masters:
+  - path: state_master_base.yaml
+    families: [oxygen, nitrogen, hydrocarbon]
+
+excited_state_registry_path: excited_state_registry.yaml
+
+state_filters:
+  charge_window_min: 0
+  charge_window_max: 0
+
+state_promotions:
+  molecular_excited_states:
+    enabled: true
+    source_systems: [qdb, ideadb, vamdc]
+    min_support_score: 0.8
+    max_states_per_species: 3
+    require_electron_signal: true
+
+template_promotions:
+  molecular_excited_state_templates:
+    enabled: true
+    source_systems: [qdb, ideadb, vamdc]
+    target_families: [hydrocarbon, oxygen, nitrogen]
+    min_support_score: 0.8
+    include_electron_excitation: true
+    include_radiative_relaxation: true
+    include_collisional_quenching: true
+    include_superelastic_deexcitation: true
+    quenching_partners:
+      hydrocarbon: [CH4, H2]
+      oxygen: [O2, N2]
+      nitrogen: [N2, O2]
+
+limits:
+  max_generation: 3
+  beam_width: 32
+  max_species: 80
+
+conditions:
+  electron_max_ev: 10000.0
+  ion_max_ev: 200.0
+  gas_temperature_k: 300.0
+
+bootstrap:
+  pubchem:
+    enabled: false
+  nist_asd:
+    enabled: false
+  atct:
+    enabled: false
+  reaction_evidence:
+    seed_templates: false
+    sources:
+      - kind: qdb_snapshot
+        path: ../snapshots/qdb_molecular_excited_snapshot.json
+      - kind: vamdc_xsams
+        path: ../snapshots/vamdc_ideadb_molecular_excitation_sample.xsams
+        source_name: IDEADB molecular excitation sample
+        source_system: ideadb
+        support_score: 0.86
+      - kind: vamdc_xsams
+        path: ../snapshots/vamdc_molecular_excitation_sample.xsams
+        source_name: VAMDC molecular excitation sample
+        source_system: vamdc
+        support_score: 0.84

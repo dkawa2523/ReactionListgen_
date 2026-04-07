@@ -1,0 +1,24 @@
+reactions:
+  - key: hydrocarbon::electron_dissociation::ch4_to_ch3_h
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [CH4]
+    products: [CH3, H]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, CH3, H]
+    threshold_ev: 9.0
+    base_confidence: 0.78
+    reference_ids: [curated_hydrocarbon]
+    note: "Primary methane dissociation channel."
+
+  - key: hydrocarbon::electron_dissociation::ch4_to_ch2_h2
+    family: electron_dissociation
+    required_projectile: e-
+    reactants: [CH4]
+    products: [CH2, H2]
+    lhs_tokens: [e-, CH4]
+    rhs_tokens: [e-, CH2, H2]
+    threshold_ev: 10.5
+    base_confidence: 0.74
+    reference_ids: [curated_hydrocarbon]
+    note: "Secondary methane dissociation channel."

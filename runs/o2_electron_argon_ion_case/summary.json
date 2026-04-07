@@ -1,0 +1,32 @@
+﻿{
+    "species_count":  10,
+    "reaction_count":  14,
+    "species":  [
+                    "Ar+",
+                    "O2",
+                    "Ar",
+                    "O",
+                    "O-",
+                    "O2+",
+                    "O2-",
+                    "O2[a1Delta_g]",
+                    "O2[b1Sigma_g_plus]",
+                    "O+"
+                ],
+    "reactions":  [
+                      "Ar+ + O2 -\u003e Ar + O2+",
+                      "e- + O2 -\u003e O- + O",
+                      "e- + O2 -\u003e O2-",
+                      "e- + O2 -\u003e e- + O + O",
+                      "e- + O2 -\u003e e- + O2(a1Delta_g)",
+                      "e- + O2 -\u003e e- + O2(b1Sigma_g+)",
+                      "e- + O2 -\u003e e- + e- + O2+",
+                      "Ar+ + O -\u003e Ar + O+",
+                      "e- + O2+ -\u003e O + O",
+                      "e- + O -\u003e O-",
+                      "Ar+ + O2- -\u003e Ar + O2",
+                      "Ar+ + O- -\u003e Ar + O",
+                      "e- + Ar -\u003e e- + e- + Ar+",
+                      "O+ + O2 -\u003e O + O2+"
+                  ]
+}

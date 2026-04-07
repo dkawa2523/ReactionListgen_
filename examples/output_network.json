@@ -1,0 +1,4471 @@
+{
+  "metadata": {
+    "feed_count": 2,
+    "species_count": 40,
+    "reaction_count": 32,
+    "loaded_resources": [
+      "packaged:species_library.yaml",
+      "packaged:references.yaml",
+      "packaged:reactions_ch4.yaml",
+      "packaged:reactions_c_c4f8.yaml"
+    ],
+    "config_sha256": "fa8afb2306c99e98f200b340903a13e83e275916057c875ad51f5172ea3529bb",
+    "alias_count": 8,
+    "source_manifest": {
+      "generated_at": "2026-04-05T12:43:04+00:00",
+      "config_path": "/mnt/data/prb_v9_useful/examples/config.yaml",
+      "total_records": 10,
+      "sources": [
+        {
+          "source_id": "ideadb",
+          "source_name": "IDEADB (illustrative XSAMS)",
+          "record_count": 1,
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "collision_process_record",
+          "source_family": "electron_attachment",
+          "source_priority": 90
+        },
+        {
+          "source_id": "kida",
+          "source_name": "KIDA",
+          "record_count": 2,
+          "acquisition_method": "official_download",
+          "evidence_kind": "astrochemistry_network_record",
+          "source_family": "astrochemistry",
+          "source_priority": 30
+        },
+        {
+          "source_id": "nist_kinetics",
+          "source_name": "NIST Chemical Kinetics Database",
+          "record_count": 2,
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "thermal_gas_phase_record",
+          "source_family": "thermal_kinetics",
+          "source_priority": 75
+        },
+        {
+          "source_id": "qdb",
+          "source_name": "Quantemol-DB",
+          "record_count": 3,
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "validated_chemistry_record",
+          "source_family": "plasma_chemistry",
+          "source_priority": 95
+        },
+        {
+          "source_id": "umist",
+          "source_name": "UMIST Database for Astrochemistry",
+          "record_count": 2,
+          "acquisition_method": "official_download",
+          "evidence_kind": "astrochemistry_network_record",
+          "source_family": "astrochemistry",
+          "source_priority": 35
+        }
+      ]
+    },
+    "source_profiles_path": null
+  },
+  "species": [
+    {
+      "prototype_key": "C+[2P_3/2]",
+      "display_name": "C+ 2P_3/2",
+      "formula": "C",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "2P_3/2",
+      "excitation_energy_ev": 0.0079,
+      "tags": [
+        "asd_bootstrap",
+        "atomic",
+        "ion",
+        "excited"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C+[2P_3/2]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.55,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.805,
+        "tier": "high"
+      },
+      "id": "4d40bd8f61e04deba6be9421afe77ec6"
+    },
+    {
+      "prototype_key": "C+[4P_1/2]",
+      "display_name": "C+ 4P_1/2",
+      "formula": "C",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "4P_1/2",
+      "excitation_energy_ev": 6.5,
+      "tags": [
+        "asd_bootstrap",
+        "atomic",
+        "ion",
+        "excited"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C+[4P_1/2]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.55,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.805,
+        "tier": "high"
+      },
+      "id": "b5e118af500b436faa28e1ceecc6a9a8"
+    },
+    {
+      "prototype_key": "CH4",
+      "display_name": "Methane",
+      "formula": "CH4",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "feed",
+        "curated"
+      ],
+      "identity": {
+        "query": "Methane",
+        "namespace": "name",
+        "cid": 297,
+        "title": "Methane",
+        "formula": "CH4",
+        "molecular_weight": 16.043,
+        "smiles": "C",
+        "inchi": "InChI=1S/CH4/h1H4",
+        "inchikey": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+        "synonyms": [
+          "Methane",
+          "Methyl hydride"
+        ],
+        "candidate_count": 1,
+        "ambiguous": false,
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/297"
+      },
+      "thermo": {
+        "delta_hf_298_kj_mol": -74.6,
+        "delta_hf_0_kj_mol": -66.6,
+        "source_version": "1.220",
+        "doi": "10.17038/CSE/2568691",
+        "source_url": "https://atct.anl.gov/"
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CH4",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "evaluated_database",
+          "support_score": 0.94,
+          "source_url": "https://atct.anl.gov/",
+          "locator": "CH4",
+          "citation": "ATcT 1.220",
+          "retrieved_at": null,
+          "note": "Thermochemical values attached from ATcT snapshot.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "pubchem",
+          "source_name": "PubChem",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "identity_database_record",
+          "support_score": 0.88,
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/297",
+          "locator": "297",
+          "citation": "PubChem compound identity record",
+          "retrieved_at": null,
+          "note": "Feed identity canonicalized with PubChem.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.725,
+        "evidence_bonus": 0.21,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.05,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "667a48432e034a14a4291318ffc2b385"
+    },
+    {
+      "prototype_key": "C[1D_2]",
+      "display_name": "C 1D_2",
+      "formula": "C",
+      "charge": 0,
+      "state_class": "excited",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "1D_2",
+      "excitation_energy_ev": 1.263,
+      "tags": [
+        "asd_bootstrap",
+        "atomic",
+        "excited"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C[1D_2]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.55,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.805,
+        "tier": "high"
+      },
+      "id": "2bed2e0b49764e01951cab9faef3d50b"
+    },
+    {
+      "prototype_key": "C[3P_1]",
+      "display_name": "C 3P_1",
+      "formula": "C",
+      "charge": 0,
+      "state_class": "excited",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "3P_1",
+      "excitation_energy_ev": 0.002,
+      "tags": [
+        "asd_bootstrap",
+        "atomic",
+        "excited"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C[3P_1]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.55,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.805,
+        "tier": "high"
+      },
+      "id": "f56b1fe7ced44a9a9207c584d9686d06"
+    },
+    {
+      "prototype_key": "F",
+      "display_name": "Fluorine atom",
+      "formula": "F",
+      "charge": 0,
+      "state_class": "atom",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "atom",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "F",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7999999999999999,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "9da4a2caea4e440d897afaecfb694e09"
+    },
+    {
+      "prototype_key": "F[2P_1/2]",
+      "display_name": "F 2P_1/2",
+      "formula": "F",
+      "charge": 0,
+      "state_class": "excited",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "2P_1/2",
+      "excitation_energy_ev": 0.0501,
+      "tags": [
+        "asd_bootstrap",
+        "atomic",
+        "excited"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "F[2P_1/2]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.55,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.805,
+        "tier": "high"
+      },
+      "id": "2def016b269b44f69b56a257595c9012"
+    },
+    {
+      "prototype_key": "F[4P_5/2]",
+      "display_name": "F 4P_5/2",
+      "formula": "F",
+      "charge": 0,
+      "state_class": "excited",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "4P_5/2",
+      "excitation_energy_ev": 12.73,
+      "tags": [
+        "asd_bootstrap",
+        "atomic",
+        "excited"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "F[4P_5/2]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.55,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.805,
+        "tier": "high"
+      },
+      "id": "bd6d0818edf240c288bbc9fef61f43b0"
+    },
+    {
+      "prototype_key": "H",
+      "display_name": "Hydrogen atom",
+      "formula": "H",
+      "charge": 0,
+      "state_class": "atom",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "atom",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": 218.0,
+        "delta_hf_0_kj_mol": 216.0,
+        "source_version": "1.220",
+        "doi": "10.17038/CSE/2568691",
+        "source_url": "https://atct.anl.gov/"
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "H",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "evaluated_database",
+          "support_score": 0.94,
+          "source_url": "https://atct.anl.gov/",
+          "locator": "H",
+          "citation": "ATcT 1.220",
+          "retrieved_at": null,
+          "note": "Thermochemical values attached from ATcT snapshot.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7450000000000001,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.05,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "b7ca36b4cad84350bd76da3396e1a30b"
+    },
+    {
+      "prototype_key": "H[2P_1/2]",
+      "display_name": "H 2P_1/2",
+      "formula": "H",
+      "charge": 0,
+      "state_class": "excited",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "2P_1/2",
+      "excitation_energy_ev": 10.2,
+      "tags": [
+        "asd_bootstrap",
+        "atomic",
+        "excited"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "H[2P_1/2]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.55,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.805,
+        "tier": "high"
+      },
+      "id": "383fbac6db274550b4fa6211faac42b3"
+    },
+    {
+      "prototype_key": "H[2S_1/2]",
+      "display_name": "H 2S_1/2",
+      "formula": "H",
+      "charge": 0,
+      "state_class": "excited",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "2S_1/2",
+      "excitation_energy_ev": 10.2,
+      "tags": [
+        "asd_bootstrap",
+        "atomic",
+        "excited"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "H[2S_1/2]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.55,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.805,
+        "tier": "high"
+      },
+      "id": "5bb93751c72b4708a3439fa25e05bb3b"
+    },
+    {
+      "prototype_key": "c-C4F8",
+      "display_name": "Cyclobutane, octafluoro-",
+      "formula": "C4F8",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 0,
+      "multiplicity": null,
+      "structure_id": "c-C4F8",
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "feed",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": {
+        "query": "Cyclobutane, octafluoro-",
+        "namespace": "name",
+        "cid": 137139,
+        "title": "Cyclobutane, octafluoro-",
+        "formula": "C4F8",
+        "molecular_weight": 200.03,
+        "smiles": "C1(C(C(C1(F)F)(F)F)(F)F)(F)F",
+        "inchi": "InChI=1S/C4F8/c5-1(6)2(7,8)4(11,12)3(1,9)10",
+        "inchikey": "XJNRGXJCFJMKJL-UHFFFAOYSA-N",
+        "synonyms": [
+          "Cyclobutane, octafluoro-",
+          "Octafluorocyclobutane"
+        ],
+        "candidate_count": 1,
+        "ambiguous": false,
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/137139"
+      },
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "c-C4F8",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "pubchem",
+          "source_name": "PubChem",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "identity_database_record",
+          "support_score": 0.88,
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/137139",
+          "locator": "137139",
+          "citation": "PubChem compound identity record",
+          "retrieved_at": null,
+          "note": "Feed identity canonicalized with PubChem.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.55,
+        "evidence_bonus": 0.1975,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.8275,
+        "tier": "high"
+      },
+      "id": "2e8106784cab4e76b7e9327b18039a0d"
+    },
+    {
+      "prototype_key": "C2F3+",
+      "display_name": "C2F3+",
+      "formula": "C2F3",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "ion",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C2F3+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "e0820b82c54d4eab8e6e93dc9046478d"
+    },
+    {
+      "prototype_key": "C2F4",
+      "display_name": "Tetrafluoroethylene",
+      "formula": "C2F4",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "molecule",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C2F4",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.82,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "79272c0cd6a8484d8528a40f6abbcd09"
+    },
+    {
+      "prototype_key": "C2F4+",
+      "display_name": "C2F4+",
+      "formula": "C2F4",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "ion",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C2F4+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "9e8c6f4963c54e4ca5d2b4160abf1ffc"
+    },
+    {
+      "prototype_key": "C2F5",
+      "display_name": "C2F5 radical",
+      "formula": "C2F5",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "radical",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C2F5",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7724999999999999,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "d6637715e5544497b18a2d4eb6094da9"
+    },
+    {
+      "prototype_key": "C3F5",
+      "display_name": "C3F5 radical",
+      "formula": "C3F5",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "radical",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C3F5",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.71,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.965,
+        "tier": "high"
+      },
+      "id": "9dc97aa7742542498c0ce3f4216b5780"
+    },
+    {
+      "prototype_key": "C3F5+",
+      "display_name": "C3F5+",
+      "formula": "C3F5",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "ion",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C3F5+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7724999999999999,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "245552d7e05848cba26d68a39fd2229a"
+    },
+    {
+      "prototype_key": "C3F5-",
+      "display_name": "C3F5-",
+      "formula": "C3F5",
+      "charge": -1,
+      "state_class": "anion",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "anion",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C3F5-",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "d8a4b004e7f2456b84cfbb08cbd42f8f"
+    },
+    {
+      "prototype_key": "C3F6",
+      "display_name": "C3F6 neutral fragment",
+      "formula": "C3F6",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "molecule",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C3F6",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7724999999999999,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "3400fa64dee34e1483e6a6a2a055e681"
+    },
+    {
+      "prototype_key": "C4F7",
+      "display_name": "C4F7 radical",
+      "formula": "C4F7",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "radical",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C4F7",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7999999999999999,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "ce106b8475824a1fb5e59464a65720e9"
+    },
+    {
+      "prototype_key": "CF2+",
+      "display_name": "CF2+",
+      "formula": "CF2",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "ion",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CF2+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "8e5fb72df70f415890569e1a8b985b1e"
+    },
+    {
+      "prototype_key": "CF3",
+      "display_name": "CF3 radical",
+      "formula": "CF3",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "radical",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CF3",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "235e1a9e64824fd6a9f7cf75e297d440"
+    },
+    {
+      "prototype_key": "CF3-",
+      "display_name": "CF3-",
+      "formula": "CF3",
+      "charge": -1,
+      "state_class": "anion",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "anion",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CF3-",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "ff5398f61a07434ba91a3a31eabd55c9"
+    },
+    {
+      "prototype_key": "CH",
+      "display_name": "CH radical",
+      "formula": "CH",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "radical",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": 596.0,
+        "delta_hf_0_kj_mol": 594.0,
+        "source_version": "1.220",
+        "doi": "10.17038/CSE/2568691",
+        "source_url": "https://atct.anl.gov/"
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CH",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "evaluated_database",
+          "support_score": 0.94,
+          "source_url": "https://atct.anl.gov/",
+          "locator": "CH",
+          "citation": "ATcT 1.220",
+          "retrieved_at": null,
+          "note": "Thermochemical values attached from ATcT snapshot.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7499999999999999,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.05,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "414f5d5fa9994f6cbc6be180ae2b2899"
+    },
+    {
+      "prototype_key": "CH2",
+      "display_name": "Methylene",
+      "formula": "CH2",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "radical",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": 392.0,
+        "delta_hf_0_kj_mol": 390.0,
+        "source_version": "1.220",
+        "doi": "10.17038/CSE/2568691",
+        "source_url": "https://atct.anl.gov/"
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CH2",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "evaluated_database",
+          "support_score": 0.94,
+          "source_url": "https://atct.anl.gov/",
+          "locator": "CH2",
+          "citation": "ATcT 1.220",
+          "retrieved_at": null,
+          "note": "Thermochemical values attached from ATcT snapshot.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7899999999999999,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.05,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "008c5f42ca6b41acbccd8eff2de56a69"
+    },
+    {
+      "prototype_key": "CH2-",
+      "display_name": "CH2-",
+      "formula": "CH2",
+      "charge": -1,
+      "state_class": "anion",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "anion",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CH2-",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "aedbd07bb0a745948fe55bb241adb894"
+    },
+    {
+      "prototype_key": "CH3",
+      "display_name": "Methyl radical",
+      "formula": "CH3",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "radical",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": 146.0,
+        "delta_hf_0_kj_mol": 142.0,
+        "source_version": "1.220",
+        "doi": "10.17038/CSE/2568691",
+        "source_url": "https://atct.anl.gov/"
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CH3",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "evaluated_database",
+          "support_score": 0.94,
+          "source_url": "https://atct.anl.gov/",
+          "locator": "CH3",
+          "citation": "ATcT 1.220",
+          "retrieved_at": null,
+          "note": "Thermochemical values attached from ATcT snapshot.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.05,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "e8cc595b96bb4e9ea661490efc08a113"
+    },
+    {
+      "prototype_key": "CH3+",
+      "display_name": "CH3+",
+      "formula": "CH3",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "ion",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CH3+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.9149999999999998,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "cecd4d2836974cafbe466a967b848639"
+    },
+    {
+      "prototype_key": "CH4+",
+      "display_name": "CH4+",
+      "formula": "CH4",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "ion",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CH4+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "8130d03eee3341bfb40e0ba485a28053"
+    },
+    {
+      "prototype_key": "CH4[V13]",
+      "display_name": "CH4(v13)",
+      "formula": "CH4",
+      "charge": 0,
+      "state_class": "excited",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "V13",
+      "excitation_energy_ev": 0.361,
+      "tags": [
+        "excited",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CH4[V13]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "5a7c7c4817e445d5a96a8c1d95e5f561"
+    },
+    {
+      "prototype_key": "CH4[V24]",
+      "display_name": "CH4(v24)",
+      "formula": "CH4",
+      "charge": 0,
+      "state_class": "excited",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": "V24",
+      "excitation_energy_ev": 0.162,
+      "tags": [
+        "excited",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CH4[V24]",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "24eec7d5361045edb0d2a1f40720808c"
+    },
+    {
+      "prototype_key": "F-",
+      "display_name": "Fluoride anion",
+      "formula": "F",
+      "charge": -1,
+      "state_class": "anion",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "anion",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "F-",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "91dfa40d899e4f4e98a87f3cb5f994d3"
+    },
+    {
+      "prototype_key": "H-",
+      "display_name": "Hydride anion",
+      "formula": "H",
+      "charge": -1,
+      "state_class": "anion",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "anion",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "H-",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "c61ebd4b0ac84a92b52897b2e133c411"
+    },
+    {
+      "prototype_key": "H2",
+      "display_name": "Hydrogen",
+      "formula": "H2",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "molecule",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": 0.0,
+        "delta_hf_0_kj_mol": 0.0,
+        "source_version": "1.220",
+        "doi": "10.17038/CSE/2568691",
+        "source_url": "https://atct.anl.gov/"
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "H2",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "evaluated_database",
+          "support_score": 0.94,
+          "source_url": "https://atct.anl.gov/",
+          "locator": "H2",
+          "citation": "ATcT 1.220",
+          "retrieved_at": null,
+          "note": "Thermochemical values attached from ATcT snapshot.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.05,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "00f4c30d08804317bae72cb48125dd49"
+    },
+    {
+      "prototype_key": "c-C4F8-",
+      "display_name": "C4F8-",
+      "formula": "C4F8",
+      "charge": -1,
+      "state_class": "anion",
+      "generation": 1,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "anion",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "c-C4F8-",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.95,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "bc0fad095d754625b71f178a0b03fd0c"
+    },
+    {
+      "prototype_key": "C2F3",
+      "display_name": "C2F3 radical",
+      "formula": "C2F3",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 2,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "radical",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "C2F3",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.69,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.04,
+        "final_score": 0.9049999999999999,
+        "tier": "high"
+      },
+      "id": "3c7a952b956c4f61a65bc7fb84bb2e1f"
+    },
+    {
+      "prototype_key": "CF2",
+      "display_name": "CF2 radical",
+      "formula": "CF2",
+      "charge": 0,
+      "state_class": "ground",
+      "generation": 2,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "radical",
+        "fluorocarbon",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CF2",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.69,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.04,
+        "final_score": 0.9049999999999999,
+        "tier": "high"
+      },
+      "id": "19d63d32a1d24fdf9c2931d8ac907b04"
+    },
+    {
+      "prototype_key": "CH2+",
+      "display_name": "CH2+",
+      "formula": "CH2",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 2,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "ion",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CH2+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.8349999999999999,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.04,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "id": "1b6ed4fdd00f443e8569576d4b0ffd9e"
+    },
+    {
+      "prototype_key": "CH+",
+      "display_name": "CH+",
+      "formula": "CH",
+      "charge": 1,
+      "state_class": "cation",
+      "generation": 3,
+      "multiplicity": null,
+      "structure_id": null,
+      "excitation_label": null,
+      "excitation_energy_ev": null,
+      "tags": [
+        "ion",
+        "curated"
+      ],
+      "identity": null,
+      "thermo": {
+        "delta_hf_298_kj_mol": null,
+        "delta_hf_0_kj_mol": null,
+        "source_version": null,
+        "doi": null,
+        "source_url": null
+      },
+      "evidence": [
+        {
+          "source_system": "catalog",
+          "source_name": "species_library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_species_record",
+          "support_score": 0.7,
+          "source_url": null,
+          "locator": "CH+",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Species instantiated from packaged species library.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7450000000000001,
+        "evidence_bonus": 0.175,
+        "balance_bonus": 0.08,
+        "threshold_bonus": 0.0,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.08,
+        "final_score": 0.9200000000000003,
+        "tier": "high"
+      },
+      "id": "4e880f626948431eb585410450689968"
+    }
+  ],
+  "reactions": [
+    {
+      "key": "c_c4f8::electron_attachment_c3f5_minus",
+      "family": "electron_attachment",
+      "equation": "e- + C4F8 -> C3F5- + CF3",
+      "reactant_state_ids": [
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "d8a4b004e7f2456b84cfbb08cbd42f8f",
+        "235e1a9e64824fd6a9f7cf75e297d440"
+      ],
+      "reactant_keys": [
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "C3F5-",
+        "CF3"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "C3F5-",
+        "CF3"
+      ],
+      "generation": 1,
+      "threshold_ev": 0.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "c-C4F8 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_c4f8",
+          "citation": "Packaged c-C4F8 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated fluorocarbon family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.8,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "19d2743c3c2e478f9d4263336f41ea07"
+    },
+    {
+      "key": "c_c4f8::electron_attachment_cf3_minus",
+      "family": "electron_attachment",
+      "equation": "e- + C4F8 -> CF3- + C3F5",
+      "reactant_state_ids": [
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "ff5398f61a07434ba91a3a31eabd55c9",
+        "9dc97aa7742542498c0ce3f4216b5780"
+      ],
+      "reactant_keys": [
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "CF3-",
+        "C3F5"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "CF3-",
+        "C3F5"
+      ],
+      "generation": 1,
+      "threshold_ev": 0.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "c-C4F8 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_c4f8",
+          "citation": "Packaged c-C4F8 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated fluorocarbon family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.8,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "ac24abf812ae4cc0a63289992c1da477"
+    },
+    {
+      "key": "c_c4f8::electron_attachment_f_minus",
+      "family": "electron_attachment",
+      "equation": "e- + C4F8 -> F- + C4F7",
+      "reactant_state_ids": [
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "91dfa40d899e4f4e98a87f3cb5f994d3",
+        "ce106b8475824a1fb5e59464a65720e9"
+      ],
+      "reactant_keys": [
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "F-",
+        "C4F7"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "F-",
+        "C4F7"
+      ],
+      "generation": 1,
+      "threshold_ev": 0.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "c-C4F8 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_c4f8",
+          "citation": "Packaged c-C4F8 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated fluorocarbon family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.82,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "331cc505be6b4384924e6d11b8396c24"
+    },
+    {
+      "key": "c_c4f8::electron_attachment_parent",
+      "family": "electron_attachment",
+      "equation": "e- + C4F8 -> C4F8-",
+      "reactant_state_ids": [
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "bc0fad095d754625b71f178a0b03fd0c"
+      ],
+      "reactant_keys": [
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "c-C4F8-"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "C4F8-"
+      ],
+      "generation": 1,
+      "threshold_ev": 0.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "c-C4F8 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_c4f8",
+          "citation": "Packaged c-C4F8 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated fluorocarbon family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.78,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "d659b4ab8d864f73a38ae9f8458c2733"
+    },
+    {
+      "key": "c_c4f8::electron_dissociative_ionization_c2f3",
+      "family": "electron_dissociative_ionization",
+      "equation": "e- + C4F8 -> e- + e- + C2F3+ + C2F5",
+      "reactant_state_ids": [
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "e0820b82c54d4eab8e6e93dc9046478d",
+        "d6637715e5544497b18a2d4eb6094da9"
+      ],
+      "reactant_keys": [
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "C2F3+",
+        "C2F5"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "e-",
+        "C2F3+",
+        "C2F5"
+      ],
+      "generation": 1,
+      "threshold_ev": 12.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "c-C4F8 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_c4f8",
+          "citation": "Packaged c-C4F8 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated fluorocarbon family used as the starting network prior.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "inference",
+          "source_name": "balanced_counterfragment_inference",
+          "acquisition_method": "package_template",
+          "evidence_kind": "mass_balance_inference",
+          "support_score": 0.36,
+          "source_url": null,
+          "locator": "mass_balance_inference_family",
+          "citation": "Mass and charge balanced counterfragment inference",
+          "retrieved_at": null,
+          "note": "Primary ionic product specified in the template; neutral counterpart inferred from conservation laws.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.68,
+        "evidence_bonus": 0.14250000000000002,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "5804ed2c953b4c79a2b63795d8694408"
+    },
+    {
+      "key": "c_c4f8::electron_dissociative_ionization_c2f4",
+      "family": "electron_dissociative_ionization",
+      "equation": "e- + C4F8 -> e- + e- + C2F4+ + C2F4",
+      "reactant_state_ids": [
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "9e8c6f4963c54e4ca5d2b4160abf1ffc",
+        "79272c0cd6a8484d8528a40f6abbcd09"
+      ],
+      "reactant_keys": [
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "C2F4+",
+        "C2F4"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "e-",
+        "C2F4+",
+        "C2F4"
+      ],
+      "generation": 1,
+      "threshold_ev": 12.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "c-C4F8 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_c4f8",
+          "citation": "Packaged c-C4F8 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated fluorocarbon family used as the starting network prior.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "qdb",
+          "source_name": "Quantemol-DB",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "validated_chemistry_record",
+          "support_score": 0.901,
+          "source_url": "https://quantemoldb.com/chemistries/api/",
+          "locator": null,
+          "citation": "Illustrative normalized QDB snapshot",
+          "retrieved_at": null,
+          "note": "Fluorocarbon ionization channel represented in a QDB chemistry set.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.84,
+        "evidence_bonus": 0.210125,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "05fa31e610ef4ee1ab2de01f013d3b0f"
+    },
+    {
+      "key": "c_c4f8::electron_dissociative_ionization_c3f5",
+      "family": "electron_dissociative_ionization",
+      "equation": "e- + C4F8 -> e- + e- + C3F5+ + CF3",
+      "reactant_state_ids": [
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "245552d7e05848cba26d68a39fd2229a",
+        "235e1a9e64824fd6a9f7cf75e297d440"
+      ],
+      "reactant_keys": [
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "C3F5+",
+        "CF3"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "e-",
+        "C3F5+",
+        "CF3"
+      ],
+      "generation": 1,
+      "threshold_ev": 12.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "c-C4F8 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_c4f8",
+          "citation": "Packaged c-C4F8 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated fluorocarbon family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.84,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "5e6bd6cb217d45039e61b93e7b739359"
+    },
+    {
+      "key": "c_c4f8::electron_dissociative_ionization_cf2",
+      "family": "electron_dissociative_ionization",
+      "equation": "e- + C4F8 -> e- + e- + CF2+ + C3F6",
+      "reactant_state_ids": [
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "8e5fb72df70f415890569e1a8b985b1e",
+        "3400fa64dee34e1483e6a6a2a055e681"
+      ],
+      "reactant_keys": [
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "CF2+",
+        "C3F6"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "e-",
+        "CF2+",
+        "C3F6"
+      ],
+      "generation": 1,
+      "threshold_ev": 12.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "c-C4F8 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_c4f8",
+          "citation": "Packaged c-C4F8 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated fluorocarbon family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.72,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "7f37fc88178548aab58b36ad14fa2350"
+    },
+    {
+      "key": "c_c4f8::neutral_f_loss",
+      "family": "neutral_fragmentation",
+      "equation": "C4F8 -> C4F7 + F",
+      "reactant_state_ids": [
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "ce106b8475824a1fb5e59464a65720e9",
+        "9da4a2caea4e440d897afaecfb694e09"
+      ],
+      "reactant_keys": [
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "C4F7",
+        "F"
+      ],
+      "lhs_tokens": [
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "C4F7",
+        "F"
+      ],
+      "generation": 1,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "packaged_curated_fragmentation",
+          "acquisition_method": "package_template",
+          "evidence_kind": "heuristic_family",
+          "support_score": 0.52,
+          "source_url": null,
+          "locator": "curated_fragmentation_family",
+          "citation": "Curated fragmentation family",
+          "retrieved_at": null,
+          "note": "Balanced fragmentation step added to continue second and third generation expansion.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.58,
+        "evidence_bonus": 0.13,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.85,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "44ba800278ac4b02a16b8681015c8f34"
+    },
+    {
+      "key": "c_c4f8::ring_open_fragmentation",
+      "family": "neutral_fragmentation",
+      "equation": "C4F8 -> C2F4 + C2F4",
+      "reactant_state_ids": [
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "79272c0cd6a8484d8528a40f6abbcd09"
+      ],
+      "reactant_keys": [
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "C2F4"
+      ],
+      "lhs_tokens": [
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "C2F4",
+        "C2F4"
+      ],
+      "generation": 1,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "packaged_curated_fragmentation",
+          "acquisition_method": "package_template",
+          "evidence_kind": "heuristic_family",
+          "support_score": 0.52,
+          "source_url": null,
+          "locator": "curated_fragmentation_family",
+          "citation": "Curated fragmentation family",
+          "retrieved_at": null,
+          "note": "Balanced fragmentation step added to continue second and third generation expansion.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.6,
+        "evidence_bonus": 0.13,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 0.87,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "e9d449df28ce42e8a9f27dd67c707966"
+    },
+    {
+      "key": "ch4::electron_attachment_ch2_minus",
+      "family": "electron_attachment",
+      "equation": "e- + CH4 -> H2 + CH2-",
+      "reactant_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "product_state_ids": [
+        "00f4c30d08804317bae72cb48125dd49",
+        "aedbd07bb0a745948fe55bb241adb894"
+      ],
+      "reactant_keys": [
+        "CH4"
+      ],
+      "product_keys": [
+        "H2",
+        "CH2-"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "CH4"
+      ],
+      "rhs_tokens": [
+        "H2",
+        "CH2-"
+      ],
+      "generation": 1,
+      "threshold_ev": 9.0,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.86,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Dissociative attachment channel to CH2-.",
+      "id": "a61f1ae1b9ef4b8ca575d9fdd9950095"
+    },
+    {
+      "key": "ch4::electron_attachment_h_minus",
+      "family": "electron_attachment",
+      "equation": "e- + CH4 -> CH3 + H-",
+      "reactant_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "product_state_ids": [
+        "e8cc595b96bb4e9ea661490efc08a113",
+        "c61ebd4b0ac84a92b52897b2e133c411"
+      ],
+      "reactant_keys": [
+        "CH4"
+      ],
+      "product_keys": [
+        "CH3",
+        "H-"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "CH4"
+      ],
+      "rhs_tokens": [
+        "CH3",
+        "H-"
+      ],
+      "generation": 1,
+      "threshold_ev": 7.7,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "ideadb",
+          "source_name": "IDEADB (illustrative XSAMS)",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "collision_process_record",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": null,
+          "citation": "Illustrative IDEADB-style DEA dataset; 2024; 10.0000/example",
+          "retrieved_at": null,
+          "note": "VAMDC XSAMS dissociative_electron_attachment record.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.88,
+        "evidence_bonus": 0.2,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Dissociative attachment channel to H-.",
+      "id": "8f5a60bccf254038af813ffbf57ff5d5"
+    },
+    {
+      "key": "ch4::electron_dissociation_ch",
+      "family": "electron_dissociation",
+      "equation": "e- + CH4 -> e- + CH + H2 + H",
+      "reactant_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "product_state_ids": [
+        "414f5d5fa9994f6cbc6be180ae2b2899",
+        "00f4c30d08804317bae72cb48125dd49",
+        "b7ca36b4cad84350bd76da3396e1a30b"
+      ],
+      "reactant_keys": [
+        "CH4"
+      ],
+      "product_keys": [
+        "CH",
+        "H2",
+        "H"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "CH4"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "CH",
+        "H2",
+        "H"
+      ],
+      "generation": 1,
+      "threshold_ev": 12.0,
+      "delta_h_kj_mol": 888.6,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "reaction_enthalpy_inference",
+          "support_score": 0.88,
+          "source_url": null,
+          "locator": "ch4::electron_dissociation_ch",
+          "citation": "ATcT-derived reaction enthalpy from species enthalpies",
+          "retrieved_at": null,
+          "note": "Reaction enthalpy computed from attached species thermochemistry.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7,
+        "evidence_bonus": 0.20750000000000002,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": -0.08,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "ce78b215ec45400d8f8f37b45e063403"
+    },
+    {
+      "key": "ch4::electron_dissociation_ch2",
+      "family": "electron_dissociation",
+      "equation": "e- + CH4 -> e- + CH2 + H2",
+      "reactant_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "product_state_ids": [
+        "008c5f42ca6b41acbccd8eff2de56a69",
+        "00f4c30d08804317bae72cb48125dd49"
+      ],
+      "reactant_keys": [
+        "CH4"
+      ],
+      "product_keys": [
+        "CH2",
+        "H2"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "CH4"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "CH2",
+        "H2"
+      ],
+      "generation": 1,
+      "threshold_ev": 10.5,
+      "delta_h_kj_mol": 466.6,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "reaction_enthalpy_inference",
+          "support_score": 0.88,
+          "source_url": null,
+          "locator": "ch4::electron_dissociation_ch2",
+          "citation": "ATcT-derived reaction enthalpy from species enthalpies",
+          "retrieved_at": null,
+          "note": "Reaction enthalpy computed from attached species thermochemistry.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "umist",
+          "source_name": "UMIST Database for Astrochemistry",
+          "acquisition_method": "official_download",
+          "evidence_kind": "reverse_astrochemistry_network_record",
+          "support_score": 0.49800000000000005,
+          "source_url": "https://umistdatabase.uk/react/9002",
+          "locator": null,
+          "citation": "UMIST Rate22 reaction #9002",
+          "retrieved_at": null,
+          "note": "Reverse-direction match found in evidence source. UMIST RATE22 #9002 type=IN method=C accuracy=factor2; Illustrative UMIST radical stabilization",
+          "raw_ref": null
+        },
+        {
+          "source_system": "kida",
+          "source_name": "KIDA",
+          "acquisition_method": "official_download",
+          "evidence_kind": "reverse_astrochemistry_network_record",
+          "support_score": 0.45,
+          "source_url": null,
+          "locator": null,
+          "citation": "KIDA reaction #1002",
+          "retrieved_at": null,
+          "note": "Reverse-direction match found in evidence source. KIDA network record #1002 type=4; parameter_count=5",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.74,
+        "evidence_bonus": 0.16300000000000003,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": -0.03,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "35023c8221f848a49c7f2271dd5ef6ae"
+    },
+    {
+      "key": "ch4::electron_dissociation_ch3",
+      "family": "electron_dissociation",
+      "equation": "e- + CH4 -> e- + CH3 + H",
+      "reactant_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "product_state_ids": [
+        "e8cc595b96bb4e9ea661490efc08a113",
+        "b7ca36b4cad84350bd76da3396e1a30b"
+      ],
+      "reactant_keys": [
+        "CH4"
+      ],
+      "product_keys": [
+        "CH3",
+        "H"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "CH4"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "CH3",
+        "H"
+      ],
+      "generation": 1,
+      "threshold_ev": 9.0,
+      "delta_h_kj_mol": 438.6,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "reaction_enthalpy_inference",
+          "support_score": 0.88,
+          "source_url": null,
+          "locator": "ch4::electron_dissociation_ch3",
+          "citation": "ATcT-derived reaction enthalpy from species enthalpies",
+          "retrieved_at": null,
+          "note": "Reaction enthalpy computed from attached species thermochemistry.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "nist_kinetics",
+          "source_name": "NIST Chemical Kinetics Database",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "reverse_thermal_gas_phase_record",
+          "support_score": 0.7519999999999999,
+          "source_url": "https://kinetics.nist.gov/kinetics/",
+          "locator": null,
+          "citation": "Illustrative normalized NIST kinetics snapshot",
+          "retrieved_at": null,
+          "note": "Reverse-direction match found in evidence source. Reverse-direction thermal record used as supporting evidence for CH4 fragmentation family.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "umist",
+          "source_name": "UMIST Database for Astrochemistry",
+          "acquisition_method": "official_download",
+          "evidence_kind": "reverse_astrochemistry_network_record",
+          "support_score": 0.456,
+          "source_url": "https://umistdatabase.uk/react/9001",
+          "locator": null,
+          "citation": "UMIST Rate22 reaction #9001",
+          "retrieved_at": null,
+          "note": "Reverse-direction match found in evidence source. UMIST RATE22 #9001 type=NN method=L accuracy=factor2; Illustrative UMIST reverse hydrogenation",
+          "raw_ref": null
+        },
+        {
+          "source_system": "kida",
+          "source_name": "KIDA",
+          "acquisition_method": "official_download",
+          "evidence_kind": "reverse_astrochemistry_network_record",
+          "support_score": 0.45,
+          "source_url": null,
+          "locator": null,
+          "citation": "KIDA reaction #1001",
+          "retrieved_at": null,
+          "note": "Reverse-direction match found in evidence source. KIDA network record #1001 type=4; parameter_count=5",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.78,
+        "evidence_bonus": 0.1659,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": -0.03,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "e93b49897ca34747a137de76038ea689"
+    },
+    {
+      "key": "ch4::electron_dissociative_ionization_ch3",
+      "family": "electron_dissociative_ionization",
+      "equation": "e- + CH4 -> e- + e- + H + CH3+",
+      "reactant_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "product_state_ids": [
+        "b7ca36b4cad84350bd76da3396e1a30b",
+        "cecd4d2836974cafbe466a967b848639"
+      ],
+      "reactant_keys": [
+        "CH4"
+      ],
+      "product_keys": [
+        "H",
+        "CH3+"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "CH4"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "e-",
+        "H",
+        "CH3+"
+      ],
+      "generation": 1,
+      "threshold_ev": 14.3,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "qdb",
+          "source_name": "Quantemol-DB",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "validated_chemistry_record",
+          "support_score": 0.908,
+          "source_url": "https://quantemoldb.com/chemistries/api/",
+          "locator": null,
+          "citation": "Illustrative normalized QDB snapshot",
+          "retrieved_at": null,
+          "note": "Electron-impact dissociative ionization channel represented in a QDB chemistry set.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.9,
+        "evidence_bonus": 0.21100000000000002,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Direct dissociative ionization channel.",
+      "id": "83c60c7415564696b8a3dc921ab25ec1"
+    },
+    {
+      "key": "ch4::electron_ionization_parent",
+      "family": "electron_ionization",
+      "equation": "e- + CH4 -> e- + e- + CH4+",
+      "reactant_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "product_state_ids": [
+        "8130d03eee3341bfb40e0ba485a28053"
+      ],
+      "reactant_keys": [
+        "CH4"
+      ],
+      "product_keys": [
+        "CH4+"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "CH4"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "e-",
+        "CH4+"
+      ],
+      "generation": 1,
+      "threshold_ev": 12.6,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "qdb",
+          "source_name": "Quantemol-DB",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "validated_chemistry_record",
+          "support_score": 0.908,
+          "source_url": "https://quantemoldb.com/chemistries/api/",
+          "locator": null,
+          "citation": "Illustrative normalized QDB snapshot",
+          "retrieved_at": null,
+          "note": "Electron-impact parent ionization channel represented in a QDB chemistry set.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.9,
+        "evidence_bonus": 0.21100000000000002,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Parent ionization channel.",
+      "id": "a0ae9a3104f246bca8c12758c9954050"
+    },
+    {
+      "key": "ch4::vibrational_v13",
+      "family": "electron_excitation_vibrational",
+      "equation": "e- + CH4 -> e- + CH4(V13)",
+      "reactant_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "product_state_ids": [
+        "5a7c7c4817e445d5a96a8c1d95e5f561"
+      ],
+      "reactant_keys": [
+        "CH4"
+      ],
+      "product_keys": [
+        "CH4[V13]"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "CH4"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "CH4(V13)"
+      ],
+      "generation": 1,
+      "threshold_ev": 0.361,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.88,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "29439f0705d44bed9db5f32e1d8d4fd0"
+    },
+    {
+      "key": "ch4::vibrational_v24",
+      "family": "electron_excitation_vibrational",
+      "equation": "e- + CH4 -> e- + CH4(V24)",
+      "reactant_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "product_state_ids": [
+        "24eec7d5361045edb0d2a1f40720808c"
+      ],
+      "reactant_keys": [
+        "CH4"
+      ],
+      "product_keys": [
+        "CH4[V24]"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "CH4"
+      ],
+      "rhs_tokens": [
+        "e-",
+        "CH4(V24)"
+      ],
+      "generation": 1,
+      "threshold_ev": 0.162,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.88,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.1,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "d6259fbae15148ab8049562a0c91a620"
+    },
+    {
+      "key": "ext::ideadb::3afad999fe645d4f",
+      "family": "electron_collision_evidence",
+      "equation": "e- + CH4 -> H- + CH3",
+      "reactant_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "product_state_ids": [
+        "c61ebd4b0ac84a92b52897b2e133c411",
+        "e8cc595b96bb4e9ea661490efc08a113"
+      ],
+      "reactant_keys": [
+        "CH4"
+      ],
+      "product_keys": [
+        "H-",
+        "CH3"
+      ],
+      "lhs_tokens": [
+        "e-",
+        "CH4"
+      ],
+      "rhs_tokens": [
+        "H-",
+        "CH3"
+      ],
+      "generation": 1,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "ideadb",
+          "source_name": "IDEADB (illustrative XSAMS)",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "collision_process_record",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": null,
+          "citation": "Illustrative IDEADB-style DEA dataset; 2024; 10.0000/example",
+          "retrieved_at": null,
+          "note": "VAMDC XSAMS dissociative_electron_attachment record.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "ideadb",
+          "source_name": "IDEADB (illustrative XSAMS)",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "collision_process_record",
+          "support_score": 0.82,
+          "source_url": null,
+          "locator": null,
+          "citation": "Illustrative IDEADB-style DEA dataset; 2024; 10.0000/example",
+          "retrieved_at": null,
+          "note": "VAMDC XSAMS dissociative_electron_attachment record.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.82,
+        "evidence_bonus": 0.205,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.0,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "VAMDC XSAMS dissociative_electron_attachment record.",
+      "id": "a5002119848d4860a11258a0b04c1eb8"
+    },
+    {
+      "key": "c_c4f8::c2f3plus_followup",
+      "family": "ion_neutral_followup",
+      "equation": "C2F3+ + C4F8 -> C3F5+ + C3F6",
+      "reactant_state_ids": [
+        "e0820b82c54d4eab8e6e93dc9046478d",
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "245552d7e05848cba26d68a39fd2229a",
+        "3400fa64dee34e1483e6a6a2a055e681"
+      ],
+      "reactant_keys": [
+        "C2F3+",
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "C3F5+",
+        "C3F6"
+      ],
+      "lhs_tokens": [
+        "C2F3+",
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "C3F5+",
+        "C3F6"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "c-C4F8 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_c4f8",
+          "citation": "Packaged c-C4F8 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated fluorocarbon family used as the starting network prior.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "inference",
+          "source_name": "mass_balance_completion",
+          "acquisition_method": "package_template",
+          "evidence_kind": "mass_balance_completion",
+          "support_score": 0.44,
+          "source_url": null,
+          "locator": "c_c4f8::c2f3plus_followup::missing1",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Missing co-product completed by exact atom/charge balance: C3F6.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.58,
+        "evidence_bonus": 0.1525,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 0.8224999999999999,
+        "tier": "high"
+      },
+      "note": "Missing co-products completed by exact balance.",
+      "id": "5572b609485f4fc1b563ce9bdc5cfcfd"
+    },
+    {
+      "key": "c_c4f8::c3f5_to_c2f3",
+      "family": "radical_fragmentation",
+      "equation": "C3F5 -> C2F3 + CF2",
+      "reactant_state_ids": [
+        "9dc97aa7742542498c0ce3f4216b5780"
+      ],
+      "product_state_ids": [
+        "3c7a952b956c4f61a65bc7fb84bb2e1f",
+        "19d63d32a1d24fdf9c2931d8ac907b04"
+      ],
+      "reactant_keys": [
+        "C3F5"
+      ],
+      "product_keys": [
+        "C2F3",
+        "CF2"
+      ],
+      "lhs_tokens": [
+        "C3F5"
+      ],
+      "rhs_tokens": [
+        "C2F3",
+        "CF2"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "packaged_curated_fragmentation",
+          "acquisition_method": "package_template",
+          "evidence_kind": "heuristic_family",
+          "support_score": 0.52,
+          "source_url": null,
+          "locator": "curated_fragmentation_family",
+          "citation": "Curated fragmentation family",
+          "retrieved_at": null,
+          "note": "Balanced fragmentation step added to continue second and third generation expansion.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.52,
+        "evidence_bonus": 0.13,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 0.74,
+        "tier": "medium"
+      },
+      "note": null,
+      "id": "72606b8d0e054b0eae295364482f6dbc"
+    },
+    {
+      "key": "c_c4f8::c4f7_to_c3f5",
+      "family": "radical_fragmentation",
+      "equation": "C4F7 -> C3F5 + CF2",
+      "reactant_state_ids": [
+        "ce106b8475824a1fb5e59464a65720e9"
+      ],
+      "product_state_ids": [
+        "9dc97aa7742542498c0ce3f4216b5780",
+        "19d63d32a1d24fdf9c2931d8ac907b04"
+      ],
+      "reactant_keys": [
+        "C4F7"
+      ],
+      "product_keys": [
+        "C3F5",
+        "CF2"
+      ],
+      "lhs_tokens": [
+        "C4F7"
+      ],
+      "rhs_tokens": [
+        "C3F5",
+        "CF2"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "packaged_curated_fragmentation",
+          "acquisition_method": "package_template",
+          "evidence_kind": "heuristic_family",
+          "support_score": 0.52,
+          "source_url": null,
+          "locator": "curated_fragmentation_family",
+          "citation": "Curated fragmentation family",
+          "retrieved_at": null,
+          "note": "Balanced fragmentation step added to continue second and third generation expansion.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.54,
+        "evidence_bonus": 0.13,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 0.76,
+        "tier": "medium"
+      },
+      "note": null,
+      "id": "b257c52192e94008bd0a8739949ef40f"
+    },
+    {
+      "key": "c_c4f8::cf2plus_followup",
+      "family": "ion_neutral_followup",
+      "equation": "CF2+ + C4F8 -> C3F5+ + C2F5",
+      "reactant_state_ids": [
+        "8e5fb72df70f415890569e1a8b985b1e",
+        "2e8106784cab4e76b7e9327b18039a0d"
+      ],
+      "product_state_ids": [
+        "245552d7e05848cba26d68a39fd2229a",
+        "d6637715e5544497b18a2d4eb6094da9"
+      ],
+      "reactant_keys": [
+        "CF2+",
+        "c-C4F8"
+      ],
+      "product_keys": [
+        "C3F5+",
+        "C2F5"
+      ],
+      "lhs_tokens": [
+        "CF2+",
+        "C4F8"
+      ],
+      "rhs_tokens": [
+        "C3F5+",
+        "C2F5"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "c-C4F8 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_c4f8",
+          "citation": "Packaged c-C4F8 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated fluorocarbon family used as the starting network prior.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "inference",
+          "source_name": "mass_balance_completion",
+          "acquisition_method": "package_template",
+          "evidence_kind": "mass_balance_completion",
+          "support_score": 0.44,
+          "source_url": null,
+          "locator": "c_c4f8::cf2plus_followup::missing1",
+          "citation": null,
+          "retrieved_at": null,
+          "note": "Missing co-product completed by exact atom/charge balance: C2F5.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.58,
+        "evidence_bonus": 0.1525,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 0.8224999999999999,
+        "tier": "high"
+      },
+      "note": "Missing co-products completed by exact balance.",
+      "id": "3e4315881395452395e8f1dfb8c351bf"
+    },
+    {
+      "key": "c_c4f8::tetrafluoroethylene_split",
+      "family": "radical_fragmentation",
+      "equation": "C2F4 -> CF2 + CF2",
+      "reactant_state_ids": [
+        "79272c0cd6a8484d8528a40f6abbcd09"
+      ],
+      "product_state_ids": [
+        "19d63d32a1d24fdf9c2931d8ac907b04"
+      ],
+      "reactant_keys": [
+        "C2F4"
+      ],
+      "product_keys": [
+        "CF2"
+      ],
+      "lhs_tokens": [
+        "C2F4"
+      ],
+      "rhs_tokens": [
+        "CF2",
+        "CF2"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "packaged_curated_fragmentation",
+          "acquisition_method": "package_template",
+          "evidence_kind": "heuristic_family",
+          "support_score": 0.52,
+          "source_url": null,
+          "locator": "curated_fragmentation_family",
+          "citation": "Curated fragmentation family",
+          "retrieved_at": null,
+          "note": "Balanced fragmentation step added to continue second and third generation expansion.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.56,
+        "evidence_bonus": 0.13,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 0.78,
+        "tier": "medium"
+      },
+      "note": null,
+      "id": "1e082bf908954e6493375b56af25b2fe"
+    },
+    {
+      "key": "ch4::ion_fragmentation_ch2",
+      "family": "ion_fragmentation",
+      "equation": "CH3+ -> CH2+ + H",
+      "reactant_state_ids": [
+        "cecd4d2836974cafbe466a967b848639"
+      ],
+      "product_state_ids": [
+        "1b6ed4fdd00f443e8569576d4b0ffd9e",
+        "b7ca36b4cad84350bd76da3396e1a30b"
+      ],
+      "reactant_keys": [
+        "CH3+"
+      ],
+      "product_keys": [
+        "CH2+",
+        "H"
+      ],
+      "lhs_tokens": [
+        "CH3+"
+      ],
+      "rhs_tokens": [
+        "CH2+",
+        "H"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.6,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 0.8849999999999999,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "0004582623044d7a97189f95a033a0ac"
+    },
+    {
+      "key": "ch4::parent_ion_fragmentation",
+      "family": "ion_fragmentation",
+      "equation": "CH4+ -> CH3+ + H",
+      "reactant_state_ids": [
+        "8130d03eee3341bfb40e0ba485a28053"
+      ],
+      "product_state_ids": [
+        "cecd4d2836974cafbe466a967b848639",
+        "b7ca36b4cad84350bd76da3396e1a30b"
+      ],
+      "reactant_keys": [
+        "CH4+"
+      ],
+      "product_keys": [
+        "CH3+",
+        "H"
+      ],
+      "lhs_tokens": [
+        "CH4+"
+      ],
+      "rhs_tokens": [
+        "CH3+",
+        "H"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.68,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.05,
+        "final_score": 0.9649999999999999,
+        "tier": "high"
+      },
+      "note": null,
+      "id": "4cc07485b7234cada5b9df95e0daac2a"
+    },
+    {
+      "key": "ch4::radical_fragmentation_ch2",
+      "family": "radical_fragmentation",
+      "equation": "CH3 -> CH2 + H",
+      "reactant_state_ids": [
+        "e8cc595b96bb4e9ea661490efc08a113"
+      ],
+      "product_state_ids": [
+        "008c5f42ca6b41acbccd8eff2de56a69",
+        "b7ca36b4cad84350bd76da3396e1a30b"
+      ],
+      "reactant_keys": [
+        "CH3"
+      ],
+      "product_keys": [
+        "CH2",
+        "H"
+      ],
+      "lhs_tokens": [
+        "CH3"
+      ],
+      "rhs_tokens": [
+        "CH2",
+        "H"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": 464.0,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "packaged_curated_fragmentation",
+          "acquisition_method": "package_template",
+          "evidence_kind": "heuristic_family",
+          "support_score": 0.52,
+          "source_url": null,
+          "locator": "curated_fragmentation_family",
+          "citation": "Curated fragmentation family",
+          "retrieved_at": null,
+          "note": "Balanced fragmentation step added to continue second and third generation expansion.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "reaction_enthalpy_inference",
+          "support_score": 0.88,
+          "source_url": null,
+          "locator": "ch4::radical_fragmentation_ch2",
+          "citation": "ATcT-derived reaction enthalpy from species enthalpies",
+          "retrieved_at": null,
+          "note": "Reaction enthalpy computed from attached species thermochemistry.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "nist_kinetics",
+          "source_name": "NIST Chemical Kinetics Database",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "reverse_thermal_gas_phase_record",
+          "support_score": 0.7379999999999999,
+          "source_url": "https://kinetics.nist.gov/kinetics/",
+          "locator": null,
+          "citation": "Illustrative normalized NIST kinetics snapshot",
+          "retrieved_at": null,
+          "note": "Reverse-direction match found in evidence source. Reverse-direction thermal record used as supporting evidence for radical contraction ladder.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.62,
+        "evidence_bonus": 0.17816666666666667,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": -0.1,
+        "generation_penalty": 0.05,
+        "final_score": 0.7881666666666667,
+        "tier": "medium"
+      },
+      "note": null,
+      "id": "aab112ade62047afb5fc8f53c4ce91b2"
+    },
+    {
+      "key": "ext::nist_kinetics::a49fca9d58434ec6",
+      "family": "gas_phase_evidence",
+      "equation": "CH3 + H -> CH4",
+      "reactant_state_ids": [
+        "e8cc595b96bb4e9ea661490efc08a113",
+        "b7ca36b4cad84350bd76da3396e1a30b"
+      ],
+      "product_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "reactant_keys": [
+        "CH3",
+        "H"
+      ],
+      "product_keys": [
+        "CH4"
+      ],
+      "lhs_tokens": [
+        "CH3",
+        "H"
+      ],
+      "rhs_tokens": [
+        "CH4"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": -438.6,
+      "evidence": [
+        {
+          "source_system": "nist_kinetics",
+          "source_name": "NIST Chemical Kinetics Database",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "thermal_gas_phase_record",
+          "support_score": 0.8019999999999999,
+          "source_url": "https://kinetics.nist.gov/kinetics/",
+          "locator": null,
+          "citation": "Illustrative normalized NIST kinetics snapshot",
+          "retrieved_at": null,
+          "note": "Reverse-direction thermal record used as supporting evidence for CH4 fragmentation family.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "reaction_enthalpy_inference",
+          "support_score": 0.88,
+          "source_url": null,
+          "locator": "ext::nist_kinetics::a49fca9d58434ec6",
+          "citation": "ATcT-derived reaction enthalpy from species enthalpies",
+          "retrieved_at": null,
+          "note": "Reaction enthalpy computed from attached species thermochemistry.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "nist_kinetics",
+          "source_name": "NIST Chemical Kinetics Database",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "thermal_gas_phase_record",
+          "support_score": 0.8019999999999999,
+          "source_url": "https://kinetics.nist.gov/kinetics/",
+          "locator": null,
+          "citation": "Illustrative normalized NIST kinetics snapshot",
+          "retrieved_at": null,
+          "note": "Reverse-direction thermal record used as supporting evidence for CH4 fragmentation family.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "umist",
+          "source_name": "UMIST Database for Astrochemistry",
+          "acquisition_method": "official_download",
+          "evidence_kind": "astrochemistry_network_record",
+          "support_score": 0.506,
+          "source_url": "https://umistdatabase.uk/react/9001",
+          "locator": null,
+          "citation": "UMIST Rate22 reaction #9001",
+          "retrieved_at": null,
+          "note": "UMIST RATE22 #9001 type=NN method=L accuracy=factor2; Illustrative UMIST reverse hydrogenation",
+          "raw_ref": null
+        },
+        {
+          "source_system": "kida",
+          "source_name": "KIDA",
+          "acquisition_method": "official_download",
+          "evidence_kind": "astrochemistry_network_record",
+          "support_score": 0.48,
+          "source_url": null,
+          "locator": null,
+          "citation": "KIDA reaction #1001",
+          "retrieved_at": null,
+          "note": "KIDA network record #1001 type=4; parameter_count=5",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.8019999999999999,
+        "evidence_bonus": 0.17350000000000002,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.08,
+        "generation_penalty": 0.05,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Reverse-direction thermal record used as supporting evidence for CH4 fragmentation family.",
+      "id": "6d1a0bf819964e58b04dc90713fe6334"
+    },
+    {
+      "key": "ext::nist_kinetics::b5557c3a9b23e5bb",
+      "family": "gas_phase_evidence",
+      "equation": "CH2 + H -> CH3",
+      "reactant_state_ids": [
+        "008c5f42ca6b41acbccd8eff2de56a69",
+        "b7ca36b4cad84350bd76da3396e1a30b"
+      ],
+      "product_state_ids": [
+        "e8cc595b96bb4e9ea661490efc08a113"
+      ],
+      "reactant_keys": [
+        "CH2",
+        "H"
+      ],
+      "product_keys": [
+        "CH3"
+      ],
+      "lhs_tokens": [
+        "CH2",
+        "H"
+      ],
+      "rhs_tokens": [
+        "CH3"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": -464.0,
+      "evidence": [
+        {
+          "source_system": "nist_kinetics",
+          "source_name": "NIST Chemical Kinetics Database",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "thermal_gas_phase_record",
+          "support_score": 0.7879999999999999,
+          "source_url": "https://kinetics.nist.gov/kinetics/",
+          "locator": null,
+          "citation": "Illustrative normalized NIST kinetics snapshot",
+          "retrieved_at": null,
+          "note": "Reverse-direction thermal record used as supporting evidence for radical contraction ladder.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "reaction_enthalpy_inference",
+          "support_score": 0.88,
+          "source_url": null,
+          "locator": "ext::nist_kinetics::b5557c3a9b23e5bb",
+          "citation": "ATcT-derived reaction enthalpy from species enthalpies",
+          "retrieved_at": null,
+          "note": "Reaction enthalpy computed from attached species thermochemistry.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "nist_kinetics",
+          "source_name": "NIST Chemical Kinetics Database",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "thermal_gas_phase_record",
+          "support_score": 0.7879999999999999,
+          "source_url": "https://kinetics.nist.gov/kinetics/",
+          "locator": null,
+          "citation": "Illustrative normalized NIST kinetics snapshot",
+          "retrieved_at": null,
+          "note": "Reverse-direction thermal record used as supporting evidence for radical contraction ladder.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.7879999999999999,
+        "evidence_bonus": 0.20466666666666666,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.08,
+        "generation_penalty": 0.05,
+        "final_score": 1.0,
+        "tier": "high"
+      },
+      "note": "Reverse-direction thermal record used as supporting evidence for radical contraction ladder.",
+      "id": "b109d3407e5b4089abb69c3302c3c8b7"
+    },
+    {
+      "key": "ext::umist::68a9db7e7ec9454a",
+      "family": "gas_phase_evidence",
+      "equation": "CH2 + H2 -> CH4",
+      "reactant_state_ids": [
+        "008c5f42ca6b41acbccd8eff2de56a69",
+        "00f4c30d08804317bae72cb48125dd49"
+      ],
+      "product_state_ids": [
+        "667a48432e034a14a4291318ffc2b385"
+      ],
+      "reactant_keys": [
+        "CH2",
+        "H2"
+      ],
+      "product_keys": [
+        "CH4"
+      ],
+      "lhs_tokens": [
+        "CH2",
+        "H2"
+      ],
+      "rhs_tokens": [
+        "CH4"
+      ],
+      "generation": 2,
+      "threshold_ev": null,
+      "delta_h_kj_mol": -466.6,
+      "evidence": [
+        {
+          "source_system": "umist",
+          "source_name": "UMIST Database for Astrochemistry",
+          "acquisition_method": "official_download",
+          "evidence_kind": "astrochemistry_network_record",
+          "support_score": 0.548,
+          "source_url": "https://umistdatabase.uk/react/9002",
+          "locator": null,
+          "citation": "UMIST Rate22 reaction #9002",
+          "retrieved_at": null,
+          "note": "UMIST RATE22 #9002 type=IN method=C accuracy=factor2; Illustrative UMIST radical stabilization",
+          "raw_ref": null
+        },
+        {
+          "source_system": "atct",
+          "source_name": "Active Thermochemical Tables",
+          "acquisition_method": "offline_snapshot",
+          "evidence_kind": "reaction_enthalpy_inference",
+          "support_score": 0.88,
+          "source_url": null,
+          "locator": "ext::umist::68a9db7e7ec9454a",
+          "citation": "ATcT-derived reaction enthalpy from species enthalpies",
+          "retrieved_at": null,
+          "note": "Reaction enthalpy computed from attached species thermochemistry.",
+          "raw_ref": null
+        },
+        {
+          "source_system": "umist",
+          "source_name": "UMIST Database for Astrochemistry",
+          "acquisition_method": "official_download",
+          "evidence_kind": "astrochemistry_network_record",
+          "support_score": 0.548,
+          "source_url": "https://umistdatabase.uk/react/9002",
+          "locator": null,
+          "citation": "UMIST Rate22 reaction #9002",
+          "retrieved_at": null,
+          "note": "UMIST RATE22 #9002 type=IN method=C accuracy=factor2; Illustrative UMIST radical stabilization",
+          "raw_ref": null
+        },
+        {
+          "source_system": "kida",
+          "source_name": "KIDA",
+          "acquisition_method": "official_download",
+          "evidence_kind": "astrochemistry_network_record",
+          "support_score": 0.48,
+          "source_url": null,
+          "locator": null,
+          "citation": "KIDA reaction #1002",
+          "retrieved_at": null,
+          "note": "KIDA network record #1002 type=4; parameter_count=5",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.548,
+        "evidence_bonus": 0.1535,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.08,
+        "generation_penalty": 0.05,
+        "final_score": 0.8714999999999999,
+        "tier": "high"
+      },
+      "note": "UMIST RATE22 #9002 type=IN method=C accuracy=factor2; Illustrative UMIST radical stabilization",
+      "id": "59313b12a9c84056b1b37f207446f81d"
+    },
+    {
+      "key": "ch4::ion_fragmentation_ch",
+      "family": "ion_fragmentation",
+      "equation": "CH2+ -> CH+ + H",
+      "reactant_state_ids": [
+        "1b6ed4fdd00f443e8569576d4b0ffd9e"
+      ],
+      "product_state_ids": [
+        "4e880f626948431eb585410450689968",
+        "b7ca36b4cad84350bd76da3396e1a30b"
+      ],
+      "reactant_keys": [
+        "CH2+"
+      ],
+      "product_keys": [
+        "CH+",
+        "H"
+      ],
+      "lhs_tokens": [
+        "CH2+"
+      ],
+      "rhs_tokens": [
+        "CH+",
+        "H"
+      ],
+      "generation": 3,
+      "threshold_ev": null,
+      "delta_h_kj_mol": null,
+      "evidence": [
+        {
+          "source_system": "template_library",
+          "source_name": "CH4 curated reaction library",
+          "acquisition_method": "package_template",
+          "evidence_kind": "curated_reaction_family",
+          "support_score": 0.78,
+          "source_url": null,
+          "locator": "curated_ch4",
+          "citation": "Packaged CH4 reaction template set",
+          "retrieved_at": null,
+          "note": "Curated methane family used as the starting network prior.",
+          "raw_ref": null
+        }
+      ],
+      "confidence": {
+        "base_score": 0.56,
+        "evidence_bonus": 0.195,
+        "balance_bonus": 0.12,
+        "threshold_bonus": 0.02,
+        "thermo_bonus": 0.0,
+        "generation_penalty": 0.1,
+        "final_score": 0.7950000000000002,
+        "tier": "medium"
+      },
+      "note": null,
+      "id": "0126efce6b264a39a75df373b9749de8"
+    }
+  ],
+  "diagnostics": [
+    {
+      "level": "info",
+      "code": "asd_bootstrap",
+      "message": "Merged ASD-derived atomic states into catalog.",
+      "context": {
+        "added_species": 8
+      }
+    },
+    {
+      "level": "info",
+      "code": "external_templates_seeded",
+      "message": "Merged external evidence-derived templates into catalog.",
+      "context": {
+        "added_templates": 4,
+        "by_source": {
+          "nist_kinetics": 2,
+          "umist": 2,
+          "kida": 2,
+          "ideadb": 1
+        }
+      }
+    },
+    {
+      "level": "info",
+      "code": "mass_balance_completion",
+      "message": "Resolved missing co-product for c_c4f8::cf2plus_followup: C2F5",
+      "context": {
+        "template_key": "c_c4f8::cf2plus_followup",
+        "resolved_species_key": "C2F5"
+      }
+    },
+    {
+      "level": "info",
+      "code": "mass_balance_completion",
+      "message": "Resolved missing co-product for c_c4f8::c2f3plus_followup: C3F6",
+      "context": {
+        "template_key": "c_c4f8::c2f3plus_followup",
+        "resolved_species_key": "C3F6"
+      }
+    },
+    {
+      "level": "info",
+      "code": "thermochem_pruned",
+      "message": "Pruned strongly endothermic reaction ch4::radical_fragmentation_ch",
+      "context": {
+        "reaction_key": "ch4::radical_fragmentation_ch",
+        "delta_h_kj_mol": 422.0,
+        "hard_limit_kj_mol": 320.0
+      }
+    },
+    {
+      "level": "info",
+      "code": "thermochem_pruned",
+      "message": "Pruned strongly endothermic reaction ch4::radical_fragmentation_c",
+      "context": {
+        "reaction_key": "ch4::radical_fragmentation_c",
+        "delta_h_kj_mol": 339.0,
+        "hard_limit_kj_mol": 320.0
+      }
+    }
+  ]
+}

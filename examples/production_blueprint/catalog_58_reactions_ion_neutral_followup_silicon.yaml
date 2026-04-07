@@ -1,0 +1,30 @@
+reactions:
+  - key: silicon::ion_neutral_followup::sih4_plus_h2
+    family: ion_neutral_followup
+    reactants: [SiH4+, H2]
+    products: [SiH3, H, H2+]
+    lhs_tokens: [SiH4+, H2]
+    rhs_tokens: [SiH3, H, H2+]
+    base_confidence: 0.67
+    reference_ids: [curated_silicon]
+    note: "Representative silane cation follow-up channel that transfers charge into the hydrogen pool."
+
+  - key: silicon::ion_neutral_followup::sih2cl2_plus_h2
+    family: ion_neutral_followup
+    reactants: [SiH2Cl2+, H2]
+    products: [SiHCl2, H, H2+]
+    lhs_tokens: [SiH2Cl2+, H2]
+    rhs_tokens: [SiHCl2, H, H2+]
+    base_confidence: 0.66
+    reference_ids: [curated_silicon]
+    note: "Representative dichlorosilane cation follow-up channel in hydrogen-containing gas mixtures."
+
+  - key: silicon::ion_neutral_followup::sihcl3_plus_h2
+    family: ion_neutral_followup
+    reactants: [SiHCl3+, H2]
+    products: [SiHCl2, HCl, H2+]
+    lhs_tokens: [SiHCl3+, H2]
+    rhs_tokens: [SiHCl2, HCl, H2+]
+    base_confidence: 0.65
+    reference_ids: [curated_silicon]
+    note: "Representative trichlorosilane cation follow-up channel producing HCl in the gas phase."

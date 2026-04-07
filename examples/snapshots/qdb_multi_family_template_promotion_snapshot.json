@@ -1,0 +1,64 @@
+{
+  "records": [
+    {
+      "reactants": ["e-", "CH4"],
+      "products": ["e-", "CH4(v14)"],
+      "citation": "Illustrative normalized QDB multi-family template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.92,
+      "note": "Electron-impact vibrational excitation channel promoted across the hydrocarbon family.",
+      "chemistry_id": 410,
+      "process_family": "electron_excitation_vibrational",
+      "promotion_family": "hydrocarbon",
+      "promotion_stage": "curated_bridge",
+      "promoted_excited_states": [
+        {
+          "token": "CH4(v14)",
+          "label": "v14",
+          "energy_ev": 0.374,
+          "display_name": "CH4(v14)"
+        }
+      ]
+    },
+    {
+      "reactants": ["e-", "O2"],
+      "products": ["e-", "O2(c1Sigma_u-)"],
+      "citation": "Illustrative normalized QDB multi-family template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.90,
+      "note": "Electron-impact electronic excitation channel promoted across the oxygen family.",
+      "chemistry_id": 411,
+      "process_family": "electron_excitation",
+      "promotion_family": "oxygen",
+      "promotion_stage": "curated_bridge",
+      "promoted_excited_states": [
+        {
+          "token": "O2(c1Sigma_u-)",
+          "label": "c1Sigma_u-",
+          "energy_ev": 4.50,
+          "display_name": "O2(c1Sigma_u-)"
+        }
+      ]
+    },
+    {
+      "reactants": ["e-", "N2"],
+      "products": ["e-", "N2(B3Pi_g)"],
+      "citation": "Illustrative normalized QDB multi-family template-promotion snapshot",
+      "source_url": "https://quantemoldb.com/chemistries/api/",
+      "support_score": 0.88,
+      "note": "Electron-impact electronic excitation channel promoted across the nitrogen family.",
+      "chemistry_id": 412,
+      "process_family": "electron_excitation",
+      "promotion_family": "nitrogen",
+      "promotion_stage": "curated_bridge",
+      "promoted_excited_states": [
+        {
+          "token": "N2(B3Pi_g)",
+          "label": "B3Pi_g",
+          "energy_ev": 7.35,
+          "display_name": "N2(B3Pi_g)"
+        }
+      ]
+    }
+  ]
+}

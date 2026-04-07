@@ -1,0 +1,20 @@
+reactions:
+  - key: chlorine::ion_neutral_followup::cl2_plus_h2
+    family: ion_neutral_followup
+    reactants: [Cl2+, H2]
+    products: [HCl, Cl+, H]
+    lhs_tokens: [Cl2+, H2]
+    rhs_tokens: [HCl, Cl+, H]
+    base_confidence: 0.68
+    reference_ids: [curated_chlorine]
+    note: "Representative chlorine cation follow-up channel in hydrogen-containing gas mixtures."
+
+  - key: chlorine::ion_neutral_followup::hcl_plus_cl2
+    family: ion_neutral_followup
+    reactants: [HCl+, Cl2]
+    products: [Cl2+, HCl]
+    lhs_tokens: [HCl+, Cl2]
+    rhs_tokens: [Cl2+, HCl]
+    base_confidence: 0.66
+    reference_ids: [curated_chlorine]
+    note: "Representative charge-transfer-like follow-up channel for hydrogen chloride cations."

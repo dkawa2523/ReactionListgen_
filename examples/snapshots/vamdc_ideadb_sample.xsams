@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XSAMSData xmlns="http://vamdc.org/xml/xsams/1.0">
+  <Species>
+    <Molecules>
+      <Molecule speciesID="M_CH4">
+        <MolecularChemicalSpecies>
+          <StoichiometricFormula>CH4</StoichiometricFormula>
+          <ChemicalName><Value>Methane</Value></ChemicalName>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="M_CH3">
+        <MolecularChemicalSpecies>
+          <StoichiometricFormula>CH3</StoichiometricFormula>
+          <ChemicalName><Value>Methyl</Value></ChemicalName>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="M_Hm">
+        <MolecularChemicalSpecies>
+          <StoichiometricFormula>H-</StoichiometricFormula>
+          <ChemicalName><Value>Hydride anion</Value></ChemicalName>
+        </MolecularChemicalSpecies>
+      </Molecule>
+    </Molecules>
+    <Particles>
+      <Particle speciesID="P_E">
+        <ParticleProperties>
+          <Name>e-</Name>
+        </ParticleProperties>
+      </Particle>
+    </Particles>
+  </Species>
+  <Sources>
+    <Source sourceID="S1">
+      <Title>Illustrative IDEADB-style DEA dataset</Title>
+      <Year>2024</Year>
+      <DOI>10.0000/example</DOI>
+    </Source>
+  </Sources>
+  <Processes>
+    <Collisions>
+      <Collision>
+        <Reactant><SpeciesRef>P_E</SpeciesRef></Reactant>
+        <Reactant><SpeciesRef>M_CH4</SpeciesRef></Reactant>
+        <Product><SpeciesRef>M_Hm</SpeciesRef></Product>
+        <Product><SpeciesRef>M_CH3</SpeciesRef></Product>
+        <SourceRef>S1</SourceRef>
+      </Collision>
+    </Collisions>
+  </Processes>
+</XSAMSData>
